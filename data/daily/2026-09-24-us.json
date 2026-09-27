@@ -1,0 +1,1150 @@
+{
+  "authority": {
+    "source_digest": "sha256:de165306529afda627516c30b8e49ab59116315b59a16abc2c9112834cf1f39b",
+    "source_path": "reports/snapshots/production-snapshot-us-2026-09-24.json",
+    "type": "CANONICAL_PRODUCTION_SNAPSHOT",
+    "web_owns_investment_state": false
+  },
+  "candidates": [
+    {
+      "canonical_state": "EXECUTION_CONFIRMATION_REQUIRED",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Vicor Corporation"
+      },
+      "constraint_codes": [
+        "MISSING_SPREAD"
+      ],
+      "decision_reason": "EXECUTION_CONFIRMATION_REQUIRED",
+      "directional_basis": "EVENT_DRIVEN_LONG",
+      "event": {
+        "event_id": "url:45ff6181bf2ab1aab456df6c7ae619836b10882759abcc2f98718422e85d6bba",
+        "evidence_kind": "PRIMARY",
+        "family": "GUIDANCE",
+        "headline": "Vicor (VICR) Climbed, But What Is Behind The Attention Now?",
+        "polarity": "POSITIVE",
+        "publication_time": "2026-09-22T12:53:27+00:00",
+        "semantic_status": "VALID_POSITIVE",
+        "source": "Trefis",
+        "timestamp_authority": "PUBLICATION_TIME_ONLY",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_PARTIAL",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "4428680ac196928f2e93e728cdc035ead86d577dd26710e4532aa99f9f60aa4c",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 1618100.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 1038600.0,
+          "relative_volume": 1.5579626420181012,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "WAIT_FOR_PRICE",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 263.73
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 258.37
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 257.48
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 291.69
+        }
+      },
+      "rank": 1,
+      "risk": "中",
+      "score": 76.2,
+      "symbol": "VICR"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "CrowdStrike Holdings, Inc."
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "FALLBACK",
+        "family": "PRICE_ACTION_COMMENTARY",
+        "headline": "US Stock Market Today: S&P 500 Futures Edge Higher On Strong Eurozone Activity Data",
+        "polarity": "POSITIVE",
+        "publication_time": "2026-09-23T19:05:16+00:00",
+        "semantic_status": "EXCLUDE_BOUND_CANDIDATE",
+        "source": "StockStory",
+        "timestamp_authority": "PUBLICATION_TIME_ONLY",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "7ca2862d19783c0c883a89d0250533589685aed4a9091848ab5e47d79c6746b7",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 13203900.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 13372700.0,
+          "relative_volume": 0.9873772686144159,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 249.82
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 245.89
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 245.23
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 267.78
+        }
+      },
+      "rank": 2,
+      "risk": "中",
+      "score": 56.0,
+      "symbol": "CRWD"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Valero Energy Corporation"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "FALLBACK",
+        "family": "无明确催化",
+        "headline": "Update: Market Chatter: US Oil Executives Push Back Against Donald Trump's Potential Ban on Diesel Exports",
+        "polarity": null,
+        "publication_time": "2026-09-23T17:03:00+00:00",
+        "semantic_status": "CAP_BREACH",
+        "source": "Zacks",
+        "timestamp_authority": "PUBLICATION_TIME_ONLY",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "669b67911c4ba69cdf5d082d0e1ca9f34f39bf446f3de36511cb000c71251310",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 7081400.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 3616100.0,
+          "relative_volume": 1.9582976134509555,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 378.56
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 373.01
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 424.74
+        }
+      },
+      "rank": 3,
+      "risk": "中",
+      "score": 55.8,
+      "symbol": "VLO"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Mettler-Toledo International, I"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "NONE",
+        "family": "无明确催化",
+        "headline": "1 S&P 500 Stock Worth Your Attention and 2 We Ignore",
+        "polarity": null,
+        "publication_time": null,
+        "semantic_status": "ABSTAIN",
+        "source": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "844f7fed5751d5d37b5e83ab498d0559b3feccc21b53abdfa8853a6f2806dc90",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 238600.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 288000.0,
+          "relative_volume": 0.8284722222222223,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 1486.35
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 1473.9
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 1471.82
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 1527.41
+        }
+      },
+      "rank": 4,
+      "risk": "中",
+      "score": 53.5,
+      "symbol": "MTD"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Space Exploration Technologies "
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "NONE",
+        "family": "无明确催化",
+        "headline": "SpaceX President Just Filed to Sell Nearly $52 Million in Stock",
+        "polarity": null,
+        "publication_time": null,
+        "semantic_status": "ABSTAIN",
+        "source": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "ca74669b4f186c679eaca6361f0594d041d2787696d1ebf1c2909c2584759204",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 60280300.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 83135050.0,
+          "relative_volume": 0.7250888764726791,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 148.61
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 146.45
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 146.09
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 160.65
+        }
+      },
+      "rank": 5,
+      "risk": "中",
+      "score": 53.5,
+      "symbol": "SPCX"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Veeva Systems Inc."
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "FALLBACK",
+        "family": "无明确催化",
+        "headline": "Veeva Unveils Falcon Router to Streamline Biopharma Case Routing",
+        "polarity": null,
+        "publication_time": "2026-09-23T17:02:00+00:00",
+        "semantic_status": "CAP_BREACH",
+        "source": "Zacks",
+        "timestamp_authority": "PUBLICATION_TIME_ONLY",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "e3801cfa61ab022d8c88d988bdd393a0cac940e87cf90ca9c1d4423df4e1dc70",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 1426700.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 1199100.0,
+          "relative_volume": 1.1898090234342424,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 265.91
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 299.02
+        }
+      },
+      "rank": 6,
+      "risk": "中",
+      "score": 53.5,
+      "symbol": "VEEV"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Deere & Company"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "NONE",
+        "family": "无明确催化",
+        "headline": "Don’t expect a grand bargain from the Trump-Xi summit: Yardeni",
+        "polarity": null,
+        "publication_time": null,
+        "semantic_status": "ABSTAIN",
+        "source": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "52bf415a8b24d23c841aaa16c7ad47baf6c5974289e81e03aa31f1a56a7b27dc",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 1819000.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 1232200.0,
+          "relative_volume": 1.4762213926310663,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 703.2
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 697.5
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 727.13
+        }
+      },
+      "rank": 7,
+      "risk": "中",
+      "score": 53.2,
+      "symbol": "DE"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Sandisk Corporation"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "FALLBACK",
+        "family": "无明确催化",
+        "headline": "Intel, Marvell, Super Micro, Meta, MGM, and More Stocks That Explain Today’s Market",
+        "polarity": null,
+        "publication_time": "2026-09-24T09:28:00+00:00",
+        "semantic_status": "CAP_BREACH",
+        "source": "Zacks",
+        "timestamp_authority": "PUBLICATION_TIME_ONLY",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "a4f8bdc29783a35c9f5f4fd606fcc09d0ee9d74bb387164e767a3ba9ce28d10d",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 7687400.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 9461600.0,
+          "relative_volume": 0.812484146444576,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 1647.08
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 1615.15
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 1609.83
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 1946.73
+        }
+      },
+      "rank": 8,
+      "risk": "中",
+      "score": 52.9,
+      "symbol": "SNDK"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "West Pharmaceutical Services, I"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "FALLBACK",
+        "family": "无明确催化",
+        "headline": "Veeva Unveils Falcon Router to Streamline Biopharma Case Routing",
+        "polarity": null,
+        "publication_time": "2026-09-22T15:07:41+00:00",
+        "semantic_status": "CAP_BREACH",
+        "source": "MT Newswires",
+        "timestamp_authority": "PUBLICATION_TIME_ONLY",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "d7df89ef3139a2b4908644fa94cd873342a60d429e686a0eec1bb69457a77ee2",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 876900.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 621000.0,
+          "relative_volume": 1.4120772946859903,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 369.06
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 366.48
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 366.05
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 379.07
+        }
+      },
+      "rank": 9,
+      "risk": "中",
+      "score": 52.8,
+      "symbol": "WST"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Ingersoll Rand Inc."
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "NONE",
+        "family": "无明确催化",
+        "headline": "1 S&P 500 Stock for Long-Term Investors and 2 We Find Risky",
+        "polarity": null,
+        "publication_time": null,
+        "semantic_status": "ABSTAIN",
+        "source": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_PARTIAL",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "7f368705a94dbe8d448e77293be421d56e93cad5cafcaa1422085ac5a40e9d92",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 8572700.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 5665700.0,
+          "relative_volume": 1.5130875266957304,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 75.09
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 74.48
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 74.38
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 82.31
+        }
+      },
+      "rank": 10,
+      "risk": "中",
+      "score": 52.7,
+      "symbol": "IR"
+    },
+    {
+      "canonical_state": "OVEREXTENDED",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED",
+        "EXCESSIVE_GAP"
+      ],
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "event_id": null,
+        "evidence_kind": "FALLBACK",
+        "family": "PRICE_ACTION_COMMENTARY",
+        "headline": null,
+        "polarity": "NEGATIVE",
+        "publication_time": "2026-09-24T04:29:11+00:00",
+        "semantic_status": "VALID_NO_BULLISH_AUTHORITY",
+        "source": "Simply Wall St.",
+        "timestamp_authority": "PUBLICATION_TIME_ONLY",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "f33ff86294c34bc41e71b8d7f3fb0fa7a83871ac7c7b90505cb18df0185b72c9",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 8755500.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 3200800.0,
+          "relative_volume": 2.7354098975256185,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "presentation_group": "BLOCKED",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 11,
+      "risk": "高",
+      "score": 24.9,
+      "symbol": "NWSA"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "url:45ff6181bf2ab1aab456df6c7ae619836b10882759abcc2f98718422e85d6bba",
+      "evidence_kind": "PRIMARY",
+      "family": "GUIDANCE",
+      "headline": "Vicor (VICR) Climbed, But What Is Behind The Attention Now?",
+      "polarity": "POSITIVE",
+      "publication_time": "2026-09-22T12:53:27+00:00",
+      "semantic_status": "VALID_POSITIVE",
+      "source": "Trefis",
+      "symbol": "VICR",
+      "timestamp_authority": "PUBLICATION_TIME_ONLY",
+      "underlying_event_time": null
+    },
+    {
+      "event_id": null,
+      "evidence_kind": "FALLBACK",
+      "family": "PRICE_ACTION_COMMENTARY",
+      "headline": "US Stock Market Today: S&P 500 Futures Edge Higher On Strong Eurozone Activity Data",
+      "polarity": "POSITIVE",
+      "publication_time": "2026-09-23T19:05:16+00:00",
+      "semantic_status": "EXCLUDE_BOUND_CANDIDATE",
+      "source": "StockStory",
+      "symbol": "CRWD",
+      "timestamp_authority": "PUBLICATION_TIME_ONLY",
+      "underlying_event_time": null
+    },
+    {
+      "event_id": null,
+      "evidence_kind": "FALLBACK",
+      "family": "无明确催化",
+      "headline": "Update: Market Chatter: US Oil Executives Push Back Against Donald Trump's Potential Ban on Diesel Exports",
+      "polarity": null,
+      "publication_time": "2026-09-23T17:03:00+00:00",
+      "semantic_status": "CAP_BREACH",
+      "source": "Zacks",
+      "symbol": "VLO",
+      "timestamp_authority": "PUBLICATION_TIME_ONLY",
+      "underlying_event_time": null
+    },
+    {
+      "event_id": null,
+      "evidence_kind": "NONE",
+      "family": "无明确催化",
+      "headline": "1 S&P 500 Stock Worth Your Attention and 2 We Ignore",
+      "polarity": null,
+      "publication_time": null,
+      "semantic_status": "ABSTAIN",
+      "source": null,
+      "symbol": "MTD",
+      "timestamp_authority": "NOT_IDENTIFIABLE",
+      "underlying_event_time": null
+    },
+    {
+      "event_id": null,
+      "evidence_kind": "NONE",
+      "family": "无明确催化",
+      "headline": "SpaceX President Just Filed to Sell Nearly $52 Million in Stock",
+      "polarity": null,
+      "publication_time": null,
+      "semantic_status": "ABSTAIN",
+      "source": null,
+      "symbol": "SPCX",
+      "timestamp_authority": "NOT_IDENTIFIABLE",
+      "underlying_event_time": null
+    },
+    {
+      "event_id": null,
+      "evidence_kind": "FALLBACK",
+      "family": "无明确催化",
+      "headline": "Veeva Unveils Falcon Router to Streamline Biopharma Case Routing",
+      "polarity": null,
+      "publication_time": "2026-09-23T17:02:00+00:00",
+      "semantic_status": "CAP_BREACH",
+      "source": "Zacks",
+      "symbol": "VEEV",
+      "timestamp_authority": "PUBLICATION_TIME_ONLY",
+      "underlying_event_time": null
+    },
+    {
+      "event_id": null,
+      "evidence_kind": "NONE",
+      "family": "无明确催化",
+      "headline": "Don’t expect a grand bargain from the Trump-Xi summit: Yardeni",
+      "polarity": null,
+      "publication_time": null,
+      "semantic_status": "ABSTAIN",
+      "source": null,
+      "symbol": "DE",
+      "timestamp_authority": "NOT_IDENTIFIABLE",
+      "underlying_event_time": null
+    },
+    {
+      "event_id": null,
+      "evidence_kind": "FALLBACK",
+      "family": "无明确催化",
+      "headline": "Intel, Marvell, Super Micro, Meta, MGM, and More Stocks That Explain Today’s Market",
+      "polarity": null,
+      "publication_time": "2026-09-24T09:28:00+00:00",
+      "semantic_status": "CAP_BREACH",
+      "source": "Zacks",
+      "symbol": "SNDK",
+      "timestamp_authority": "PUBLICATION_TIME_ONLY",
+      "underlying_event_time": null
+    },
+    {
+      "event_id": null,
+      "evidence_kind": "FALLBACK",
+      "family": "无明确催化",
+      "headline": "Veeva Unveils Falcon Router to Streamline Biopharma Case Routing",
+      "polarity": null,
+      "publication_time": "2026-09-22T15:07:41+00:00",
+      "semantic_status": "CAP_BREACH",
+      "source": "MT Newswires",
+      "symbol": "WST",
+      "timestamp_authority": "PUBLICATION_TIME_ONLY",
+      "underlying_event_time": null
+    },
+    {
+      "event_id": null,
+      "evidence_kind": "NONE",
+      "family": "无明确催化",
+      "headline": "1 S&P 500 Stock for Long-Term Investors and 2 We Find Risky",
+      "polarity": null,
+      "publication_time": null,
+      "semantic_status": "ABSTAIN",
+      "source": null,
+      "symbol": "IR",
+      "timestamp_authority": "NOT_IDENTIFIABLE",
+      "underlying_event_time": null
+    }
+  ],
+  "generated_at": "2026-09-24T08:47:00.752923-04:00",
+  "health": [
+    {
+      "canonical_status": "OK",
+      "dimension": "Yahoo Finance",
+      "failed": 0,
+      "reasons": {},
+      "state": "HEALTHY",
+      "total": 100
+    },
+    {
+      "canonical_status": "PARTIAL",
+      "dimension": "Finnhub",
+      "failed": 0,
+      "reasons": {
+        "Budget exhausted": 80
+      },
+      "state": "PARTIAL",
+      "total": 100
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "Issuer IR",
+      "failed": 0,
+      "reasons": {
+        "Unsupported market": 100
+      },
+      "state": "UNAVAILABLE",
+      "total": 100
+    },
+    {
+      "canonical_status": "OK",
+      "dimension": "SEC EDGAR",
+      "failed": 0,
+      "reasons": {},
+      "state": "HEALTHY",
+      "total": 100
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "NewsAPI",
+      "failed": 0,
+      "reasons": {
+        "PRODUCTION_PLAN_NOT_AUTHORIZED": 100
+      },
+      "state": "UNAVAILABLE",
+      "total": 100
+    },
+    {
+      "canonical_status": "FAILED",
+      "dimension": "Gemini Event Semantics",
+      "failed": 4,
+      "reasons": {
+        "Deterministic filter rejected": 16,
+        "NO_CANONICAL_EVENT_ID": 25,
+        "RuntimeError": 4,
+        "SEMANTIC_CANDIDATE_CAP": 40
+      },
+      "state": "DEGRADED",
+      "total": 100
+    }
+  ],
+  "market": "us",
+  "report_identity": {
+    "date": "2026-09-24",
+    "git_commit": "48ca3822b6c272e831f9cb24ad319c05bfa62479",
+    "production_run_id": 119,
+    "snapshot_digest": "79a4cd6a7938348d5a8eb392638e4a3fda6df09cd0314bc38c9b08c612e2ce29"
+  },
+  "research": {
+    "de_cov_004": {
+      "label": "Research",
+      "sessions_completed": 0,
+      "sessions_total": 20,
+      "status": "ACTIVE"
+    }
+  },
+  "schema_version": "short-invest-dashboard-today/1",
+  "source_cutoff": "2026-09-24T08:47:00.752923-04:00",
+  "summary": {
+    "BLOCKED": 1,
+    "MONITORING": 9,
+    "OTHER_NOT_IDENTIFIABLE": 0,
+    "READY": 0,
+    "WAIT_FOR_PRICE": 1,
+    "total": 11
+  }
+}

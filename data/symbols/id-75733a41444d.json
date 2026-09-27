@@ -1,0 +1,551 @@
+{
+  "authority": {
+    "later_outcomes_appendable": true,
+    "original_decisions_immutable": true,
+    "research_artifacts_excluded": true
+  },
+  "decision_levels": [
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-18",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 84.51
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 83.69
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 83.55
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 89.71
+      },
+      "observation_id": "obs-1d473f661f12ae2462c6851d",
+      "provenance": {
+        "run_identity": 112,
+        "source_digest": "sha256:922db7deb19670ba14f37cd58877041bc7f5fe3058579792b348a61ebf0df0ad"
+      }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-21",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 84.6
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 83.75
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 83.61
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 89.74
+      },
+      "observation_id": "obs-578bcf408e15c81779d3550e",
+      "provenance": {
+        "run_identity": 113,
+        "source_digest": "sha256:94215b2286af22a56e0fa9f5a1e16649841fe458642a5b74b06075a8d0a125a9"
+      }
+    }
+  ],
+  "events": [],
+  "first_actionable_observation": null,
+  "first_retained_observation": "2026-09-18",
+  "generated_at": "2026-09-21T08:46:30.364882-04:00",
+  "identity": {
+    "company": {
+      "reason": null,
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
+    },
+    "market": "us",
+    "symbol": "ADM",
+    "symbol_id": "id-75733a41444d"
+  },
+  "latest_actionable_observation": null,
+  "latest_canonical_state": "BACKGROUND_MONITORING",
+  "latest_retained_observation": "2026-09-21",
+  "lifecycle": {
+    "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "multi_llm_reviews": [
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 68.0,
+        "mean_rank_among_selectors": 3.0,
+        "provider_confidences": {
+          "deepseek": 68
+        },
+        "provider_ranks": {
+          "deepseek": 3
+        },
+        "short_invest_rank": 9,
+        "successful_provider_count": 5,
+        "symbol": "ADM",
+        "vote_count": 1,
+        "vote_fraction": 0.2
+      },
+      "date": "2026-09-18",
+      "disagreement": [
+        {
+          "symbol": "ADM",
+          "type": "SINGLE_MODEL_SELECTION"
+        }
+      ],
+      "observation_id": "obs-1d473f661f12ae2462c6851d",
+      "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": 3,
+          "reason": "Management raised 2026 adjusted EPS guidance to $5.15–$5.60 from $4.15–$4.70, a powerful upward revision behind the +51% YTD run; Q2 adjusted EPS of $1.84 beat. Zacks sees FY26 EPS up ~52%, supporting continued momentum.",
+          "risk": "Ag-commodity margin normalization or a grain-price pullback could reverse momentum; the 51% YTD run may already discount much of the guidance raise.",
+          "score": 68,
+          "selected": true
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        }
+      ],
+      "review_date": "2026-09-18",
+      "review_run_identity": 112,
+      "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    }
+  ],
+  "observation_count": 2,
+  "observations": [
+    {
+      "availability": {
+        "canonical_price": "INVALID",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-09-18",
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "d3f67dd3a10b7d5182726206e1d41581cc045958152033d9e5d77155b3c681a9",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 3673200.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 3655750.0,
+          "relative_volume": 1.0047733023319427,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 68.0,
+          "mean_rank_among_selectors": 3.0,
+          "provider_confidences": {
+            "deepseek": 68
+          },
+          "provider_ranks": {
+            "deepseek": 3
+          },
+          "short_invest_rank": 9,
+          "successful_provider_count": 5,
+          "symbol": "ADM",
+          "vote_count": 1,
+          "vote_fraction": 0.2
+        },
+        "disagreement": [
+          {
+            "symbol": "ADM",
+            "type": "SINGLE_MODEL_SELECTION"
+          }
+        ],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 3,
+            "reason": "Management raised 2026 adjusted EPS guidance to $5.15–$5.60 from $4.15–$4.70, a powerful upward revision behind the +51% YTD run; Q2 adjusted EPS of $1.84 beat. Zacks sees FY26 EPS up ~52%, supporting continued momentum.",
+            "risk": "Ag-commodity margin normalization or a grain-price pullback could reverse momentum; the 51% YTD run may already discount much of the guidance raise.",
+            "score": 68,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "observation_id": "obs-1d473f661f12ae2462c6851d",
+      "observed_at": "2026-09-18T08:46:52.363104-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 84.51
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 83.69
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 83.55
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 89.71
+        }
+      },
+      "rank": 9,
+      "risk": "中",
+      "run_identity": 112,
+      "score": 54.3,
+      "source_digest": "sha256:922db7deb19670ba14f37cd58877041bc7f5fe3058579792b348a61ebf0df0ad",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "ADM",
+      "symbol_id": "id-75733a41444d"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-09-21",
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_PARTIAL",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "089000164bfaaadae1b45acd70ac1cb1ed34d5dfb101cf070bfe70db16228642",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 10792400.0,
+          "observation_asof": "2026-09-21T08:46:30.364882-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 3631850.0,
+          "relative_volume": 2.971598496633947,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-578bcf408e15c81779d3550e",
+      "observed_at": "2026-09-21T08:46:30.364882-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 85.01
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 84.6
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 83.75
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 83.61
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 89.74
+        }
+      },
+      "rank": 10,
+      "risk": "中",
+      "run_identity": 113,
+      "score": 53.2,
+      "source_digest": "sha256:94215b2286af22a56e0fa9f5a1e16649841fe458642a5b74b06075a8d0a125a9",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "ADM",
+      "symbol_id": "id-75733a41444d"
+    }
+  ],
+  "outcomes": {
+    "authority": "Retained OutcomeRecord authority only; LEGACY_REVIEW_D1 excluded",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "price_observations": [
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "USD",
+      "date": "2026-09-21",
+      "horizon": "D0",
+      "observation_id": "obs-578bcf408e15c81779d3550e",
+      "provenance": {
+        "run_identity": 113,
+        "source_digest": "sha256:94215b2286af22a56e0fa9f5a1e16649841fe458642a5b74b06075a8d0a125a9"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-09-21T08:46:30.364882-04:00",
+      "value": 85.01
+    }
+  ],
+  "schema_version": "short-invest-dashboard-symbol/5",
+  "trajectory": {
+    "continuous_market_series": false,
+    "points": [
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "USD",
+        "date": "2026-09-21",
+        "horizon": "D0",
+        "observation_id": "obs-578bcf408e15c81779d3550e",
+        "provenance": {
+          "run_identity": 113,
+          "source_digest": "sha256:94215b2286af22a56e0fa9f5a1e16649841fe458642a5b74b06075a8d0a125a9"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-09-21T08:46:30.364882-04:00",
+        "value": 85.01
+      }
+    ],
+    "status": "AVAILABLE"
+  }
+}

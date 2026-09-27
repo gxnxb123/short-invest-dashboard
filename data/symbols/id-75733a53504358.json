@@ -1,0 +1,653 @@
+{
+  "authority": {
+    "later_outcomes_appendable": true,
+    "original_decisions_immutable": true,
+    "research_artifacts_excluded": true
+  },
+  "decision_levels": [
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-16",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-048f0b30b839409f01984dcc",
+      "provenance": {
+        "run_identity": 108,
+        "source_digest": "sha256:b467cba3b012ea58327a4a6b4c62bc61f2a5353221e861d3ec91763f4713e1fa"
+      }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-18",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 153.31
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 151.27
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 150.93
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 159.25
+      },
+      "observation_id": "obs-133128108c7fe1a6454c8466",
+      "provenance": {
+        "run_identity": 112,
+        "source_digest": "sha256:922db7deb19670ba14f37cd58877041bc7f5fe3058579792b348a61ebf0df0ad"
+      }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-24",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 148.61
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 146.45
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 146.09
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 160.65
+      },
+      "observation_id": "obs-448f3479c1c3c8e5ff88b767",
+      "provenance": {
+        "run_identity": 119,
+        "source_digest": "sha256:de165306529afda627516c30b8e49ab59116315b59a16abc2c9112834cf1f39b"
+      }
+    }
+  ],
+  "events": [],
+  "first_actionable_observation": null,
+  "first_retained_observation": "2026-09-16",
+  "generated_at": "2026-09-24T08:47:00.752923-04:00",
+  "identity": {
+    "company": {
+      "reason": null,
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
+    },
+    "market": "us",
+    "symbol": "SPCX",
+    "symbol_id": "id-75733a53504358"
+  },
+  "latest_actionable_observation": null,
+  "latest_canonical_state": "BACKGROUND_MONITORING",
+  "latest_retained_observation": "2026-09-24",
+  "lifecycle": {
+    "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "multi_llm_reviews": [
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 95.0,
+        "mean_rank_among_selectors": 1.0,
+        "provider_confidences": {
+          "gemini": 95
+        },
+        "provider_ranks": {
+          "gemini": 1
+        },
+        "short_invest_rank": 6,
+        "successful_provider_count": 5,
+        "symbol": "SPCX",
+        "vote_count": 1,
+        "vote_fraction": 0.2
+      },
+      "date": "2026-09-18",
+      "disagreement": [
+        {
+          "symbol": "SPCX",
+          "type": "SINGLE_MODEL_SELECTION"
+        }
+      ],
+      "observation_id": "obs-133128108c7fe1a6454c8466",
+      "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 1,
+          "reason": "SpaceX faces a historic $15.5B–$22B programmatic buying event today as its Nasdaq-100 weighting is set to double. This massive passive inflow provides extreme liquidity and upward price pressure, which often offsets upcoming supply concerns like the September 24 share unlock.",
+          "risk": "Short-term sell-off following the completion of programmatic buying or anticipatory selling ahead of the September 24 lockup expiration.",
+          "score": 95,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        }
+      ],
+      "review_date": "2026-09-18",
+      "review_run_identity": 112,
+      "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    }
+  ],
+  "observation_count": 3,
+  "observations": [
+    {
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-09-16",
+      "decision_reason": "NO_AFFIRMATIVE_LONG_THESIS",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": null,
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "400218e2516470470f8fa2e450ba6833c212028b269961ba6c1c72f6ef1dbe46",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 72432600.0,
+          "observation_asof": "2026-09-16T08:47:21.432407-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 82557050.0,
+          "relative_volume": 0.877364198454281,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-048f0b30b839409f01984dcc",
+      "observed_at": "2026-09-16T08:47:21.432407-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": null,
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 5,
+      "risk": "中",
+      "run_identity": 108,
+      "score": 55.3,
+      "source_digest": "sha256:b467cba3b012ea58327a4a6b4c62bc61f2a5353221e861d3ec91763f4713e1fa",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "SPCX",
+      "symbol_id": "id-75733a53504358"
+    },
+    {
+      "availability": {
+        "canonical_price": "INVALID",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-09-18",
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "704aafad7888ba90b79cd6fb6ccd675ab3078328cf938fbf13adf2d65d986e86",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 83764900.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 94021700.0,
+          "relative_volume": 0.8909102898586178,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 95.0,
+          "mean_rank_among_selectors": 1.0,
+          "provider_confidences": {
+            "gemini": 95
+          },
+          "provider_ranks": {
+            "gemini": 1
+          },
+          "short_invest_rank": 6,
+          "successful_provider_count": 5,
+          "symbol": "SPCX",
+          "vote_count": 1,
+          "vote_fraction": 0.2
+        },
+        "disagreement": [
+          {
+            "symbol": "SPCX",
+            "type": "SINGLE_MODEL_SELECTION"
+          }
+        ],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 1,
+            "reason": "SpaceX faces a historic $15.5B–$22B programmatic buying event today as its Nasdaq-100 weighting is set to double. This massive passive inflow provides extreme liquidity and upward price pressure, which often offsets upcoming supply concerns like the September 24 share unlock.",
+            "risk": "Short-term sell-off following the completion of programmatic buying or anticipatory selling ahead of the September 24 lockup expiration.",
+            "score": 95,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "observation_id": "obs-133128108c7fe1a6454c8466",
+      "observed_at": "2026-09-18T08:46:52.363104-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 153.31
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 151.27
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 150.93
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 159.25
+        }
+      },
+      "rank": 6,
+      "risk": "中",
+      "run_identity": 112,
+      "score": 57.3,
+      "source_digest": "sha256:922db7deb19670ba14f37cd58877041bc7f5fe3058579792b348a61ebf0df0ad",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "SPCX",
+      "symbol_id": "id-75733a53504358"
+    },
+    {
+      "availability": {
+        "canonical_price": "INVALID",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-09-24",
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "ca74669b4f186c679eaca6361f0594d041d2787696d1ebf1c2909c2584759204",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 60280300.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 83135050.0,
+          "relative_volume": 0.7250888764726791,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-448f3479c1c3c8e5ff88b767",
+      "observed_at": "2026-09-24T08:47:00.752923-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 148.61
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 146.45
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 146.09
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 160.65
+        }
+      },
+      "rank": 5,
+      "risk": "中",
+      "run_identity": 119,
+      "score": 53.5,
+      "source_digest": "sha256:de165306529afda627516c30b8e49ab59116315b59a16abc2c9112834cf1f39b",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "SPCX",
+      "symbol_id": "id-75733a53504358"
+    }
+  ],
+  "outcomes": {
+    "authority": "Retained OutcomeRecord authority only; LEGACY_REVIEW_D1 excluded",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "price_observations": [],
+  "schema_version": "short-invest-dashboard-symbol/5",
+  "trajectory": {
+    "continuous_market_series": false,
+    "points": [],
+    "status": "UNAVAILABLE"
+  }
+}

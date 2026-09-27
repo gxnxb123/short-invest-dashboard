@@ -1,0 +1,705 @@
+{
+  "authority": {
+    "later_outcomes_appendable": true,
+    "original_decisions_immutable": true,
+    "research_artifacts_excluded": true
+  },
+  "decision_levels": [
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-16",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-bcbe2ff36345452a9400915a",
+      "provenance": {
+        "run_identity": 108,
+        "source_digest": "sha256:b467cba3b012ea58327a4a6b4c62bc61f2a5353221e861d3ec91763f4713e1fa"
+      }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-18",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 261.28
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 258.93
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 258.54
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 276.95
+      },
+      "observation_id": "obs-c30f37311701ac14bc8afa82",
+      "provenance": {
+        "run_identity": 112,
+        "source_digest": "sha256:922db7deb19670ba14f37cd58877041bc7f5fe3058579792b348a61ebf0df0ad"
+      }
+    }
+  ],
+  "events": [],
+  "first_actionable_observation": null,
+  "first_retained_observation": "2026-09-16",
+  "generated_at": "2026-09-18T08:46:52.363104-04:00",
+  "identity": {
+    "company": {
+      "reason": null,
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
+    },
+    "market": "us",
+    "symbol": "PSX",
+    "symbol_id": "id-75733a505358"
+  },
+  "latest_actionable_observation": null,
+  "latest_canonical_state": "BACKGROUND_MONITORING",
+  "latest_retained_observation": "2026-09-18",
+  "lifecycle": {
+    "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "multi_llm_reviews": [
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 71.0,
+        "mean_rank_among_selectors": 2.5,
+        "provider_confidences": {
+          "deepseek": 56,
+          "gemini": 95,
+          "meta": 58,
+          "xai": 75
+        },
+        "provider_ranks": {
+          "deepseek": 4,
+          "gemini": 1,
+          "meta": 4,
+          "xai": 1
+        },
+        "short_invest_rank": 1,
+        "successful_provider_count": 5,
+        "symbol": "PSX",
+        "vote_count": 4,
+        "vote_fraction": 0.8
+      },
+      "date": "2026-09-16",
+      "disagreement": [],
+      "observation_id": "obs-bcbe2ff36345452a9400915a",
+      "packet_digest": "b37662a415ecd006dba9b5eb86d4ce1de9ef83c7b834032bace2632591a030f0",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": 1,
+          "reason": "Morgan Stanley raised PT to $284 (Overweight); BofA added large position; strong refining margins and Q2 results support technical long amid elevated oil.",
+          "risk": "Refining margin volatility if supply disruptions ease faster than expected.",
+          "score": 75,
+          "selected": true
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 1,
+          "reason": "Phillips 66 is a prime beneficiary of current $100+ oil prices and widening crack spreads. The company recently reported blowout earnings with EPS of $9.41 (beating $7.50 estimates) and authorized a massive $10 billion share-repurchase program. Analysts at Zacks recently upgraded the stock to Strong Buy, citing its integrated refining and midstream advantage.",
+          "risk": "A sharp, unexpected decline in crude prices or a significant contraction in global refining margins.",
+          "score": 95,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": 4,
+          "reason": "PSX trades at a fresh record high as refining margins and midstream growth converge; it beat Q2 EPS by roughly 25% versus consensus and has drawn bullish coverage including a Zacks Bull of the Day designation. Technical momentum remains intact.",
+          "risk": "A scheduled Bayway refinery labor rally raises operating-continuity and labor-cost questions; any strike or disruption at a key plant could quickly dent sentiment.",
+          "score": 56,
+          "selected": true
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": 4,
+          "reason": "+17.5% monthly momentum with supportive refining plus midstream cash-flow resilience; UBS Buy and record high.",
+          "risk": "High WTI input costs hurt refining; 17.5% monthly run into all-time high risks post-FOMC fade.",
+          "score": 58,
+          "selected": true
+        }
+      ],
+      "review_date": "2026-09-16",
+      "review_run_identity": 108,
+      "reviewed_at": "2026-09-16T12:55:42.181381+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-16.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    },
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 74.5,
+        "mean_rank_among_selectors": 1.5,
+        "provider_confidences": {
+          "deepseek": 74,
+          "qwen": 75
+        },
+        "provider_ranks": {
+          "deepseek": 2,
+          "qwen": 1
+        },
+        "short_invest_rank": 8,
+        "successful_provider_count": 5,
+        "symbol": "PSX",
+        "vote_count": 2,
+        "vote_fraction": 0.4
+      },
+      "date": "2026-09-18",
+      "disagreement": [],
+      "observation_id": "obs-c30f37311701ac14bc8afa82",
+      "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": 2,
+          "reason": "Q2 EPS of $9.41 crushed the $7.50 consensus with refining margins juiced by $100+ crude; BMO lifted its target to $310 (well above ~$274) and the buyback/Explorer Pipeline sale story is still unfolding. Fresh +3.6% breakout on heavy volume signals accumulation.",
+          "risk": "A quick retreat in crude or crack spreads would unwind the refining-margin trade; several desks (Barclays $216, BofA $255) see limited upside.",
+          "score": 74,
+          "selected": true
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": 1,
+          "reason": "New 52-week high at $274 with fresh analyst upgrades (BMO to $310, UBS to $300). Strong Q2 earnings of $9.55 EPS and cooler crude supporting refining margins. Q3 results not until Oct 28, eliminating near-term earnings risk. Technical breakout with 32.9% YTD outperformance vs SPX.",
+          "risk": "Extended after 62% YTD rally with peak cycle concerns. Seeking Alpha article warns 'the peak is in' after robust refining EBITDA growth and high utilization rates.",
+          "score": 75,
+          "selected": true
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        }
+      ],
+      "review_date": "2026-09-18",
+      "review_run_identity": 112,
+      "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    }
+  ],
+  "observation_count": 2,
+  "observations": [
+    {
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "MISSING_PREMARKET_VOLUME",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-09-16",
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": null,
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "0f2a66d1035ac330442378eb9c37759e8fab0a8a494dedd59b995bd2b2510578",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 2877600.0,
+          "observation_asof": "2026-09-16T08:47:21.432407-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 2545350.0,
+          "relative_volume": 1.1305321468560317,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 71.0,
+          "mean_rank_among_selectors": 2.5,
+          "provider_confidences": {
+            "deepseek": 56,
+            "gemini": 95,
+            "meta": 58,
+            "xai": 75
+          },
+          "provider_ranks": {
+            "deepseek": 4,
+            "gemini": 1,
+            "meta": 4,
+            "xai": 1
+          },
+          "short_invest_rank": 1,
+          "successful_provider_count": 5,
+          "symbol": "PSX",
+          "vote_count": 4,
+          "vote_fraction": 0.8
+        },
+        "disagreement": [],
+        "packet_digest": "b37662a415ecd006dba9b5eb86d4ce1de9ef83c7b834032bace2632591a030f0",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": 1,
+            "reason": "Morgan Stanley raised PT to $284 (Overweight); BofA added large position; strong refining margins and Q2 results support technical long amid elevated oil.",
+            "risk": "Refining margin volatility if supply disruptions ease faster than expected.",
+            "score": 75,
+            "selected": true
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 1,
+            "reason": "Phillips 66 is a prime beneficiary of current $100+ oil prices and widening crack spreads. The company recently reported blowout earnings with EPS of $9.41 (beating $7.50 estimates) and authorized a massive $10 billion share-repurchase program. Analysts at Zacks recently upgraded the stock to Strong Buy, citing its integrated refining and midstream advantage.",
+            "risk": "A sharp, unexpected decline in crude prices or a significant contraction in global refining margins.",
+            "score": 95,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 4,
+            "reason": "PSX trades at a fresh record high as refining margins and midstream growth converge; it beat Q2 EPS by roughly 25% versus consensus and has drawn bullish coverage including a Zacks Bull of the Day designation. Technical momentum remains intact.",
+            "risk": "A scheduled Bayway refinery labor rally raises operating-continuity and labor-cost questions; any strike or disruption at a key plant could quickly dent sentiment.",
+            "score": 56,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 4,
+            "reason": "+17.5% monthly momentum with supportive refining plus midstream cash-flow resilience; UBS Buy and record high.",
+            "risk": "High WTI input costs hurt refining; 17.5% monthly run into all-time high risks post-FOMC fade.",
+            "score": 58,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-09-16",
+        "review_run_identity": 108,
+        "reviewed_at": "2026-09-16T12:55:42.181381+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-16.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "observation_id": "obs-bcbe2ff36345452a9400915a",
+      "observed_at": "2026-09-16T08:47:21.432407-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": null,
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 1,
+      "risk": "中",
+      "run_identity": 108,
+      "score": 57.8,
+      "source_digest": "sha256:b467cba3b012ea58327a4a6b4c62bc61f2a5353221e861d3ec91763f4713e1fa",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "PSX",
+      "symbol_id": "id-75733a505358"
+    },
+    {
+      "availability": {
+        "canonical_price": "INVALID",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-09-18",
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "842cae93e6ca6a7a01c841baafa60d2c64f02ef4a7a515e6f6b2c7e4cef37e8c",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 3574700.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 2774300.0,
+          "relative_volume": 1.2885052085210684,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 74.5,
+          "mean_rank_among_selectors": 1.5,
+          "provider_confidences": {
+            "deepseek": 74,
+            "qwen": 75
+          },
+          "provider_ranks": {
+            "deepseek": 2,
+            "qwen": 1
+          },
+          "short_invest_rank": 8,
+          "successful_provider_count": 5,
+          "symbol": "PSX",
+          "vote_count": 2,
+          "vote_fraction": 0.4
+        },
+        "disagreement": [],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 2,
+            "reason": "Q2 EPS of $9.41 crushed the $7.50 consensus with refining margins juiced by $100+ crude; BMO lifted its target to $310 (well above ~$274) and the buyback/Explorer Pipeline sale story is still unfolding. Fresh +3.6% breakout on heavy volume signals accumulation.",
+            "risk": "A quick retreat in crude or crack spreads would unwind the refining-margin trade; several desks (Barclays $216, BofA $255) see limited upside.",
+            "score": 74,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": 1,
+            "reason": "New 52-week high at $274 with fresh analyst upgrades (BMO to $310, UBS to $300). Strong Q2 earnings of $9.55 EPS and cooler crude supporting refining margins. Q3 results not until Oct 28, eliminating near-term earnings risk. Technical breakout with 32.9% YTD outperformance vs SPX.",
+            "risk": "Extended after 62% YTD rally with peak cycle concerns. Seeking Alpha article warns 'the peak is in' after robust refining EBITDA growth and high utilization rates.",
+            "score": 75,
+            "selected": true
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "observation_id": "obs-c30f37311701ac14bc8afa82",
+      "observed_at": "2026-09-18T08:46:52.363104-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 261.28
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 258.93
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 258.54
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 276.95
+        }
+      },
+      "rank": 8,
+      "risk": "中",
+      "run_identity": 112,
+      "score": 55.8,
+      "source_digest": "sha256:922db7deb19670ba14f37cd58877041bc7f5fe3058579792b348a61ebf0df0ad",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "PSX",
+      "symbol_id": "id-75733a505358"
+    }
+  ],
+  "outcomes": {
+    "authority": "Retained OutcomeRecord authority only; LEGACY_REVIEW_D1 excluded",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "price_observations": [],
+  "schema_version": "short-invest-dashboard-symbol/5",
+  "trajectory": {
+    "continuous_market_series": false,
+    "points": [],
+    "status": "UNAVAILABLE"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "authority": {
+    "later_outcomes_appendable": true,
+    "original_decisions_immutable": true,
+    "research_artifacts_excluded": true
+  },
+  "decision_levels": [
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-22",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 130.02
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 127.04
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 126.55
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 151.52
+      },
+      "observation_id": "obs-d3b930b34bb00866548f9e3a",
+      "provenance": {
+        "run_identity": 116,
+        "source_digest": "sha256:a834bf9b6a07824f50e8a3881ce141cab14d798fe16c0dec9f701881509bc0ba"
+      }
+    }
+  ],
+  "events": [],
+  "first_actionable_observation": "2026-09-22",
+  "first_retained_observation": "2026-09-22",
+  "generated_at": "2026-09-22T08:46:54.346329-04:00",
+  "identity": {
+    "company": {
+      "reason": null,
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
+    },
+    "market": "us",
+    "symbol": "DOCN",
+    "symbol_id": "id-75733a444f434e"
+  },
+  "latest_actionable_observation": "2026-09-22",
+  "latest_canonical_state": "WAIT_FOR_PRICE",
+  "latest_retained_observation": "2026-09-22",
+  "lifecycle": {
+    "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "multi_llm_reviews": [],
+  "observation_count": 1,
+  "observations": [
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "WAIT_FOR_PRICE",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-09-22",
+      "decision_reason": "WAIT_FOR_PRICE",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_PARTIAL",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "c1bb1ac154c96ce41bbd49842506fb137976baed21b3e8e1b4f63093472ff3d7",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 4596400.0,
+          "observation_asof": "2026-09-22T08:46:54.346329-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 2669300.0,
+          "relative_volume": 1.72194957479489,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-d3b930b34bb00866548f9e3a",
+      "observed_at": "2026-09-22T08:46:54.346329-04:00",
+      "presentation_group": "WAIT_FOR_PRICE",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 146.2
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 130.02
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 127.04
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 126.55
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 151.52
+        }
+      },
+      "rank": 2,
+      "risk": "中",
+      "run_identity": 116,
+      "score": 57.7,
+      "source_digest": "sha256:a834bf9b6a07824f50e8a3881ce141cab14d798fe16c0dec9f701881509bc0ba",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "DOCN",
+      "symbol_id": "id-75733a444f434e"
+    }
+  ],
+  "outcomes": {
+    "authority": "Retained OutcomeRecord authority only; LEGACY_REVIEW_D1 excluded",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "price_observations": [
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "USD",
+      "date": "2026-09-22",
+      "horizon": "D0",
+      "observation_id": "obs-d3b930b34bb00866548f9e3a",
+      "provenance": {
+        "run_identity": 116,
+        "source_digest": "sha256:a834bf9b6a07824f50e8a3881ce141cab14d798fe16c0dec9f701881509bc0ba"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-09-22T08:46:54.346329-04:00",
+      "value": 146.2
+    }
+  ],
+  "schema_version": "short-invest-dashboard-symbol/5",
+  "trajectory": {
+    "continuous_market_series": false,
+    "points": [
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "USD",
+        "date": "2026-09-22",
+        "horizon": "D0",
+        "observation_id": "obs-d3b930b34bb00866548f9e3a",
+        "provenance": {
+          "run_identity": 116,
+          "source_digest": "sha256:a834bf9b6a07824f50e8a3881ce141cab14d798fe16c0dec9f701881509bc0ba"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-09-22T08:46:54.346329-04:00",
+        "value": 146.2
+      }
+    ],
+    "status": "AVAILABLE"
+  }
+}

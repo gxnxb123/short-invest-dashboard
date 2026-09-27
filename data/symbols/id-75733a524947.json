@@ -1,0 +1,698 @@
+{
+  "authority": {
+    "later_outcomes_appendable": true,
+    "original_decisions_immutable": true,
+    "research_artifacts_excluded": true
+  },
+  "decision_levels": [
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-04",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-a73de411c9e281df37f6c566",
+      "provenance": {
+        "run_identity": 94,
+        "source_digest": "sha256:968a073b660fcd115b230248873b197067c84bd75389a7769321e25b724a6524"
+      }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-16",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-46eb79601aeaab8b265a615d",
+      "provenance": {
+        "run_identity": 108,
+        "source_digest": "sha256:b467cba3b012ea58327a4a6b4c62bc61f2a5353221e861d3ec91763f4713e1fa"
+      }
+    }
+  ],
+  "events": [
+    {
+      "binding_status": "EXACT_CANONICAL_BINDING",
+      "date": "2026-09-16",
+      "event_id": "url:6fd8c940e60b05a55927ab102decc0f8bcaf1bcba0162d9cc911cfa3f9d252b8",
+      "evidence_kind": null,
+      "family": "订单/合同",
+      "headline": "Transocean (RIG) Stock Trades Up, Here Is Why",
+      "observation_id": "obs-46eb79601aeaab8b265a615d",
+      "polarity": null,
+      "publication_time": null,
+      "representative_source": "StockStory",
+      "representative_source_role": "NON_PRIMARY",
+      "semantic_source": null,
+      "semantic_status": null,
+      "timestamp_authority": "NOT_IDENTIFIABLE",
+      "underlying_event_time": null
+    }
+  ],
+  "first_actionable_observation": null,
+  "first_retained_observation": "2026-09-04",
+  "generated_at": "2026-09-16T08:47:21.432407-04:00",
+  "identity": {
+    "company": {
+      "reason": null,
+      "status": "KNOWN",
+      "value": "Transocean Ltd (Switzerland)"
+    },
+    "market": "us",
+    "symbol": "RIG",
+    "symbol_id": "id-75733a524947"
+  },
+  "latest_actionable_observation": null,
+  "latest_canonical_state": "BACKGROUND_MONITORING",
+  "latest_retained_observation": "2026-09-16",
+  "lifecycle": {
+    "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "multi_llm_reviews": [
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 78.0,
+        "mean_rank_among_selectors": 4.0,
+        "provider_confidences": {
+          "gemini": 78
+        },
+        "provider_ranks": {
+          "gemini": 4
+        },
+        "short_invest_rank": 4,
+        "successful_provider_count": 3,
+        "symbol": "RIG",
+        "vote_count": 1,
+        "vote_fraction": 0.3333333333333333
+      },
+      "date": "2026-09-04",
+      "disagreement": [
+        {
+          "symbol": "RIG",
+          "type": "SINGLE_MODEL_SELECTION"
+        }
+      ],
+      "observation_id": "obs-a73de411c9e281df37f6c566",
+      "packet_digest": "10f8d741e260942906b2b6d6933f09ea36c00d500ef90bee900ab5e50f8f12bf",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 4,
+          "reason": "Transocean is benefiting from a tightening offshore drilling market and a $300 million ONGC contract win that significantly expands its backlog. Recent price action shows resilient accumulation despite an earnings miss, as rising crude prices and geopolitical risk premiums in the Middle East drive increased interest in deepwater energy services.",
+          "risk": "High debt leverage and negative net margins make the stock highly sensitive to sudden drops in oil prices.",
+          "score": 78,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "INVALID_OUTPUT",
+          "provider": "deepseek",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "INVALID_OUTPUT",
+          "provider": "qwen",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        }
+      ],
+      "review_date": "2026-09-04",
+      "review_run_identity": 94,
+      "reviewed_at": "2026-09-04T12:54:32.381923+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-04.json",
+      "successful_provider_count": 3,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "meta"
+      ]
+    },
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 66.33333333333333,
+        "mean_rank_among_selectors": 3.0,
+        "provider_confidences": {
+          "deepseek": 48,
+          "gemini": 85,
+          "meta": 66
+        },
+        "provider_ranks": {
+          "deepseek": 5,
+          "gemini": 3,
+          "meta": 1
+        },
+        "short_invest_rank": 3,
+        "successful_provider_count": 5,
+        "symbol": "RIG",
+        "vote_count": 3,
+        "vote_fraction": 0.6
+      },
+      "date": "2026-09-16",
+      "disagreement": [],
+      "observation_id": "obs-46eb79601aeaab8b265a615d",
+      "packet_digest": "b37662a415ecd006dba9b5eb86d4ce1de9ef83c7b834032bace2632591a030f0",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 3,
+          "reason": "Transocean is gaining strong momentum following a $300 million ultra-deepwater contract award from India's ONGC, significantly boosting its backlog. The stock rose over 8% yesterday on high volume, signaling institutional interest. Rising offshore drilling demand and higher oil prices support continued recovery in its ultra-deepwater fleet utilization.",
+          "risk": "Persistent negative net margins and extreme sensitivity to broader energy sector volatility and debt levels.",
+          "score": 85,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": 5,
+          "reason": "The only catalyst-backed long on the list: a fresh $80 million ultra-deepwater drillship award and a roughly 6% offshore-driller rally tied to oil above $100 support near-term upside in a beaten-down name.",
+          "risk": "A highly leveraged balance sheet and sub-$6 share price make this the most volatile selection; any oil pullback or financing concern could erase the contract-driven pop.",
+          "score": 48,
+          "selected": true
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": 1,
+          "reason": "Sept 15 $80M 170-day Deepwater Conqueror award adds backlog, shares surged 6-8% off 60-day MA with ~$6.7B backlog visibility.",
+          "risk": "Sharp reversal after 6-9% contract spike; offshore beta vulnerable if hawkish Fed sparks demand/oil pullback.",
+          "score": 66,
+          "selected": true
+        }
+      ],
+      "review_date": "2026-09-16",
+      "review_run_identity": 108,
+      "reviewed_at": "2026-09-16T12:55:42.181381+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-16.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    }
+  ],
+  "observation_count": 2,
+  "observations": [
+    {
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "bullish",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-09-04",
+      "decision_reason": null,
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": null,
+        "volume": null
+      },
+      "market": "us",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 78.0,
+          "mean_rank_among_selectors": 4.0,
+          "provider_confidences": {
+            "gemini": 78
+          },
+          "provider_ranks": {
+            "gemini": 4
+          },
+          "short_invest_rank": 4,
+          "successful_provider_count": 3,
+          "symbol": "RIG",
+          "vote_count": 1,
+          "vote_fraction": 0.3333333333333333
+        },
+        "disagreement": [
+          {
+            "symbol": "RIG",
+            "type": "SINGLE_MODEL_SELECTION"
+          }
+        ],
+        "packet_digest": "10f8d741e260942906b2b6d6933f09ea36c00d500ef90bee900ab5e50f8f12bf",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 4,
+            "reason": "Transocean is benefiting from a tightening offshore drilling market and a $300 million ONGC contract win that significantly expands its backlog. Recent price action shows resilient accumulation despite an earnings miss, as rising crude prices and geopolitical risk premiums in the Middle East drive increased interest in deepwater energy services.",
+            "risk": "High debt leverage and negative net margins make the stock highly sensitive to sudden drops in oil prices.",
+            "score": 78,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "INVALID_OUTPUT",
+            "provider": "deepseek",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "INVALID_OUTPUT",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-04",
+        "review_run_identity": 94,
+        "reviewed_at": "2026-09-04T12:54:32.381923+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-04.json",
+        "successful_provider_count": 3,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "meta"
+        ]
+      },
+      "observation_id": "obs-a73de411c9e281df37f6c566",
+      "observed_at": "2026-09-04T08:46:49.567119-04:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": null,
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 4,
+      "risk": "中",
+      "run_identity": 94,
+      "score": 56.2,
+      "source_digest": "sha256:968a073b660fcd115b230248873b197067c84bd75389a7769321e25b724a6524",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "RIG",
+      "symbol_id": "id-75733a524947"
+    },
+    {
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "AVAILABLE",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Transocean Ltd (Switzerland)"
+      },
+      "constraint_codes": [
+        "NEGATIVE_FACTORS",
+        "MISSING_SPREAD",
+        "MISSING_PREMARKET_VOLUME"
+      ],
+      "date": "2026-09-16",
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "EVENT_DRIVEN_LONG",
+      "event": {
+        "binding_status": "EXACT_CANONICAL_BINDING",
+        "event_id": "url:6fd8c940e60b05a55927ab102decc0f8bcaf1bcba0162d9cc911cfa3f9d252b8",
+        "evidence_kind": null,
+        "family": "订单/合同",
+        "headline": "Transocean (RIG) Stock Trades Up, Here Is Why",
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": "StockStory",
+        "representative_source_role": "NON_PRIMARY",
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": null,
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "bb7edc1a2ea945a0c748234e204ee1bfefbb47cf9e49edd4ee0fb12ec277d831",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 68752700.0,
+          "observation_asof": "2026-09-16T08:47:21.432407-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 43770000.0,
+          "relative_volume": 1.570772218414439,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 66.33333333333333,
+          "mean_rank_among_selectors": 3.0,
+          "provider_confidences": {
+            "deepseek": 48,
+            "gemini": 85,
+            "meta": 66
+          },
+          "provider_ranks": {
+            "deepseek": 5,
+            "gemini": 3,
+            "meta": 1
+          },
+          "short_invest_rank": 3,
+          "successful_provider_count": 5,
+          "symbol": "RIG",
+          "vote_count": 3,
+          "vote_fraction": 0.6
+        },
+        "disagreement": [],
+        "packet_digest": "b37662a415ecd006dba9b5eb86d4ce1de9ef83c7b834032bace2632591a030f0",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 3,
+            "reason": "Transocean is gaining strong momentum following a $300 million ultra-deepwater contract award from India's ONGC, significantly boosting its backlog. The stock rose over 8% yesterday on high volume, signaling institutional interest. Rising offshore drilling demand and higher oil prices support continued recovery in its ultra-deepwater fleet utilization.",
+            "risk": "Persistent negative net margins and extreme sensitivity to broader energy sector volatility and debt levels.",
+            "score": 85,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 5,
+            "reason": "The only catalyst-backed long on the list: a fresh $80 million ultra-deepwater drillship award and a roughly 6% offshore-driller rally tied to oil above $100 support near-term upside in a beaten-down name.",
+            "risk": "A highly leveraged balance sheet and sub-$6 share price make this the most volatile selection; any oil pullback or financing concern could erase the contract-driven pop.",
+            "score": 48,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 1,
+            "reason": "Sept 15 $80M 170-day Deepwater Conqueror award adds backlog, shares surged 6-8% off 60-day MA with ~$6.7B backlog visibility.",
+            "risk": "Sharp reversal after 6-9% contract spike; offshore beta vulnerable if hawkish Fed sparks demand/oil pullback.",
+            "score": 66,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-09-16",
+        "review_run_identity": 108,
+        "reviewed_at": "2026-09-16T12:55:42.181381+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-16.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "observation_id": "obs-46eb79601aeaab8b265a615d",
+      "observed_at": "2026-09-16T08:47:21.432407-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": null,
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 3,
+      "risk": "高",
+      "run_identity": 108,
+      "score": 56.2,
+      "source_digest": "sha256:b467cba3b012ea58327a4a6b4c62bc61f2a5353221e861d3ec91763f4713e1fa",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "RIG",
+      "symbol_id": "id-75733a524947"
+    }
+  ],
+  "outcomes": {
+    "authority": "Retained OutcomeRecord authority only; LEGACY_REVIEW_D1 excluded",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "price_observations": [],
+  "schema_version": "short-invest-dashboard-symbol/5",
+  "trajectory": {
+    "continuous_market_series": false,
+    "points": [],
+    "status": "UNAVAILABLE"
+  }
+}

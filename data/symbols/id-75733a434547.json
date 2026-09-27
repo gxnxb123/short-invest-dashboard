@@ -1,0 +1,379 @@
+{
+  "authority": {
+    "later_outcomes_appendable": true,
+    "original_decisions_immutable": true,
+    "research_artifacts_excluded": true
+  },
+  "decision_levels": [
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-11",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-ffe53d5356b433a945ca7789",
+      "provenance": {
+        "run_identity": 102,
+        "source_digest": "sha256:cf63344f06776f1185b29ef7917e1a767857d5f4c679fc20c47e52861a584ab6"
+      }
+    }
+  ],
+  "events": [
+    {
+      "binding_status": "EXACT_CANONICAL_BINDING",
+      "date": "2026-09-11",
+      "event_id": "url:d003ac9c4a231c1b7c8af2f08dec017f29d487ceb443d4bbdaadd45ed051eeac",
+      "evidence_kind": null,
+      "family": "并购",
+      "headline": "CEG, SHEL Stocks Rise Overnight: Constellation Energy To Acquire Rhode Island State Energy Center From Shell For $715M",
+      "observation_id": "obs-ffe53d5356b433a945ca7789",
+      "polarity": null,
+      "publication_time": null,
+      "representative_source": "Stocktwits",
+      "representative_source_role": "NON_PRIMARY",
+      "semantic_source": null,
+      "semantic_status": null,
+      "timestamp_authority": "NOT_IDENTIFIABLE",
+      "underlying_event_time": null
+    }
+  ],
+  "first_actionable_observation": null,
+  "first_retained_observation": "2026-09-11",
+  "generated_at": "2026-09-11T08:47:12.786960-04:00",
+  "identity": {
+    "company": {
+      "reason": null,
+      "status": "KNOWN",
+      "value": "Constellation Energy Corporatio"
+    },
+    "market": "us",
+    "symbol": "CEG",
+    "symbol_id": "id-75733a434547"
+  },
+  "latest_actionable_observation": null,
+  "latest_canonical_state": "neutral",
+  "latest_retained_observation": "2026-09-11",
+  "lifecycle": {
+    "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "multi_llm_reviews": [
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 71.33333333333333,
+        "mean_rank_among_selectors": 1.0,
+        "provider_confidences": {
+          "deepseek": 60,
+          "gemini": 90,
+          "meta": 64
+        },
+        "provider_ranks": {
+          "deepseek": 1,
+          "gemini": 1,
+          "meta": 1
+        },
+        "short_invest_rank": 1,
+        "successful_provider_count": 5,
+        "symbol": "CEG",
+        "vote_count": 3,
+        "vote_fraction": 0.6
+      },
+      "date": "2026-09-11",
+      "disagreement": [],
+      "observation_id": "obs-ffe53d5356b433a945ca7789",
+      "packet_digest": "93db0e4952f8b21b01eccb2fa2adfc1c413fe7850046b393eb92b63fc5b1ffe0",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 1,
+          "reason": "Constellation is a primary beneficiary of the 'nuclear renaissance' as tech hyperscalers secure carbon-free baseload power. Recent regulatory wins, including a FERC waiver for capacity rights transfer to the Crane Clean Energy Center (Three Mile Island), accelerate its 2027 restart timeline. Higher full-year EPS guidance ($12.50) and nuclear's scarcity value provide a resilient long-term fundamental floor with technical bullishness.",
+          "risk": "Regulatory or interconnection delays with the PJM grid, which could push the Crane Center's revenue generation beyond current 2027 estimates.",
+          "score": 90,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": 1,
+          "reason": "Constellation just raised FY26 adjusted EPS guidance to $11.50–$12.50, a midpoint roughly 28% above last year, and holds long-duration PPAs with Microsoft (Crane restart, ~$16B) and Meta (Clinton), plus the $715M RISEC acquisition. The nuclear/AI power demand story gives visible growth, and at least one estimate pegs shares ~24% below fair value, with utility defensiveness suited to the current tape.",
+          "risk": "Despite positive news, CEG fell 2.7% on Sep 10, suggesting much AI-power enthusiasm is already priced in; a further rise in Treasury yields would pressure utility valuations near term.",
+          "score": 60,
+          "selected": true
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": 1,
+          "reason": "Overnight deal to acquire 609-MW Rhode Island gas plant for $715M expected immediately accretive, above 10% return threshold without hurting $5B buyback, adding New England merchant capacity into AI/data-center demand.",
+          "risk": "Hot Sept. 11 CPI or hawkish Fed repricing drives broad selloff; deal closes Q1 2027 pending approvals, limiting near-term earnings impact.",
+          "score": 64,
+          "selected": true
+        }
+      ],
+      "review_date": "2026-09-11",
+      "review_run_identity": 102,
+      "reviewed_at": "2026-09-11T12:55:44.591076+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-11.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    }
+  ],
+  "observation_count": 1,
+  "observations": [
+    {
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "AVAILABLE",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "neutral",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Constellation Energy Corporatio"
+      },
+      "constraint_codes": [
+        "MISSING_SPREAD",
+        "MISSING_PREMARKET_VOLUME",
+        "MISSING_RELATIVE_VOLUME"
+      ],
+      "date": "2026-09-11",
+      "decision_reason": null,
+      "directional_basis": null,
+      "event": {
+        "binding_status": "EXACT_CANONICAL_BINDING",
+        "event_id": "url:d003ac9c4a231c1b7c8af2f08dec017f29d487ceb443d4bbdaadd45ed051eeac",
+        "evidence_kind": null,
+        "family": "并购",
+        "headline": "CEG, SHEL Stocks Rise Overnight: Constellation Energy To Acquire Rhode Island State Energy Center From Shell For $715M",
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": "Stocktwits",
+        "representative_source_role": "NON_PRIMARY",
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": null,
+        "volume": null
+      },
+      "market": "us",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 71.33333333333333,
+          "mean_rank_among_selectors": 1.0,
+          "provider_confidences": {
+            "deepseek": 60,
+            "gemini": 90,
+            "meta": 64
+          },
+          "provider_ranks": {
+            "deepseek": 1,
+            "gemini": 1,
+            "meta": 1
+          },
+          "short_invest_rank": 1,
+          "successful_provider_count": 5,
+          "symbol": "CEG",
+          "vote_count": 3,
+          "vote_fraction": 0.6
+        },
+        "disagreement": [],
+        "packet_digest": "93db0e4952f8b21b01eccb2fa2adfc1c413fe7850046b393eb92b63fc5b1ffe0",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 1,
+            "reason": "Constellation is a primary beneficiary of the 'nuclear renaissance' as tech hyperscalers secure carbon-free baseload power. Recent regulatory wins, including a FERC waiver for capacity rights transfer to the Crane Clean Energy Center (Three Mile Island), accelerate its 2027 restart timeline. Higher full-year EPS guidance ($12.50) and nuclear's scarcity value provide a resilient long-term fundamental floor with technical bullishness.",
+            "risk": "Regulatory or interconnection delays with the PJM grid, which could push the Crane Center's revenue generation beyond current 2027 estimates.",
+            "score": 90,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 1,
+            "reason": "Constellation just raised FY26 adjusted EPS guidance to $11.50–$12.50, a midpoint roughly 28% above last year, and holds long-duration PPAs with Microsoft (Crane restart, ~$16B) and Meta (Clinton), plus the $715M RISEC acquisition. The nuclear/AI power demand story gives visible growth, and at least one estimate pegs shares ~24% below fair value, with utility defensiveness suited to the current tape.",
+            "risk": "Despite positive news, CEG fell 2.7% on Sep 10, suggesting much AI-power enthusiasm is already priced in; a further rise in Treasury yields would pressure utility valuations near term.",
+            "score": 60,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 1,
+            "reason": "Overnight deal to acquire 609-MW Rhode Island gas plant for $715M expected immediately accretive, above 10% return threshold without hurting $5B buyback, adding New England merchant capacity into AI/data-center demand.",
+            "risk": "Hot Sept. 11 CPI or hawkish Fed repricing drives broad selloff; deal closes Q1 2027 pending approvals, limiting near-term earnings impact.",
+            "score": 64,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-09-11",
+        "review_run_identity": 102,
+        "reviewed_at": "2026-09-11T12:55:44.591076+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-11.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "observation_id": "obs-ffe53d5356b433a945ca7789",
+      "observed_at": "2026-09-11T08:47:12.786960-04:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": null,
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 1,
+      "risk": "中",
+      "run_identity": 102,
+      "score": 73.1,
+      "source_digest": "sha256:cf63344f06776f1185b29ef7917e1a767857d5f4c679fc20c47e52861a584ab6",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "CEG",
+      "symbol_id": "id-75733a434547"
+    }
+  ],
+  "outcomes": {
+    "authority": "Retained OutcomeRecord authority only; LEGACY_REVIEW_D1 excluded",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "price_observations": [],
+  "schema_version": "short-invest-dashboard-symbol/5",
+  "trajectory": {
+    "continuous_market_series": false,
+    "points": [],
+    "status": "UNAVAILABLE"
+  }
+}

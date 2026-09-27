@@ -1,0 +1,1390 @@
+{
+  "authority": {
+    "source_digest": "sha256:f47be2614ca4683c5f4739f12ef20701a386b98e7796ad2768d89332e55081a7",
+    "source_path": "reports/snapshots/production-snapshot-de-2026-09-18.json",
+    "type": "CANONICAL_PRODUCTION_SNAPSHOT",
+    "web_owns_investment_state": false
+  },
+  "candidates": [
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "a1230146c13f350b2b6bfd2f70c1059b68d805e1d923d4a3fcf13450f0e59c62",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 952995.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 1970584.0,
+          "relative_volume": 0.48361044238662243,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 69.0,
+          "mean_rank_among_selectors": 1.2,
+          "provider_confidences": {
+            "deepseek": 55,
+            "gemini": 85,
+            "meta": 68,
+            "qwen": 72,
+            "xai": 65
+          },
+          "provider_ranks": {
+            "deepseek": 2,
+            "gemini": 1,
+            "meta": 1,
+            "qwen": 1,
+            "xai": 1
+          },
+          "short_invest_rank": 1,
+          "successful_provider_count": 5,
+          "symbol": "RWE.DE",
+          "vote_count": 5,
+          "vote_fraction": 1.0
+        },
+        "disagreement": [],
+        "packet_digest": "ffd94a6323bff3417846c4c6ac48cbe6b0bf19ccedff4447ee064ed6c78eb7b2",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": 1,
+            "reason": "RWE raised Amprion stake to 58% (Sept 16-17 news), driving 3.1% gain and outperformance vs DAX. Near 52-week high at €61.80; UBS reaffirmed Buy with €68 target.",
+            "risk": "Regulatory approval delay on grid stake increase could stall momentum.",
+            "score": 65,
+            "selected": true
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 1,
+            "reason": "RWE recently delivered robust H1 2026 results with a 64% surge in adjusted EPS and upgraded full-year guidance. Strong technical momentum is supported by a significant €42 billion investment plan and strategic shift toward regulated grid infrastructure, with multiple analysts maintaining 'Buy' ratings and targets as high as €75.",
+            "risk": "Wholesale power price volatility and potential funding gaps for its extensive €42 billion multi-year investment program.",
+            "score": 85,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 2,
+            "reason": "RWE signed a Masdar MoU to jointly pursue German offshore wind auctions with over €3bn indicative investment, plus an ADNOC LNG cooperation. Shares added about 2.8% to near €60 and still trade below the roughly €67 fair-value narrative, making this the group's most stable, catalyst-supported technical long.",
+            "risk": "The MoU is non-binding and dated to 2027 auctions, so much of the positive news may already be priced; a DAX stall would likely trigger consolidation.",
+            "score": 55,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": 1,
+            "reason": "Strong H1 2026 results (EPS +64%, EBITDA €3.0B) with raised 2026-2027 guidance. UBS reaffirmed Buy/€68 target Sept 14. Ongoing buyback and Goldman Sachs top utility pick provide near-term support. Trading at €59-60 with 7-15% upside to consensus targets.",
+            "risk": "Broader market weakness from oil spike and inflation concerns could drag even quality utilities lower in risk-off environment.",
+            "score": 72,
+            "selected": true
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 1,
+            "reason": "Fresh 433MW Oracle VPPA on Sept 17 plus Sept 11 UAE Masdar/ADNOC wind-LNG deals, raised 2026/27 outlook, UBS Buy EUR68 and Goldman Conviction List; closed Sept 17 at EUR60.62, +1.5%.",
+            "risk": "Overbought into 52-week highs invites profit-taking; pullback in power prices or renewed yield/oil strength could stall momentum.",
+            "score": 68,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 111,
+        "reviewed_at": "2026-09-18T06:24:26.492835+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-de-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 59.76
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 59.28
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 59.19
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 62.11
+        }
+      },
+      "rank": 1,
+      "risk": "中",
+      "score": 49.9,
+      "symbol": "RWE.DE",
+      "symbol_id": "id-64653a5257452e4445"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "NEGATIVE_FACTORS",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "NO_AFFIRMATIVE_LONG_THESIS",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "2153ecde63d52aea2658e297ba0471a9100277d0f96bdbb2b0dae616c3d6bea4",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 3718577.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 4154344.0,
+          "relative_volume": 0.8951057014055649,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": null,
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 2,
+      "risk": "高",
+      "score": 48.5,
+      "symbol": "EOAN.DE",
+      "symbol_id": "id-64653a454f414e2e4445"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "NEGATIVE_FACTORS",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "8ebca4e66f09bab4172f5709cd220453ebcc1fd56dcf6b1bab530560aeb428bf",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 1601005.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 2095541.0,
+          "relative_volume": 0.7640055718308542,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 57.666666666666664,
+          "mean_rank_among_selectors": 2.3333333333333335,
+          "provider_confidences": {
+            "deepseek": 48,
+            "gemini": 70,
+            "xai": 55
+          },
+          "provider_ranks": {
+            "deepseek": 3,
+            "gemini": 2,
+            "xai": 2
+          },
+          "short_invest_rank": 3,
+          "successful_provider_count": 5,
+          "symbol": "TKA.DE",
+          "vote_count": 3,
+          "vote_fraction": 0.6
+        },
+        "disagreement": [],
+        "packet_digest": "ffd94a6323bff3417846c4c6ac48cbe6b0bf19ccedff4447ee064ed6c78eb7b2",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": 2,
+            "reason": "63% YTD gain; Q3 revenue +8% to €8.8bn, TK Accelis 49% spin-off on track for Oct listing. Deutsche Bank raised PT to €18 (Buy).",
+            "risk": "Steel sector cyclical weakness or delayed spin-off execution.",
+            "score": 55,
+            "selected": true
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 2,
+            "reason": "The stock has shown significant momentum with a 12% rise over the last month, supported by strategic restructuring including the tk accelis spin-off. Technical indicators like the 3-month MACD and short-term moving averages remain positive, and analysts have recently revised fair value estimates upward to €22.00.",
+            "risk": "Cyclical downturn in European steel demand and execution risks surrounding the complex separation of its materials and steel units.",
+            "score": 70,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 3,
+            "reason": "Thyssenkrupp trades near its 52-week high after a 24% 30-day run, supported by Deutsche Bank's Buy rating and €18 target, up from €16. Restructuring momentum remains the dominant driver, and the current risk-on tape favors continuation of the technical trend.",
+            "risk": "The stock is extended with roughly 49% realized volatility; fading restructuring or anchor-investor speculation could trigger sharp profit-taking.",
+            "score": 48,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 111,
+        "reviewed_at": "2026-09-18T06:24:26.492835+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-de-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 3,
+      "risk": "高",
+      "score": 48.4,
+      "symbol": "TKA.DE",
+      "symbol_id": "id-64653a544b412e4445"
+    },
+    {
+      "canonical_state": "NEGATIVE_OR_BLOCKED",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Siemens Healthineers AG       N"
+      },
+      "constraint_codes": [
+        "EVENT_NEGATIVE",
+        "CATALYST_NOT_FRESH",
+        "CATALYST_NOT_ACTIONABLE"
+      ],
+      "decision_reason": "ADVERSE_EVENT",
+      "directional_basis": "NEGATIVE_OR_BLOCKED",
+      "event": {
+        "binding_status": "EXACT_CANONICAL_BINDING",
+        "event_id": "url:420b6032f0c2e0cf4b948578102c5155c1e81c4ee541e128a9a5610f041c80a2",
+        "evidence_kind": null,
+        "family": "指引下调",
+        "headline": "Siemens Healthineers Cuts Revenue Outlook on Diagnostics Weakness",
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": "The Wall Street Journal",
+        "representative_source_role": "NON_PRIMARY",
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "d94325dc4adb3c9176a9d5afb701d47c4a688c4f4cdbb3d29249bb1ea92bcb1c",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 747529.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 881698.0,
+          "relative_volume": 0.8478288484265587,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": null,
+      "presentation_group": "BLOCKED",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 38.35
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 38.15
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 38.11
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 40.93
+        }
+      },
+      "rank": 4,
+      "risk": "中",
+      "score": 45.9,
+      "symbol": "SHL.DE",
+      "symbol_id": "id-64653a53484c2e4445"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "NEGATIVE_FACTORS",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "7ccdfba448d72c01e80503b258b3ceba538b1dbe2a2c29a3d58be098aad5f7e2",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 537363.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 1007697.0,
+          "relative_volume": 0.5332585092542699,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 55.0,
+          "mean_rank_among_selectors": 3.0,
+          "provider_confidences": {
+            "gemini": 55,
+            "meta": 55
+          },
+          "provider_ranks": {
+            "gemini": 4,
+            "meta": 2
+          },
+          "short_invest_rank": 5,
+          "successful_provider_count": 5,
+          "symbol": "VOW3.DE",
+          "vote_count": 2,
+          "vote_fraction": 0.4
+        },
+        "disagreement": [],
+        "packet_digest": "ffd94a6323bff3417846c4c6ac48cbe6b0bf19ccedff4447ee064ed6c78eb7b2",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 4,
+            "reason": "Volkswagen is seeing short-term technical buying opportunities as it tests support near €81. Management’s focus on a new 'competence center' for security/defense at Osnabrück and aggressive cost-cutting measures provide a pivot for sentiment, even as the company manages a difficult transition in its core EV lineup.",
+            "risk": "Class action litigation and severe sales volume weakness in the critical Chinese market impacting operating margins.",
+            "score": 55,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 2,
+            "reason": "Supervisory board backed sweeping turnaround Sept 4 with deep job cuts and fewer models; hit 11-week high, Citi Buy to EUR100; deeply oversold, -22% YTD, well below fair value.",
+            "risk": "Sept 4 +7% spike may be priced; execution, labour resistance, China weakness and US tariffs could reverse the bounce.",
+            "score": 55,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 111,
+        "reviewed_at": "2026-09-18T06:24:26.492835+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-de-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 5,
+      "risk": "高",
+      "score": 45.3,
+      "symbol": "VOW3.DE",
+      "symbol_id": "id-64653a564f57332e4445"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "NEGATIVE_FACTORS",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "6d33d70c9796d85aee5af1bc2e8687c891cb07e506423ed5dc4cc3ef8337572e",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 759877.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 1276316.0,
+          "relative_volume": 0.5953674481868126,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 60.0,
+          "mean_rank_among_selectors": 2.0,
+          "provider_confidences": {
+            "deepseek": 60,
+            "gemini": 60
+          },
+          "provider_ranks": {
+            "deepseek": 1,
+            "gemini": 3
+          },
+          "short_invest_rank": 6,
+          "successful_provider_count": 5,
+          "symbol": "BMW.DE",
+          "vote_count": 2,
+          "vote_fraction": 0.4
+        },
+        "disagreement": [],
+        "packet_digest": "ffd94a6323bff3417846c4c6ac48cbe6b0bf19ccedff4447ee064ed6c78eb7b2",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 3,
+            "reason": "BMW recently showed signs of a technical rebound, gaining over 2% in the latest session. While fundamentally challenged in China, the company is aggressively defending margins through a voluntary redundancy program aimed at saving €1 billion annually and maintaining a high dividend yield to support its valuation floor.",
+            "risk": "Sustained market share erosion in China due to intense local EV competition and potential restructuring costs for German plants.",
+            "score": 60,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 1,
+            "reason": "Berenberg upgraded BMW to Buy with a €75 target from €69, arguing the June China-driven profit warning created a sounder earnings base ahead of the late-September capital markets day. The stock rose about 2.3% to roughly €63.6 even as BlackRock added to its net short, a notable show of underlying demand.",
+            "risk": "A late-September capital markets day that underwhelms, combined with BlackRock's increased short position, could quickly reverse the bounce.",
+            "score": 60,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 111,
+        "reviewed_at": "2026-09-18T06:24:26.492835+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-de-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 6,
+      "risk": "高",
+      "score": 45.2,
+      "symbol": "BMW.DE",
+      "symbol_id": "id-64653a424d572e4445"
+    },
+    {
+      "canonical_state": "NEGATIVE_OR_BLOCKED",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "EVENT_NEGATIVE",
+        "CATALYST_NOT_FRESH",
+        "CATALYST_NOT_ACTIONABLE",
+        "NEGATIVE_FACTORS",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "ADVERSE_EVENT",
+      "directional_basis": "NEGATIVE_OR_BLOCKED",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "acc2258095daf323722cd0af3e64da4aae855f27dd9b6e839d84ec694d9fe2a9",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 2196924.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 5776944.0,
+          "relative_volume": 0.3802917251751099,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": null,
+      "presentation_group": "BLOCKED",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 7,
+      "risk": "高",
+      "score": 43.8,
+      "symbol": "DBK.DE",
+      "symbol_id": "id-64653a44424b2e4445"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "NO_AFFIRMATIVE_LONG_THESIS",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "6e99abca1bab28d9ab87535053e6a9030a0ab229715e2b4da5dea0309c8881d5",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 158529.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 463158.0,
+          "relative_volume": 0.34227844493671705,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": null,
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 141.51
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 157.75
+        }
+      },
+      "rank": 8,
+      "risk": "中",
+      "score": 41.5,
+      "symbol": "ADS.DE",
+      "symbol_id": "id-64653a4144532e4445"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "NEGATIVE_FACTORS",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "NO_AFFIRMATIVE_LONG_THESIS",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "c8fc0785efac2e1bc30f07494baf1b32ce6e3ee6b944d48c8cbee96922a8702b",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 57603.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 92923.0,
+          "relative_volume": 0.6199003475996255,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": null,
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 9,
+      "risk": "高",
+      "score": 40.1,
+      "symbol": "MTX.DE",
+      "symbol_id": "id-64653a4d54582e4445"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "NEGATIVE_FACTORS",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "NO_AFFIRMATIVE_LONG_THESIS",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete",
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "d1a8230c31300d1ed904f9ff4ef2405bf28f447ca66e40d5d0ddc1fc17113e7f",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 73569.0,
+          "observation_asof": "2026-09-18T08:18:35.463123+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 91544.0,
+          "relative_volume": 0.8036463340033209,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": null,
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": "MATCHING_TIMESTAMPED_PRICE_UNAVAILABLE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 10,
+      "risk": "高",
+      "score": 39.7,
+      "symbol": "SRT3.DE",
+      "symbol_id": "id-64653a535254332e4445"
+    }
+  ],
+  "events": [
+    {
+      "binding_status": "EXACT_CANONICAL_BINDING",
+      "event_id": "url:420b6032f0c2e0cf4b948578102c5155c1e81c4ee541e128a9a5610f041c80a2",
+      "evidence_kind": null,
+      "family": "指引下调",
+      "headline": "Siemens Healthineers Cuts Revenue Outlook on Diagnostics Weakness",
+      "polarity": null,
+      "publication_time": null,
+      "representative_source": "The Wall Street Journal",
+      "representative_source_role": "NON_PRIMARY",
+      "semantic_source": null,
+      "semantic_status": null,
+      "symbol": "SHL.DE",
+      "timestamp_authority": "NOT_IDENTIFIABLE",
+      "underlying_event_time": null
+    }
+  ],
+  "generated_at": "2026-09-18T08:18:35.463123+02:00",
+  "health": [
+    {
+      "canonical_status": "OK",
+      "dimension": "Yahoo Finance",
+      "failed": 0,
+      "reasons": {},
+      "state": "HEALTHY",
+      "total": 75
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "Finnhub",
+      "failed": 0,
+      "reasons": {
+        "Unsupported market": 75
+      },
+      "state": "UNAVAILABLE",
+      "total": 75
+    },
+    {
+      "canonical_status": "FAILED",
+      "dimension": "Issuer IR",
+      "failed": 1,
+      "reasons": {
+        "RssParseError": 1,
+        "issuer_not_configured": 73
+      },
+      "state": "DEGRADED",
+      "total": 75
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "NewsAPI",
+      "failed": 0,
+      "reasons": {
+        "PRODUCTION_PLAN_NOT_AUTHORIZED": 75
+      },
+      "state": "UNAVAILABLE",
+      "total": 75
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "SEC EDGAR",
+      "failed": 0,
+      "reasons": {
+        "Unsupported market": 75
+      },
+      "state": "UNAVAILABLE",
+      "total": 75
+    },
+    {
+      "canonical_status": "PARTIAL",
+      "dimension": "DeepSeek",
+      "failed": 0,
+      "reasons": {
+        "Stage U LLM budget": 25,
+        "Upstream provider unavailable": 2
+      },
+      "state": "PARTIAL",
+      "total": 75
+    }
+  ],
+  "market": "de",
+  "report_identity": {
+    "date": "2026-09-18",
+    "git_commit": "806bf5096f41c8d845e96d2b12f742f51cbd7bf9",
+    "production_run_id": 111,
+    "snapshot_digest": "ce59300033ed17cfb50ab34acbef8903c87c3c85f87a400566a11597068d21c4"
+  },
+  "research": {
+    "de_cov_004": {
+      "label": "Research",
+      "sessions_completed": 0,
+      "sessions_total": 20,
+      "status": "ACTIVE"
+    }
+  },
+  "schema_version": "short-invest-dashboard-today/4",
+  "source_cutoff": "2026-09-18T08:18:35.463123+02:00",
+  "summary": {
+    "BLOCKED": 2,
+    "MONITORING": 8,
+    "OTHER_NOT_IDENTIFIABLE": 0,
+    "READY": 0,
+    "WAIT_FOR_PRICE": 0,
+    "total": 10
+  }
+}

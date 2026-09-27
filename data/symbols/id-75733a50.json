@@ -1,0 +1,185 @@
+{
+  "authority": {
+    "later_outcomes_appendable": true,
+    "original_decisions_immutable": true,
+    "research_artifacts_excluded": true
+  },
+  "decision_levels": [
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-22",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 104.95
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 103.3
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 103.03
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 115.72
+      },
+      "observation_id": "obs-7813c6e63568912aa6180a6e",
+      "provenance": {
+        "run_identity": 116,
+        "source_digest": "sha256:a834bf9b6a07824f50e8a3881ce141cab14d798fe16c0dec9f701881509bc0ba"
+      }
+    }
+  ],
+  "events": [],
+  "first_actionable_observation": null,
+  "first_retained_observation": "2026-09-22",
+  "generated_at": "2026-09-22T08:46:54.346329-04:00",
+  "identity": {
+    "company": {
+      "reason": null,
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
+    },
+    "market": "us",
+    "symbol": "P",
+    "symbol_id": "id-75733a50"
+  },
+  "latest_actionable_observation": null,
+  "latest_canonical_state": "BACKGROUND_MONITORING",
+  "latest_retained_observation": "2026-09-22",
+  "lifecycle": {
+    "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "multi_llm_reviews": [],
+  "observation_count": 1,
+  "observations": [
+    {
+      "availability": {
+        "canonical_price": "INVALID",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-09-22",
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_PARTIAL",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "3ce3c695f3bf83d9ccaefb51d5dc2479842fd1ea3cd527f205eb04ca07b91387",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 7332200.0,
+          "observation_asof": "2026-09-22T08:46:54.346329-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 3104000.0,
+          "relative_volume": 2.3621778350515465,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-7813c6e63568912aa6180a6e",
+      "observed_at": "2026-09-22T08:46:54.346329-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 104.95
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 103.3
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 103.03
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 115.72
+        }
+      },
+      "rank": 6,
+      "risk": "中",
+      "run_identity": 116,
+      "score": 56.8,
+      "source_digest": "sha256:a834bf9b6a07824f50e8a3881ce141cab14d798fe16c0dec9f701881509bc0ba",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "P",
+      "symbol_id": "id-75733a50"
+    }
+  ],
+  "outcomes": {
+    "authority": "Retained OutcomeRecord authority only; LEGACY_REVIEW_D1 excluded",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "price_observations": [],
+  "schema_version": "short-invest-dashboard-symbol/5",
+  "trajectory": {
+    "continuous_market_series": false,
+    "points": [],
+    "status": "UNAVAILABLE"
+  }
+}

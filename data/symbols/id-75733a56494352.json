@@ -1,0 +1,201 @@
+{
+  "authority": {
+    "later_outcomes_appendable": true,
+    "original_decisions_immutable": true,
+    "research_artifacts_excluded": true
+  },
+  "decision_levels": [
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-09-24",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 263.73
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 258.37
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 257.48
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 291.69
+      },
+      "observation_id": "obs-5046dc4b11f4ef85d33eaf98",
+      "provenance": {
+        "run_identity": 119,
+        "source_digest": "sha256:de165306529afda627516c30b8e49ab59116315b59a16abc2c9112834cf1f39b"
+      }
+    }
+  ],
+  "events": [
+    {
+      "binding_status": "EXACT_CANONICAL_BINDING",
+      "date": "2026-09-24",
+      "event_id": "url:45ff6181bf2ab1aab456df6c7ae619836b10882759abcc2f98718422e85d6bba",
+      "evidence_kind": "PRIMARY",
+      "family": "财报/指引",
+      "headline": "Why Did Vicor Stock Jump Before It Raised Its Outlook?",
+      "observation_id": "obs-5046dc4b11f4ef85d33eaf98",
+      "polarity": "POSITIVE",
+      "publication_time": "2026-09-22T12:53:27+00:00",
+      "representative_source": "Trefis",
+      "representative_source_role": "NON_PRIMARY",
+      "semantic_source": "Trefis",
+      "semantic_status": "VALID_POSITIVE",
+      "timestamp_authority": "PUBLICATION_TIME_ONLY",
+      "underlying_event_time": null
+    }
+  ],
+  "first_actionable_observation": "2026-09-24",
+  "first_retained_observation": "2026-09-24",
+  "generated_at": "2026-09-24T08:47:00.752923-04:00",
+  "identity": {
+    "company": {
+      "reason": null,
+      "status": "KNOWN",
+      "value": "Vicor Corporation"
+    },
+    "market": "us",
+    "symbol": "VICR",
+    "symbol_id": "id-75733a56494352"
+  },
+  "latest_actionable_observation": "2026-09-24",
+  "latest_canonical_state": "EXECUTION_CONFIRMATION_REQUIRED",
+  "latest_retained_observation": "2026-09-24",
+  "lifecycle": {
+    "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "multi_llm_reviews": [],
+  "observation_count": 1,
+  "observations": [
+    {
+      "availability": {
+        "canonical_price": "INVALID",
+        "event": "AVAILABLE",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "EXECUTION_CONFIRMATION_REQUIRED",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Vicor Corporation"
+      },
+      "constraint_codes": [
+        "MISSING_SPREAD"
+      ],
+      "date": "2026-09-24",
+      "decision_reason": "EXECUTION_CONFIRMATION_REQUIRED",
+      "directional_basis": "EVENT_DRIVEN_LONG",
+      "event": {
+        "binding_status": "EXACT_CANONICAL_BINDING",
+        "event_id": "url:45ff6181bf2ab1aab456df6c7ae619836b10882759abcc2f98718422e85d6bba",
+        "evidence_kind": "PRIMARY",
+        "family": "财报/指引",
+        "headline": "Why Did Vicor Stock Jump Before It Raised Its Outlook?",
+        "polarity": "POSITIVE",
+        "publication_time": "2026-09-22T12:53:27+00:00",
+        "representative_source": "Trefis",
+        "representative_source_role": "NON_PRIMARY",
+        "semantic_source": "Trefis",
+        "semantic_status": "VALID_POSITIVE",
+        "timestamp_authority": "PUBLICATION_TIME_ONLY",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_PARTIAL",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "4428680ac196928f2e93e728cdc035ead86d577dd26710e4532aa99f9f60aa4c",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 1618100.0,
+          "observation_asof": "2026-09-24T08:47:00.752923-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 1038600.0,
+          "relative_volume": 1.5579626420181012,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-5046dc4b11f4ef85d33eaf98",
+      "observed_at": "2026-09-24T08:47:00.752923-04:00",
+      "presentation_group": "WAIT_FOR_PRICE",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 263.73
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 258.37
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 257.48
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 291.69
+        }
+      },
+      "rank": 1,
+      "risk": "中",
+      "run_identity": 119,
+      "score": 76.2,
+      "source_digest": "sha256:de165306529afda627516c30b8e49ab59116315b59a16abc2c9112834cf1f39b",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "VICR",
+      "symbol_id": "id-75733a56494352"
+    }
+  ],
+  "outcomes": {
+    "authority": "Retained OutcomeRecord authority only; LEGACY_REVIEW_D1 excluded",
+    "availability": "NOT_RETAINED",
+    "observations": [],
+    "status": "UNAVAILABLE"
+  },
+  "price_observations": [],
+  "schema_version": "short-invest-dashboard-symbol/5",
+  "trajectory": {
+    "continuous_market_series": false,
+    "points": [],
+    "status": "UNAVAILABLE"
+  }
+}
