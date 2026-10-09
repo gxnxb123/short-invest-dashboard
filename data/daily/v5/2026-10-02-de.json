@@ -1,0 +1,96 @@
+{
+  "authority": {
+    "source_digest": "sha256:b196d37f1510497e7e2cc4af20786df8fac810bb1ad57f77a01ab9f263d9a8a5",
+    "source_path": "reports/snapshots/production-snapshot-de-2026-10-02.json",
+    "type": "CANONICAL_PRODUCTION_SNAPSHOT",
+    "web_owns_investment_state": false
+  },
+  "candidates": [],
+  "events": [],
+  "generated_at": "2026-10-02T08:19:49.565797+02:00",
+  "health": [
+    {
+      "canonical_status": "OK",
+      "dimension": "Yahoo Finance",
+      "failed": 0,
+      "reasons": {},
+      "state": "HEALTHY",
+      "total": 75
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "Finnhub",
+      "failed": 0,
+      "reasons": {
+        "Unsupported market": 75
+      },
+      "state": "UNAVAILABLE",
+      "total": 75
+    },
+    {
+      "canonical_status": "PARTIAL",
+      "dimension": "Issuer IR",
+      "failed": 0,
+      "reasons": {
+        "issuer_not_configured": 74
+      },
+      "state": "PARTIAL",
+      "total": 75
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "NewsAPI",
+      "failed": 0,
+      "reasons": {
+        "PRODUCTION_PLAN_NOT_AUTHORIZED": 75
+      },
+      "state": "UNAVAILABLE",
+      "total": 75
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "SEC EDGAR",
+      "failed": 0,
+      "reasons": {
+        "Unsupported market": 75
+      },
+      "state": "UNAVAILABLE",
+      "total": 75
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "Gemini Event Semantics",
+      "failed": 0,
+      "reasons": {
+        "Deterministic filter rejected": 75
+      },
+      "state": "UNAVAILABLE",
+      "total": 75
+    }
+  ],
+  "market": "de",
+  "report_identity": {
+    "date": "2026-10-02",
+    "git_commit": "5cbaf60fa0f083d9b70ec75523e883195a2a7d2b",
+    "production_run_id": 130,
+    "snapshot_digest": "20bdabde5c21f5af66e85ced600581278dc72be8351086547e388fe622987019"
+  },
+  "research": {
+    "de_cov_004": {
+      "label": "Research",
+      "sessions_completed": 0,
+      "sessions_total": 20,
+      "status": "ACTIVE"
+    }
+  },
+  "schema_version": "short-invest-dashboard-today/5",
+  "source_cutoff": "2026-10-02T08:19:49.565797+02:00",
+  "summary": {
+    "BLOCKED": 0,
+    "MONITORING": 0,
+    "OTHER_NOT_IDENTIFIABLE": 0,
+    "READY": 0,
+    "WAIT_FOR_PRICE": 0,
+    "total": 0
+  }
+}

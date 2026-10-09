@@ -1,0 +1,1860 @@
+{
+  "authority": {
+    "source_digest": "sha256:922db7deb19670ba14f37cd58877041bc7f5fe3058579792b348a61ebf0df0ad",
+    "source_path": "reports/snapshots/production-snapshot-us-2026-09-18.json",
+    "type": "CANONICAL_PRODUCTION_SNAPSHOT",
+    "web_owns_investment_state": false
+  },
+  "candidates": [
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "NetApp, Inc."
+      },
+      "constraint_codes": [
+        "MISSING_SPREAD"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "EVENT_DRIVEN_LONG",
+      "event": {
+        "binding_status": "EXACT_CANONICAL_BINDING",
+        "event_id": "url:ce16cb4a17edc55194d20e31c43ea53ef5f5678962aaa138da328cd29737c7f5",
+        "evidence_kind": null,
+        "family": "财报/指引",
+        "headline": "Did NetApp Borrow Its Record Quarter From The Rest Of The Year?",
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": "Trefis",
+        "representative_source_role": "NON_PRIMARY",
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "b2692cd917e8706c6496fd38bf830a45d54a03ed066e8754b9b699528ad09763",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 1898600.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 2028450.0,
+          "relative_volume": 0.9359856047721167,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 76.4,
+          "mean_rank_among_selectors": 1.8,
+          "provider_confidences": {
+            "deepseek": 75,
+            "gemini": 90,
+            "meta": 72,
+            "qwen": 70,
+            "xai": 75
+          },
+          "provider_ranks": {
+            "deepseek": 1,
+            "gemini": 2,
+            "meta": 2,
+            "qwen": 2,
+            "xai": 2
+          },
+          "short_invest_rank": 1,
+          "successful_provider_count": 5,
+          "symbol": "NTAP",
+          "vote_count": 5,
+          "vote_fraction": 1.0
+        },
+        "disagreement": [],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": 2,
+            "reason": "Beat-and-raise quarter with AI/cloud partnerships (NVIDIA, Buccaneers) and upward FY2027 EPS revisions; trades near recent highs on storage demand.",
+            "risk": "High valuation multiples may limit further near-term upside if growth moderates.",
+            "score": 75,
+            "selected": true
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 2,
+            "reason": "Strong momentum following a massive Q1 earnings beat and upwardly revised fiscal 2027 guidance. The company is successfully converting AI and hybrid-cloud demand into high-margin profit, with technicals showing consistent accumulation behavior and higher lows on the daily chart.",
+            "risk": "Profit-taking after its recent 8% surge or broader sector rotation away from high-performing storage names.",
+            "score": 90,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 1,
+            "reason": "Beat-and-raise quarter (revenue +29.9% YoY, EPS $2.58 vs. consensus) with FY27 guidance lifted to ~17% revenue growth; AI/cloud storage demand drove multiple target hikes (Susquehanna $195, Morgan Stanley $191). Stock broke to ~$197 on expanding momentum with no negative follow-through.",
+            "risk": "Price now sits at or above several raised analyst targets; post-earnings momentum could stall absent a fresh catalyst.",
+            "score": 75,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": 2,
+            "reason": "Record Q1 FY27 with revenue up 30% YoY to $2.03B and non-GAAP EPS of $2.58. Raised FY27 guidance to $7.975-$8.225B on accelerating AI storage demand. Analyst upgrades to $225 (Argus) and $215 (Loop Revenue) provide 15% upside from current $191-199 levels.",
+            "risk": "Premium valuation after strong earnings run. All-flash revenues up 46.6% may be priced in, and next earnings not until December removes near-term catalyst.",
+            "score": 70,
+            "selected": true
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 2,
+            "reason": "Q1 EPS $2.58 vs $2.13 estimate on $2.03B +29.9% revenue; raised FY27 guidance and ~350 AI deals.",
+            "risk": "Sept 2 beat is 16 days old and may be largely priced; high-beta storage pullback risk.",
+            "score": 72,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 193.13
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 190.35
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 189.89
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 202.86
+        }
+      },
+      "rank": 1,
+      "risk": "中",
+      "score": 74.5,
+      "symbol": "NTAP",
+      "symbol_id": "id-75733a4e544150"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "NEGATIVE_FACTORS",
+        "MISSING_SPREAD"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "EVENT_DRIVEN_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "61ef47843fccdac4814bb582681df55e96d721ffb0cbd58148f55c6b82cc55c2",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 20186700.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 10919750.0,
+          "relative_volume": 1.8486412234712333,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 85.0,
+          "mean_rank_among_selectors": 2.0,
+          "provider_confidences": {
+            "gemini": 85,
+            "xai": 85
+          },
+          "provider_ranks": {
+            "gemini": 3,
+            "xai": 1
+          },
+          "short_invest_rank": 2,
+          "successful_provider_count": 5,
+          "symbol": "FPS",
+          "vote_count": 2,
+          "vote_fraction": 0.4
+        },
+        "disagreement": [],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": 1,
+            "reason": "Q4 revenue +94% YoY to $462M, bookings +375%, backlog $3B; FY2027 guidance well above consensus on AI data-center power demand.",
+            "risk": "Elevated valuation and potential profit-taking after sharp post-earnings rally.",
+            "score": 85,
+            "selected": true
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 3,
+            "reason": "The stock is rallying on a record $3 billion backlog and massive 94% year-over-year revenue growth. Its specialized electrical equipment is in critical demand for AI data center build-outs, creating a fundamental tailwind that has triggered multiple analyst upgrades.",
+            "risk": "Extremely high valuation at 127x earnings and risk of a 'sell the news' reaction following its recent vertical move.",
+            "score": 85,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": 2,
+      "risk": "高",
+      "score": 59.5,
+      "symbol": "FPS",
+      "symbol_id": "id-75733a465053"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "c19df2cd22c2ac95ca80929d906970f103d3beed4dbef4bd8e8f2706bbc97340",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 16590200.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 11117700.0,
+          "relative_volume": 1.4922331057682794,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 62.5,
+          "mean_rank_among_selectors": 4.0,
+          "provider_confidences": {
+            "deepseek": 65,
+            "meta": 60
+          },
+          "provider_ranks": {
+            "deepseek": 4,
+            "meta": 4
+          },
+          "short_invest_rank": 3,
+          "successful_provider_count": 5,
+          "symbol": "CRM",
+          "vote_count": 2,
+          "vote_fraction": 0.4
+        },
+        "disagreement": [],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 4,
+            "reason": "Agentforce AI-agent adoption is accelerating, and the Anthropic partnership plus closed Fin acquisition reinforce the rebound; shares are up ~34% in a month with Dreamforce ahead as a potential positive catalyst. Strong relative strength in a risk-on tech tape.",
+            "risk": "Expectations into Dreamforce are elevated (RBC flagged this); a sell-the-news reaction could unwind the sharp monthly rally.",
+            "score": 65,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 4,
+            "reason": "Q2 EPS $5.90 vs $3.27 and $11.35B sales drove ~23% surge on Agentforce/Data 360 momentum.",
+            "risk": "+26-34% one-month surge leaves stock extended and vulnerable to profit-taking.",
+            "score": 60,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 242.8
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 242.55
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 239.66
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 239.18
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 271.64
+        }
+      },
+      "rank": 3,
+      "risk": "中",
+      "score": 57.5,
+      "symbol": "CRM",
+      "symbol_id": "id-75733a43524d"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "9d9ed77b9fabe7e8db5742d070e26a02fc6447f87f9ea291803f47bce0a42242",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 9317800.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 9502200.0,
+          "relative_volume": 0.9805939677127402,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 66.5,
+          "mean_rank_among_selectors": 3.25,
+          "provider_confidences": {
+            "deepseek": 58,
+            "meta": 78,
+            "qwen": 60,
+            "xai": 70
+          },
+          "provider_ranks": {
+            "deepseek": 5,
+            "meta": 1,
+            "qwen": 4,
+            "xai": 3
+          },
+          "short_invest_rank": 4,
+          "successful_provider_count": 5,
+          "symbol": "DELL",
+          "vote_count": 4,
+          "vote_fraction": 0.8
+        },
+        "disagreement": [
+          {
+            "symbol": "DELL",
+            "type": "LOW_RANK_HIGH_CONSENSUS"
+          }
+        ],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": 3,
+            "reason": "Record AI server orders ($60.9B in one quarter) and raised full-year guidance drive stock to new highs on hyperscale capex.",
+            "risk": "Supply-chain or margin pressure if AI server mix shifts or competition intensifies.",
+            "score": 70,
+            "selected": true
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 5,
+            "reason": "AI server orders hit $61B in Q2 (vs $24B in Q1) with a growing pipeline and Oracle endorsement; record-high breakout reflects a multi-year AI TAM narrative, and ~18x forward earnings keeps valuation defensible despite the run.",
+            "risk": "Extremely extended (+300% YTD, above upper Bollinger); any softening in hyperscaler AI-order commentary could trigger sharp profit-taking.",
+            "score": 58,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": 4,
+            "reason": "AI server boom drove 323% gain in 2026 with annual revenue outlook raised by $25B. JP Morgan raised target to $635. Stock at $588 showing continued momentum with bullish options flow. AI infrastructure spending remains robust.",
+            "risk": "Trading above average analyst target of $560 creates overextension risk. After tripling in value, profit-taking pressure is likely despite strong fundamentals. Limited upside to consensus targets.",
+            "score": 60,
+            "selected": true
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 1,
+            "reason": "Record Q2 revenue $47B +58% vs $44.5B expected, record $60.9B AI orders and $95B backlog, raised FY27 to $192B revenue.",
+            "risk": "Overbought at 52-week high $534.96; supply constraints flagged on call could cap near-term follow-through.",
+            "score": 78,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 569.18
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 558.14
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 556.3
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 611.88
+        }
+      },
+      "rank": 4,
+      "risk": "中",
+      "score": 57.3,
+      "symbol": "DELL",
+      "symbol_id": "id-75733a44454c4c"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "8a34ba8ed334facd3f68c6e86769085df9a783d9aef12a0f763e789e66673c34",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 688800.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 719800.0,
+          "relative_volume": 0.9569324812447902,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 75.0,
+          "mean_rank_among_selectors": 5.0,
+          "provider_confidences": {
+            "gemini": 75
+          },
+          "provider_ranks": {
+            "gemini": 5
+          },
+          "short_invest_rank": 5,
+          "successful_provider_count": 5,
+          "symbol": "WAT",
+          "vote_count": 1,
+          "vote_fraction": 0.2
+        },
+        "disagreement": [
+          {
+            "symbol": "WAT",
+            "type": "SINGLE_MODEL_SELECTION"
+          }
+        ],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 5,
+            "reason": "Technical breakout to 52-week highs supported by the commercial launch of the BD FACSDiscover A7 system. Improving healthcare sector sentiment and a rotation into life-science tools provide a supportive macro backdrop for its instrument replacement cycle thesis.",
+            "risk": "Short-term reversal if the breakout fails to attract follow-through volume or if Treasury yields spike, pressuring high-multiple healthcare stocks.",
+            "score": 75,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 423.21
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 419.77
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 419.19
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 435.8
+        }
+      },
+      "rank": 5,
+      "risk": "中",
+      "score": 57.3,
+      "symbol": "WAT",
+      "symbol_id": "id-75733a574154"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "704aafad7888ba90b79cd6fb6ccd675ab3078328cf938fbf13adf2d65d986e86",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 83764900.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 94021700.0,
+          "relative_volume": 0.8909102898586178,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 95.0,
+          "mean_rank_among_selectors": 1.0,
+          "provider_confidences": {
+            "gemini": 95
+          },
+          "provider_ranks": {
+            "gemini": 1
+          },
+          "short_invest_rank": 6,
+          "successful_provider_count": 5,
+          "symbol": "SPCX",
+          "vote_count": 1,
+          "vote_fraction": 0.2
+        },
+        "disagreement": [
+          {
+            "symbol": "SPCX",
+            "type": "SINGLE_MODEL_SELECTION"
+          }
+        ],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 1,
+            "reason": "SpaceX faces a historic $15.5B–$22B programmatic buying event today as its Nasdaq-100 weighting is set to double. This massive passive inflow provides extreme liquidity and upward price pressure, which often offsets upcoming supply concerns like the September 24 share unlock.",
+            "risk": "Short-term sell-off following the completion of programmatic buying or anticipatory selling ahead of the September 24 lockup expiration.",
+            "score": 95,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 153.31
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 151.27
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 150.93
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 159.25
+        }
+      },
+      "rank": 6,
+      "risk": "中",
+      "score": 57.3,
+      "symbol": "SPCX",
+      "symbol_id": "id-75733a53504358"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "NO_AFFIRMATIVE_LONG_THESIS",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "f507be3a935416d2dace2d645036e9bd0a7602018ab325b6d2906751867b832b",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 809800.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 886450.0,
+          "relative_volume": 0.9135315020587738,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": null,
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 275.28
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 272.65
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 272.21
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 306.37
+        }
+      },
+      "rank": 7,
+      "risk": "中",
+      "score": 56.9,
+      "symbol": "CRL",
+      "symbol_id": "id-75733a43524c"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "842cae93e6ca6a7a01c841baafa60d2c64f02ef4a7a515e6f6b2c7e4cef37e8c",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 3574700.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 2774300.0,
+          "relative_volume": 1.2885052085210684,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 74.5,
+          "mean_rank_among_selectors": 1.5,
+          "provider_confidences": {
+            "deepseek": 74,
+            "qwen": 75
+          },
+          "provider_ranks": {
+            "deepseek": 2,
+            "qwen": 1
+          },
+          "short_invest_rank": 8,
+          "successful_provider_count": 5,
+          "symbol": "PSX",
+          "vote_count": 2,
+          "vote_fraction": 0.4
+        },
+        "disagreement": [],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 2,
+            "reason": "Q2 EPS of $9.41 crushed the $7.50 consensus with refining margins juiced by $100+ crude; BMO lifted its target to $310 (well above ~$274) and the buyback/Explorer Pipeline sale story is still unfolding. Fresh +3.6% breakout on heavy volume signals accumulation.",
+            "risk": "A quick retreat in crude or crack spreads would unwind the refining-margin trade; several desks (Barclays $216, BofA $255) see limited upside.",
+            "score": 74,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": 1,
+            "reason": "New 52-week high at $274 with fresh analyst upgrades (BMO to $310, UBS to $300). Strong Q2 earnings of $9.55 EPS and cooler crude supporting refining margins. Q3 results not until Oct 28, eliminating near-term earnings risk. Technical breakout with 32.9% YTD outperformance vs SPX.",
+            "risk": "Extended after 62% YTD rally with peak cycle concerns. Seeking Alpha article warns 'the peak is in' after robust refining EBITDA growth and high utilization rates.",
+            "score": 75,
+            "selected": true
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 261.28
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 258.93
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 258.54
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 276.95
+        }
+      },
+      "rank": 8,
+      "risk": "中",
+      "score": 55.8,
+      "symbol": "PSX",
+      "symbol_id": "id-75733a505358"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "d3f67dd3a10b7d5182726206e1d41581cc045958152033d9e5d77155b3c681a9",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 3673200.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 3655750.0,
+          "relative_volume": 1.0047733023319427,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 68.0,
+          "mean_rank_among_selectors": 3.0,
+          "provider_confidences": {
+            "deepseek": 68
+          },
+          "provider_ranks": {
+            "deepseek": 3
+          },
+          "short_invest_rank": 9,
+          "successful_provider_count": 5,
+          "symbol": "ADM",
+          "vote_count": 1,
+          "vote_fraction": 0.2
+        },
+        "disagreement": [
+          {
+            "symbol": "ADM",
+            "type": "SINGLE_MODEL_SELECTION"
+          }
+        ],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 3,
+            "reason": "Management raised 2026 adjusted EPS guidance to $5.15–$5.60 from $4.15–$4.70, a powerful upward revision behind the +51% YTD run; Q2 adjusted EPS of $1.84 beat. Zacks sees FY26 EPS up ~52%, supporting continued momentum.",
+            "risk": "Ag-commodity margin normalization or a grain-price pullback could reverse momentum; the 51% YTD run may already discount much of the guidance raise.",
+            "score": 68,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_STALE",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 84.51
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 83.69
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 83.55
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 89.71
+        }
+      },
+      "rank": 9,
+      "risk": "中",
+      "score": 54.3,
+      "symbol": "ADM",
+      "symbol_id": "id-75733a41444d"
+    },
+    {
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "MISSING_SPREAD",
+        "CATALYST_UNVERIFIED"
+      ],
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_volume_confirmation_below_minimum"
+        ],
+        "missing_fields": [
+          "spread_percent"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "7037ea36f03015d16447b547a361c28a618d6e941e344d1934323cf8efb16c1d",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 4902900.0,
+          "observation_asof": "2026-09-18T08:46:52.363104-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 4251100.0,
+          "relative_volume": 1.153325021759074,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 68.5,
+          "mean_rank_among_selectors": 3.5,
+          "provider_confidences": {
+            "gemini": 80,
+            "meta": 64,
+            "qwen": 65,
+            "xai": 65
+          },
+          "provider_ranks": {
+            "gemini": 4,
+            "meta": 3,
+            "qwen": 3,
+            "xai": 4
+          },
+          "short_invest_rank": 10,
+          "successful_provider_count": 5,
+          "symbol": "LITE",
+          "vote_count": 4,
+          "vote_fraction": 0.8
+        },
+        "disagreement": [
+          {
+            "symbol": "LITE",
+            "type": "LOW_RANK_HIGH_CONSENSUS"
+          }
+        ],
+        "packet_digest": "a9b9e32cbce6114733b5e8f5d02c8fc02b8807cbde31e1a8c5a2ca6720538b8e",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": 4,
+            "reason": "Recent surge on AI optical networking tailwinds and peer strength, positioning for multi-year data-center fiber demand.",
+            "risk": "Insider selling and elevated short interest could cap gains on any AI sentiment cooling.",
+            "score": 65,
+            "selected": true
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 4,
+            "reason": "Lumentum is benefiting from sector-wide optimism in optical networking following Ciena’s bullish long-term targets. Major analyst initiations with price targets significantly above current levels highlight its role as a key 'picks and shovels' play for AI-driven connectivity bottlenecks.",
+            "risk": "High volatility and sensitivity to sector peers' performance, alongside persistent operating losses during its growth phase.",
+            "score": 80,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": 3,
+            "reason": "Revenue doubled to $1.01B in fiscal Q4 with AI optical demand driving 447% gain over 12 months. Consensus target $1,168 offers 30% upside from $893.61. RSI at 44 shows neutral momentum with room to run. Above 50-day average of $838.87 confirms uptrend.",
+            "risk": "Stock looks 'fully priced' after massive gains per Simply Wall St analysis. Extended valuation after doubling revenue creates vulnerability to profit-taking in volatile market.",
+            "score": 65,
+            "selected": true
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 3,
+            "reason": "Rebounded 8% to $906.76 as best S&P performer on AI-optical bet; up 6.1% since earnings.",
+            "risk": "Extreme volatility near $900 and repeated insider 500-share sales in September pressure momentum.",
+            "score": 64,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-09-18",
+        "review_run_identity": 112,
+        "reviewed_at": "2026-09-18T12:54:44.165211+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-us-2026-09-18.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "presentation_group": "MONITORING",
+      "price": {
+        "currency": "USD",
+        "current": {
+          "reason": "PRICE_TIMESTAMP_AFTER_CUTOFF",
+          "status": "INVALID",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 903.72
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 885.37
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 882.31
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 1048.16
+        }
+      },
+      "rank": 10,
+      "risk": "中",
+      "score": 54.3,
+      "symbol": "LITE",
+      "symbol_id": "id-75733a4c495445"
+    }
+  ],
+  "events": [
+    {
+      "binding_status": "EXACT_CANONICAL_BINDING",
+      "event_id": "url:ce16cb4a17edc55194d20e31c43ea53ef5f5678962aaa138da328cd29737c7f5",
+      "evidence_kind": null,
+      "family": "财报/指引",
+      "headline": "Did NetApp Borrow Its Record Quarter From The Rest Of The Year?",
+      "polarity": null,
+      "publication_time": null,
+      "representative_source": "Trefis",
+      "representative_source_role": "NON_PRIMARY",
+      "semantic_source": null,
+      "semantic_status": null,
+      "symbol": "NTAP",
+      "timestamp_authority": "NOT_IDENTIFIABLE",
+      "underlying_event_time": null
+    }
+  ],
+  "generated_at": "2026-09-18T08:46:52.363104-04:00",
+  "health": [
+    {
+      "canonical_status": "OK",
+      "dimension": "Yahoo Finance",
+      "failed": 0,
+      "reasons": {},
+      "state": "HEALTHY",
+      "total": 100
+    },
+    {
+      "canonical_status": "PARTIAL",
+      "dimension": "Finnhub",
+      "failed": 0,
+      "reasons": {
+        "Budget exhausted": 80
+      },
+      "state": "PARTIAL",
+      "total": 100
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "Issuer IR",
+      "failed": 0,
+      "reasons": {
+        "Unsupported market": 100
+      },
+      "state": "UNAVAILABLE",
+      "total": 100
+    },
+    {
+      "canonical_status": "OK",
+      "dimension": "SEC EDGAR",
+      "failed": 0,
+      "reasons": {},
+      "state": "HEALTHY",
+      "total": 100
+    },
+    {
+      "canonical_status": "SKIPPED",
+      "dimension": "NewsAPI",
+      "failed": 0,
+      "reasons": {
+        "PRODUCTION_PLAN_NOT_AUTHORIZED": 100
+      },
+      "state": "UNAVAILABLE",
+      "total": 100
+    },
+    {
+      "canonical_status": "PARTIAL",
+      "dimension": "DeepSeek",
+      "failed": 0,
+      "reasons": {
+        "Stage U LLM budget": 50
+      },
+      "state": "PARTIAL",
+      "total": 100
+    }
+  ],
+  "market": "us",
+  "report_identity": {
+    "date": "2026-09-18",
+    "git_commit": "85cd621bb9ea094b94d33fc160acc54a4d0073e4",
+    "production_run_id": 112,
+    "snapshot_digest": "d0695aea0bdee0cbb18a9fff01e095fd92f0d3429f676b8ae4cbdee279437e8c"
+  },
+  "research": {
+    "de_cov_004": {
+      "label": "Research",
+      "sessions_completed": 0,
+      "sessions_total": 20,
+      "status": "ACTIVE"
+    }
+  },
+  "schema_version": "short-invest-dashboard-today/5",
+  "source_cutoff": "2026-09-18T08:46:52.363104-04:00",
+  "summary": {
+    "BLOCKED": 0,
+    "MONITORING": 10,
+    "OTHER_NOT_IDENTIFIABLE": 0,
+    "READY": 0,
+    "WAIT_FOR_PRICE": 0,
+    "total": 10
+  }
+}
