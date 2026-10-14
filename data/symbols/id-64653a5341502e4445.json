@@ -311,12 +311,46 @@
         "run_identity": 120,
         "source_digest": "sha256:41918a198b928dafbafa7e034f37b5812486a9ec4a4ccfd59fc0f1f9afdbe29d"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-14",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-db79803c78c98053254cb7ff",
+      "provenance": {
+        "run_identity": 144,
+        "source_digest": "sha256:f7d5b3cfff44561cab360a71e8e83127e588fcdc9369af11fb7e6bcc0dbda142"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-08-26",
-  "generated_at": "2026-09-25T08:19:28.890943+02:00",
+  "generated_at": "2026-10-14T08:22:06.473220+02:00",
   "identity": {
     "company": {
       "reason": null,
@@ -328,8 +362,8 @@
     "symbol_id": "id-64653a5341502e4445"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-09-25",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-10-14",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -913,7 +947,7 @@
     "status": "AVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 9,
+  "observation_count": 10,
   "observations": [
     {
       "availability": {
@@ -1731,6 +1765,93 @@
       "run_identity": 120,
       "score": 46.4,
       "source_digest": "sha256:41918a198b928dafbafa7e034f37b5812486a9ec4a4ccfd59fc0f1f9afdbe29d",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "SAP.DE",
+      "symbol_id": "id-64653a5341502e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 5
+        },
+        {
+          "provider": "qwen",
+          "rank": 1
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-14",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-db79803c78c98053254cb7ff",
+      "observed_at": "2026-10-14T08:22:06.473220+02:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 144,
+      "score": null,
+      "source_digest": "sha256:f7d5b3cfff44561cab360a71e8e83127e588fcdc9369af11fb7e6bcc0dbda142",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "SAP.DE",
       "symbol_id": "id-64653a5341502e4445"
