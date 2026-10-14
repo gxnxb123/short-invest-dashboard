@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Short Invest · History</title>
-  <link rel="stylesheet" href="styles.css?v=axes001"><link rel="stylesheet" href="history.css?v=axes001">
+  <link rel="stylesheet" href="styles.css?v=axes001"><link rel="stylesheet" href="history.css?v=history-ux-001">
 </head>
 <body>
 <header><div><p class="eyebrow">SHORT INVEST · RETAINED HISTORY</p><h1>History</h1><p id="history-asof">Loading retained snapshot timestamp…</p></div><nav aria-label="Primary"><a href="index.html">Today</a><a href="history.html" aria-current="page">History</a><a href="events.html">Events</a><a href="system.html">System</a></nav></header>
@@ -10,7 +10,7 @@
   <p id="history-error" role="alert" hidden></p>
   <section class="history-controls"><label>Market <select id="history-market"><option value="both">DE + US</option><option value="de">DE</option><option value="us">US</option></select></label><button id="latest">Back to latest</button></section>
   <section class="history-layout">
-    <div class="panel"><p class="eyebrow">RETAINED RUNS</p><h2>Dates</h2><div id="run-list"></div></div>
+    <div class="panel"><p class="eyebrow">RETAINED RUNS</p><h2>Dates</h2><div id="run-list"></div><button id="more-runs" class="history-more" hidden>Show older runs</button></div>
     <div class="panel">
       <p class="eyebrow" id="day-kind">HISTORICAL OBSERVATION</p><h2 id="day-title">Select a retained day</h2>
       <div class="day-nav"><button id="previous">Previous retained day</button><button id="next">Next retained day</button></div>
@@ -23,8 +23,8 @@
       <div class="history-autonomous"><p class="eyebrow">INDEPENDENT MODEL RESEARCH · AUTHORITY NONE</p><h3>Frozen Autonomous LLM Picks</h3><p class="note">Five independent 1–5 day ideas per operational model, retained at the original cutoff.</p><div id="history-autonomous"></div></div>
     </div>
   </section>
-  <section class="panel"><p class="eyebrow">SYMBOL HISTORY INDEX</p><h2>Historical observations</h2><p class="note">These are retained Short Invest observations, not necessarily actionable recommendations. OutcomeRecord coverage remains unavailable unless explicitly retained.</p><div id="history-symbols"></div></section>
+  <section class="panel"><p class="eyebrow">SYMBOL HISTORY INDEX</p><h2>Historical observations</h2><p class="note">These are retained Short Invest observations, not necessarily actionable recommendations. OutcomeRecord coverage remains unavailable unless explicitly retained.</p><div id="history-symbols"></div><button id="more-symbols" class="history-more" hidden>Show all symbols</button></section>
 </main>
-<script type="module" src="history.js?v=autonomous001"></script>
+<script type="module" src="history.js?v=history-ux-001"></script>
 </body>
 </html>
