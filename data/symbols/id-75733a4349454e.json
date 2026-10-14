@@ -81,6 +81,40 @@
         "value": null
       },
       "current_recommendation": false,
+      "effective_date": "2026-10-07",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-193e5812c72a0a3b3f37bd1d",
+      "provenance": {
+        "run_identity": 107,
+        "source_digest": "sha256:9b18ecbe1a91cdf11899f22bc900bb9ab3a431d65611d86b39722eb5aa8dac03"
+      }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
       "effective_date": "2026-10-09",
       "ideal_high": {
         "reason": null,
@@ -116,6 +150,33 @@
   "history_market_context": {
     "additional_sessions": [
       {
+        "close": 449.7699890136719,
+        "high": 454.7300109863281,
+        "low": 424.0199890136719,
+        "open": 436.0,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:8c6ae9dc77151fb4e6531a2e69294dc3e8f4220c706c10e290745c64ea8d3e7e:r4:4cf0d6db7c8d1fa74df0",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-09",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:05afb6235657300f995fe5d667fd92e878dde3e5f04d88e36bb0106e023c2dca",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "004-MATURE_D4-4cf0d6db7c8d1fa74df0"
+          }
+        ],
+        "session_date": "2026-10-09"
+      },
+      {
         "close": 405.010009765625,
         "high": 445.95001220703125,
         "low": 400.20001220703125,
@@ -123,7 +184,7 @@
         "provenance": [
           {
             "class": "OUTCOME_RECORD_RETAINED",
-            "outcome_id": "outcome-subject:55afe79afd7ff9820b380416e4f96ad0442497f43d868d288f4b5258ab51381c:r2:76751246f8c643fe54aa",
+            "outcome_id": "outcome-subject:8c6ae9dc77151fb4e6531a2e69294dc3e8f4220c706c10e290745c64ea8d3e7e:r4:4cf0d6db7c8d1fa74df0",
             "price_authority": {
               "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
               "effective_as_of": "2026-10-12",
@@ -137,7 +198,7 @@
               "schema_version": "short-invest-provider-observation-reference/1",
               "success": true
             },
-            "revision_identity": "002-MATURE_D2-76751246f8c643fe54aa"
+            "revision_identity": "004-MATURE_D4-4cf0d6db7c8d1fa74df0"
           }
         ],
         "session_date": "2026-10-12"
@@ -150,7 +211,7 @@
         "provenance": [
           {
             "class": "OUTCOME_RECORD_RETAINED",
-            "outcome_id": "outcome-subject:55afe79afd7ff9820b380416e4f96ad0442497f43d868d288f4b5258ab51381c:r2:76751246f8c643fe54aa",
+            "outcome_id": "outcome-subject:8c6ae9dc77151fb4e6531a2e69294dc3e8f4220c706c10e290745c64ea8d3e7e:r4:4cf0d6db7c8d1fa74df0",
             "price_authority": {
               "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
               "effective_as_of": "2026-10-13",
@@ -164,7 +225,7 @@
               "schema_version": "short-invest-provider-observation-reference/1",
               "success": true
             },
-            "revision_identity": "002-MATURE_D2-76751246f8c643fe54aa"
+            "revision_identity": "004-MATURE_D4-4cf0d6db7c8d1fa74df0"
           }
         ],
         "session_date": "2026-10-13"
@@ -1739,7 +1800,7 @@
       ]
     }
   ],
-  "observation_count": 3,
+  "observation_count": 4,
   "observations": [
     {
       "availability": {
@@ -1947,6 +2008,200 @@
       "run_identity": 127,
       "score": 45.4,
       "source_digest": "sha256:f68e12b093076e604b9ae85430708d500c185f32c09d081b2dfb73e19feece72",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "CIEN",
+      "symbol_id": "id-75733a4349454e"
+    },
+    {
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "NEXT_ARCHITECTURE_DEEP_REVIEW",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-07",
+      "decision_reason": "SELECTED_FOR_DEEP_REVIEW",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": null,
+          "recommendation_membership": false,
+          "route": null,
+          "state": null,
+          "status": "CANONICAL_NOT_ROUTED"
+        },
+        "causal": {
+          "items": [],
+          "reason": "NO_QUALIFYING_EVIDENCE",
+          "status": "NO_QUALIFYING_EVIDENCE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": null,
+          "eligible": true,
+          "path_safety_percentile": null,
+          "queue_position": 5,
+          "routing_contract_version": "deep-review-router-v1",
+          "sector": null,
+          "selected_for_deep_review": true,
+          "severe_weakness_gated": false,
+          "stability_label": null,
+          "stability_quality_percentile": null
+        },
+        "detailed_position": 3,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.55,
+            "early_opportunity_probability": 0.4,
+            "exhaustion_probability": 0.18,
+            "giveback_probability": 0.16,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.69,
+            "mfe_ge_3_probability": 0.71,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": null,
+            "label": null,
+            "max_abs_return_5d_percent": null,
+            "max_drawdown_20d_percent": null,
+            "reason": null,
+            "residual_volatility_percent": null,
+            "status": null
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [
+            "xai",
+            "gemini",
+            "qwen",
+            "meta"
+          ],
+          "aggregate_authority_status": "AVAILABLE",
+          "causal_evidence_sufficiency": "ABSENT",
+          "continuation_thesis": "SUPPORTED",
+          "failed_or_unavailable_provider_count": 1,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "MEDIUM",
+          "provider_distributions": {
+            "causal_sufficiency_distribution": {
+              "absent_count": 3,
+              "partial_count": 0,
+              "sufficient_count": 0,
+              "unavailable_count": 0
+            },
+            "continuation_distribution": {
+              "abstain_count": 0,
+              "mixed_count": 0,
+              "supported_count": 3,
+              "weak_count": 0
+            },
+            "priced_in_distribution": {
+              "high_count": 1,
+              "low_count": 0,
+              "medium_count": 2,
+              "unknown_count": 0
+            },
+            "transmission_distribution": {
+              "high_count": 0,
+              "low_count": 0,
+              "medium_count": 0,
+              "not_applicable_count": 3,
+              "unknown_count": 0
+            }
+          },
+          "provider_status_counts": {
+            "PROVIDER_HTTP_ERROR": 1,
+            "SUCCESS": 3
+          },
+          "status": "AVAILABLE",
+          "successful_provider_count": 3,
+          "transmission_confidence": "NOT_APPLICABLE"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:e0b6847138dc236c6e587b46e1d46c98c1fed9b49cee2a74518625c8a452cd94",
+        "symbol": "CIEN"
+      },
+      "observation_id": "obs-193e5812c72a0a3b3f37bd1d",
+      "observed_at": "2026-10-07T08:46:19.400500-04:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 107,
+      "score": null,
+      "source_digest": "sha256:9b18ecbe1a91cdf11899f22bc900bb9ab3a431d65611d86b39722eb5aa8dac03",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "CIEN",
       "symbol_id": "id-75733a4349454e"

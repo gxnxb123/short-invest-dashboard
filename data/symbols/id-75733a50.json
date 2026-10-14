@@ -115,6 +115,40 @@
         "value": null
       },
       "current_recommendation": false,
+      "effective_date": "2026-10-08",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-c43375eb9feb6a6200dd0489",
+      "provenance": {
+        "run_identity": 137,
+        "source_digest": "sha256:258d48607cfceebaa9e1c7a3bd2866384a6172f81128130106079d8d20892193"
+      }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
       "effective_date": "2026-10-12",
       "ideal_high": {
         "reason": null,
@@ -150,6 +184,33 @@
   "history_market_context": {
     "additional_sessions": [
       {
+        "close": 155.30999755859375,
+        "high": 155.6300048828125,
+        "low": 151.39999389648438,
+        "open": 154.77000427246094,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:9511d36547a9768f255a8dff064abb007b8e0c4560ccb5d4ddb0d2715a33031c:r3:48c6ee187ddf53c47912",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-12",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:0715d250806c156c7f62988a8d3542d85d6879bdf585e16a15f00cb02d1fe5e0",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "003-MATURE_D3-48c6ee187ddf53c47912"
+          }
+        ],
+        "session_date": "2026-10-12"
+      },
+      {
         "close": 156.97000122070312,
         "high": 157.57000732421875,
         "low": 148.9499969482422,
@@ -157,7 +218,7 @@
         "provenance": [
           {
             "class": "OUTCOME_RECORD_RETAINED",
-            "outcome_id": "signal:10f6a45e7e0dd7a765fdd0f89ddcc217eeb26a4d2ae0c54b4fd9aab713acbb53:r1:7e781f7d0e4b6db86623",
+            "outcome_id": "outcome-subject:9511d36547a9768f255a8dff064abb007b8e0c4560ccb5d4ddb0d2715a33031c:r3:48c6ee187ddf53c47912",
             "price_authority": {
               "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
               "effective_as_of": "2026-10-13",
@@ -165,13 +226,13 @@
               "normalized_data_digest": "sha256:c74367015c87abdf71cf6b9e11ba5cd373caa9235e5d8c4daeb3c6401de1f717",
               "observed_at": null,
               "operation": "historical_daily_ohlc",
-              "provider": "YAHOO_FINANCE",
+              "provider": "YAHOO_FINANCE_BATCH",
               "raw_response_digest": null,
               "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
               "schema_version": "short-invest-provider-observation-reference/1",
               "success": true
             },
-            "revision_identity": "001-MATURE_D1-7e781f7d0e4b6db86623"
+            "revision_identity": "003-MATURE_D3-48c6ee187ddf53c47912"
           }
         ],
         "session_date": "2026-10-13"
@@ -1699,7 +1760,7 @@
       ]
     }
   ],
-  "observation_count": 4,
+  "observation_count": 5,
   "observations": [
     {
       "availability": {
@@ -2137,6 +2198,166 @@
       "run_identity": 122,
       "score": 48.8,
       "source_digest": "sha256:b6ec5b92310a9e7b4da57884cf3e910b3f4cd69cf8f1ac0367df430e3e16e787",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "P",
+      "symbol_id": "id-75733a50"
+    },
+    {
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "NEXT_ARCHITECTURE_DEEP_REVIEW",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-08",
+      "decision_reason": "SELECTED_FOR_DEEP_REVIEW",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": null,
+          "recommendation_membership": false,
+          "route": null,
+          "state": null,
+          "status": "CANONICAL_NOT_ROUTED"
+        },
+        "causal": {
+          "items": [],
+          "reason": "NO_QUALIFYING_EVIDENCE",
+          "status": "NO_QUALIFYING_EVIDENCE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": null,
+          "eligible": true,
+          "path_safety_percentile": null,
+          "queue_position": 1,
+          "routing_contract_version": "deep-review-router-v1",
+          "sector": null,
+          "selected_for_deep_review": true,
+          "severe_weakness_gated": false,
+          "stability_label": null,
+          "stability_quality_percentile": null
+        },
+        "detailed_position": 50,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.55,
+            "early_opportunity_probability": 0.45,
+            "exhaustion_probability": 0.19,
+            "giveback_probability": 0.16,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.7,
+            "mfe_ge_3_probability": 0.8,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": null,
+            "label": null,
+            "max_abs_return_5d_percent": null,
+            "max_drawdown_20d_percent": null,
+            "reason": null,
+            "residual_volatility_percent": null,
+            "status": null
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [],
+          "aggregate_authority_status": null,
+          "causal_evidence_sufficiency": null,
+          "continuation_thesis": "NOT_EVALUATED",
+          "failed_or_unavailable_provider_count": null,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "UNKNOWN",
+          "provider_distributions": {},
+          "provider_status_counts": {},
+          "status": "NOT_EVALUATED",
+          "successful_provider_count": null,
+          "transmission_confidence": "UNKNOWN"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:fca4101706794f47a617908c126f5857d5e5b4d9b04eaee92d65a77694d2dedc",
+        "symbol": "P"
+      },
+      "observation_id": "obs-c43375eb9feb6a6200dd0489",
+      "observed_at": "2026-10-08T08:47:04.447496-04:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 137,
+      "score": null,
+      "source_digest": "sha256:258d48607cfceebaa9e1c7a3bd2866384a6172f81128130106079d8d20892193",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "P",
       "symbol_id": "id-75733a50"
