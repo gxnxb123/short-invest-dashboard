@@ -209,12 +209,46 @@
         "run_identity": 136,
         "source_digest": "sha256:e46c9ec564c70cc1f491664c105f23de03ded5c7c920481b57742521a4670b08"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-15",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-3f904a916d686572e51b74e9",
+      "provenance": {
+        "run_identity": 146,
+        "source_digest": "sha256:07fedb55c957d298cc5e9926adb9aaa16c21fd926b02f7c5dda8f2a62853e2b3"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-09-15",
-  "generated_at": "2026-10-08T08:19:45.195312+02:00",
+  "generated_at": "2026-10-15T08:21:21.816190+02:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -225,7 +259,7 @@
         "provenance": [
           {
             "class": "OUTCOME_RECORD_RETAINED",
-            "outcome_id": "outcome-subject:b927f22d1f8aa911f8457a2a01c9d6aa691428677ae52bc54693b30bc2887e28:r3:4a3073ca440f8a8848f9",
+            "outcome_id": "outcome-subject:b927f22d1f8aa911f8457a2a01c9d6aa691428677ae52bc54693b30bc2887e28:r4:858b5631257d33de2721",
             "price_authority": {
               "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
               "effective_as_of": "2026-10-09",
@@ -239,7 +273,7 @@
               "schema_version": "short-invest-provider-observation-reference/1",
               "success": true
             },
-            "revision_identity": "003-MATURE_D3-4a3073ca440f8a8848f9"
+            "revision_identity": "004-MATURE_D4-858b5631257d33de2721"
           }
         ],
         "session_date": "2026-10-09"
@@ -252,7 +286,7 @@
         "provenance": [
           {
             "class": "OUTCOME_RECORD_RETAINED",
-            "outcome_id": "outcome-subject:b927f22d1f8aa911f8457a2a01c9d6aa691428677ae52bc54693b30bc2887e28:r3:4a3073ca440f8a8848f9",
+            "outcome_id": "outcome-subject:b927f22d1f8aa911f8457a2a01c9d6aa691428677ae52bc54693b30bc2887e28:r4:858b5631257d33de2721",
             "price_authority": {
               "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
               "effective_as_of": "2026-10-12",
@@ -266,10 +300,37 @@
               "schema_version": "short-invest-provider-observation-reference/1",
               "success": true
             },
-            "revision_identity": "003-MATURE_D3-4a3073ca440f8a8848f9"
+            "revision_identity": "004-MATURE_D4-858b5631257d33de2721"
           }
         ],
         "session_date": "2026-10-12"
+      },
+      {
+        "close": 349.1000061035156,
+        "high": 353.8999938964844,
+        "low": 347.70001220703125,
+        "open": 350.29998779296875,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:b927f22d1f8aa911f8457a2a01c9d6aa691428677ae52bc54693b30bc2887e28:r4:858b5631257d33de2721",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-13",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:1ff4590187dab7e836c282ec20fa67f78aff7fa72dca2cb789943d480e293362",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "004-MATURE_D4-858b5631257d33de2721"
+          }
+        ],
+        "session_date": "2026-10-13"
       }
     ],
     "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
@@ -287,7 +348,7 @@
   },
   "latest_actionable_observation": null,
   "latest_canonical_state": "NEXT_ARCHITECTURE_DEEP_REVIEW",
-  "latest_retained_observation": "2026-10-08",
+  "latest_retained_observation": "2026-10-15",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -306,7 +367,7 @@
     "status": "UNAVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 6,
+  "observation_count": 7,
   "observations": [
     {
       "availability": {
@@ -1014,6 +1075,198 @@
       "run_identity": 136,
       "score": null,
       "source_digest": "sha256:e46c9ec564c70cc1f491664c105f23de03ded5c7c920481b57742521a4670b08",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "MTX.DE",
+      "symbol_id": "id-64653a4d54582e4445"
+    },
+    {
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "NEXT_ARCHITECTURE_DEEP_REVIEW",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-15",
+      "decision_reason": "SELECTED_FOR_DEEP_REVIEW",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": null,
+          "recommendation_membership": false,
+          "route": null,
+          "state": null,
+          "status": "CANONICAL_NOT_ROUTED"
+        },
+        "causal": {
+          "items": [],
+          "reason": "NO_QUALIFYING_EVIDENCE",
+          "status": "NO_QUALIFYING_EVIDENCE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 85.36036036036036,
+          "eligible": true,
+          "path_safety_percentile": 74.66216216216216,
+          "queue_position": 4,
+          "routing_contract_version": "deep-review-router-v3",
+          "sector": "Industrials",
+          "selected_for_deep_review": true,
+          "severe_weakness_gated": false,
+          "stability_label": "STABLE",
+          "stability_quality_percentile": 73.64864864864865
+        },
+        "detailed_position": 26,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.29,
+            "early_opportunity_probability": 0.23,
+            "exhaustion_probability": 0.29,
+            "giveback_probability": 0.21,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.32,
+            "mfe_ge_3_probability": 0.71,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 0.0,
+            "label": "STABLE",
+            "max_abs_return_5d_percent": 2.492117312330655,
+            "max_drawdown_20d_percent": 8.248796954889952,
+            "reason": null,
+            "residual_volatility_percent": 1.3926673334216857,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [
+            "xai",
+            "gemini",
+            "qwen"
+          ],
+          "aggregate_authority_status": "AVAILABLE",
+          "causal_evidence_sufficiency": "ABSENT",
+          "continuation_thesis": "MIXED",
+          "failed_or_unavailable_provider_count": 0,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "MEDIUM",
+          "provider_distributions": {
+            "causal_sufficiency_distribution": {
+              "absent_count": 3,
+              "partial_count": 0,
+              "sufficient_count": 0,
+              "unavailable_count": 0
+            },
+            "continuation_distribution": {
+              "abstain_count": 0,
+              "mixed_count": 0,
+              "supported_count": 3,
+              "weak_count": 0
+            },
+            "priced_in_distribution": {
+              "high_count": 0,
+              "low_count": 0,
+              "medium_count": 3,
+              "unknown_count": 0
+            },
+            "transmission_distribution": {
+              "high_count": 0,
+              "low_count": 0,
+              "medium_count": 0,
+              "not_applicable_count": 3,
+              "unknown_count": 0
+            }
+          },
+          "provider_status_counts": {
+            "SUCCESS": 3
+          },
+          "status": "AVAILABLE",
+          "successful_provider_count": 3,
+          "transmission_confidence": "NOT_APPLICABLE"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:7f36c5f3f4e01942b69decd5c2bea83f7dc4e81c7336a8d52d05cbdb9ff1026c",
+        "symbol": "MTX.DE"
+      },
+      "observation_id": "obs-3f904a916d686572e51b74e9",
+      "observed_at": "2026-10-15T08:21:21.816190+02:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 146,
+      "score": null,
+      "source_digest": "sha256:07fedb55c957d298cc5e9926adb9aaa16c21fd926b02f7c5dda8f2a62853e2b3",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "MTX.DE",
       "symbol_id": "id-64653a4d54582e4445"

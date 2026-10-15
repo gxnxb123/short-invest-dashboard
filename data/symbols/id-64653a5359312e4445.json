@@ -39,12 +39,80 @@
         "run_identity": 118,
         "source_digest": "sha256:46dadc4ca994ba91092b8314b5de221eba1bbb2dad7acbc75864014b8244eb86"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-14",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-0fcde5d247658f4a8b58331e",
+      "provenance": {
+        "run_identity": 144,
+        "source_digest": "sha256:f7d5b3cfff44561cab360a71e8e83127e588fcdc9369af11fb7e6bcc0dbda142"
+      }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-15",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 95.93
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 95.42
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 95.34
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 97.85
+      },
+      "observation_id": "obs-7b82a7e462d8d761e4052b4a",
+      "provenance": {
+        "run_identity": 146,
+        "source_digest": "sha256:07fedb55c957d298cc5e9926adb9aaa16c21fd926b02f7c5dda8f2a62853e2b3"
+      }
     }
   ],
   "events": [],
-  "first_actionable_observation": null,
+  "first_actionable_observation": "2026-10-15",
   "first_retained_observation": "2026-09-24",
-  "generated_at": "2026-09-24T08:19:52.370165+02:00",
+  "generated_at": "2026-10-15T08:21:21.816190+02:00",
   "identity": {
     "company": {
       "reason": null,
@@ -55,9 +123,9 @@
     "symbol": "SY1.DE",
     "symbol_id": "id-64653a5359312e4445"
   },
-  "latest_actionable_observation": null,
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-09-24",
+  "latest_actionable_observation": "2026-10-15",
+  "latest_canonical_state": "WAIT_FOR_PRICE",
+  "latest_retained_observation": "2026-10-15",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -75,8 +143,110 @@
     "session_authority": null,
     "status": "UNAVAILABLE"
   },
-  "multi_llm_reviews": [],
-  "observation_count": 1,
+  "multi_llm_reviews": [
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 74.4,
+        "mean_rank_among_selectors": 1.6,
+        "provider_confidences": {
+          "deepseek": 80,
+          "gemini": 90,
+          "meta": 62,
+          "qwen": 65,
+          "xai": 75
+        },
+        "provider_ranks": {
+          "deepseek": 1,
+          "gemini": 2,
+          "meta": 2,
+          "qwen": 2,
+          "xai": 1
+        },
+        "short_invest_rank": 3,
+        "successful_provider_count": 5,
+        "symbol": "SY1.DE",
+        "vote_count": 5,
+        "vote_fraction": 1.0
+      },
+      "date": "2026-10-15",
+      "disagreement": [],
+      "observation_id": "obs-7b82a7e462d8d761e4052b4a",
+      "packet_digest": "a0cce7161e756bd7385985071169a068a15804bb9b1e0e3901c832d773097c6f",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": 1,
+          "reason": "Givaudan Q3 beat lifted peer Symrise 3%+ to near 52-week high; ongoing buyback and Singapore expansion add support ahead of Oct 28 results.",
+          "risk": "Q3 earnings miss could reverse recent momentum near highs.",
+          "score": 75,
+          "selected": true
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 2,
+          "reason": "Symrise is supported by an active share buyback program, having repurchased over 4.5 million shares since February 2026. This consistent corporate demand provides a price floor. Technically, the stock is in a medium-term rising trend channel, with analysts maintaining a high 'Smart Score' of 10 and a consensus buy rating based on robust organic growth guidance.",
+          "risk": "High valuation multiples and leverage above target range could limit major acquisition potential and lead to price corrections if growth targets miss.",
+          "score": 90,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": 1,
+          "reason": "Broke out to a fresh 12-month high (€96.60 intraday, highest since June 2025) after Givaudan's strong Q3 sales lifted the flavours/fragrances complex; the stock has been in an uptrend since May (+30%) with buybacks adding support. Clear relative strength within the DAX.",
+          "risk": "The breakout is already extended after a ~3% single-day jump on the Givaudan read-through; a cooling of sector sentiment or profit-taking at the highs could trigger a quick pullback.",
+          "score": 80,
+          "selected": true
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": 2,
+          "reason": "Active €400M share buyback program ends October 31, creating ~2 weeks of mechanical buying demand. Stock gained 3.09% on Oct 13 and trades near its 52-week high of €97. H1 2026 showed accelerating growth momentum with improving cash flow, supporting the technical setup.",
+          "risk": "Buyback concludes in two weeks, removing the demand floor; if broader sentiment softens, the stock lacks a near-term catalyst to sustain momentum above €97.",
+          "score": 65,
+          "selected": true
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": 2,
+          "reason": "Disclosed 145,400-share buyback Oct 5-9 with pre-market +1.07% to EUR94.26; JPMorgan Overweight EUR100 expecting 4.8% organic ahead of Oct 28 report; technical Buy signal since Oct 2.",
+          "risk": "Oct 28 sales update disappoints on organic growth or FX, reversing buyback support.",
+          "score": 62,
+          "selected": true
+        }
+      ],
+      "review_date": "2026-10-15",
+      "review_run_identity": 146,
+      "reviewed_at": "2026-10-15T06:25:59.208454+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-de-2026-10-15.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    }
+  ],
+  "observation_count": 3,
   "observations": [
     {
       "availability": {
@@ -180,6 +350,412 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "SY1.DE",
       "symbol_id": "id-64653a5359312e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "deepseek",
+          "rank": 1
+        },
+        {
+          "provider": "qwen",
+          "rank": 5
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-14",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-0fcde5d247658f4a8b58331e",
+      "observed_at": "2026-10-14T08:22:06.473220+02:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 144,
+      "score": null,
+      "source_digest": "sha256:f7d5b3cfff44561cab360a71e8e83127e588fcdc9369af11fb7e6bcc0dbda142",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "SY1.DE",
+      "symbol_id": "id-64653a5359312e4445"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "WAIT_FOR_PRICE",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-10-15",
+      "decision_reason": "WAIT_FOR_PRICE",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": "EXECUTION_EVIDENCE_COMPLETE",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "a7899186142c048d54e6f5b5191774247e32023acd60a962cc1024b1159bd183",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 356589.0,
+          "observation_asof": "2026-10-15T08:20:06.777612+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 429856.0,
+          "relative_volume": 0.8295545484999628,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "de",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 74.4,
+          "mean_rank_among_selectors": 1.6,
+          "provider_confidences": {
+            "deepseek": 80,
+            "gemini": 90,
+            "meta": 62,
+            "qwen": 65,
+            "xai": 75
+          },
+          "provider_ranks": {
+            "deepseek": 1,
+            "gemini": 2,
+            "meta": 2,
+            "qwen": 2,
+            "xai": 1
+          },
+          "short_invest_rank": 3,
+          "successful_provider_count": 5,
+          "symbol": "SY1.DE",
+          "vote_count": 5,
+          "vote_fraction": 1.0
+        },
+        "disagreement": [],
+        "packet_digest": "a0cce7161e756bd7385985071169a068a15804bb9b1e0e3901c832d773097c6f",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": 1,
+            "reason": "Givaudan Q3 beat lifted peer Symrise 3%+ to near 52-week high; ongoing buyback and Singapore expansion add support ahead of Oct 28 results.",
+            "risk": "Q3 earnings miss could reverse recent momentum near highs.",
+            "score": 75,
+            "selected": true
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 2,
+            "reason": "Symrise is supported by an active share buyback program, having repurchased over 4.5 million shares since February 2026. This consistent corporate demand provides a price floor. Technically, the stock is in a medium-term rising trend channel, with analysts maintaining a high 'Smart Score' of 10 and a consensus buy rating based on robust organic growth guidance.",
+            "risk": "High valuation multiples and leverage above target range could limit major acquisition potential and lead to price corrections if growth targets miss.",
+            "score": 90,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 1,
+            "reason": "Broke out to a fresh 12-month high (€96.60 intraday, highest since June 2025) after Givaudan's strong Q3 sales lifted the flavours/fragrances complex; the stock has been in an uptrend since May (+30%) with buybacks adding support. Clear relative strength within the DAX.",
+            "risk": "The breakout is already extended after a ~3% single-day jump on the Givaudan read-through; a cooling of sector sentiment or profit-taking at the highs could trigger a quick pullback.",
+            "score": 80,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": 2,
+            "reason": "Active €400M share buyback program ends October 31, creating ~2 weeks of mechanical buying demand. Stock gained 3.09% on Oct 13 and trades near its 52-week high of €97. H1 2026 showed accelerating growth momentum with improving cash flow, supporting the technical setup.",
+            "risk": "Buyback concludes in two weeks, removing the demand floor; if broader sentiment softens, the stock lacks a near-term catalyst to sustain momentum above €97.",
+            "score": 65,
+            "selected": true
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 2,
+            "reason": "Disclosed 145,400-share buyback Oct 5-9 with pre-market +1.07% to EUR94.26; JPMorgan Overweight EUR100 expecting 4.8% organic ahead of Oct 28 report; technical Buy signal since Oct 2.",
+            "risk": "Oct 28 sales update disappoints on organic growth or FX, reversing buyback support.",
+            "score": 62,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-10-15",
+        "review_run_identity": 146,
+        "reviewed_at": "2026-10-15T06:25:59.208454+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-de-2026-10-15.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": "TECHNICAL_LONG",
+          "recommendation_membership": true,
+          "route": "WAIT_FOR_PRICE",
+          "state": null,
+          "status": "CANONICAL_ROUTED"
+        },
+        "causal": {
+          "items": [
+            {
+              "direction": "POSITIVE",
+              "headline": "Givaudan Stock Surges, Symrise Opens Scent Center in Singapore",
+              "scope": "COMPANY",
+              "transmission": "DIRECT_HIGH"
+            }
+          ],
+          "reason": null,
+          "status": "AVAILABLE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 83.78378378378379,
+          "eligible": true,
+          "path_safety_percentile": 90.70945945945945,
+          "queue_position": 3,
+          "routing_contract_version": "deep-review-router-v3",
+          "sector": "Basic Materials",
+          "selected_for_deep_review": true,
+          "severe_weakness_gated": false,
+          "stability_label": "EXTENDED",
+          "stability_quality_percentile": 64.1891891891892
+        },
+        "detailed_position": 70,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.38,
+            "early_opportunity_probability": 0.27,
+            "exhaustion_probability": 0.18,
+            "giveback_probability": 0.17,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.62,
+            "mfe_ge_3_probability": 0.64,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 5.387485291355154,
+            "label": "EXTENDED",
+            "max_abs_return_5d_percent": 3.0881376661465065,
+            "max_drawdown_20d_percent": 3.3369013332428143,
+            "reason": null,
+            "residual_volatility_percent": 1.178935826067036,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [
+            "xai",
+            "gemini",
+            "qwen"
+          ],
+          "aggregate_authority_status": "AVAILABLE",
+          "causal_evidence_sufficiency": "PARTIAL",
+          "continuation_thesis": "SUPPORTED",
+          "failed_or_unavailable_provider_count": 0,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "MEDIUM",
+          "provider_distributions": {
+            "causal_sufficiency_distribution": {
+              "absent_count": 0,
+              "partial_count": 3,
+              "sufficient_count": 0,
+              "unavailable_count": 0
+            },
+            "continuation_distribution": {
+              "abstain_count": 0,
+              "mixed_count": 0,
+              "supported_count": 3,
+              "weak_count": 0
+            },
+            "priced_in_distribution": {
+              "high_count": 0,
+              "low_count": 0,
+              "medium_count": 3,
+              "unknown_count": 0
+            },
+            "transmission_distribution": {
+              "high_count": 1,
+              "low_count": 0,
+              "medium_count": 2,
+              "not_applicable_count": 0,
+              "unknown_count": 0
+            }
+          },
+          "provider_status_counts": {
+            "SUCCESS": 3
+          },
+          "status": "AVAILABLE",
+          "successful_provider_count": 3,
+          "transmission_confidence": "MEDIUM"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:fd3d63899cecf8ed5c75f5af197d7b7ce0a4b0c00fd3ad8e57f1dc7cf79c5d53",
+        "symbol": "SY1.DE"
+      },
+      "observation_id": "obs-7b82a7e462d8d761e4052b4a",
+      "observed_at": "2026-10-15T08:21:21.816190+02:00",
+      "presentation_group": "WAIT_FOR_PRICE",
+      "price": {
+        "currency": "EUR",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 96.98
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 95.93
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 95.42
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 95.34
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 97.85
+        }
+      },
+      "rank": 3,
+      "risk": "中",
+      "run_identity": 146,
+      "score": 44.9,
+      "source_digest": "sha256:07fedb55c957d298cc5e9926adb9aaa16c21fd926b02f7c5dda8f2a62853e2b3",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "SY1.DE",
+      "symbol_id": "id-64653a5359312e4445"
     }
   ],
   "outcomes": {
@@ -188,11 +764,45 @@
     "observations": [],
     "status": "UNAVAILABLE"
   },
-  "price_observations": [],
+  "price_observations": [
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "EUR",
+      "date": "2026-10-15",
+      "horizon": "D0",
+      "observation_id": "obs-7b82a7e462d8d761e4052b4a",
+      "provenance": {
+        "run_identity": 146,
+        "source_digest": "sha256:07fedb55c957d298cc5e9926adb9aaa16c21fd926b02f7c5dda8f2a62853e2b3"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-10-15T08:21:21.816190+02:00",
+      "value": 96.98
+    }
+  ],
   "schema_version": "short-invest-dashboard-symbol/6",
   "trajectory": {
     "continuous_market_series": false,
-    "points": [],
-    "status": "UNAVAILABLE"
+    "points": [
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "EUR",
+        "date": "2026-10-15",
+        "horizon": "D0",
+        "observation_id": "obs-7b82a7e462d8d761e4052b4a",
+        "provenance": {
+          "run_identity": 146,
+          "source_digest": "sha256:07fedb55c957d298cc5e9926adb9aaa16c21fd926b02f7c5dda8f2a62853e2b3"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-10-15T08:21:21.816190+02:00",
+        "value": 96.98
+      }
+    ],
+    "status": "AVAILABLE"
   }
 }
