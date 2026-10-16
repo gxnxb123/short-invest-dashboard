@@ -141,12 +141,46 @@
         "run_identity": 146,
         "source_digest": "sha256:07fedb55c957d298cc5e9926adb9aaa16c21fd926b02f7c5dda8f2a62853e2b3"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-16",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 72.97
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 71.71
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 71.49
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 78.13
+      },
+      "observation_id": "obs-377be3b988e3e92b440a9287",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-10-06",
-  "generated_at": "2026-10-15T08:21:21.816190+02:00",
+  "generated_at": "2026-10-16T08:22:07.333524+02:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -283,6 +317,33 @@
           }
         ],
         "session_date": "2026-10-13"
+      },
+      {
+        "close": 72.19999694824219,
+        "high": 73.19999694824219,
+        "low": 70.5999984741211,
+        "open": 71.5,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:75c756690bc0ba32595a8ac5c55dbbacfe0be04e39c71a6f49b12924f1a6652f:r5:43891b47dc5dbedef66a",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-14",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:dd9b63ae05bf6f5759b0e7566250b106096c7aa2f4cbcd7a918d032b14f7dac9",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "005-MATURE_D5-43891b47dc5dbedef66a"
+          }
+        ],
+        "session_date": "2026-10-14"
       }
     ],
     "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
@@ -291,8 +352,8 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "UI_FIELD_NOT_AUTHORITATIVE",
-      "value": null
+      "status": "KNOWN",
+      "value": "Redcare Pharmacy N.V.         A"
     },
     "market": "de",
     "symbol": "RDC.DE",
@@ -300,7 +361,7 @@
   },
   "latest_actionable_observation": null,
   "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-10-15",
+  "latest_retained_observation": "2026-10-16",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -319,7 +380,7 @@
     "status": "UNAVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 4,
+  "observation_count": 5,
   "observations": [
     {
       "availability": {
@@ -1091,6 +1152,198 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "RDC.DE",
       "symbol_id": "id-64653a5244432e4445"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Redcare Pharmacy N.V.         A"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-10-16",
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": "EXECUTION_EVIDENCE_COMPLETE",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "41589b90f996990f3cd72804dff4d6d6339dae16d14862853a0d29f5659f0a60",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 76664.0,
+          "observation_asof": "2026-10-16T08:19:43.222127+02:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 49933.0,
+          "relative_volume": 1.5353373520517493,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "de",
+      "multi_llm": null,
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": "NO_LONG_THESIS",
+          "recommendation_membership": true,
+          "route": "BACKGROUND_MONITORING",
+          "state": null,
+          "status": "CANONICAL_ROUTED"
+        },
+        "causal": {
+          "items": [],
+          "reason": "NO_QUALIFYING_EVIDENCE",
+          "status": "NO_QUALIFYING_EVIDENCE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 89.18918918918918,
+          "eligible": true,
+          "path_safety_percentile": 36.14864864864865,
+          "queue_position": null,
+          "routing_contract_version": "deep-review-router-v3",
+          "sector": "Healthcare",
+          "selected_for_deep_review": false,
+          "severe_weakness_gated": false,
+          "stability_label": "EXTENDED",
+          "stability_quality_percentile": 34.7972972972973
+        },
+        "detailed_position": 42,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.39,
+            "early_opportunity_probability": 0.26,
+            "exhaustion_probability": 0.27,
+            "giveback_probability": 0.32,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.55,
+            "mfe_ge_3_probability": 0.81,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 8.448743859205997,
+            "label": "EXTENDED",
+            "max_abs_return_5d_percent": 2.569442325168181,
+            "max_drawdown_20d_percent": 9.965874473389505,
+            "reason": null,
+            "residual_volatility_percent": 4.946825804916079,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [],
+          "aggregate_authority_status": null,
+          "causal_evidence_sufficiency": null,
+          "continuation_thesis": "NOT_EVALUATED",
+          "failed_or_unavailable_provider_count": null,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "UNKNOWN",
+          "provider_distributions": {},
+          "provider_status_counts": {},
+          "status": "NOT_EVALUATED",
+          "successful_provider_count": null,
+          "transmission_confidence": "UNKNOWN"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:f959f331b026c35ebe945cb7ffe48012f6961f68dcc2193272f0c946a002c869",
+        "symbol": "RDC.DE"
+      },
+      "observation_id": "obs-377be3b988e3e92b440a9287",
+      "observed_at": "2026-10-16T08:22:07.333524+02:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "breakout": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 76.65
+        },
+        "currency": "EUR",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 73.3
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 72.97
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 71.71
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 71.49
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 78.13
+        }
+      },
+      "rank": 1,
+      "risk": "中",
+      "run_identity": 148,
+      "score": 46.6,
+      "sector_negative_risk": {
+        "evidence": [],
+        "reason_code": null,
+        "status": "INACTIVE"
+      },
+      "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "RDC.DE",
+      "symbol_id": "id-64653a5244432e4445"
     }
   ],
   "outcomes": {
@@ -1115,6 +1368,22 @@
       "status": "AVAILABLE",
       "timestamp": "2026-10-15T08:21:21.816190+02:00",
       "value": 72.2
+    },
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "EUR",
+      "date": "2026-10-16",
+      "horizon": "D0",
+      "observation_id": "obs-377be3b988e3e92b440a9287",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-10-16T08:22:07.333524+02:00",
+      "value": 73.3
     }
   ],
   "schema_version": "short-invest-dashboard-symbol/6",
@@ -1136,6 +1405,22 @@
         "status": "AVAILABLE",
         "timestamp": "2026-10-15T08:21:21.816190+02:00",
         "value": 72.2
+      },
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "EUR",
+        "date": "2026-10-16",
+        "horizon": "D0",
+        "observation_id": "obs-377be3b988e3e92b440a9287",
+        "provenance": {
+          "run_identity": 148,
+          "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-10-16T08:22:07.333524+02:00",
+        "value": 73.3
       }
     ],
     "status": "AVAILABLE"

@@ -107,25 +107,92 @@
         "run_identity": 144,
         "source_digest": "sha256:f7d5b3cfff44561cab360a71e8e83127e588fcdc9369af11fb7e6bcc0dbda142"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-16",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 271.27
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 269.86
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 269.62
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 278.85
+      },
+      "observation_id": "obs-97bdbc7d02953d020a76bf30",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      }
     }
   ],
   "events": [],
-  "first_actionable_observation": null,
+  "first_actionable_observation": "2026-10-16",
   "first_retained_observation": "2026-09-16",
-  "generated_at": "2026-10-14T08:22:06.473220+02:00",
+  "generated_at": "2026-10-16T08:22:07.333524+02:00",
+  "history_market_context": {
+    "additional_sessions": [
+      {
+        "close": 268.3999938964844,
+        "high": 269.0,
+        "low": 263.20001220703125,
+        "open": 268.79998779296875,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:5269df8a0655d6b3ae743420894d28d68afc8269fda0485f24f2d941239d91af:r2:3bbe280c8fed5c3a34c2",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-14",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:2514bf9c3c8145f7cbea7893dca18add17f40d1d4754c085ec60701b59d805f8",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "002-MATURE_D2-3bbe280c8fed5c3a34c2"
+          }
+        ],
+        "session_date": "2026-10-14"
+      }
+    ],
+    "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
+    "investment_semantic_input": false
+  },
   "identity": {
     "company": {
       "reason": null,
-      "status": "UI_FIELD_NOT_AUTHORITATIVE",
-      "value": null
+      "status": "KNOWN",
+      "value": "HANNOVER RUECK SE NA O.N."
     },
     "market": "de",
     "symbol": "HNR1.DE",
     "symbol_id": "id-64653a484e52312e4445"
   },
-  "latest_actionable_observation": null,
-  "latest_canonical_state": "NEXT_ARCHITECTURE_DEEP_REVIEW",
-  "latest_retained_observation": "2026-10-14",
+  "latest_actionable_observation": "2026-10-16",
+  "latest_canonical_state": "WAIT_FOR_PRICE",
+  "latest_retained_observation": "2026-10-16",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -143,8 +210,113 @@
     "session_authority": null,
     "status": "UNAVAILABLE"
   },
-  "multi_llm_reviews": [],
-  "observation_count": 3,
+  "multi_llm_reviews": [
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 69.0,
+        "mean_rank_among_selectors": 1.5,
+        "provider_confidences": {
+          "deepseek": 58,
+          "gemini": 80,
+          "meta": 68,
+          "qwen": 70
+        },
+        "provider_ranks": {
+          "deepseek": 2,
+          "gemini": 2,
+          "meta": 1,
+          "qwen": 1
+        },
+        "short_invest_rank": 8,
+        "successful_provider_count": 5,
+        "symbol": "HNR1.DE",
+        "vote_count": 4,
+        "vote_fraction": 0.8
+      },
+      "date": "2026-10-16",
+      "disagreement": [
+        {
+          "symbol": "HNR1.DE",
+          "type": "LOW_RANK_HIGH_CONSENSUS"
+        }
+      ],
+      "observation_id": "obs-97bdbc7d02953d020a76bf30",
+      "packet_digest": "0bbcbab85304b1c8505b0c5371b511d65a875b68dd374234031421786efc74fd",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 2,
+          "reason": "Hannover Re benefits from a favorable 'hard' reinsurance market, recently confirming strong 2026 net income guidance of €2.7 billion. Technical indicators remain bullish with a strong uptrend and low beta (0.40), making it a high-conviction defensive play amid current geopolitical uncertainty and the sector's positive sensitivity to interest rates.",
+          "risk": "Exposure to significant natural catastrophe claims or large loss events before the year-end could potentially impact the reaffirmed full-year profit targets.",
+          "score": 80,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": 2,
+          "reason": "Clear technical breakout above €265 with a push toward €277, supported by Jefferies' Buy/€360 view and an InvestingPro fair value near €320 versus ~€270. Momentum and an undemanding valuation support continuation over a 2-5 day window.",
+          "risk": "AlphaValue/Baader downgraded the stock to Reduce on Oct 13 and it is short-term overbought after the sharp run, leaving it exposed to profit-taking.",
+          "score": 58,
+          "selected": true
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": 1,
+          "reason": "Fitch upgrade to positive outlook (Oct 9) provides fresh fundamental catalyst; 8-day winning streak demonstrates strong technical momentum; trading below analyst average target €280-292 with upside potential to 52-wk high €281.",
+          "risk": "Extended after 8 consecutive gains; profit-taking likely near resistance at €281, with limited margin of safety after rapid appreciation.",
+          "score": 70,
+          "selected": true
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": 1,
+          "reason": "Fitch raised outlook to Positive with AA- affirmed on 254% Solvency II ratio, 21% ROE and 83.2% combined ratio. Defensive with Nov 9 results outside window.",
+          "risk": "Softer reinsurance pricing, large-loss event or broad market selloff could reverse recent strength.",
+          "score": 68,
+          "selected": true
+        }
+      ],
+      "review_date": "2026-10-16",
+      "review_run_identity": 148,
+      "reviewed_at": "2026-10-16T06:25:40.627199+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-de-2026-10-16.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    }
+  ],
+  "observation_count": 4,
   "observations": [
     {
       "availability": {
@@ -628,6 +800,299 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "HNR1.DE",
       "symbol_id": "id-64653a484e52312e4445"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "WAIT_FOR_PRICE",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "HANNOVER RUECK SE NA O.N."
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-10-16",
+      "decision_reason": "WAIT_FOR_PRICE",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": "EXECUTION_EVIDENCE_COMPLETE",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "e31729ecb4b38c97c376d81e9e7c0d9a094bd37f3082950270b604344ceba79a",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 224934.0,
+          "observation_asof": "2026-10-16T08:19:43.222127+02:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 93146.0,
+          "relative_volume": 2.41485410001503,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "de",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 69.0,
+          "mean_rank_among_selectors": 1.5,
+          "provider_confidences": {
+            "deepseek": 58,
+            "gemini": 80,
+            "meta": 68,
+            "qwen": 70
+          },
+          "provider_ranks": {
+            "deepseek": 2,
+            "gemini": 2,
+            "meta": 1,
+            "qwen": 1
+          },
+          "short_invest_rank": 8,
+          "successful_provider_count": 5,
+          "symbol": "HNR1.DE",
+          "vote_count": 4,
+          "vote_fraction": 0.8
+        },
+        "disagreement": [
+          {
+            "symbol": "HNR1.DE",
+            "type": "LOW_RANK_HIGH_CONSENSUS"
+          }
+        ],
+        "packet_digest": "0bbcbab85304b1c8505b0c5371b511d65a875b68dd374234031421786efc74fd",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 2,
+            "reason": "Hannover Re benefits from a favorable 'hard' reinsurance market, recently confirming strong 2026 net income guidance of €2.7 billion. Technical indicators remain bullish with a strong uptrend and low beta (0.40), making it a high-conviction defensive play amid current geopolitical uncertainty and the sector's positive sensitivity to interest rates.",
+            "risk": "Exposure to significant natural catastrophe claims or large loss events before the year-end could potentially impact the reaffirmed full-year profit targets.",
+            "score": 80,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 2,
+            "reason": "Clear technical breakout above €265 with a push toward €277, supported by Jefferies' Buy/€360 view and an InvestingPro fair value near €320 versus ~€270. Momentum and an undemanding valuation support continuation over a 2-5 day window.",
+            "risk": "AlphaValue/Baader downgraded the stock to Reduce on Oct 13 and it is short-term overbought after the sharp run, leaving it exposed to profit-taking.",
+            "score": 58,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": 1,
+            "reason": "Fitch upgrade to positive outlook (Oct 9) provides fresh fundamental catalyst; 8-day winning streak demonstrates strong technical momentum; trading below analyst average target €280-292 with upside potential to 52-wk high €281.",
+            "risk": "Extended after 8 consecutive gains; profit-taking likely near resistance at €281, with limited margin of safety after rapid appreciation.",
+            "score": 70,
+            "selected": true
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 1,
+            "reason": "Fitch raised outlook to Positive with AA- affirmed on 254% Solvency II ratio, 21% ROE and 83.2% combined ratio. Defensive with Nov 9 results outside window.",
+            "risk": "Softer reinsurance pricing, large-loss event or broad market selloff could reverse recent strength.",
+            "score": 68,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-10-16",
+        "review_run_identity": 148,
+        "reviewed_at": "2026-10-16T06:25:40.627199+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-de-2026-10-16.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": "TECHNICAL_LONG",
+          "recommendation_membership": true,
+          "route": "WAIT_FOR_PRICE",
+          "state": null,
+          "status": "CANONICAL_ROUTED"
+        },
+        "causal": {
+          "items": [],
+          "reason": "NO_QUALIFYING_EVIDENCE",
+          "status": "NO_QUALIFYING_EVIDENCE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 76.8018018018018,
+          "eligible": true,
+          "path_safety_percentile": 92.9054054054054,
+          "queue_position": null,
+          "routing_contract_version": "deep-review-router-v3",
+          "sector": "Financial Services",
+          "selected_for_deep_review": false,
+          "severe_weakness_gated": false,
+          "stability_label": "EXTENDED",
+          "stability_quality_percentile": 76.01351351351352
+        },
+        "detailed_position": 74,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.35,
+            "early_opportunity_probability": 0.18,
+            "exhaustion_probability": 0.2,
+            "giveback_probability": 0.14,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.57,
+            "mfe_ge_3_probability": 0.58,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 5.2062860828868684,
+            "label": "EXTENDED",
+            "max_abs_return_5d_percent": 1.5648331976680696,
+            "max_drawdown_20d_percent": 3.1660219877382962,
+            "reason": null,
+            "residual_volatility_percent": 1.0625495519858241,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [],
+          "aggregate_authority_status": null,
+          "causal_evidence_sufficiency": null,
+          "continuation_thesis": "NOT_EVALUATED",
+          "failed_or_unavailable_provider_count": null,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "UNKNOWN",
+          "provider_distributions": {},
+          "provider_status_counts": {},
+          "status": "NOT_EVALUATED",
+          "successful_provider_count": null,
+          "transmission_confidence": "UNKNOWN"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:1ba157236fb8dff2df981422a77dc65b1b408e0a14d32f9f3c9667efa14ea3d6",
+        "symbol": "HNR1.DE"
+      },
+      "observation_id": "obs-97bdbc7d02953d020a76bf30",
+      "observed_at": "2026-10-16T08:22:07.333524+02:00",
+      "presentation_group": "WAIT_FOR_PRICE",
+      "price": {
+        "breakout": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 277.2
+        },
+        "currency": "EUR",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 272.0
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 271.27
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 269.86
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 269.62
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 278.85
+        }
+      },
+      "rank": 8,
+      "risk": "中",
+      "run_identity": 148,
+      "score": 42.6,
+      "sector_negative_risk": {
+        "evidence": [],
+        "reason_code": null,
+        "status": "INACTIVE"
+      },
+      "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "HNR1.DE",
+      "symbol_id": "id-64653a484e52312e4445"
     }
   ],
   "outcomes": {
@@ -636,11 +1101,45 @@
     "observations": [],
     "status": "UNAVAILABLE"
   },
-  "price_observations": [],
+  "price_observations": [
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "EUR",
+      "date": "2026-10-16",
+      "horizon": "D0",
+      "observation_id": "obs-97bdbc7d02953d020a76bf30",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-10-16T08:22:07.333524+02:00",
+      "value": 272.0
+    }
+  ],
   "schema_version": "short-invest-dashboard-symbol/6",
   "trajectory": {
     "continuous_market_series": false,
-    "points": [],
-    "status": "UNAVAILABLE"
+    "points": [
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "EUR",
+        "date": "2026-10-16",
+        "horizon": "D0",
+        "observation_id": "obs-97bdbc7d02953d020a76bf30",
+        "provenance": {
+          "run_identity": 148,
+          "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-10-16T08:22:07.333524+02:00",
+        "value": 272.0
+      }
+    ],
+    "status": "AVAILABLE"
   }
 }

@@ -175,12 +175,46 @@
         "run_identity": 144,
         "source_digest": "sha256:f7d5b3cfff44561cab360a71e8e83127e588fcdc9369af11fb7e6bcc0dbda142"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-16",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 69.72
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 68.92
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 68.79
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 74.13
+      },
+      "observation_id": "obs-9f11c8522a347084179fb18c",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-10-06",
-  "generated_at": "2026-10-14T08:22:06.473220+02:00",
+  "generated_at": "2026-10-16T08:22:07.333524+02:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -317,6 +351,33 @@
           }
         ],
         "session_date": "2026-10-13"
+      },
+      {
+        "close": 70.80000305175781,
+        "high": 72.4000015258789,
+        "low": 70.5999984741211,
+        "open": 71.19999694824219,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:4d684528cfdedb396f5bfd76fb7ac63851336a1d49cbbc6f158168b2420ca326:r5:56971a9d65a320b99987",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-14",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:d5af4adcc4d5599b43b54192bd22bd1725746150a0317a02a3b4358500cec4b8",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "005-MATURE_D5-56971a9d65a320b99987"
+          }
+        ],
+        "session_date": "2026-10-14"
       }
     ],
     "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
@@ -325,16 +386,16 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "UI_FIELD_NOT_AUTHORITATIVE",
-      "value": null
+      "status": "KNOWN",
+      "value": "Nemetschek SE                 I"
     },
     "market": "de",
     "symbol": "NEM.DE",
     "symbol_id": "id-64653a4e454d2e4445"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "NEXT_ARCHITECTURE_DEEP_REVIEW",
-  "latest_retained_observation": "2026-10-14",
+  "latest_canonical_state": "BACKGROUND_MONITORING",
+  "latest_retained_observation": "2026-10-16",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -353,7 +414,7 @@
     "status": "UNAVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 5,
+  "observation_count": 6,
   "observations": [
     {
       "availability": {
@@ -1318,6 +1379,250 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "NEM.DE",
       "symbol_id": "id-64653a4e454d2e4445"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Nemetschek SE                 I"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-10-16",
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": "EXECUTION_EVIDENCE_COMPLETE",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "2e2461ce0144d625a385d5e1a3b1a87b08a016ce99a2c760efc6538ab23f05a4",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 249575.0,
+          "observation_asof": "2026-10-16T08:19:43.222127+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 291309.0,
+          "relative_volume": 0.8567363177931338,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "de",
+      "multi_llm": null,
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": "NO_LONG_THESIS",
+          "recommendation_membership": true,
+          "route": "BACKGROUND_MONITORING",
+          "state": null,
+          "status": "CANONICAL_ROUTED"
+        },
+        "causal": {
+          "items": [
+            {
+              "direction": "NEGATIVE",
+              "headline": "Global chipmakers sink as inflation data fuels rate-hike fears, AI rout",
+              "scope": "SECTOR",
+              "transmission": "DIRECT_MEDIUM"
+            },
+            {
+              "direction": "NEGATIVE",
+              "headline": "Tech Stocks Slump as AI Rout Intensifies",
+              "scope": "SECTOR",
+              "transmission": "DIRECT_MEDIUM"
+            },
+            {
+              "direction": "NEGATIVE",
+              "headline": "Global Tech Stocks Slump as AI Rout Intensifies",
+              "scope": "SECTOR",
+              "transmission": "DIRECT_MEDIUM"
+            }
+          ],
+          "reason": null,
+          "status": "AVAILABLE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 79.72972972972973,
+          "eligible": true,
+          "path_safety_percentile": 81.25,
+          "queue_position": null,
+          "routing_contract_version": "deep-review-router-v3",
+          "sector": "Technology",
+          "selected_for_deep_review": false,
+          "severe_weakness_gated": false,
+          "stability_label": "EXTENDED",
+          "stability_quality_percentile": 47.972972972972975
+        },
+        "detailed_position": 70,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.43,
+            "early_opportunity_probability": 0.32,
+            "exhaustion_probability": 0.19,
+            "giveback_probability": 0.18,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.71,
+            "mfe_ge_3_probability": 0.78,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 12.010580979015062,
+            "label": "EXTENDED",
+            "max_abs_return_5d_percent": 4.902726110317368,
+            "max_drawdown_20d_percent": 3.042436353349814,
+            "reason": null,
+            "residual_volatility_percent": 1.6366502580241895,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [],
+          "aggregate_authority_status": null,
+          "causal_evidence_sufficiency": null,
+          "continuation_thesis": "NOT_EVALUATED",
+          "failed_or_unavailable_provider_count": null,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "UNKNOWN",
+          "provider_distributions": {},
+          "provider_status_counts": {},
+          "status": "NOT_EVALUATED",
+          "successful_provider_count": null,
+          "transmission_confidence": "UNKNOWN"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:db032b8732c49a516a3948588811104520cb7b7a6d68090d4e17af900f5cd871",
+        "symbol": "NEM.DE"
+      },
+      "observation_id": "obs-9f11c8522a347084179fb18c",
+      "observed_at": "2026-10-16T08:22:07.333524+02:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "breakout": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 73.2
+        },
+        "currency": "EUR",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 72.15
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 69.72
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 68.92
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 68.79
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 74.13
+        }
+      },
+      "rank": 9,
+      "risk": "中",
+      "run_identity": 148,
+      "score": 42.4,
+      "sector_negative_risk": {
+        "evidence": [
+          {
+            "affected_scope_identity": "Technology",
+            "headline": "Global chipmakers sink as inflation data fuels rate-hike fears, AI rout",
+            "jev_relation": "MATERIAL",
+            "publication_timestamp": "2026-10-15T08:22:42+00:00",
+            "source": "Investing.com",
+            "transmission": "DIRECT_MEDIUM"
+          },
+          {
+            "affected_scope_identity": "Technology",
+            "headline": "Tech Stocks Slump as AI Rout Intensifies",
+            "jev_relation": "MATERIAL",
+            "publication_timestamp": "2026-10-15T09:50:26+00:00",
+            "source": "Barrons.com",
+            "transmission": "DIRECT_MEDIUM"
+          },
+          {
+            "affected_scope_identity": "Technology",
+            "headline": "Global Tech Stocks Slump as AI Rout Intensifies",
+            "jev_relation": "MATERIAL",
+            "publication_timestamp": "2026-10-15T09:05:00+00:00",
+            "source": "The Wall Street Journal",
+            "transmission": "DIRECT_MEDIUM"
+          },
+          {
+            "affected_scope_identity": "Technology",
+            "headline": "Stock Market Today, Oct. 14: Oracle Tumbles on Hotter CPI Data Lifting Treasury Yields",
+            "jev_relation": "MATERIAL",
+            "publication_timestamp": "2026-10-14T21:12:46+00:00",
+            "source": "Motley Fool",
+            "transmission": "DIRECT_MEDIUM"
+          }
+        ],
+        "reason_code": "SECTOR_NEGATIVE_RISK",
+        "status": "ACTIVE"
+      },
+      "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "NEM.DE",
+      "symbol_id": "id-64653a4e454d2e4445"
     }
   ],
   "outcomes": {
@@ -1326,11 +1631,45 @@
     "observations": [],
     "status": "UNAVAILABLE"
   },
-  "price_observations": [],
+  "price_observations": [
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "EUR",
+      "date": "2026-10-16",
+      "horizon": "D0",
+      "observation_id": "obs-9f11c8522a347084179fb18c",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-10-16T08:22:07.333524+02:00",
+      "value": 72.15
+    }
+  ],
   "schema_version": "short-invest-dashboard-symbol/6",
   "trajectory": {
     "continuous_market_series": false,
-    "points": [],
-    "status": "UNAVAILABLE"
+    "points": [
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "EUR",
+        "date": "2026-10-16",
+        "horizon": "D0",
+        "observation_id": "obs-9f11c8522a347084179fb18c",
+        "provenance": {
+          "run_identity": 148,
+          "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-10-16T08:22:07.333524+02:00",
+        "value": 72.15
+      }
+    ],
+    "status": "AVAILABLE"
   }
 }

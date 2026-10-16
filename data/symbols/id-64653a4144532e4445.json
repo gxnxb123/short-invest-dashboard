@@ -209,12 +209,46 @@
         "run_identity": 144,
         "source_digest": "sha256:f7d5b3cfff44561cab360a71e8e83127e588fcdc9369af11fb7e6bcc0dbda142"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-16",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 155.03
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 154.03
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 153.87
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 159.61
+      },
+      "observation_id": "obs-74110fb768f9f8523f3500f2",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-09-18",
-  "generated_at": "2026-10-14T08:22:06.473220+02:00",
+  "generated_at": "2026-10-16T08:22:07.333524+02:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -225,7 +259,7 @@
         "provenance": [
           {
             "class": "OUTCOME_RECORD_RETAINED",
-            "outcome_id": "outcome-subject:79512bcb91cc5f73054e0701272c3b38f5de87e62573249ddf50210c52e4a264:r2:3acb87de3aa7bc8eafd0",
+            "outcome_id": "outcome-subject:79512bcb91cc5f73054e0701272c3b38f5de87e62573249ddf50210c52e4a264:r3:bc38097c02c65a700130",
             "price_authority": {
               "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
               "effective_as_of": "2026-10-13",
@@ -239,10 +273,37 @@
               "schema_version": "short-invest-provider-observation-reference/1",
               "success": true
             },
-            "revision_identity": "002-MATURE_D2-3acb87de3aa7bc8eafd0"
+            "revision_identity": "003-MATURE_D3-bc38097c02c65a700130"
           }
         ],
         "session_date": "2026-10-13"
+      },
+      {
+        "close": 154.39999389648438,
+        "high": 155.85000610351562,
+        "low": 152.85000610351562,
+        "open": 153.8000030517578,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:79512bcb91cc5f73054e0701272c3b38f5de87e62573249ddf50210c52e4a264:r3:bc38097c02c65a700130",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-14",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:01749ab810b05971146492e006c34d54af018e4223809f6fd4bdf6e4c35c4a42",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "003-MATURE_D3-bc38097c02c65a700130"
+          }
+        ],
+        "session_date": "2026-10-14"
       }
     ],
     "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
@@ -251,16 +312,16 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "UI_FIELD_NOT_AUTHORITATIVE",
-      "value": null
+      "status": "KNOWN",
+      "value": "adidas AG                     N"
     },
     "market": "de",
     "symbol": "ADS.DE",
     "symbol_id": "id-64653a4144532e4445"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "NEXT_ARCHITECTURE_DEEP_REVIEW",
-  "latest_retained_observation": "2026-10-14",
+  "latest_canonical_state": "BACKGROUND_MONITORING",
+  "latest_retained_observation": "2026-10-16",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -503,8 +564,107 @@
     },
     "status": "AVAILABLE"
   },
-  "multi_llm_reviews": [],
-  "observation_count": 6,
+  "multi_llm_reviews": [
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 75.0,
+        "mean_rank_among_selectors": 3.0,
+        "provider_confidences": {
+          "gemini": 75
+        },
+        "provider_ranks": {
+          "gemini": 3
+        },
+        "short_invest_rank": 6,
+        "successful_provider_count": 5,
+        "symbol": "ADS.DE",
+        "vote_count": 1,
+        "vote_fraction": 0.2
+      },
+      "date": "2026-10-16",
+      "disagreement": [
+        {
+          "symbol": "ADS.DE",
+          "type": "SINGLE_MODEL_SELECTION"
+        }
+      ],
+      "observation_id": "obs-74110fb768f9f8523f3500f2",
+      "packet_digest": "0bbcbab85304b1c8505b0c5371b511d65a875b68dd374234031421786efc74fd",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 3,
+          "reason": "Adidas is riding a wave of strong brand momentum, reporting 14% currency-neutral revenue growth in H1 2026. Frequent high-profile product drops, including recent CLOT and Bad Bunny collaborations, maintain consumer buzz. Technically, the stock is stabilizing ahead of its October 29 earnings, supported by a 27% average analyst upside potential.",
+          "risk": "Slowdown in discretionary consumer spending and potential margin pressure from high marketing costs or inventory management during the turnaround phase.",
+          "score": 75,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        }
+      ],
+      "review_date": "2026-10-16",
+      "review_run_identity": 148,
+      "reviewed_at": "2026-10-16T06:25:40.627199+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-de-2026-10-16.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    }
+  ],
+  "observation_count": 7,
   "observations": [
     {
       "availability": {
@@ -1308,6 +1468,347 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "ADS.DE",
       "symbol_id": "id-64653a4144532e4445"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "adidas AG                     N"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-10-16",
+      "decision_reason": "SECTOR_NEGATIVE_RISK",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": "EXECUTION_EVIDENCE_COMPLETE",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "cbcdbad4a53d7a5b12f7bce8f1f5c8cf7de26699845b19f54fbce1899b2238a3",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 692956.0,
+          "observation_asof": "2026-10-16T08:19:43.222127+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 541046.0,
+          "relative_volume": 1.2807709510836416,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "de",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 75.0,
+          "mean_rank_among_selectors": 3.0,
+          "provider_confidences": {
+            "gemini": 75
+          },
+          "provider_ranks": {
+            "gemini": 3
+          },
+          "short_invest_rank": 6,
+          "successful_provider_count": 5,
+          "symbol": "ADS.DE",
+          "vote_count": 1,
+          "vote_fraction": 0.2
+        },
+        "disagreement": [
+          {
+            "symbol": "ADS.DE",
+            "type": "SINGLE_MODEL_SELECTION"
+          }
+        ],
+        "packet_digest": "0bbcbab85304b1c8505b0c5371b511d65a875b68dd374234031421786efc74fd",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 3,
+            "reason": "Adidas is riding a wave of strong brand momentum, reporting 14% currency-neutral revenue growth in H1 2026. Frequent high-profile product drops, including recent CLOT and Bad Bunny collaborations, maintain consumer buzz. Technically, the stock is stabilizing ahead of its October 29 earnings, supported by a 27% average analyst upside potential.",
+            "risk": "Slowdown in discretionary consumer spending and potential margin pressure from high marketing costs or inventory management during the turnaround phase.",
+            "score": 75,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          }
+        ],
+        "review_date": "2026-10-16",
+        "review_run_identity": 148,
+        "reviewed_at": "2026-10-16T06:25:40.627199+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-de-2026-10-16.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": "TECHNICAL_LONG",
+          "recommendation_membership": true,
+          "route": "BACKGROUND_MONITORING",
+          "state": null,
+          "status": "CANONICAL_ROUTED"
+        },
+        "causal": {
+          "items": [
+            {
+              "direction": "NEGATIVE",
+              "headline": "New Strong Sell Stocks for October 14th",
+              "scope": "COMPANY",
+              "transmission": "DIRECT_HIGH"
+            },
+            {
+              "direction": "NEGATIVE",
+              "headline": "New Strong Sell Stocks for October 14th",
+              "scope": "SECTOR",
+              "transmission": "DIRECT_HIGH"
+            }
+          ],
+          "reason": null,
+          "status": "AVAILABLE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 92.34234234234235,
+          "eligible": true,
+          "path_safety_percentile": 75.16891891891892,
+          "queue_position": 4,
+          "routing_contract_version": "deep-review-router-v3",
+          "sector": "Consumer Cyclical",
+          "selected_for_deep_review": true,
+          "severe_weakness_gated": false,
+          "stability_label": "EXTENDED",
+          "stability_quality_percentile": 62.16216216216216
+        },
+        "detailed_position": 46,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.47,
+            "early_opportunity_probability": 0.3,
+            "exhaustion_probability": 0.16,
+            "giveback_probability": 0.17,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.7,
+            "mfe_ge_3_probability": 0.68,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 7.6627150250392795,
+            "label": "EXTENDED",
+            "max_abs_return_5d_percent": 2.4398353927597816,
+            "max_drawdown_20d_percent": 3.7538064407464664,
+            "reason": null,
+            "residual_volatility_percent": 1.3667141348191851,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [
+            "xai",
+            "gemini",
+            "qwen"
+          ],
+          "aggregate_authority_status": "AVAILABLE",
+          "causal_evidence_sufficiency": "PARTIAL",
+          "continuation_thesis": "MIXED",
+          "failed_or_unavailable_provider_count": 0,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "MEDIUM",
+          "provider_distributions": {
+            "causal_sufficiency_distribution": {
+              "absent_count": 0,
+              "partial_count": 3,
+              "sufficient_count": 0,
+              "unavailable_count": 0
+            },
+            "continuation_distribution": {
+              "abstain_count": 0,
+              "mixed_count": 0,
+              "supported_count": 3,
+              "weak_count": 0
+            },
+            "priced_in_distribution": {
+              "high_count": 0,
+              "low_count": 1,
+              "medium_count": 2,
+              "unknown_count": 0
+            },
+            "transmission_distribution": {
+              "high_count": 0,
+              "low_count": 2,
+              "medium_count": 1,
+              "not_applicable_count": 0,
+              "unknown_count": 0
+            }
+          },
+          "provider_status_counts": {
+            "SUCCESS": 3
+          },
+          "status": "AVAILABLE",
+          "successful_provider_count": 3,
+          "transmission_confidence": "LOW"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:bf771e6dae717d603dda63e91264a38af39c8771425a951e74c630485ee91493",
+        "symbol": "ADS.DE"
+      },
+      "observation_id": "obs-74110fb768f9f8523f3500f2",
+      "observed_at": "2026-10-16T08:22:07.333524+02:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "breakout": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 158.45
+        },
+        "currency": "EUR",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 157.65
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 155.03
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 154.03
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 153.87
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 159.61
+        }
+      },
+      "rank": 6,
+      "risk": "中",
+      "run_identity": 148,
+      "score": 43.3,
+      "sector_negative_risk": {
+        "evidence": [
+          {
+            "affected_scope_identity": "Consumer Cyclical",
+            "headline": "New Strong Sell Stocks for October 14th",
+            "jev_relation": "DIRECT",
+            "publication_timestamp": "2026-10-14T08:02:00+00:00",
+            "source": "Zacks",
+            "transmission": "DIRECT_HIGH"
+          }
+        ],
+        "reason_code": "SECTOR_NEGATIVE_RISK",
+        "status": "ACTIVE"
+      },
+      "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "ADS.DE",
+      "symbol_id": "id-64653a4144532e4445"
     }
   ],
   "outcomes": {
@@ -1316,11 +1817,45 @@
     "observations": [],
     "status": "UNAVAILABLE"
   },
-  "price_observations": [],
+  "price_observations": [
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "EUR",
+      "date": "2026-10-16",
+      "horizon": "D0",
+      "observation_id": "obs-74110fb768f9f8523f3500f2",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-10-16T08:22:07.333524+02:00",
+      "value": 157.65
+    }
+  ],
   "schema_version": "short-invest-dashboard-symbol/6",
   "trajectory": {
     "continuous_market_series": false,
-    "points": [],
-    "status": "UNAVAILABLE"
+    "points": [
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "EUR",
+        "date": "2026-10-16",
+        "horizon": "D0",
+        "observation_id": "obs-74110fb768f9f8523f3500f2",
+        "provenance": {
+          "run_identity": 148,
+          "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-10-16T08:22:07.333524+02:00",
+        "value": 157.65
+      }
+    ],
+    "status": "AVAILABLE"
   }
 }

@@ -141,12 +141,46 @@
         "run_identity": 140,
         "source_digest": "sha256:bd4daa067bf8bf8c3e7caaf248710c29b02ddea0174c556c793bf46e6aa52413"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-16",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 56.8
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 56.5
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 56.46
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 59.24
+      },
+      "observation_id": "obs-99e5d9084937cfe8b4b93b81",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      }
     }
   ],
   "events": [],
-  "first_actionable_observation": null,
+  "first_actionable_observation": "2026-10-16",
   "first_retained_observation": "2026-08-26",
-  "generated_at": "2026-10-12T08:18:53.104336+02:00",
+  "generated_at": "2026-10-16T08:22:07.333524+02:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -283,6 +317,33 @@
           }
         ],
         "session_date": "2026-10-13"
+      },
+      {
+        "close": 56.779998779296875,
+        "high": 57.040000915527344,
+        "low": 56.439998626708984,
+        "open": 56.91999816894531,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:0902f69c80f304eaaf34112fc0ec0af627606a69955ef504d8d49a1a364dd232:r3:9de750f9eb1906333fb6",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-14",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:5b6601f1d0dd37c22f67312fa74aaf8df76a4f380a9f7156fd8f8fa96ae6d73d",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "003-MATURE_D3-9de750f9eb1906333fb6"
+          }
+        ],
+        "session_date": "2026-10-14"
       }
     ],
     "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
@@ -291,16 +352,16 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "UI_FIELD_NOT_AUTHORITATIVE",
-      "value": null
+      "status": "KNOWN",
+      "value": "DHL AG                        N"
     },
     "market": "de",
     "symbol": "DHL.DE",
     "symbol_id": "id-64653a44484c2e4445"
   },
-  "latest_actionable_observation": null,
-  "latest_canonical_state": "NEXT_ARCHITECTURE_DEEP_REVIEW",
-  "latest_retained_observation": "2026-10-12",
+  "latest_actionable_observation": "2026-10-16",
+  "latest_canonical_state": "WAIT_FOR_PRICE",
+  "latest_retained_observation": "2026-10-16",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -318,8 +379,113 @@
     "session_authority": null,
     "status": "UNAVAILABLE"
   },
-  "multi_llm_reviews": [],
-  "observation_count": 4,
+  "multi_llm_reviews": [
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 67.25,
+        "mean_rank_among_selectors": 2.25,
+        "provider_confidences": {
+          "deepseek": 72,
+          "gemini": 70,
+          "meta": 62,
+          "xai": 65
+        },
+        "provider_ranks": {
+          "deepseek": 1,
+          "gemini": 4,
+          "meta": 2,
+          "xai": 2
+        },
+        "short_invest_rank": 5,
+        "successful_provider_count": 5,
+        "symbol": "DHL.DE",
+        "vote_count": 4,
+        "vote_fraction": 0.8
+      },
+      "date": "2026-10-16",
+      "disagreement": [
+        {
+          "symbol": "DHL.DE",
+          "type": "LOW_RANK_HIGH_CONSENSUS"
+        }
+      ],
+      "observation_id": "obs-99e5d9084937cfe8b4b93b81",
+      "packet_digest": "0bbcbab85304b1c8505b0c5371b511d65a875b68dd374234031421786efc74fd",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "SUCCESS",
+          "provider": "xai",
+          "rank": 2,
+          "reason": "RBC initiates Outperform with €67 target citing Express volume recovery and earnings upside potential.",
+          "risk": "Broader logistics cyclicality or postal rate outcome uncertainty.",
+          "score": 65,
+          "selected": true
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 4,
+          "reason": "DHL Group is executing a large-scale share buyback program and recently announced a €400 million investment to capitalize on 'geographic tailwinds' in Central and Eastern Europe. Improved global trade forecasts and a recovery in German exports provide a supportive macro backdrop for its high-volume logistics business.",
+          "risk": "Exposure to volatile energy prices and trade disruptions in the Middle East could increase operational costs and dampen near-term profitability.",
+          "score": 70,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": 1,
+          "reason": "RBC initiated coverage at Outperform with a €67 target (~18% above ~€57), citing accelerating DHL Express momentum and FY28/30 EBIT estimates 4-8% above consensus. With Q3 results not due until Nov 5, event risk inside the horizon is low while the re-rating catalyst is fresh.",
+          "risk": "The initiation-driven pop may already be priced after the note, and a DAX stalled at its 100-day line could cap follow-through; any Express volume softness would unwind the thesis quickly.",
+          "score": 72,
+          "selected": true
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": 2,
+          "reason": "Ongoing buyback plus reported 20.35% postage hike scope for 2027-28 adds pricing lever. Q2 revenue +12.8% to EUR22.37bn and EBIT +30% support momentum.",
+          "risk": "Weak global freight rates and macro slowdown could offset domestic pricing support.",
+          "score": 62,
+          "selected": true
+        }
+      ],
+      "review_date": "2026-10-16",
+      "review_run_identity": 148,
+      "reviewed_at": "2026-10-16T06:25:40.627199+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-de-2026-10-16.json",
+      "successful_provider_count": 5,
+      "successful_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
+    }
+  ],
+  "observation_count": 5,
   "observations": [
     {
       "availability": {
@@ -887,6 +1053,338 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "DHL.DE",
       "symbol_id": "id-64653a44484c2e4445"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "WAIT_FOR_PRICE",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "DHL AG                        N"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-10-16",
+      "decision_reason": "WAIT_FOR_PRICE",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": "EXECUTION_EVIDENCE_COMPLETE",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "e954abb01e36290f8042ada936e8019a4988f93c6034fca0206d26e2d0150e2c",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 1895453.0,
+          "observation_asof": "2026-10-16T08:19:43.222127+02:00",
+          "passed": true,
+          "reason": null,
+          "reference_volume": 1142843.0,
+          "relative_volume": 1.6585418994560057,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "de",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 67.25,
+          "mean_rank_among_selectors": 2.25,
+          "provider_confidences": {
+            "deepseek": 72,
+            "gemini": 70,
+            "meta": 62,
+            "xai": 65
+          },
+          "provider_ranks": {
+            "deepseek": 1,
+            "gemini": 4,
+            "meta": 2,
+            "xai": 2
+          },
+          "short_invest_rank": 5,
+          "successful_provider_count": 5,
+          "symbol": "DHL.DE",
+          "vote_count": 4,
+          "vote_fraction": 0.8
+        },
+        "disagreement": [
+          {
+            "symbol": "DHL.DE",
+            "type": "LOW_RANK_HIGH_CONSENSUS"
+          }
+        ],
+        "packet_digest": "0bbcbab85304b1c8505b0c5371b511d65a875b68dd374234031421786efc74fd",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "SUCCESS",
+            "provider": "xai",
+            "rank": 2,
+            "reason": "RBC initiates Outperform with €67 target citing Express volume recovery and earnings upside potential.",
+            "risk": "Broader logistics cyclicality or postal rate outcome uncertainty.",
+            "score": 65,
+            "selected": true
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 4,
+            "reason": "DHL Group is executing a large-scale share buyback program and recently announced a €400 million investment to capitalize on 'geographic tailwinds' in Central and Eastern Europe. Improved global trade forecasts and a recovery in German exports provide a supportive macro backdrop for its high-volume logistics business.",
+            "risk": "Exposure to volatile energy prices and trade disruptions in the Middle East could increase operational costs and dampen near-term profitability.",
+            "score": 70,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 1,
+            "reason": "RBC initiated coverage at Outperform with a €67 target (~18% above ~€57), citing accelerating DHL Express momentum and FY28/30 EBIT estimates 4-8% above consensus. With Q3 results not due until Nov 5, event risk inside the horizon is low while the re-rating catalyst is fresh.",
+            "risk": "The initiation-driven pop may already be priced after the note, and a DAX stalled at its 100-day line could cap follow-through; any Express volume softness would unwind the thesis quickly.",
+            "score": 72,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 2,
+            "reason": "Ongoing buyback plus reported 20.35% postage hike scope for 2027-28 adds pricing lever. Q2 revenue +12.8% to EUR22.37bn and EBIT +30% support momentum.",
+            "risk": "Weak global freight rates and macro slowdown could offset domestic pricing support.",
+            "score": 62,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-10-16",
+        "review_run_identity": 148,
+        "reviewed_at": "2026-10-16T06:25:40.627199+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-de-2026-10-16.json",
+        "successful_provider_count": 5,
+        "successful_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": "TECHNICAL_LONG",
+          "recommendation_membership": true,
+          "route": "WAIT_FOR_PRICE",
+          "state": null,
+          "status": "CANONICAL_ROUTED"
+        },
+        "causal": {
+          "items": [
+            {
+              "direction": "POSITIVE",
+              "headline": "RBC starts bullish DHL coverage on Express growth, earnings upside",
+              "scope": "COMPANY",
+              "transmission": "DIRECT_HIGH"
+            }
+          ],
+          "reason": null,
+          "status": "AVAILABLE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 72.29729729729729,
+          "eligible": true,
+          "path_safety_percentile": 80.74324324324324,
+          "queue_position": 8,
+          "routing_contract_version": "deep-review-router-v3",
+          "sector": "Industrials",
+          "selected_for_deep_review": true,
+          "severe_weakness_gated": false,
+          "stability_label": "STABLE",
+          "stability_quality_percentile": 75.33783783783784
+        },
+        "detailed_position": 67,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.21,
+            "early_opportunity_probability": 0.16,
+            "exhaustion_probability": 0.3,
+            "giveback_probability": 0.17,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.43,
+            "mfe_ge_3_probability": 0.55,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 1.990003220463188,
+            "label": "STABLE",
+            "max_abs_return_5d_percent": 1.9293800505770342,
+            "max_drawdown_20d_percent": 6.27772154935019,
+            "reason": null,
+            "residual_volatility_percent": 0.9638825763199341,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [
+            "xai",
+            "gemini",
+            "qwen"
+          ],
+          "aggregate_authority_status": "AVAILABLE",
+          "causal_evidence_sufficiency": "SUFFICIENT",
+          "continuation_thesis": "SUPPORTED",
+          "failed_or_unavailable_provider_count": 0,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "MEDIUM",
+          "provider_distributions": {
+            "causal_sufficiency_distribution": {
+              "absent_count": 0,
+              "partial_count": 1,
+              "sufficient_count": 2,
+              "unavailable_count": 0
+            },
+            "continuation_distribution": {
+              "abstain_count": 0,
+              "mixed_count": 0,
+              "supported_count": 3,
+              "weak_count": 0
+            },
+            "priced_in_distribution": {
+              "high_count": 0,
+              "low_count": 1,
+              "medium_count": 2,
+              "unknown_count": 0
+            },
+            "transmission_distribution": {
+              "high_count": 2,
+              "low_count": 0,
+              "medium_count": 1,
+              "not_applicable_count": 0,
+              "unknown_count": 0
+            }
+          },
+          "provider_status_counts": {
+            "SUCCESS": 3
+          },
+          "status": "AVAILABLE",
+          "successful_provider_count": 3,
+          "transmission_confidence": "HIGH"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:356d70d3c9ae184b2182899aef64857a65e775fb4fd52e1fd68705ee516a5e03",
+        "symbol": "DHL.DE"
+      },
+      "observation_id": "obs-99e5d9084937cfe8b4b93b81",
+      "observed_at": "2026-10-16T08:22:07.333524+02:00",
+      "presentation_group": "WAIT_FOR_PRICE",
+      "price": {
+        "breakout": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 58.9
+        },
+        "currency": "EUR",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 57.7
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 56.8
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 56.5
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 56.46
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 59.24
+        }
+      },
+      "rank": 5,
+      "risk": "中",
+      "run_identity": 148,
+      "score": 43.7,
+      "sector_negative_risk": {
+        "evidence": [],
+        "reason_code": null,
+        "status": "INACTIVE"
+      },
+      "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "DHL.DE",
+      "symbol_id": "id-64653a44484c2e4445"
     }
   ],
   "outcomes": {
@@ -895,11 +1393,45 @@
     "observations": [],
     "status": "UNAVAILABLE"
   },
-  "price_observations": [],
+  "price_observations": [
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "EUR",
+      "date": "2026-10-16",
+      "horizon": "D0",
+      "observation_id": "obs-99e5d9084937cfe8b4b93b81",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-10-16T08:22:07.333524+02:00",
+      "value": 57.7
+    }
+  ],
   "schema_version": "short-invest-dashboard-symbol/6",
   "trajectory": {
     "continuous_market_series": false,
-    "points": [],
-    "status": "UNAVAILABLE"
+    "points": [
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "EUR",
+        "date": "2026-10-16",
+        "horizon": "D0",
+        "observation_id": "obs-99e5d9084937cfe8b4b93b81",
+        "provenance": {
+          "run_identity": 148,
+          "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-10-16T08:22:07.333524+02:00",
+        "value": 57.7
+      }
+    ],
+    "status": "AVAILABLE"
   }
 }

@@ -141,6 +141,40 @@
         "run_identity": 120,
         "source_digest": "sha256:41918a198b928dafbafa7e034f37b5812486a9ec4a4ccfd59fc0f1f9afdbe29d"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-16",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 17.35
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 17.25
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 17.24
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 17.89
+      },
+      "observation_id": "obs-be55df4a00846d38dc486dbb",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      }
     }
   ],
   "events": [
@@ -164,12 +198,12 @@
   ],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-09-04",
-  "generated_at": "2026-09-25T08:19:28.890943+02:00",
+  "generated_at": "2026-10-16T08:22:07.333524+02:00",
   "identity": {
     "company": {
       "reason": null,
-      "status": "UI_FIELD_NOT_AUTHORITATIVE",
-      "value": null
+      "status": "KNOWN",
+      "value": "E.ON SE                       N"
     },
     "market": "de",
     "symbol": "EOAN.DE",
@@ -177,7 +211,7 @@
   },
   "latest_actionable_observation": null,
   "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-09-25",
+  "latest_retained_observation": "2026-10-16",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -621,7 +655,7 @@
     "status": "AVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 4,
+  "observation_count": 5,
   "observations": [
     {
       "availability": {
@@ -1011,6 +1045,198 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "EOAN.DE",
       "symbol_id": "id-64653a454f414e2e4445"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "E.ON SE                       N"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-10-16",
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [],
+        "state": "EXECUTION_EVIDENCE_COMPLETE",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "990b45a5b4d7ba6b0a40364e4d2bc266eb16482e186d80e790dde2c8253b85af",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 5846628.0,
+          "observation_asof": "2026-10-16T08:19:43.222127+02:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 4097053.0,
+          "relative_volume": 1.4270325524224363,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "de",
+      "multi_llm": null,
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": "NO_LONG_THESIS",
+          "recommendation_membership": true,
+          "route": "BACKGROUND_MONITORING",
+          "state": null,
+          "status": "CANONICAL_ROUTED"
+        },
+        "causal": {
+          "items": [],
+          "reason": "NO_QUALIFYING_EVIDENCE",
+          "status": "NO_QUALIFYING_EVIDENCE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 56.081081081081074,
+          "eligible": true,
+          "path_safety_percentile": 62.33108108108108,
+          "queue_position": null,
+          "routing_contract_version": "deep-review-router-v3",
+          "sector": "Utilities",
+          "selected_for_deep_review": false,
+          "severe_weakness_gated": false,
+          "stability_label": "STABLE",
+          "stability_quality_percentile": 76.6891891891892
+        },
+        "detailed_position": 68,
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.19,
+            "early_opportunity_probability": 0.16,
+            "exhaustion_probability": 0.33,
+            "giveback_probability": 0.21,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.32,
+            "mfe_ge_3_probability": 0.64,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 2.4750988532812768,
+            "label": "STABLE",
+            "max_abs_return_5d_percent": 1.6787318201516577,
+            "max_drawdown_20d_percent": 5.682139243642627,
+            "reason": null,
+            "residual_volatility_percent": 0.8644595475066803,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [],
+          "aggregate_authority_status": null,
+          "causal_evidence_sufficiency": null,
+          "continuation_thesis": "NOT_EVALUATED",
+          "failed_or_unavailable_provider_count": null,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "UNKNOWN",
+          "provider_distributions": {},
+          "provider_status_counts": {},
+          "status": "NOT_EVALUATED",
+          "successful_provider_count": null,
+          "transmission_confidence": "UNKNOWN"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:2af2809f7f4c9503620b0e0e28379cafb3863c91e09e07cbdba0994781173936",
+        "symbol": "EOAN.DE"
+      },
+      "observation_id": "obs-be55df4a00846d38dc486dbb",
+      "observed_at": "2026-10-16T08:22:07.333524+02:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "breakout": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 17.77
+        },
+        "currency": "EUR",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 17.545
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 17.35
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 17.25
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 17.24
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 17.89
+        }
+      },
+      "rank": 3,
+      "risk": "中",
+      "run_identity": 148,
+      "score": 45.5,
+      "sector_negative_risk": {
+        "evidence": [],
+        "reason_code": null,
+        "status": "INACTIVE"
+      },
+      "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "EOAN.DE",
+      "symbol_id": "id-64653a454f414e2e4445"
     }
   ],
   "outcomes": {
@@ -1019,11 +1245,45 @@
     "observations": [],
     "status": "UNAVAILABLE"
   },
-  "price_observations": [],
+  "price_observations": [
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "EUR",
+      "date": "2026-10-16",
+      "horizon": "D0",
+      "observation_id": "obs-be55df4a00846d38dc486dbb",
+      "provenance": {
+        "run_identity": 148,
+        "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-10-16T08:22:07.333524+02:00",
+      "value": 17.545
+    }
+  ],
   "schema_version": "short-invest-dashboard-symbol/6",
   "trajectory": {
     "continuous_market_series": false,
-    "points": [],
-    "status": "UNAVAILABLE"
+    "points": [
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "EUR",
+        "date": "2026-10-16",
+        "horizon": "D0",
+        "observation_id": "obs-be55df4a00846d38dc486dbb",
+        "provenance": {
+          "run_identity": 148,
+          "source_digest": "sha256:238bbc687f6784fa29d29ce2ec08b260ed2b75671f473308a6fb3dc7844ead33"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-10-16T08:22:07.333524+02:00",
+        "value": 17.545
+      }
+    ],
+    "status": "AVAILABLE"
   }
 }
