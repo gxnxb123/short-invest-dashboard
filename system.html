@@ -1,1 +1,37 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Short Invest · System</title><link rel="stylesheet" href="styles.css?v=web009a"><link rel="stylesheet" href="system.css?v=web009a"></head><body><header><div><p class="eyebrow">SHORT INVEST · RETAINED STATUS</p><h1>System</h1><p id="system-asof">Loading retained status…</p></div><div class="markets" role="group" aria-label="Market"><button data-market="de">DE</button><button data-market="us">US</button></div></header><nav class="topnav" aria-label="Primary"><a href="index.html">Today</a><a href="live.html">Today Live</a><a href="history.html">History</a><a href="events.html">Events</a><a href="system.html" aria-current="page">System</a></nav><main><p id="system-error" role="alert" hidden></p><section class="system-grid"><div class="system-panel"><p class="eyebrow">PRODUCTION SNAPSHOT</p><h2>Provider health</h2><p class="stale-note">This is retained snapshot health, not a live status check.</p><div id="system-health"></div></div><div class="system-panel"><p class="eyebrow">RESEARCH</p><h2>Bounded research status</h2><div id="system-research"></div><p class="stale-note">Research evidence is separate from production decisions and health.</p></div></section></main><script type="module" src="system.js?v=web011"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Short Invest · System</title>
+  <link rel="stylesheet" href="styles.css?v=web009a">
+  <link rel="stylesheet" href="system.css?v=flow002">
+</head>
+<body>
+<header>
+  <div>
+    <p class="eyebrow">SHORT INVEST · TODAY'S DECISION FLOW</p>
+    <h1>How the system works</h1>
+    <p id="system-asof">Loading retained status…</p>
+  </div>
+  <div class="markets" role="group" aria-label="Market">
+    <button data-market="de">DE</button><button data-market="us">US</button>
+  </div>
+</header>
+<nav class="topnav" aria-label="Primary"><a href="index.html">Today</a><a href="live.html">Today Live</a><a href="history.html">History</a><a href="events.html">Events</a><a href="system.html" aria-current="page">System</a></nav>
+<main>
+  <p id="system-error" role="alert" hidden></p>
+  <section class="flow-hero" aria-labelledby="flow-title">
+    <div><p class="eyebrow">ONE SNAPSHOT · THREE INDEPENDENT VIEWS</p><h2 id="flow-title">From a broad market to today’s ideas</h2></div>
+    <p><strong>Research remains separate from recommendation authority.</strong> Production seeks executable decisions. Next Architecture studies remaining opportunity, while autonomous models form an independent comparison line.</p>
+  </section>
+  <section id="system-pipelines" class="pipeline-grid" aria-label="Today's system pipelines"></section>
+  <section class="system-panel system-ops">
+    <div class="section-head"><div><p class="eyebrow">OPERATIONS</p><h2>Data-provider health</h2></div><span class="snapshot-badge">Retained snapshot</span></div>
+    <p class="stale-note">This is retained snapshot health, not a live status check.</p>
+    <div id="system-health"></div><div id="system-research"></div>
+  </section>
+</main>
+<script type="module" src="system.js?v=flow002"></script>
+</body>
+</html>
