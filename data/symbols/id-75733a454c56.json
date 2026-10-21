@@ -39,12 +39,46 @@
         "run_identity": 143,
         "source_digest": "sha256:8bcd89f029010bf95bae78f7ac32f42d8318bb6755897c08fa12490be2beb7eb"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-21",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-d99f5ac443385bab9eef28b1",
+      "provenance": {
+        "run_identity": 155,
+        "source_digest": "sha256:5dd0050bbefe05ae13a179a876ee08001d2f0c57ac79490171d52db7eaf286c9"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-10-13",
-  "generated_at": "2026-10-13T08:52:04.821600-04:00",
+  "generated_at": "2026-10-21T08:51:25.574109-04:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -197,8 +231,8 @@
     "symbol_id": "id-75733a454c56"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "OVEREXTENDED",
-  "latest_retained_observation": "2026-10-13",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-10-21",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -873,7 +907,7 @@
     "status": "AVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 1,
+  "observation_count": 2,
   "observations": [
     {
       "availability": {
@@ -1073,6 +1107,95 @@
       "run_identity": 143,
       "score": 35.4,
       "source_digest": "sha256:8bcd89f029010bf95bae78f7ac32f42d8318bb6755897c08fa12490be2beb7eb",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "ELV",
+      "symbol_id": "id-75733a454c56"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 428.26,
+            "price": 447.91,
+            "quote_timestamp": "2026-10-21T12:39:50+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-21",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-d99f5ac443385bab9eef28b1",
+      "observed_at": "2026-10-21T08:51:25.574109-04:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 155,
+      "score": null,
+      "source_digest": "sha256:5dd0050bbefe05ae13a179a876ee08001d2f0c57ac79490171d52db7eaf286c9",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "ELV",
       "symbol_id": "id-75733a454c56"
