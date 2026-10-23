@@ -1652,14 +1652,45 @@
               "return_percent": 1.2846464927279477
             },
             "benchmark_relative_return_percent": null,
+            "close": 7.46999979019165,
+            "high": 7.46999979019165,
+            "horizon": "D+1",
+            "low": 6.925000190734863,
+            "open": 7.010000228881836,
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-21",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:c4183b31e91569eb04fb6d042e3bfb66f04de91fef611b7e801c898541dd0233",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "return_percent": null,
+            "session_date": "2026-10-21",
+            "status": "AVAILABLE"
+          },
+          {
+            "benchmark": {
+              "close": 25371.75,
+              "high": 25563.130859375,
+              "low": 25318.1796875,
+              "open": 25497.939453125,
+              "return_percent": 0.20529597904057617
+            },
+            "benchmark_relative_return_percent": null,
             "close": null,
             "high": null,
-            "horizon": "D+1",
+            "horizon": "D+2",
             "low": null,
             "open": null,
             "price_authority": {
               "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
-              "effective_as_of": "2026-10-21",
+              "effective_as_of": "2026-10-22",
               "missing_reason": "PRICE_DATA_NOT_RETAINED",
               "normalized_data_digest": null,
               "observed_at": null,
@@ -1671,34 +1702,41 @@
               "success": false
             },
             "return_percent": null,
-            "session_date": "2026-10-21",
+            "session_date": "2026-10-22",
             "status": "UNAVAILABLE"
           }
         ],
-        "matured_through_session": "2026-10-21",
-        "maturity_state": "MATURE_D1",
+        "matured_through_session": "2026-10-22",
+        "maturity_state": "MATURE_D2",
         "observation_id": "obs-a20d8f7d2bf58ce0f0764798",
-        "outcome_id": "signal:81fa5b4232c0504f1d697b4d8ab6824322176583b3703e618f0cc07851ef5721:r1:0882083497dff75603b1",
+        "outcome_id": "signal:81fa5b4232c0504f1d697b4d8ab6824322176583b3703e618f0cc07851ef5721:r2:ed44c497ddba1faa4e4e",
         "provenance": {
-          "record_digest": "sha256:790fc83bd2564a3ed580f704b1a0e4da30e8018944013964f184df7a319fc1f7",
-          "retention_digest": "sha256:45cba22e1755571735969a9f7d75fc9296049cf6dda899b3f9fc1968629d8d62",
+          "record_digest": "sha256:bd315bad80a845847cc8337bbd08a60a6f1f99800bbf7385e0157cead1a62d20",
+          "retention_digest": "sha256:2d9a601e7fa77c93921bd1c35adfba963236c7433271fa4447c4720abfe1314a",
           "source_schema_version": "short-invest-outcome-record/3"
         },
         "reference_authority": {
           "reason": "CANONICAL_CURRENT_PRICE_AUTHORITY_NOT_RETAINED",
           "status": "UNAVAILABLE"
         },
-        "revision": 1,
+        "revision": 2,
         "revisions": [
           {
             "available_horizons": 1,
             "maturity_state": "MATURE_D1",
             "revision": 1,
             "revision_identity": "001-MATURE_D1-0882083497dff75603b1",
+            "selected": false
+          },
+          {
+            "available_horizons": 2,
+            "maturity_state": "MATURE_D2",
+            "revision": 2,
+            "revision_identity": "002-MATURE_D2-ed44c497ddba1faa4e4e",
             "selected": true
           }
         ],
-        "selected_revision_identity": "001-MATURE_D1-0882083497dff75603b1",
+        "selected_revision_identity": "002-MATURE_D2-ed44c497ddba1faa4e4e",
         "signal_id": "signal:81fa5b4232c0504f1d697b4d8ab6824322176583b3703e618f0cc07851ef5721",
         "terminal_outcomes": {
           "D+1": null,
