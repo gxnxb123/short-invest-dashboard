@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Short Invest · ETF Rotation</title>
+  <link rel="stylesheet" href="styles.css?v=axes001"><link rel="stylesheet" href="etf.css?v=etf001">
+</head>
+<body>
+<header><div><p class="eyebrow">ETF ROTATION · RESEARCH ONLY</p><h1>ETF potential map</h1><p id="etf-asof">Loading retained ETF research…</p></div></header>
+<nav class="topnav" aria-label="Primary"><a href="index.html">Today</a><a href="live.html">Today Live</a><a href="history.html">History</a><a href="events.html">Events</a><a href="etf.html" aria-current="page">ETF</a><a href="system.html">System</a></nav>
+<main>
+  <p id="etf-error" role="alert" hidden></p>
+  <section class="etf-hero"><div><p class="eyebrow">CURRENT PRICE REGIME</p><h2 id="regime">—</h2><p id="regime-note"></p></div><div id="etf-summary" class="etf-summary"></div></section>
+  <section><div class="section-head"><div><p class="eyebrow">RELATIVE POTENTIAL</p><h2>26-ETF opportunity map</h2><p class="etf-note">Scores compare this fixed universe. Curves show historical outcomes after similar signals, not forecast returns.</p></div><label>Asset class<select id="asset-filter"><option value="ALL">All</option><option value="EQUITY">Equity</option><option value="SECTOR">Sector</option><option value="BOND">Bond</option><option value="COMMODITY">Commodity</option></select></label></div><div id="etf-rankings" class="etf-grid"></div></section>
+  <section class="context-grid"><div class="etf-panel"><p class="eyebrow">FROZEN MACRO CONTEXT</p><h2>Rates &amp; economy</h2><div id="macro"></div></div><div class="etf-panel"><p class="eyebrow">FROZEN EVENT CONTEXT</p><h2>Global risk themes</h2><div id="themes"></div></div></section>
+  <p class="research-only"><strong>No recommendation authority.</strong> Macro and event context are retained prospectively but do not change rankings until their relationship with later outcomes is validated.</p>
+</main><script type="module" src="etf.js?v=etf001"></script></body></html>

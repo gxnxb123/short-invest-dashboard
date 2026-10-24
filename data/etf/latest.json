@@ -1,0 +1,1659 @@
+{
+  "as_of_session": "2026-10-23",
+  "authority": "RESEARCH_ONLY_NO_RECOMMENDATION_AUTHORITY",
+  "descriptive_rotation_baseline": {
+    "annualized_return_percent": 12.48,
+    "full_turnover_cost_bps": 10,
+    "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
+    "maximum_drawdown_percent": -17.1,
+    "mean_period_relative_return_percent": 0.19,
+    "period_count": 113,
+    "rebalance_sessions": 21,
+    "relative_win_rate_percent": 52.21,
+    "selected_count": 5,
+    "status": "AVAILABLE"
+  },
+  "frozen_risk_overlay_validation": {
+    "calibration": {
+      "0.0": {
+        "annualized_return_percent": 8.7,
+        "full_turnover_cost_bps": 10,
+        "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
+        "maximum_drawdown_percent": -17.1,
+        "mean_period_relative_return_percent": 0.09,
+        "period_count": 79,
+        "rebalance_sessions": 21,
+        "relative_win_rate_percent": 50.63,
+        "selected_count": 5,
+        "status": "AVAILABLE"
+      },
+      "0.25": {
+        "annualized_return_percent": 6.2,
+        "full_turnover_cost_bps": 10,
+        "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
+        "maximum_drawdown_percent": -19.22,
+        "mean_period_relative_return_percent": -0.11,
+        "period_count": 79,
+        "rebalance_sessions": 21,
+        "relative_win_rate_percent": 53.16,
+        "selected_count": 5,
+        "status": "AVAILABLE"
+      },
+      "0.5": {
+        "annualized_return_percent": 6.28,
+        "full_turnover_cost_bps": 10,
+        "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
+        "maximum_drawdown_percent": -17.42,
+        "mean_period_relative_return_percent": -0.12,
+        "period_count": 79,
+        "rebalance_sessions": 21,
+        "relative_win_rate_percent": 49.37,
+        "selected_count": 5,
+        "status": "AVAILABLE"
+      }
+    },
+    "candidate_risk_penalties": [
+      0.0,
+      0.25,
+      0.5
+    ],
+    "evaluation_momentum_only": {
+      "annualized_return_percent": 21.76,
+      "full_turnover_cost_bps": 10,
+      "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
+      "maximum_drawdown_percent": -11.0,
+      "mean_period_relative_return_percent": 0.43,
+      "period_count": 34,
+      "rebalance_sessions": 21,
+      "relative_win_rate_percent": 55.88,
+      "selected_count": 5,
+      "status": "AVAILABLE"
+    },
+    "evaluation_selected_rule": {
+      "annualized_return_percent": 21.76,
+      "full_turnover_cost_bps": 10,
+      "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
+      "maximum_drawdown_percent": -11.0,
+      "mean_period_relative_return_percent": 0.43,
+      "period_count": 34,
+      "rebalance_sessions": 21,
+      "relative_win_rate_percent": 55.88,
+      "selected_count": 5,
+      "status": "AVAILABLE"
+    },
+    "interpretation": "FROZEN_CHRONOLOGICAL_HOLDOUT_RESEARCH_NOT_LIVE_AUTHORITY",
+    "selected_risk_penalty": 0.0,
+    "split": "FIRST_70_PERCENT_CALIBRATION_LAST_30_PERCENT_EVALUATION",
+    "status": "AVAILABLE"
+  },
+  "limitations": [
+    "Current-survivor proxy universe; not a point-in-time ETF universe.",
+    "Yahoo auto-adjusted prices are a total-return proxy, not issuer NAV authority.",
+    "Macro and event snapshots are prospective context only; holdings, futures-curve, FX and tax inputs are absent."
+  ],
+  "methodology": {
+    "curve": "non-overlapping historical observations in the same 10-point opportunity-score band",
+    "horizons_sessions": [
+      21,
+      63,
+      126
+    ],
+    "macro_or_news_ranking_inputs": false,
+    "opportunity": "75% cross-sectional 21/63/126-session total-return momentum rank + 25% positive-trend confirmation",
+    "risk": "equal-weight cross-sectional 63-session volatility and 126-session drawdown ranks"
+  },
+  "price_basis": "YAHOO_AUTO_ADJUSTED_TOTAL_RETURN_PROXY",
+  "price_data_digest": "sha256:9554ed8bbc289e54f84a9a4ecfbf9e5e2a93feb5c64ec50cae71814edf9bb354",
+  "price_regime_context": {
+    "broad_commodity_return_percent": 17.55,
+    "defensive_minus_cyclical_percent": 2.79,
+    "equity_breadth_median_return_percent": -1.23,
+    "high_yield_minus_treasury_percent": 0.01,
+    "interpretation": "PRICE_DERIVED_CONTEXT_NOT_MACRO_CAUSAL_AUTHORITY",
+    "long_duration_treasury_return_percent": -1.72,
+    "lookback_sessions": 63,
+    "state": "COMMODITY_LED",
+    "status": "AVAILABLE"
+  },
+  "prospective_event_context": {
+    "authority": "PROSPECTIVE_EVENT_CONTEXT_NO_RANKING_EFFECT",
+    "captured_on": "2026-10-24",
+    "jev_assessment": {
+      "assessed_at": "2026-10-24T08:04:08.824678+00:00",
+      "available_pair_count": 57,
+      "direction_counts": {
+        "MIXED_OR_UNCLEAR": 8,
+        "NEGATIVE": 3,
+        "POSITIVE": 14
+      },
+      "horizon_counts": {
+        "IMMEDIATE_1_TO_5D": 10,
+        "MEDIUM_1_TO_3M": 15,
+        "STRUCTURAL_6M_PLUS": 0,
+        "UNCERTAIN": 0
+      },
+      "meaningful_pair_count": 25,
+      "run_stats": {
+        "attempted": 57,
+        "failed": 0,
+        "input_tokens": 42578,
+        "model_discovery_requests": 1,
+        "output_tokens": 10094,
+        "pair_count": 57,
+        "status": "AVAILABLE",
+        "succeeded": 57
+      },
+      "status": "AVAILABLE"
+    },
+    "ranking_effect": "NONE_UNTIL_RELEVANCE_AND_OUTCOME_VALIDATION",
+    "source_url": "https://www.gdeltproject.org/",
+    "status": "AVAILABLE",
+    "themes": {
+      "ENERGY_SUPPLY": {
+        "article_count": 2,
+        "mapped_etfs": [
+          "XLE",
+          "USO",
+          "DBC"
+        ],
+        "sample_articles": [
+          {
+            "domain": "scroll.in",
+            "etf_assessments": [
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "DBC"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "USO"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "XLE"
+              }
+            ],
+            "language": "English",
+            "seen_at": "20261024T071500Z",
+            "source_country": "India",
+            "title": "Arunachal : Anti - dam protesters vandalise NHPC office , police station after tear gas fired",
+            "url": "https://scroll.in/latest/1096620/arunachal-anti-dam-protesters-vandalise-nhpc-office-police-station-after-tear-gas-fired"
+          },
+          {
+            "domain": "trend.az",
+            "etf_assessments": [
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "DBC"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "USO"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "XLE"
+              }
+            ],
+            "language": "English",
+            "seen_at": "20261024T071500Z",
+            "source_country": "Azerbaijan",
+            "title": "Azerbaijan ranks among T\u00fcrkiye top three gas suppliers in August",
+            "url": "https://www.trend.az/azerbaijan/4238625.html"
+          }
+        ]
+      },
+      "FINANCIAL_STRESS": {
+        "article_count": 0,
+        "mapped_etfs": [
+          "XLF",
+          "HYG",
+          "LQD",
+          "TLT",
+          "IAU"
+        ],
+        "sample_articles": []
+      },
+      "MILITARY_GEOPOLITICS": {
+        "article_count": 3,
+        "mapped_etfs": [
+          "IAU",
+          "XLE",
+          "USO",
+          "DBC",
+          "XLI",
+          "EFA",
+          "EEM"
+        ],
+        "sample_articles": [
+          {
+            "domain": "dailypioneer.com",
+            "etf_assessments": [
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "DBC"
+              },
+              {
+                "direction": "NEGATIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "EEM"
+              },
+              {
+                "direction": "NEGATIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "EFA"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "IAU"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "USO"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "XLE"
+              },
+              {
+                "direction": "NEGATIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "XLI"
+              }
+            ],
+            "language": "English",
+            "seen_at": "20261024T071500Z",
+            "source_country": "India",
+            "title": "Iran threatens Gulf internet cables if war with US and Israel resumes",
+            "url": "https://dailypioneer.com/world/iran-threatens-gulf-internet-cables-if-war-with-us-and-israel-resumes"
+          },
+          {
+            "domain": "pakobserver.net",
+            "etf_assessments": [
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "DBC"
+              },
+              {
+                "direction": "NEGATIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "EEM"
+              },
+              {
+                "direction": "NEGATIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "EFA"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "IAU"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "USO"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "XLE"
+              },
+              {
+                "direction": "NEGATIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "XLI"
+              }
+            ],
+            "language": "English",
+            "seen_at": "20261024T071500Z",
+            "source_country": "Pakistan",
+            "title": "Iran plans targeting undersea cable in Gulf if US , Israel resume war : reports",
+            "url": "https://pakobserver.net/iran-plans-targeting-undersea-cable-in-gulf-if-us-israel-resume-war-reports/"
+          },
+          {
+            "domain": "rozanaspokesman.com",
+            "etf_assessments": [
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "DBC"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "EEM"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "EFA"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "IAU"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "USO"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "XLE"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "XLI"
+              }
+            ],
+            "language": "English",
+            "seen_at": "20261024T071500Z",
+            "source_country": "India",
+            "title": "Paris Suburbs Shooting : One Killed , Five Wounded in Racist Terror Attack , Says Macron",
+            "url": "https://www.rozanaspokesman.com/news/world/241026/one-killed-five-wounded-in-paris-suburbs-shooting-described-by-macron.html"
+          }
+        ]
+      },
+      "TRADE_CONTROLS": {
+        "article_count": 6,
+        "mapped_etfs": [
+          "XLK",
+          "XLI",
+          "XLB",
+          "EFA",
+          "EEM"
+        ],
+        "sample_articles": [
+          {
+            "domain": "600kcol.iheart.com",
+            "etf_assessments": [
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "EEM"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "EFA"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "XLB"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "XLI"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "XLK"
+              }
+            ],
+            "language": "English",
+            "seen_at": "20261024T071500Z",
+            "source_country": "United States",
+            "title": "Trump Administration Rolls Back Some Canada Tariffs",
+            "url": "https://600kcol.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
+          },
+          {
+            "domain": "abcnews4.com",
+            "etf_assessments": [
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "EEM"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "EFA"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "XLB"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "XLI"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "XLK"
+              }
+            ],
+            "language": "English",
+            "seen_at": "20261024T071500Z",
+            "source_country": "United States",
+            "title": "Trump lifts tariffs on some Canadian imports , adds others in sweeping revision",
+            "url": "https://abcnews4.com/news/nation-world/trump-lifts-tariffs-on-some-canadian-imports-adds-others-in-sweeping-revision"
+          },
+          {
+            "domain": "newsradio540.iheart.com",
+            "etf_assessments": [
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "EEM"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "EFA"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "XLB"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "XLI"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "XLK"
+              }
+            ],
+            "language": "English",
+            "seen_at": "20261024T071500Z",
+            "source_country": "United States",
+            "title": "Trump Administration Rolls Back Some Canada Tariffs",
+            "url": "https://newsradio540.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
+          }
+        ]
+      }
+    },
+    "warning": "Coverage volume and headlines are context, not verified event direction or investment signals."
+  },
+  "prospective_macro_context": {
+    "authority": "PROSPECTIVE_FROZEN_MACRO_CONTEXT_NO_RANKING_EFFECT",
+    "captured_on": "2026-10-24",
+    "derived": {
+      "cpi_year_over_year_percent": 4.02,
+      "ten_year_minus_two_year_percentage_points": 0.31,
+      "unemployment_three_observation_change_points": 0.0
+    },
+    "latest": {
+      "CPIAUCSL": {
+        "label": "US CPI",
+        "observation_date": "2026-09-01",
+        "value": 336.298
+      },
+      "DGS10": {
+        "label": "US Treasury 10-year yield",
+        "observation_date": "2026-10-22",
+        "value": 4.96
+      },
+      "DGS2": {
+        "label": "US Treasury 2-year yield",
+        "observation_date": "2026-10-22",
+        "value": 4.65
+      },
+      "FEDFUNDS": {
+        "label": "Federal funds rate",
+        "observation_date": "2026-09-01",
+        "value": 3.75
+      },
+      "UNRATE": {
+        "label": "US unemployment rate",
+        "observation_date": "2026-09-01",
+        "value": 4.2
+      }
+    },
+    "ranking_effect": "NONE_UNTIL_PROSPECTIVE_VALIDATION",
+    "source_url": "https://fred.stlouisfed.org/",
+    "status": "AVAILABLE"
+  },
+  "rankings": [
+    {
+      "asset_class": "COMMODITY",
+      "confidence_score": 80,
+      "exposure": "WTI futures strategy",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 99.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 4.02,
+          "median_return_percent": 2.03,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -14.68,
+          "return_p80_percent": 26.17,
+          "sample_count": 15
+        },
+        "21": {
+          "median_relative_return_percent": 3.92,
+          "median_return_percent": 1.48,
+          "outperform_universe_probability_percent": 58.82,
+          "positive_return_probability_percent": 70.59,
+          "return_p20_percent": -3.65,
+          "return_p80_percent": 11.15,
+          "sample_count": 17
+        },
+        "63": {
+          "median_relative_return_percent": 4.05,
+          "median_return_percent": 6.27,
+          "outperform_universe_probability_percent": 68.75,
+          "positive_return_probability_percent": 68.75,
+          "return_p20_percent": -10.33,
+          "return_p80_percent": 22.62,
+          "sample_count": 16
+        }
+      },
+      "risk_score": 53.8,
+      "status": "AVAILABLE",
+      "symbol": "USO"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 77,
+      "exposure": "Energy",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 97.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 2.96,
+          "median_return_percent": 7.72,
+          "outperform_universe_probability_percent": 69.23,
+          "positive_return_probability_percent": 76.92,
+          "return_p20_percent": -0.06,
+          "return_p80_percent": 14.57,
+          "sample_count": 13
+        },
+        "21": {
+          "median_relative_return_percent": -0.59,
+          "median_return_percent": -0.81,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 42.86,
+          "return_p20_percent": -9.04,
+          "return_p80_percent": 5.6,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": 1.16,
+          "median_return_percent": -0.35,
+          "outperform_universe_probability_percent": 53.85,
+          "positive_return_probability_percent": 46.15,
+          "return_p20_percent": -5.53,
+          "return_p80_percent": 10.75,
+          "sample_count": 13
+        }
+      },
+      "risk_score": 44.2,
+      "status": "AVAILABLE",
+      "symbol": "XLE"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 68,
+      "exposure": "Health care",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 92.3,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -3.11,
+          "median_return_percent": 0.11,
+          "outperform_universe_probability_percent": 33.33,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -2.12,
+          "return_p80_percent": 3.93,
+          "sample_count": 6
+        },
+        "21": {
+          "median_relative_return_percent": -1.19,
+          "median_return_percent": 0.41,
+          "outperform_universe_probability_percent": 33.33,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -3.13,
+          "return_p80_percent": 2.88,
+          "sample_count": 6
+        },
+        "63": {
+          "median_relative_return_percent": -1.85,
+          "median_return_percent": -1.72,
+          "outperform_universe_probability_percent": 16.67,
+          "positive_return_probability_percent": 33.33,
+          "return_p20_percent": -4.62,
+          "return_p80_percent": 0.13,
+          "sample_count": 6
+        }
+      },
+      "risk_score": 42.3,
+      "status": "AVAILABLE",
+      "symbol": "XLV"
+    },
+    {
+      "asset_class": "COMMODITY",
+      "confidence_score": 72,
+      "exposure": "Broad commodity futures",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 87.5,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 4.63,
+          "median_return_percent": 9.95,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": -1.64,
+          "return_p80_percent": 16.98,
+          "sample_count": 9
+        },
+        "21": {
+          "median_relative_return_percent": -0.68,
+          "median_return_percent": 0.51,
+          "outperform_universe_probability_percent": 44.44,
+          "positive_return_probability_percent": 55.56,
+          "return_p20_percent": -4.87,
+          "return_p80_percent": 2.63,
+          "sample_count": 9
+        },
+        "63": {
+          "median_relative_return_percent": -0.52,
+          "median_return_percent": 3.32,
+          "outperform_universe_probability_percent": 44.44,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": -3.09,
+          "return_p80_percent": 6.79,
+          "sample_count": 9
+        }
+      },
+      "risk_score": 38.5,
+      "status": "AVAILABLE",
+      "symbol": "DBC"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 69,
+      "exposure": "Consumer staples",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 86.5,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -2.04,
+          "median_return_percent": -1.26,
+          "outperform_universe_probability_percent": 42.86,
+          "positive_return_probability_percent": 28.57,
+          "return_p20_percent": -5.07,
+          "return_p80_percent": 3.07,
+          "sample_count": 7
+        },
+        "21": {
+          "median_relative_return_percent": -1.6,
+          "median_return_percent": -0.29,
+          "outperform_universe_probability_percent": 14.29,
+          "positive_return_probability_percent": 28.57,
+          "return_p20_percent": -5.47,
+          "return_p80_percent": 1.16,
+          "sample_count": 7
+        },
+        "63": {
+          "median_relative_return_percent": -3.65,
+          "median_return_percent": -0.56,
+          "outperform_universe_probability_percent": 28.57,
+          "positive_return_probability_percent": 14.29,
+          "return_p20_percent": -1.81,
+          "return_p80_percent": -0.41,
+          "sample_count": 7
+        }
+      },
+      "risk_score": 42.3,
+      "status": "AVAILABLE",
+      "symbol": "XLP"
+    },
+    {
+      "asset_class": "BOND",
+      "confidence_score": 77,
+      "exposure": "US Treasury 1-3 year",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 68.3,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -5.66,
+          "median_return_percent": 1.49,
+          "outperform_universe_probability_percent": 7.69,
+          "positive_return_probability_percent": 76.92,
+          "return_p20_percent": -0.32,
+          "return_p80_percent": 2.31,
+          "sample_count": 13
+        },
+        "21": {
+          "median_relative_return_percent": -1.11,
+          "median_return_percent": 0.01,
+          "outperform_universe_probability_percent": 35.71,
+          "positive_return_probability_percent": 57.14,
+          "return_p20_percent": -0.45,
+          "return_p80_percent": 0.56,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": -2.84,
+          "median_return_percent": 0.13,
+          "outperform_universe_probability_percent": 30.77,
+          "positive_return_probability_percent": 69.23,
+          "return_p20_percent": -0.72,
+          "return_p80_percent": 1.36,
+          "sample_count": 13
+        }
+      },
+      "risk_score": 9.6,
+      "status": "AVAILABLE",
+      "symbol": "SHY"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 81,
+      "exposure": "Materials",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 65.7,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -2.17,
+          "median_return_percent": -0.96,
+          "outperform_universe_probability_percent": 18.75,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -8.82,
+          "return_p80_percent": 7.19,
+          "sample_count": 16
+        },
+        "21": {
+          "median_relative_return_percent": -0.76,
+          "median_return_percent": -0.07,
+          "outperform_universe_probability_percent": 35.29,
+          "positive_return_probability_percent": 47.06,
+          "return_p20_percent": -3.22,
+          "return_p80_percent": 3.27,
+          "sample_count": 17
+        },
+        "63": {
+          "median_relative_return_percent": -0.95,
+          "median_return_percent": 2.32,
+          "outperform_universe_probability_percent": 47.06,
+          "positive_return_probability_percent": 64.71,
+          "return_p20_percent": -8.85,
+          "return_p80_percent": 6.47,
+          "sample_count": 17
+        }
+      },
+      "risk_score": 50.0,
+      "status": "AVAILABLE",
+      "symbol": "XLB"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 80,
+      "exposure": "Technology",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 64.7,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 11.22,
+          "median_return_percent": 19.82,
+          "outperform_universe_probability_percent": 73.33,
+          "positive_return_probability_percent": 93.33,
+          "return_p20_percent": 12.54,
+          "return_p80_percent": 31.23,
+          "sample_count": 15
+        },
+        "21": {
+          "median_relative_return_percent": 3.35,
+          "median_return_percent": 3.07,
+          "outperform_universe_probability_percent": 73.33,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": -0.41,
+          "return_p80_percent": 8.36,
+          "sample_count": 15
+        },
+        "63": {
+          "median_relative_return_percent": 5.57,
+          "median_return_percent": 10.58,
+          "outperform_universe_probability_percent": 86.67,
+          "positive_return_probability_percent": 86.67,
+          "return_p20_percent": 6.1,
+          "return_p80_percent": 14.84,
+          "sample_count": 15
+        }
+      },
+      "risk_score": 84.6,
+      "status": "AVAILABLE",
+      "symbol": "XLK"
+    },
+    {
+      "asset_class": "EQUITY",
+      "confidence_score": 81,
+      "exposure": "US large cap",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 62.8,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 3.39,
+          "median_return_percent": 9.01,
+          "outperform_universe_probability_percent": 68.75,
+          "positive_return_probability_percent": 81.25,
+          "return_p20_percent": 3.68,
+          "return_p80_percent": 13.7,
+          "sample_count": 16
+        },
+        "21": {
+          "median_relative_return_percent": -0.05,
+          "median_return_percent": 1.4,
+          "outperform_universe_probability_percent": 47.06,
+          "positive_return_probability_percent": 70.59,
+          "return_p20_percent": -2.1,
+          "return_p80_percent": 2.82,
+          "sample_count": 17
+        },
+        "63": {
+          "median_relative_return_percent": 2.48,
+          "median_return_percent": 2.92,
+          "outperform_universe_probability_percent": 64.71,
+          "positive_return_probability_percent": 82.35,
+          "return_p20_percent": 0.14,
+          "return_p80_percent": 7.92,
+          "sample_count": 17
+        }
+      },
+      "risk_score": 26.9,
+      "status": "AVAILABLE",
+      "symbol": "SPY"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 75,
+      "exposure": "Financials",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 62.8,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -5.26,
+          "median_return_percent": 4.14,
+          "outperform_universe_probability_percent": 45.45,
+          "positive_return_probability_percent": 54.55,
+          "return_p20_percent": -8.4,
+          "return_p80_percent": 17.14,
+          "sample_count": 11
+        },
+        "21": {
+          "median_relative_return_percent": 0.74,
+          "median_return_percent": 3.1,
+          "outperform_universe_probability_percent": 54.55,
+          "positive_return_probability_percent": 72.73,
+          "return_p20_percent": -10.34,
+          "return_p80_percent": 4.49,
+          "sample_count": 11
+        },
+        "63": {
+          "median_relative_return_percent": -0.69,
+          "median_return_percent": 0.63,
+          "outperform_universe_probability_percent": 45.45,
+          "positive_return_probability_percent": 54.55,
+          "return_p20_percent": -10.19,
+          "return_p80_percent": 6.46,
+          "sample_count": 11
+        }
+      },
+      "risk_score": 44.2,
+      "status": "AVAILABLE",
+      "symbol": "XLF"
+    },
+    {
+      "asset_class": "EQUITY",
+      "confidence_score": 77,
+      "exposure": "US Nasdaq 100",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 59.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 9.2,
+          "median_return_percent": 17.5,
+          "outperform_universe_probability_percent": 84.62,
+          "positive_return_probability_percent": 84.62,
+          "return_p20_percent": 11.51,
+          "return_p80_percent": 24.23,
+          "sample_count": 13
+        },
+        "21": {
+          "median_relative_return_percent": 0.1,
+          "median_return_percent": 1.79,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 71.43,
+          "return_p20_percent": -0.36,
+          "return_p80_percent": 6.94,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": 4.3,
+          "median_return_percent": 9.67,
+          "outperform_universe_probability_percent": 69.23,
+          "positive_return_probability_percent": 76.92,
+          "return_p20_percent": -0.34,
+          "return_p80_percent": 17.71,
+          "sample_count": 13
+        }
+      },
+      "risk_score": 71.2,
+      "status": "AVAILABLE",
+      "symbol": "QQQ"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 75,
+      "exposure": "Consumer discretionary",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 56.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -0.06,
+          "median_return_percent": 1.55,
+          "outperform_universe_probability_percent": 45.45,
+          "positive_return_probability_percent": 63.64,
+          "return_p20_percent": -0.9,
+          "return_p80_percent": 10.94,
+          "sample_count": 11
+        },
+        "21": {
+          "median_relative_return_percent": -0.16,
+          "median_return_percent": 1.41,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": -0.46,
+          "return_p80_percent": 3.44,
+          "sample_count": 12
+        },
+        "63": {
+          "median_relative_return_percent": -0.85,
+          "median_return_percent": 1.92,
+          "outperform_universe_probability_percent": 41.67,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -5.31,
+          "return_p80_percent": 6.68,
+          "sample_count": 12
+        }
+      },
+      "risk_score": 63.5,
+      "status": "AVAILABLE",
+      "symbol": "XLY"
+    },
+    {
+      "asset_class": "EQUITY",
+      "confidence_score": 79,
+      "exposure": "Developed markets ex-US",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 46.8,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -3.2,
+          "median_return_percent": 2.55,
+          "outperform_universe_probability_percent": 35.71,
+          "positive_return_probability_percent": 64.29,
+          "return_p20_percent": -2.94,
+          "return_p80_percent": 12.49,
+          "sample_count": 14
+        },
+        "21": {
+          "median_relative_return_percent": 0.08,
+          "median_return_percent": 1.59,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 64.29,
+          "return_p20_percent": -4.18,
+          "return_p80_percent": 3.29,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": -0.49,
+          "median_return_percent": 2.41,
+          "outperform_universe_probability_percent": 35.71,
+          "positive_return_probability_percent": 78.57,
+          "return_p20_percent": -0.17,
+          "return_p80_percent": 8.81,
+          "sample_count": 14
+        }
+      },
+      "risk_score": 44.2,
+      "status": "AVAILABLE",
+      "symbol": "EFA"
+    },
+    {
+      "asset_class": "BOND",
+      "confidence_score": 100,
+      "exposure": "US inflation-linked Treasury",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 46.8,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -4.19,
+          "median_return_percent": 1.49,
+          "outperform_universe_probability_percent": 18.92,
+          "positive_return_probability_percent": 72.97,
+          "return_p20_percent": -0.52,
+          "return_p80_percent": 4.2,
+          "sample_count": 37
+        },
+        "21": {
+          "median_relative_return_percent": -0.91,
+          "median_return_percent": 0.05,
+          "outperform_universe_probability_percent": 33.33,
+          "positive_return_probability_percent": 53.85,
+          "return_p20_percent": -0.51,
+          "return_p80_percent": 1.18,
+          "sample_count": 39
+        },
+        "63": {
+          "median_relative_return_percent": -3.23,
+          "median_return_percent": 0.51,
+          "outperform_universe_probability_percent": 25.64,
+          "positive_return_probability_percent": 56.41,
+          "return_p20_percent": -1.28,
+          "return_p80_percent": 2.56,
+          "sample_count": 39
+        }
+      },
+      "risk_score": 17.3,
+      "status": "AVAILABLE",
+      "symbol": "TIP"
+    },
+    {
+      "asset_class": "BOND",
+      "confidence_score": 79,
+      "exposure": "US Treasury 7-10 year",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 42.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -6.57,
+          "median_return_percent": 1.89,
+          "outperform_universe_probability_percent": 7.14,
+          "positive_return_probability_percent": 64.29,
+          "return_p20_percent": -1.42,
+          "return_p80_percent": 4.08,
+          "sample_count": 14
+        },
+        "21": {
+          "median_relative_return_percent": -1.96,
+          "median_return_percent": -0.23,
+          "outperform_universe_probability_percent": 21.43,
+          "positive_return_probability_percent": 42.86,
+          "return_p20_percent": -1.17,
+          "return_p80_percent": 2.97,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": -2.86,
+          "median_return_percent": 1.85,
+          "outperform_universe_probability_percent": 35.71,
+          "positive_return_probability_percent": 57.14,
+          "return_p20_percent": -1.04,
+          "return_p80_percent": 3.36,
+          "sample_count": 14
+        }
+      },
+      "risk_score": 26.9,
+      "status": "AVAILABLE",
+      "symbol": "IEF"
+    },
+    {
+      "asset_class": "BOND",
+      "confidence_score": 75,
+      "exposure": "US Treasury 20+ year",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 42.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -7.81,
+          "median_return_percent": -3.18,
+          "outperform_universe_probability_percent": 27.27,
+          "positive_return_probability_percent": 36.36,
+          "return_p20_percent": -8.14,
+          "return_p80_percent": 8.66,
+          "sample_count": 11
+        },
+        "21": {
+          "median_relative_return_percent": -2.84,
+          "median_return_percent": -1.91,
+          "outperform_universe_probability_percent": 27.27,
+          "positive_return_probability_percent": 36.36,
+          "return_p20_percent": -3.32,
+          "return_p80_percent": 0.56,
+          "sample_count": 11
+        },
+        "63": {
+          "median_relative_return_percent": -2.56,
+          "median_return_percent": -0.31,
+          "outperform_universe_probability_percent": 36.36,
+          "positive_return_probability_percent": 45.45,
+          "return_p20_percent": -4.9,
+          "return_p80_percent": 5.65,
+          "sample_count": 11
+        }
+      },
+      "risk_score": 40.4,
+      "status": "AVAILABLE",
+      "symbol": "TLT"
+    },
+    {
+      "asset_class": "BOND",
+      "confidence_score": 99,
+      "exposure": "US investment-grade credit",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 41.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -3.55,
+          "median_return_percent": 0.58,
+          "outperform_universe_probability_percent": 17.24,
+          "positive_return_probability_percent": 62.07,
+          "return_p20_percent": -3.33,
+          "return_p80_percent": 5.53,
+          "sample_count": 29
+        },
+        "21": {
+          "median_relative_return_percent": -0.37,
+          "median_return_percent": 0.34,
+          "outperform_universe_probability_percent": 41.94,
+          "positive_return_probability_percent": 64.52,
+          "return_p20_percent": -1.26,
+          "return_p80_percent": 1.02,
+          "sample_count": 31
+        },
+        "63": {
+          "median_relative_return_percent": -1.07,
+          "median_return_percent": -0.19,
+          "outperform_universe_probability_percent": 35.48,
+          "positive_return_probability_percent": 48.39,
+          "return_p20_percent": -3.78,
+          "return_p80_percent": 2.89,
+          "sample_count": 31
+        }
+      },
+      "risk_score": 30.8,
+      "status": "AVAILABLE",
+      "symbol": "LQD"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 87,
+      "exposure": "Real estate",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 39.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -3.54,
+          "median_return_percent": 4.06,
+          "outperform_universe_probability_percent": 35.0,
+          "positive_return_probability_percent": 70.0,
+          "return_p20_percent": -4.09,
+          "return_p80_percent": 8.84,
+          "sample_count": 20
+        },
+        "21": {
+          "median_relative_return_percent": -0.85,
+          "median_return_percent": 0.79,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -2.84,
+          "return_p80_percent": 6.26,
+          "sample_count": 20
+        },
+        "63": {
+          "median_relative_return_percent": -3.67,
+          "median_return_percent": -0.08,
+          "outperform_universe_probability_percent": 25.0,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -7.31,
+          "return_p80_percent": 7.1,
+          "sample_count": 20
+        }
+      },
+      "risk_score": 48.1,
+      "status": "AVAILABLE",
+      "symbol": "XLRE"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 75,
+      "exposure": "Utilities",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 39.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -0.76,
+          "median_return_percent": 9.09,
+          "outperform_universe_probability_percent": 36.36,
+          "positive_return_probability_percent": 90.91,
+          "return_p20_percent": 6.8,
+          "return_p80_percent": 15.46,
+          "sample_count": 11
+        },
+        "21": {
+          "median_relative_return_percent": -0.62,
+          "median_return_percent": 1.62,
+          "outperform_universe_probability_percent": 45.45,
+          "positive_return_probability_percent": 72.73,
+          "return_p20_percent": -2.89,
+          "return_p80_percent": 4.58,
+          "sample_count": 11
+        },
+        "63": {
+          "median_relative_return_percent": -1.27,
+          "median_return_percent": 5.54,
+          "outperform_universe_probability_percent": 36.36,
+          "positive_return_probability_percent": 72.73,
+          "return_p20_percent": -0.05,
+          "return_p80_percent": 7.03,
+          "sample_count": 11
+        }
+      },
+      "risk_score": 61.5,
+      "status": "AVAILABLE",
+      "symbol": "XLU"
+    },
+    {
+      "asset_class": "EQUITY",
+      "confidence_score": 73,
+      "exposure": "US small cap",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 35.3,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -2.91,
+          "median_return_percent": 2.97,
+          "outperform_universe_probability_percent": 30.0,
+          "positive_return_probability_percent": 70.0,
+          "return_p20_percent": -8.21,
+          "return_p80_percent": 14.72,
+          "sample_count": 10
+        },
+        "21": {
+          "median_relative_return_percent": 0.26,
+          "median_return_percent": 3.09,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -9.56,
+          "return_p80_percent": 4.66,
+          "sample_count": 10
+        },
+        "63": {
+          "median_relative_return_percent": -0.77,
+          "median_return_percent": 6.19,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 70.0,
+          "return_p20_percent": -6.65,
+          "return_p80_percent": 12.82,
+          "sample_count": 10
+        }
+      },
+      "risk_score": 61.5,
+      "status": "AVAILABLE",
+      "symbol": "IWM"
+    },
+    {
+      "asset_class": "BOND",
+      "confidence_score": 72,
+      "exposure": "US high-yield credit",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 33.7,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -2.0,
+          "median_return_percent": -3.1,
+          "outperform_universe_probability_percent": 33.33,
+          "positive_return_probability_percent": 33.33,
+          "return_p20_percent": -6.23,
+          "return_p80_percent": 1.56,
+          "sample_count": 9
+        },
+        "21": {
+          "median_relative_return_percent": -1.02,
+          "median_return_percent": 0.89,
+          "outperform_universe_probability_percent": 33.33,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": -0.35,
+          "return_p80_percent": 1.99,
+          "sample_count": 9
+        },
+        "63": {
+          "median_relative_return_percent": 0.22,
+          "median_return_percent": -1.05,
+          "outperform_universe_probability_percent": 55.56,
+          "positive_return_probability_percent": 11.11,
+          "return_p20_percent": -2.03,
+          "return_p80_percent": -0.19,
+          "sample_count": 9
+        }
+      },
+      "risk_score": 21.2,
+      "status": "AVAILABLE",
+      "symbol": "HYG"
+    },
+    {
+      "asset_class": "EQUITY",
+      "confidence_score": 71,
+      "exposure": "Emerging markets",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 17.3,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -2.71,
+          "median_return_percent": -6.68,
+          "outperform_universe_probability_percent": 37.5,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -16.27,
+          "return_p80_percent": 7.66,
+          "sample_count": 8
+        },
+        "21": {
+          "median_relative_return_percent": 0.31,
+          "median_return_percent": -1.51,
+          "outperform_universe_probability_percent": 62.5,
+          "positive_return_probability_percent": 25.0,
+          "return_p20_percent": -7.31,
+          "return_p80_percent": 2.07,
+          "sample_count": 8
+        },
+        "63": {
+          "median_relative_return_percent": -3.22,
+          "median_return_percent": -6.79,
+          "outperform_universe_probability_percent": 37.5,
+          "positive_return_probability_percent": 12.5,
+          "return_p20_percent": -9.02,
+          "return_p80_percent": -2.17,
+          "sample_count": 8
+        }
+      },
+      "risk_score": 88.5,
+      "status": "AVAILABLE",
+      "symbol": "EEM"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 57,
+      "exposure": "Communication services",
+      "history_sessions": 2099,
+      "history_start": "2018-06-19",
+      "opportunity_score": 14.4,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -1.09,
+          "median_return_percent": 0.46,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -6.98,
+          "return_p80_percent": 27.06,
+          "sample_count": 5
+        },
+        "21": {
+          "median_relative_return_percent": -0.65,
+          "median_return_percent": 0.19,
+          "outperform_universe_probability_percent": 25.0,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -3.88,
+          "return_p80_percent": 2.98,
+          "sample_count": 8
+        },
+        "63": {
+          "median_relative_return_percent": -1.0,
+          "median_return_percent": 0.5,
+          "outperform_universe_probability_percent": 28.57,
+          "positive_return_probability_percent": 57.14,
+          "return_p20_percent": -7.12,
+          "return_p80_percent": 5.64,
+          "sample_count": 7
+        }
+      },
+      "risk_score": 80.8,
+      "status": "AVAILABLE",
+      "symbol": "XLC"
+    },
+    {
+      "asset_class": "SECTOR",
+      "confidence_score": 64,
+      "exposure": "Industrials",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 13.5,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 7.67,
+          "median_return_percent": 22.54,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": 2.25,
+          "return_p80_percent": 27.6,
+          "sample_count": 3
+        },
+        "21": {
+          "median_relative_return_percent": 3.86,
+          "median_return_percent": 9.15,
+          "outperform_universe_probability_percent": 100.0,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 7.03,
+          "return_p80_percent": 9.6,
+          "sample_count": 3
+        },
+        "63": {
+          "median_relative_return_percent": 6.88,
+          "median_return_percent": 12.81,
+          "outperform_universe_probability_percent": 100.0,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 10.8,
+          "return_p80_percent": 16.06,
+          "sample_count": 3
+        }
+      },
+      "risk_score": 67.3,
+      "status": "AVAILABLE",
+      "symbol": "XLI"
+    },
+    {
+      "asset_class": "COMMODITY",
+      "confidence_score": 65,
+      "exposure": "Physical gold",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 12.5,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 1.0,
+          "median_return_percent": 3.54,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 1.56,
+          "return_p80_percent": 5.84,
+          "sample_count": 4
+        },
+        "21": {
+          "median_relative_return_percent": 1.07,
+          "median_return_percent": 3.23,
+          "outperform_universe_probability_percent": 75.0,
+          "positive_return_probability_percent": 75.0,
+          "return_p20_percent": 0.38,
+          "return_p80_percent": 4.01,
+          "sample_count": 4
+        },
+        "63": {
+          "median_relative_return_percent": -4.99,
+          "median_return_percent": -0.32,
+          "outperform_universe_probability_percent": 25.0,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -4.59,
+          "return_p80_percent": 4.51,
+          "sample_count": 4
+        }
+      },
+      "risk_score": 92.3,
+      "status": "AVAILABLE",
+      "symbol": "IAU"
+    },
+    {
+      "asset_class": "COMMODITY",
+      "confidence_score": 75,
+      "exposure": "Physical silver",
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "opportunity_score": 3.8,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 4.86,
+          "median_return_percent": 5.96,
+          "outperform_universe_probability_percent": 72.73,
+          "positive_return_probability_percent": 81.82,
+          "return_p20_percent": 2.07,
+          "return_p80_percent": 10.71,
+          "sample_count": 11
+        },
+        "21": {
+          "median_relative_return_percent": 1.55,
+          "median_return_percent": -0.45,
+          "outperform_universe_probability_percent": 58.33,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -4.12,
+          "return_p80_percent": 6.65,
+          "sample_count": 12
+        },
+        "63": {
+          "median_relative_return_percent": 1.38,
+          "median_return_percent": 0.6,
+          "outperform_universe_probability_percent": 75.0,
+          "positive_return_probability_percent": 58.33,
+          "return_p20_percent": -3.25,
+          "return_p80_percent": 3.43,
+          "sample_count": 12
+        }
+      },
+      "risk_score": 98.1,
+      "status": "AVAILABLE",
+      "symbol": "SLV"
+    }
+  ],
+  "schema_version": "etf-rotation-research/1",
+  "universe_count": 26
+}
