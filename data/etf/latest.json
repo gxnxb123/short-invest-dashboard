@@ -2,52 +2,52 @@
   "as_of_session": "2026-10-23",
   "authority": "RESEARCH_ONLY_NO_RECOMMENDATION_AUTHORITY",
   "descriptive_rotation_baseline": {
-    "annualized_return_percent": 12.48,
+    "annualized_return_percent": 14.71,
     "full_turnover_cost_bps": 10,
     "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
-    "maximum_drawdown_percent": -17.1,
-    "mean_period_relative_return_percent": 0.19,
+    "maximum_drawdown_percent": -24.57,
+    "mean_period_relative_return_percent": 0.25,
     "period_count": 113,
     "rebalance_sessions": 21,
-    "relative_win_rate_percent": 52.21,
+    "relative_win_rate_percent": 53.98,
     "selected_count": 5,
     "status": "AVAILABLE"
   },
   "frozen_risk_overlay_validation": {
     "calibration": {
       "0.0": {
-        "annualized_return_percent": 8.7,
+        "annualized_return_percent": 5.27,
         "full_turnover_cost_bps": 10,
         "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
-        "maximum_drawdown_percent": -17.1,
-        "mean_period_relative_return_percent": 0.09,
+        "maximum_drawdown_percent": -24.57,
+        "mean_period_relative_return_percent": -0.24,
         "period_count": 79,
         "rebalance_sessions": 21,
-        "relative_win_rate_percent": 50.63,
+        "relative_win_rate_percent": 48.1,
         "selected_count": 5,
         "status": "AVAILABLE"
       },
       "0.25": {
-        "annualized_return_percent": 6.2,
+        "annualized_return_percent": 6.32,
         "full_turnover_cost_bps": 10,
         "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
-        "maximum_drawdown_percent": -19.22,
-        "mean_period_relative_return_percent": -0.11,
+        "maximum_drawdown_percent": -23.13,
+        "mean_period_relative_return_percent": -0.18,
         "period_count": 79,
         "rebalance_sessions": 21,
-        "relative_win_rate_percent": 53.16,
+        "relative_win_rate_percent": 54.43,
         "selected_count": 5,
         "status": "AVAILABLE"
       },
       "0.5": {
-        "annualized_return_percent": 6.28,
+        "annualized_return_percent": 4.94,
         "full_turnover_cost_bps": 10,
         "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
-        "maximum_drawdown_percent": -17.42,
-        "mean_period_relative_return_percent": -0.12,
+        "maximum_drawdown_percent": -25.18,
+        "mean_period_relative_return_percent": -0.31,
         "period_count": 79,
         "rebalance_sessions": 21,
-        "relative_win_rate_percent": 49.37,
+        "relative_win_rate_percent": 43.04,
         "selected_count": 5,
         "status": "AVAILABLE"
       }
@@ -58,31 +58,31 @@
       0.5
     ],
     "evaluation_momentum_only": {
-      "annualized_return_percent": 21.76,
+      "annualized_return_percent": 40.03,
       "full_turnover_cost_bps": 10,
       "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
-      "maximum_drawdown_percent": -11.0,
-      "mean_period_relative_return_percent": 0.43,
+      "maximum_drawdown_percent": -10.21,
+      "mean_period_relative_return_percent": 1.4,
       "period_count": 34,
       "rebalance_sessions": 21,
-      "relative_win_rate_percent": 55.88,
+      "relative_win_rate_percent": 67.65,
       "selected_count": 5,
       "status": "AVAILABLE"
     },
     "evaluation_selected_rule": {
-      "annualized_return_percent": 21.76,
+      "annualized_return_percent": 31.31,
       "full_turnover_cost_bps": 10,
       "interpretation": "DESCRIPTIVE_BASELINE_NOT_OUT_OF_SAMPLE_VALIDATION",
-      "maximum_drawdown_percent": -11.0,
-      "mean_period_relative_return_percent": 0.43,
+      "maximum_drawdown_percent": -7.89,
+      "mean_period_relative_return_percent": 0.85,
       "period_count": 34,
       "rebalance_sessions": 21,
-      "relative_win_rate_percent": 55.88,
+      "relative_win_rate_percent": 50.0,
       "selected_count": 5,
       "status": "AVAILABLE"
     },
     "interpretation": "FROZEN_CHRONOLOGICAL_HOLDOUT_RESEARCH_NOT_LIVE_AUTHORITY",
-    "selected_risk_penalty": 0.0,
+    "selected_risk_penalty": 0.25,
     "split": "FIRST_70_PERCENT_CALIBRATION_LAST_30_PERCENT_EVALUATION",
     "status": "AVAILABLE"
   },
@@ -93,17 +93,44 @@
   ],
   "methodology": {
     "curve": "non-overlapping historical observations in the same 10-point opportunity-score band",
+    "downside_risk": "positioning-unwind watch requires prior 58-session gain >=15%, 5-session loss >=6%, relative loss versus SPY >=4%, and 21-session drawdown >=9%; only a material negative event upgrades it to downside bias",
+    "final_score": "45% opportunity + 20% 5/21-session cross-sectional market psychology + 15% inverse risk + 10% confidence-damped historical analog + 10% JEV-reviewed catalyst environment",
     "horizons_sessions": [
       21,
       63,
       126
     ],
-    "macro_or_news_ranking_inputs": false,
+    "macro_ranking_input": false,
+    "news_ranking_input": true,
     "opportunity": "75% cross-sectional 21/63/126-session total-return momentum rank + 25% positive-trend confirmation",
     "risk": "equal-weight cross-sectional 63-session volatility and 126-session drawdown ranks"
   },
+  "positioning_unwind_validation": {
+    "calibration": {
+      "episode_count": 64,
+      "future_10_session_gain_5_percent_probability": 46.88,
+      "future_10_session_loss_5_percent_probability": 40.62,
+      "status": "AVAILABLE"
+    },
+    "evaluation": {
+      "episode_count": 51,
+      "future_10_session_gain_5_percent_probability": 41.18,
+      "future_10_session_loss_5_percent_probability": 35.29,
+      "status": "AVAILABLE"
+    },
+    "frozen_rule": {
+      "drawdown_from_21_session_high_max_percent": -9,
+      "episode_cooldown_calendar_days": 30,
+      "prior_58_session_return_min_percent": 15,
+      "recent_5_session_return_max_percent": -6,
+      "relative_to_spy_5_session_max_percent": -4
+    },
+    "interpretation": "PRICE_ONLY_UNWIND_IS_TWO_SIDED_AND_HAS_NO_RANKING_EFFECT",
+    "split": "FIRST_70_PERCENT_CALIBRATION_LAST_30_PERCENT_EVALUATION",
+    "status": "AVAILABLE"
+  },
   "price_basis": "YAHOO_AUTO_ADJUSTED_TOTAL_RETURN_PROXY",
-  "price_data_digest": "sha256:9554ed8bbc289e54f84a9a4ecfbf9e5e2a93feb5c64ec50cae71814edf9bb354",
+  "price_data_digest": "sha256:44dd7cc26eaf81d3812d5f03c0166ae04d61e00407b89d20ee08e31741db23f8",
   "price_regime_context": {
     "broad_commodity_return_percent": 17.55,
     "defensive_minus_cyclical_percent": 2.79,
@@ -116,45 +143,468 @@
     "status": "AVAILABLE"
   },
   "prospective_event_context": {
-    "authority": "PROSPECTIVE_EVENT_CONTEXT_NO_RANKING_EFFECT",
+    "authority": "PROSPECTIVE_EVENT_CONTEXT_RESEARCH_RANKING_ONLY",
     "captured_on": "2026-10-24",
+    "important_news": [
+      {
+        "domain": "pakobserver.net",
+        "language": "English",
+        "material_impacts": [
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "BNO"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "CIBR"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "DBC"
+          },
+          {
+            "direction": "NEGATIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "EEM"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "IAU"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "ITA"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "USO"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLE"
+          }
+        ],
+        "seen_at": "20261024T071500Z",
+        "source_country": "Pakistan",
+        "themes": [
+          "MILITARY_GEOPOLITICS"
+        ],
+        "title": "Iran plans targeting undersea cable in Gulf if US , Israel resume war : reports",
+        "url": "https://pakobserver.net/iran-plans-targeting-undersea-cable-in-gulf-if-us-israel-resume-war-reports/"
+      },
+      {
+        "domain": "dailypioneer.com",
+        "language": "English",
+        "material_impacts": [
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "BNO"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "CIBR"
+          },
+          {
+            "direction": "NEGATIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "EEM"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "IAU"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "ITA"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "USO"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "IMMEDIATE_1_TO_5D",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLE"
+          }
+        ],
+        "seen_at": "20261024T071500Z",
+        "source_country": "India",
+        "themes": [
+          "MILITARY_GEOPOLITICS"
+        ],
+        "title": "Iran threatens Gulf internet cables if war with US and Israel resumes",
+        "url": "https://dailypioneer.com/world/iran-threatens-gulf-internet-cables-if-war-with-us-and-israel-resumes"
+      },
+      {
+        "domain": "600kcol.iheart.com",
+        "language": "English",
+        "material_impacts": [
+          {
+            "direction": "POSITIVE",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLB"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLI"
+          }
+        ],
+        "seen_at": "20261024T071500Z",
+        "source_country": "United States",
+        "themes": [
+          "TRADE_CONTROLS"
+        ],
+        "title": "Trump Administration Rolls Back Some Canada Tariffs",
+        "url": "https://600kcol.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
+      },
+      {
+        "domain": "newsradio540.iheart.com",
+        "language": "English",
+        "material_impacts": [
+          {
+            "direction": "POSITIVE",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLB"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLI"
+          }
+        ],
+        "seen_at": "20261024T071500Z",
+        "source_country": "United States",
+        "themes": [
+          "TRADE_CONTROLS"
+        ],
+        "title": "Trump Administration Rolls Back Some Canada Tariffs",
+        "url": "https://newsradio540.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
+      },
+      {
+        "domain": "wchstv.com",
+        "language": "English",
+        "material_impacts": [
+          {
+            "direction": "MIXED_OR_UNCLEAR",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLB"
+          },
+          {
+            "direction": "MIXED_OR_UNCLEAR",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLI"
+          }
+        ],
+        "seen_at": "20261024T071500Z",
+        "source_country": "United States",
+        "themes": [
+          "TRADE_CONTROLS"
+        ],
+        "title": "Trump lifts tariffs on some Canadian imports , adds others in sweeping revision",
+        "url": "https://wchstv.com/news/nation-world/trump-lifts-tariffs-on-some-canadian-imports-adds-others-in-sweeping-revision"
+      },
+      {
+        "domain": "wmanfm.iheart.com",
+        "language": "English",
+        "material_impacts": [
+          {
+            "direction": "POSITIVE",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLB"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLI"
+          }
+        ],
+        "seen_at": "20261024T071500Z",
+        "source_country": "United States",
+        "themes": [
+          "TRADE_CONTROLS"
+        ],
+        "title": "Trump Administration Rolls Back Some Canada Tariffs",
+        "url": "https://wmanfm.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
+      },
+      {
+        "domain": "wrak.iheart.com",
+        "language": "English",
+        "material_impacts": [
+          {
+            "direction": "POSITIVE",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLB"
+          },
+          {
+            "direction": "POSITIVE",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLI"
+          }
+        ],
+        "seen_at": "20261024T071500Z",
+        "source_country": "United States",
+        "themes": [
+          "TRADE_CONTROLS"
+        ],
+        "title": "Trump Administration Rolls Back Some Canada Tariffs",
+        "url": "https://wrak.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
+      },
+      {
+        "domain": "abcnews4.com",
+        "language": "English",
+        "material_impacts": [
+          {
+            "direction": "MIXED_OR_UNCLEAR",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "status": "AVAILABLE",
+            "symbol": "XLB"
+          }
+        ],
+        "seen_at": "20261024T071500Z",
+        "source_country": "United States",
+        "themes": [
+          "TRADE_CONTROLS"
+        ],
+        "title": "Trump lifts tariffs on some Canadian imports , adds others in sweeping revision",
+        "url": "https://abcnews4.com/news/nation-world/trump-lifts-tariffs-on-some-canadian-imports-adds-others-in-sweeping-revision"
+      },
+      {
+        "domain": "scroll.in",
+        "language": "English",
+        "material_impacts": [],
+        "seen_at": "20261024T071500Z",
+        "source_country": "India",
+        "themes": [
+          "ENERGY_SUPPLY"
+        ],
+        "title": "Arunachal : Anti - dam protesters vandalise NHPC office , police station after tear gas fired",
+        "url": "https://scroll.in/latest/1096620/arunachal-anti-dam-protesters-vandalise-nhpc-office-police-station-after-tear-gas-fired"
+      },
+      {
+        "domain": "trend.az",
+        "language": "English",
+        "material_impacts": [],
+        "seen_at": "20261024T071500Z",
+        "source_country": "Azerbaijan",
+        "themes": [
+          "ENERGY_SUPPLY"
+        ],
+        "title": "Azerbaijan ranks among T\u00fcrkiye top three gas suppliers in August",
+        "url": "https://www.trend.az/azerbaijan/4238625.html"
+      }
+    ],
     "jev_assessment": {
-      "assessed_at": "2026-10-24T08:04:08.824678+00:00",
-      "available_pair_count": 57,
+      "assessed_at": "2026-10-24T17:16:03.534778+00:00",
+      "available_pair_count": 72,
       "direction_counts": {
-        "MIXED_OR_UNCLEAR": 8,
-        "NEGATIVE": 3,
-        "POSITIVE": 14
+        "MIXED_OR_UNCLEAR": 3,
+        "NEGATIVE": 2,
+        "POSITIVE": 21
       },
       "horizon_counts": {
-        "IMMEDIATE_1_TO_5D": 10,
-        "MEDIUM_1_TO_3M": 15,
+        "IMMEDIATE_1_TO_5D": 15,
+        "MEDIUM_1_TO_3M": 11,
         "STRUCTURAL_6M_PLUS": 0,
         "UNCERTAIN": 0
       },
-      "meaningful_pair_count": 25,
+      "meaningful_pair_count": 26,
       "run_stats": {
-        "attempted": 57,
-        "failed": 0,
-        "input_tokens": 42578,
+        "attempted": 73,
+        "failed": 1,
+        "input_tokens": 58631,
         "model_discovery_requests": 1,
-        "output_tokens": 10094,
-        "pair_count": 57,
+        "output_tokens": 12737,
+        "pair_count": 73,
         "status": "AVAILABLE",
-        "succeeded": 57
+        "succeeded": 72
       },
       "status": "AVAILABLE"
     },
-    "ranking_effect": "NONE_UNTIL_RELEVANCE_AND_OUTCOME_VALIDATION",
+    "material_negative_symbols": [
+      "EEM"
+    ],
+    "material_positive_symbols": [
+      "BNO",
+      "CIBR",
+      "DBC",
+      "IAU",
+      "ITA",
+      "USO",
+      "XLB",
+      "XLE",
+      "XLI"
+    ],
+    "ranking_effect": "BOUNDED_FINAL_SCORE_INPUT_RESEARCH_ONLY",
     "source_url": "https://www.gdeltproject.org/",
     "status": "AVAILABLE",
+    "symbol_catalyst_context": {
+      "BNO": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "CIBR": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "DBC": {
+        "negative_count": 0,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
+        "state": "POSITIVE"
+      },
+      "EEM": {
+        "negative_count": 2,
+        "net_impact": -40,
+        "positive_count": 0,
+        "score": 10,
+        "state": "NEGATIVE"
+      },
+      "IAU": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "ITA": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "USO": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "XLB": {
+        "negative_count": 0,
+        "net_impact": 48,
+        "positive_count": 4,
+        "score": 98,
+        "state": "POSITIVE"
+      },
+      "XLE": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "XLI": {
+        "negative_count": 0,
+        "net_impact": 48,
+        "positive_count": 4,
+        "score": 98,
+        "state": "POSITIVE"
+      }
+    },
     "themes": {
+      "DEFENSE_ORDERS": {
+        "article_count": 0,
+        "mapped_etfs": [
+          "ITA",
+          "XLI"
+        ],
+        "sample_articles": []
+      },
+      "ECONOMIC_GROWTH": {
+        "article_count": 0,
+        "mapped_etfs": [
+          "SPY",
+          "QQQ",
+          "IWM",
+          "XLI",
+          "XLY",
+          "XLP",
+          "XLV",
+          "EFA",
+          "EEM"
+        ],
+        "sample_articles": []
+      },
       "ENERGY_SUPPLY": {
         "article_count": 2,
         "mapped_etfs": [
           "XLE",
           "USO",
-          "DBC"
+          "BNO",
+          "DBC",
+          "ICLN"
         ],
         "sample_articles": [
           {
@@ -162,10 +612,24 @@
             "etf_assessments": [
               {
                 "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "BNO"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
                 "status": "AVAILABLE",
                 "symbol": "DBC"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "ICLN"
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
@@ -196,7 +660,21 @@
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
                 "status": "AVAILABLE",
+                "symbol": "BNO"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
                 "symbol": "DBC"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "ICLN"
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
@@ -232,14 +710,25 @@
         ],
         "sample_articles": []
       },
+      "HEALTH_POLICY": {
+        "article_count": 0,
+        "mapped_etfs": [
+          "XLV"
+        ],
+        "sample_articles": []
+      },
       "MILITARY_GEOPOLITICS": {
         "article_count": 3,
         "mapped_etfs": [
           "IAU",
+          "GDX",
+          "ITA",
           "XLE",
           "USO",
+          "BNO",
           "DBC",
           "XLI",
+          "CIBR",
           "EFA",
           "EEM"
         ],
@@ -247,6 +736,20 @@
           {
             "domain": "dailypioneer.com",
             "etf_assessments": [
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "BNO"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "CIBR"
+              },
               {
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
@@ -271,9 +774,23 @@
               {
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "GDX"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
                 "status": "AVAILABLE",
                 "symbol": "IAU"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "ITA"
               },
               {
                 "direction": "POSITIVE",
@@ -290,7 +807,7 @@
                 "symbol": "XLE"
               },
               {
-                "direction": "NEGATIVE",
+                "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
                 "status": "AVAILABLE",
@@ -311,6 +828,20 @@
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
                 "status": "AVAILABLE",
+                "symbol": "BNO"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "CIBR"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
                 "symbol": "DBC"
               },
               {
@@ -330,9 +861,23 @@
               {
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "GDX"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
                 "status": "AVAILABLE",
                 "symbol": "IAU"
+              },
+              {
+                "direction": "POSITIVE",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "MATERIAL",
+                "status": "AVAILABLE",
+                "symbol": "ITA"
               },
               {
                 "direction": "POSITIVE",
@@ -351,7 +896,7 @@
               {
                 "direction": "NEGATIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
-                "relation": "MATERIAL",
+                "relation": "INCIDENTAL",
                 "status": "AVAILABLE",
                 "symbol": "XLI"
               }
@@ -365,6 +910,20 @@
           {
             "domain": "rozanaspokesman.com",
             "etf_assessments": [
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "BNO"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "UNCERTAIN",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "CIBR"
+              },
               {
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
@@ -387,11 +946,25 @@
                 "symbol": "EFA"
               },
               {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "GDX"
+              },
+              {
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
                 "status": "AVAILABLE",
                 "symbol": "IAU"
+              },
+              {
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
+                "relation": "INCIDENTAL",
+                "status": "AVAILABLE",
+                "symbol": "ITA"
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
@@ -423,6 +996,55 @@
           }
         ]
       },
+      "MONETARY_INFLATION": {
+        "article_count": 0,
+        "mapped_etfs": [
+          "SPY",
+          "QQQ",
+          "IWM",
+          "SHY",
+          "IEF",
+          "TLT",
+          "TIP",
+          "LQD",
+          "HYG",
+          "IAU"
+        ],
+        "sample_articles": []
+      },
+      "POLITICAL_SOCIAL_SHOCK": {
+        "article_count": 0,
+        "mapped_etfs": [
+          "SPY",
+          "EFA",
+          "EEM",
+          "XLI",
+          "XLE",
+          "XLU",
+          "IAU",
+          "DBC"
+        ],
+        "sample_articles": []
+      },
+      "PRECIOUS_METALS": {
+        "article_count": 0,
+        "mapped_etfs": [
+          "IAU",
+          "GDX",
+          "SLV"
+        ],
+        "sample_articles": []
+      },
+      "TECHNOLOGY_AI": {
+        "article_count": 0,
+        "mapped_etfs": [
+          "QQQ",
+          "XLK",
+          "SMH",
+          "CIBR"
+        ],
+        "sample_articles": []
+      },
       "TRADE_CONTROLS": {
         "article_count": 6,
         "mapped_etfs": [
@@ -444,14 +1066,14 @@
                 "symbol": "EEM"
               },
               {
-                "direction": "POSITIVE",
-                "horizon": "MEDIUM_1_TO_3M",
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
                 "status": "AVAILABLE",
                 "symbol": "EFA"
               },
               {
-                "direction": "MIXED_OR_UNCLEAR",
+                "direction": "POSITIVE",
                 "horizon": "MEDIUM_1_TO_3M",
                 "relation": "MATERIAL",
                 "status": "AVAILABLE",
@@ -466,7 +1088,7 @@
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
-                "horizon": "IMMEDIATE_1_TO_5D",
+                "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
                 "status": "AVAILABLE",
                 "symbol": "XLK"
@@ -491,7 +1113,7 @@
               {
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "MEDIUM_1_TO_3M",
-                "relation": "MATERIAL",
+                "relation": "INCIDENTAL",
                 "status": "AVAILABLE",
                 "symbol": "EFA"
               },
@@ -503,10 +1125,10 @@
                 "symbol": "XLB"
               },
               {
-                "direction": "MIXED_OR_UNCLEAR",
-                "horizon": "MEDIUM_1_TO_3M",
-                "relation": "MATERIAL",
-                "status": "AVAILABLE",
+                "direction": null,
+                "horizon": null,
+                "relation": null,
+                "status": "UNAVAILABLE",
                 "symbol": "XLI"
               },
               {
@@ -535,7 +1157,7 @@
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
-                "horizon": "MEDIUM_1_TO_3M",
+                "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
                 "status": "AVAILABLE",
                 "symbol": "EFA"
@@ -571,7 +1193,7 @@
         ]
       }
     },
-    "warning": "Coverage volume and headlines are context, not verified event direction or investment signals."
+    "warning": "Only JEV-reviewed material direction has a bounded effect on the research score; it is not recommendation authority."
   },
   "prospective_macro_context": {
     "authority": "PROSPECTIVE_FROZEN_MACRO_CONTEXT_NO_RANKING_EFFECT",
@@ -615,934 +1237,2090 @@
   "rankings": [
     {
       "asset_class": "COMMODITY",
-      "confidence_score": 80,
-      "exposure": "WTI futures strategy",
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 88,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": 0.0,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 37.91,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 5.66,
+        "relative_to_spy_5_session_percent": 6.09,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Brent crude futures strategy",
+      "final_score": 88.9,
+      "final_score_change_1_session": 3.7,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 7.04,
+      "historical_analog_score": 81.0,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 99.0,
+      "market_psychology_score": 98.9,
+      "opportunity_score": 99.4,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": 4.02,
-          "median_return_percent": 2.03,
-          "outperform_universe_probability_percent": 66.67,
-          "positive_return_probability_percent": 60.0,
-          "return_p20_percent": -14.68,
-          "return_p80_percent": 26.17,
-          "sample_count": 15
+          "median_relative_return_percent": 9.07,
+          "median_return_percent": 12.4,
+          "outperform_universe_probability_percent": 71.43,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": -16.41,
+          "return_p80_percent": 25.32,
+          "sample_count": 21
         },
         "21": {
-          "median_relative_return_percent": 3.92,
-          "median_return_percent": 1.48,
-          "outperform_universe_probability_percent": 58.82,
-          "positive_return_probability_percent": 70.59,
-          "return_p20_percent": -3.65,
-          "return_p80_percent": 11.15,
-          "sample_count": 17
+          "median_relative_return_percent": 1.62,
+          "median_return_percent": 1.23,
+          "outperform_universe_probability_percent": 65.22,
+          "positive_return_probability_percent": 60.87,
+          "return_p20_percent": -2.86,
+          "return_p80_percent": 9.2,
+          "sample_count": 23
         },
         "63": {
-          "median_relative_return_percent": 4.05,
-          "median_return_percent": 6.27,
-          "outperform_universe_probability_percent": 68.75,
-          "positive_return_probability_percent": 68.75,
-          "return_p20_percent": -10.33,
-          "return_p80_percent": 22.62,
-          "sample_count": 16
+          "median_relative_return_percent": 4.91,
+          "median_return_percent": 7.48,
+          "outperform_universe_probability_percent": 63.64,
+          "positive_return_probability_percent": 68.18,
+          "return_p20_percent": -13.41,
+          "return_p80_percent": 12.13,
+          "sample_count": 22
         }
       },
-      "risk_score": 53.8,
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 51.7,
+      "sleeve": "COMMODITY",
       "status": "AVAILABLE",
-      "symbol": "USO"
+      "symbol": "BNO",
+      "tradable_isin": "IE00BVFZGD11",
+      "tradable_name": "WisdomTree Bloomberg Brent Crude Oil ETC",
+      "tradable_symbol": "0LJB"
+    },
+    {
+      "asset_class": "COMMODITY",
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 84,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": 0.0,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 29.66,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 4.8,
+        "relative_to_spy_5_session_percent": 5.23,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "WTI futures strategy",
+      "final_score": 86.1,
+      "final_score_change_1_session": 4.2,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 4.43,
+      "historical_analog_score": 68.6,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 95.6,
+      "opportunity_score": 97.2,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 6.45,
+          "median_return_percent": 6.41,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 61.11,
+          "return_p20_percent": -16.18,
+          "return_p80_percent": 22.2,
+          "sample_count": 18
+        },
+        "21": {
+          "median_relative_return_percent": 3.46,
+          "median_return_percent": 1.4,
+          "outperform_universe_probability_percent": 57.89,
+          "positive_return_probability_percent": 68.42,
+          "return_p20_percent": -2.49,
+          "return_p80_percent": 10.59,
+          "sample_count": 19
+        },
+        "63": {
+          "median_relative_return_percent": 4.6,
+          "median_return_percent": 5.48,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 72.22,
+          "return_p20_percent": -7.32,
+          "return_p80_percent": 12.55,
+          "sample_count": 18
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 50.6,
+      "sleeve": "COMMODITY",
+      "status": "AVAILABLE",
+      "symbol": "USO",
+      "tradable_isin": "IE00BVFZGC04",
+      "tradable_name": "WisdomTree Bloomberg WTI Crude Oil ETC",
+      "tradable_symbol": "0LJC"
     },
     {
       "asset_class": "SECTOR",
-      "confidence_score": 77,
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 73,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": 0.0,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 17.62,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 1.6,
+        "relative_to_spy_5_session_percent": 2.03,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
       "exposure": "Energy",
+      "final_score": 86.0,
+      "final_score_change_1_session": 7.0,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 2.94,
+      "historical_analog_score": 60.7,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 97.1,
+      "market_psychology_score": 92.2,
+      "opportunity_score": 96.1,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": 2.96,
-          "median_return_percent": 7.72,
-          "outperform_universe_probability_percent": 69.23,
-          "positive_return_probability_percent": 76.92,
-          "return_p20_percent": -0.06,
-          "return_p80_percent": 14.57,
+          "median_relative_return_percent": 3.07,
+          "median_return_percent": 7.87,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 80.0,
+          "return_p20_percent": 0.58,
+          "return_p80_percent": 17.35,
+          "sample_count": 10
+        },
+        "21": {
+          "median_relative_return_percent": -2.16,
+          "median_return_percent": -1.23,
+          "outperform_universe_probability_percent": 45.45,
+          "positive_return_probability_percent": 36.36,
+          "return_p20_percent": -8.26,
+          "return_p80_percent": 4.59,
+          "sample_count": 11
+        },
+        "63": {
+          "median_relative_return_percent": 0.3,
+          "median_return_percent": 2.17,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -6.99,
+          "return_p80_percent": 9.83,
+          "sample_count": 10
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 38.3,
+      "sleeve": "US_SECTOR",
+      "status": "AVAILABLE",
+      "symbol": "XLE",
+      "tradable_isin": "IE00BWBXM492",
+      "tradable_name": "State Street SPDR S&P U.S. Energy Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDE"
+    },
+    {
+      "asset_class": "THEME",
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 73,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -3.53,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 10.91,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 7.39,
+        "relative_to_spy_5_session_percent": 7.82,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Cyber security",
+      "final_score": 82.0,
+      "final_score_change_1_session": 19.9,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 3.35,
+      "historical_analog_score": 62.2,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 91.1,
+      "opportunity_score": 93.9,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -3.6,
+          "median_return_percent": 5.16,
+          "outperform_universe_probability_percent": 20.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -4.15,
+          "return_p80_percent": 9.69,
+          "sample_count": 10
+        },
+        "21": {
+          "median_relative_return_percent": 0.12,
+          "median_return_percent": 1.0,
+          "outperform_universe_probability_percent": 53.85,
+          "positive_return_probability_percent": 53.85,
+          "return_p20_percent": -1.9,
+          "return_p80_percent": 5.72,
+          "sample_count": 13
+        },
+        "63": {
+          "median_relative_return_percent": 0.28,
+          "median_return_percent": 3.88,
+          "outperform_universe_probability_percent": 58.33,
+          "positive_return_probability_percent": 83.33,
+          "return_p20_percent": 0.3,
+          "return_p80_percent": 5.5,
+          "sample_count": 12
+        }
+      },
+      "rebound_opportunity_context": {
+        "material_negative_event": false,
+        "material_positive_event": true,
+        "price_recovery_confirmed": false,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_positioning_unwind_session": "2026-10-19",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 57.8,
+      "sleeve": "THEMATIC_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "CIBR",
+      "tradable_isin": "IE00BYPLS672",
+      "tradable_name": "L&G Cyber Security UCITS ETF",
+      "tradable_symbol": "ISPY"
+    },
+    {
+      "asset_class": "FACTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 67,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.54,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 4.14,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 1.67,
+        "relative_to_spy_5_session_percent": 2.1,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "World minimum volatility factor",
+      "final_score": 80.3,
+      "final_score_change_1_session": 0.7,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": -0.77,
+      "historical_analog_score": 47.4,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 88.9,
+      "opportunity_score": 88.3,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 1.45,
+          "median_return_percent": 2.73,
+          "outperform_universe_probability_percent": 60.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -4.92,
+          "return_p80_percent": 4.59,
+          "sample_count": 5
+        },
+        "21": {
+          "median_relative_return_percent": 0.62,
+          "median_return_percent": -2.47,
+          "outperform_universe_probability_percent": 60.0,
+          "positive_return_probability_percent": 20.0,
+          "return_p20_percent": -5.5,
+          "return_p80_percent": -0.56,
+          "sample_count": 5
+        },
+        "63": {
+          "median_relative_return_percent": -0.81,
+          "median_return_percent": -2.58,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 40.0,
+          "return_p20_percent": -4.67,
+          "return_p80_percent": 0.44,
+          "sample_count": 5
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 13.3,
+      "sleeve": "FACTOR_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "USMV",
+      "tradable_isin": "IE00B8FHGS14",
+      "tradable_name": "iShares Edge MSCI World Minimum Volatility UCITS ETF",
+      "tradable_symbol": "IQQ0"
+    },
+    {
+      "asset_class": "COMMODITY",
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 77,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": 0.0,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 16.3,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 1.07,
+        "relative_to_spy_5_session_percent": 1.5,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Broad commodity futures",
+      "final_score": 79.0,
+      "final_score_change_1_session": 4.7,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 3.79,
+      "historical_analog_score": 64.6,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 80.0,
+      "opportunity_score": 88.3,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 4.04,
+          "median_return_percent": 9.95,
+          "outperform_universe_probability_percent": 61.54,
+          "positive_return_probability_percent": 61.54,
+          "return_p20_percent": -3.24,
+          "return_p80_percent": 14.81,
           "sample_count": 13
         },
         "21": {
-          "median_relative_return_percent": -0.59,
-          "median_return_percent": -0.81,
-          "outperform_universe_probability_percent": 50.0,
+          "median_relative_return_percent": -1.43,
+          "median_return_percent": -1.04,
+          "outperform_universe_probability_percent": 35.71,
           "positive_return_probability_percent": 42.86,
-          "return_p20_percent": -9.04,
-          "return_p80_percent": 5.6,
+          "return_p20_percent": -3.76,
+          "return_p80_percent": 1.6,
           "sample_count": 14
         },
         "63": {
-          "median_relative_return_percent": 1.16,
-          "median_return_percent": -0.35,
-          "outperform_universe_probability_percent": 53.85,
-          "positive_return_probability_percent": 46.15,
-          "return_p20_percent": -5.53,
-          "return_p80_percent": 10.75,
-          "sample_count": 13
+          "median_relative_return_percent": -1.22,
+          "median_return_percent": 2.46,
+          "outperform_universe_probability_percent": 42.86,
+          "positive_return_probability_percent": 57.14,
+          "return_p20_percent": -6.31,
+          "return_p80_percent": 9.06,
+          "sample_count": 14
         }
       },
-      "risk_score": 44.2,
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 35.0,
+      "sleeve": "COMMODITY",
       "status": "AVAILABLE",
-      "symbol": "XLE"
+      "symbol": "DBC",
+      "tradable_isin": "GB00B15KY989",
+      "tradable_name": "WisdomTree Broad Commodities ETC",
+      "tradable_symbol": "AIGC"
     },
     {
       "asset_class": "SECTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
       "confidence_score": 68,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -1.11,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 8.56,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 1.45,
+        "relative_to_spy_5_session_percent": 1.88,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
       "exposure": "Health care",
+      "final_score": 78.1,
+      "final_score_change_1_session": -1.6,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": -1.5,
+      "historical_analog_score": 44.9,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 92.3,
+      "market_psychology_score": 86.7,
+      "opportunity_score": 92.8,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": -3.11,
-          "median_return_percent": 0.11,
-          "outperform_universe_probability_percent": 33.33,
+          "median_relative_return_percent": -0.12,
+          "median_return_percent": -0.62,
+          "outperform_universe_probability_percent": 50.0,
           "positive_return_probability_percent": 50.0,
-          "return_p20_percent": -2.12,
+          "return_p20_percent": -2.93,
           "return_p80_percent": 3.93,
           "sample_count": 6
         },
         "21": {
-          "median_relative_return_percent": -1.19,
-          "median_return_percent": 0.41,
+          "median_relative_return_percent": -1.7,
+          "median_return_percent": -1.74,
           "outperform_universe_probability_percent": 33.33,
-          "positive_return_probability_percent": 50.0,
-          "return_p20_percent": -3.13,
+          "positive_return_probability_percent": 33.33,
+          "return_p20_percent": -7.31,
           "return_p80_percent": 2.88,
           "sample_count": 6
         },
         "63": {
-          "median_relative_return_percent": -1.85,
-          "median_return_percent": -1.72,
-          "outperform_universe_probability_percent": 16.67,
-          "positive_return_probability_percent": 33.33,
+          "median_relative_return_percent": -1.9,
+          "median_return_percent": -2.13,
+          "outperform_universe_probability_percent": 33.33,
+          "positive_return_probability_percent": 16.67,
           "return_p20_percent": -4.62,
-          "return_p80_percent": 0.13,
+          "return_p80_percent": -1.38,
           "sample_count": 6
         }
       },
-      "risk_score": 42.3,
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 36.7,
+      "sleeve": "US_SECTOR",
       "status": "AVAILABLE",
-      "symbol": "XLV"
+      "symbol": "XLV",
+      "tradable_isin": "IE00BWBXM617",
+      "tradable_name": "State Street SPDR S&P U.S. Health Care Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDH"
+    },
+    {
+      "asset_class": "SECTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 69,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -1.92,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 3.32,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.73,
+        "relative_to_spy_5_session_percent": 1.16,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Consumer staples",
+      "final_score": 74.8,
+      "final_score_change_1_session": -5.3,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 0.24,
+      "historical_analog_score": 50.8,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 82.2,
+      "opportunity_score": 86.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 0.48,
+          "median_return_percent": 1.59,
+          "outperform_universe_probability_percent": 57.14,
+          "positive_return_probability_percent": 57.14,
+          "return_p20_percent": -3.83,
+          "return_p80_percent": 5.95,
+          "sample_count": 7
+        },
+        "21": {
+          "median_relative_return_percent": -1.03,
+          "median_return_percent": -0.48,
+          "outperform_universe_probability_percent": 28.57,
+          "positive_return_probability_percent": 28.57,
+          "return_p20_percent": -5.47,
+          "return_p80_percent": 1.49,
+          "sample_count": 7
+        },
+        "63": {
+          "median_relative_return_percent": -1.08,
+          "median_return_percent": -0.39,
+          "outperform_universe_probability_percent": 42.86,
+          "positive_return_probability_percent": 42.86,
+          "return_p20_percent": -1.28,
+          "return_p80_percent": 1.67,
+          "sample_count": 7
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 36.7,
+      "sleeve": "US_SECTOR",
+      "status": "AVAILABLE",
+      "symbol": "XLP",
+      "tradable_isin": "IE00BWBXM385",
+      "tradable_name": "State Street SPDR S&P U.S. Consumer Staples Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDS"
+    },
+    {
+      "asset_class": "SECTOR",
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 48,
+        "positive_count": 4,
+        "score": 98,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 89,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.74,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -0.46,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.77,
+        "relative_to_spy_5_session_percent": 1.2,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Materials",
+      "final_score": 69.6,
+      "final_score_change_1_session": 0.4,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 0.8,
+      "historical_analog_score": 53.5,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 80.0,
+      "opportunity_score": 66.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -1.91,
+          "median_return_percent": 1.16,
+          "outperform_universe_probability_percent": 36.36,
+          "positive_return_probability_percent": 54.55,
+          "return_p20_percent": -6.36,
+          "return_p80_percent": 12.81,
+          "sample_count": 22
+        },
+        "21": {
+          "median_relative_return_percent": -1.74,
+          "median_return_percent": -1.09,
+          "outperform_universe_probability_percent": 30.77,
+          "positive_return_probability_percent": 34.62,
+          "return_p20_percent": -3.53,
+          "return_p80_percent": 1.22,
+          "sample_count": 26
+        },
+        "63": {
+          "median_relative_return_percent": -0.47,
+          "median_return_percent": 2.32,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -8.94,
+          "return_p80_percent": 7.17,
+          "sample_count": 25
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 42.2,
+      "sleeve": "US_SECTOR",
+      "status": "AVAILABLE",
+      "symbol": "XLB",
+      "tradable_isin": "IE00BWBXM831",
+      "tradable_name": "State Street SPDR S&P U.S. Materials Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDM"
+    },
+    {
+      "asset_class": "FACTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 91,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -2.15,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 3.75,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -0.94,
+        "relative_to_spy_5_session_percent": -0.51,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "World quality factor",
+      "final_score": 69.3,
+      "final_score_change_1_session": -2.5,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 5.21,
+      "historical_analog_score": 73.7,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 51.1,
+      "opportunity_score": 76.7,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 1.81,
+          "median_return_percent": 9.37,
+          "outperform_universe_probability_percent": 56.52,
+          "positive_return_probability_percent": 78.26,
+          "return_p20_percent": -0.98,
+          "return_p80_percent": 12.36,
+          "sample_count": 23
+        },
+        "21": {
+          "median_relative_return_percent": 0.69,
+          "median_return_percent": 2.05,
+          "outperform_universe_probability_percent": 60.0,
+          "positive_return_probability_percent": 76.0,
+          "return_p20_percent": -3.07,
+          "return_p80_percent": 3.74,
+          "sample_count": 25
+        },
+        "63": {
+          "median_relative_return_percent": 1.45,
+          "median_return_percent": 4.22,
+          "outperform_universe_probability_percent": 72.0,
+          "positive_return_probability_percent": 80.0,
+          "return_p20_percent": 0.28,
+          "return_p80_percent": 9.24,
+          "sample_count": 25
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 18.9,
+      "sleeve": "FACTOR_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "QUAL",
+      "tradable_isin": "IE00BP3QZ601",
+      "tradable_name": "iShares Edge MSCI World Quality Factor UCITS ETF",
+      "tradable_symbol": "IS3Q"
+    },
+    {
+      "asset_class": "BOND",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 65,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.02,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 0.28,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.17,
+        "relative_to_spy_5_session_percent": 0.6,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "US Treasury 1-3 year",
+      "final_score": 68.0,
+      "final_score_change_1_session": 0.8,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 1.35,
+      "historical_analog_score": 54.4,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 58.9,
+      "opportunity_score": 70.6,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -12.14,
+          "median_return_percent": 2.27,
+          "outperform_universe_probability_percent": 0.0,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 2.04,
+          "return_p80_percent": 2.46,
+          "sample_count": 4
+        },
+        "21": {
+          "median_relative_return_percent": -0.45,
+          "median_return_percent": 0.29,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 0.12,
+          "return_p80_percent": 0.89,
+          "sample_count": 4
+        },
+        "63": {
+          "median_relative_return_percent": -7.08,
+          "median_return_percent": 1.49,
+          "outperform_universe_probability_percent": 25.0,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 1.08,
+          "return_p80_percent": 2.07,
+          "sample_count": 4
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 6.7,
+      "sleeve": "FIXED_INCOME",
+      "status": "AVAILABLE",
+      "symbol": "SHY",
+      "tradable_isin": "IE00B14X4S71",
+      "tradable_name": "iShares $ Treasury Bond 1-3yr UCITS ETF",
+      "tradable_symbol": "IUSU"
+    },
+    {
+      "asset_class": "EQUITY",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 92,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -2.45,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 3.53,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -0.43,
+        "relative_to_spy_5_session_percent": 0.0,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "US large cap",
+      "final_score": 65.4,
+      "final_score_change_1_session": 0.9,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 5.77,
+      "historical_analog_score": 76.5,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 53.3,
+      "opportunity_score": 67.2,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 1.12,
+          "median_return_percent": 10.55,
+          "outperform_universe_probability_percent": 62.5,
+          "positive_return_probability_percent": 83.33,
+          "return_p20_percent": 4.08,
+          "return_p80_percent": 15.92,
+          "sample_count": 24
+        },
+        "21": {
+          "median_relative_return_percent": -0.19,
+          "median_return_percent": 1.59,
+          "outperform_universe_probability_percent": 48.0,
+          "positive_return_probability_percent": 80.0,
+          "return_p20_percent": 0.09,
+          "return_p80_percent": 3.02,
+          "sample_count": 25
+        },
+        "63": {
+          "median_relative_return_percent": 1.41,
+          "median_return_percent": 5.17,
+          "outperform_universe_probability_percent": 68.0,
+          "positive_return_probability_percent": 88.0,
+          "return_p20_percent": 1.6,
+          "return_p80_percent": 8.43,
+          "sample_count": 25
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 21.1,
+      "sleeve": "REGION_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "SPY",
+      "tradable_isin": "IE00B5BMR087",
+      "tradable_name": "iShares Core S&P 500 UCITS ETF (Acc)",
+      "tradable_symbol": "SXR8"
+    },
+    {
+      "asset_class": "SECTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 81,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -1.32,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -2.05,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.68,
+        "relative_to_spy_5_session_percent": 1.11,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Financials",
+      "final_score": 64.8,
+      "final_score_change_1_session": -10.2,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 1.72,
+      "historical_analog_score": 57.0,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 71.1,
+      "opportunity_score": 66.7,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -1.81,
+          "median_return_percent": 3.53,
+          "outperform_universe_probability_percent": 43.75,
+          "positive_return_probability_percent": 56.25,
+          "return_p20_percent": -8.4,
+          "return_p80_percent": 17.14,
+          "sample_count": 16
+        },
+        "21": {
+          "median_relative_return_percent": -1.28,
+          "median_return_percent": 0.99,
+          "outperform_universe_probability_percent": 43.75,
+          "positive_return_probability_percent": 68.75,
+          "return_p20_percent": -2.41,
+          "return_p80_percent": 4.29,
+          "sample_count": 16
+        },
+        "63": {
+          "median_relative_return_percent": -3.39,
+          "median_return_percent": 0.63,
+          "outperform_universe_probability_percent": 43.75,
+          "positive_return_probability_percent": 56.25,
+          "return_p20_percent": -9.68,
+          "return_p80_percent": 6.99,
+          "sample_count": 16
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 34.4,
+      "sleeve": "US_SECTOR",
+      "status": "AVAILABLE",
+      "symbol": "XLF",
+      "tradable_isin": "IE00BWBXM500",
+      "tradable_name": "State Street SPDR S&P U.S. Financials Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDF"
+    },
+    {
+      "asset_class": "EQUITY",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 88,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -5.26,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 3.68,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -0.82,
+        "relative_to_spy_5_session_percent": -0.39,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Japan",
+      "final_score": 60.4,
+      "final_score_change_1_session": 3.5,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 5.75,
+      "historical_analog_score": 75.3,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 50.0,
+      "opportunity_score": 67.8,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 0.54,
+          "median_return_percent": 10.34,
+          "outperform_universe_probability_percent": 52.38,
+          "positive_return_probability_percent": 71.43,
+          "return_p20_percent": -1.06,
+          "return_p80_percent": 16.05,
+          "sample_count": 21
+        },
+        "21": {
+          "median_relative_return_percent": -0.2,
+          "median_return_percent": 0.92,
+          "outperform_universe_probability_percent": 43.48,
+          "positive_return_probability_percent": 60.87,
+          "return_p20_percent": -1.04,
+          "return_p80_percent": 3.12,
+          "sample_count": 23
+        },
+        "63": {
+          "median_relative_return_percent": 0.34,
+          "median_return_percent": 5.98,
+          "outperform_universe_probability_percent": 52.17,
+          "positive_return_probability_percent": 73.91,
+          "return_p20_percent": -1.82,
+          "return_p80_percent": 9.25,
+          "sample_count": 23
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 51.1,
+      "sleeve": "REGION_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "EWJ",
+      "tradable_isin": "IE00B4L5YX21",
+      "tradable_name": "iShares Core MSCI Japan IMI UCITS ETF",
+      "tradable_symbol": "EUNN"
+    },
+    {
+      "asset_class": "SECTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 76,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -2.1,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 1.69,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.57,
+        "relative_to_spy_5_session_percent": 1.0,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Consumer discretionary",
+      "final_score": 59.8,
+      "final_score_change_1_session": -5.8,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 5.71,
+      "historical_analog_score": 71.7,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 70.0,
+      "opportunity_score": 59.4,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 0.04,
+          "median_return_percent": 9.79,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 75.0,
+          "return_p20_percent": -0.93,
+          "return_p80_percent": 13.04,
+          "sample_count": 12
+        },
+        "21": {
+          "median_relative_return_percent": -1.23,
+          "median_return_percent": 2.56,
+          "outperform_universe_probability_percent": 46.15,
+          "positive_return_probability_percent": 69.23,
+          "return_p20_percent": -2.12,
+          "return_p80_percent": 4.23,
+          "sample_count": 13
+        },
+        "63": {
+          "median_relative_return_percent": 0.52,
+          "median_return_percent": 4.77,
+          "outperform_universe_probability_percent": 53.85,
+          "positive_return_probability_percent": 61.54,
+          "return_p20_percent": -1.41,
+          "return_p80_percent": 7.72,
+          "sample_count": 13
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 54.4,
+      "sleeve": "US_SECTOR",
+      "status": "AVAILABLE",
+      "symbol": "XLY",
+      "tradable_isin": "IE00BWBXM278",
+      "tradable_name": "State Street SPDR S&P U.S. Consumer Discretionary Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDD"
+    },
+    {
+      "asset_class": "BOND",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 92,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.08,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -1.0,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.66,
+        "relative_to_spy_5_session_percent": 1.09,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "US inflation-linked Treasury",
+      "final_score": 59.3,
+      "final_score_change_1_session": 0.2,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 0.71,
+      "historical_analog_score": 53.3,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 66.7,
+      "opportunity_score": 50.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -4.41,
+          "median_return_percent": 0.73,
+          "outperform_universe_probability_percent": 25.0,
+          "positive_return_probability_percent": 54.17,
+          "return_p20_percent": -4.01,
+          "return_p80_percent": 4.07,
+          "sample_count": 24
+        },
+        "21": {
+          "median_relative_return_percent": -0.24,
+          "median_return_percent": 0.56,
+          "outperform_universe_probability_percent": 44.0,
+          "positive_return_probability_percent": 64.0,
+          "return_p20_percent": -0.33,
+          "return_p80_percent": 1.76,
+          "sample_count": 25
+        },
+        "63": {
+          "median_relative_return_percent": -2.95,
+          "median_return_percent": 0.83,
+          "outperform_universe_probability_percent": 28.0,
+          "positive_return_probability_percent": 68.0,
+          "return_p20_percent": -1.63,
+          "return_p80_percent": 2.21,
+          "sample_count": 25
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 12.2,
+      "sleeve": "FIXED_INCOME",
+      "status": "AVAILABLE",
+      "symbol": "TIP",
+      "tradable_isin": "IE00B1FZSC47",
+      "tradable_name": "iShares $ TIPS UCITS ETF",
+      "tradable_symbol": "IUST"
+    },
+    {
+      "asset_class": "BOND",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 84,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.16,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -2.05,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.7,
+        "relative_to_spy_5_session_percent": 1.13,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "US Treasury 7-10 year",
+      "final_score": 57.3,
+      "final_score_change_1_session": 0.5,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 0.35,
+      "historical_analog_score": 51.5,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 70.0,
+      "opportunity_score": 46.7,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -8.38,
+          "median_return_percent": 1.43,
+          "outperform_universe_probability_percent": 11.11,
+          "positive_return_probability_percent": 61.11,
+          "return_p20_percent": -2.38,
+          "return_p80_percent": 3.27,
+          "sample_count": 18
+        },
+        "21": {
+          "median_relative_return_percent": -2.32,
+          "median_return_percent": -0.45,
+          "outperform_universe_probability_percent": 22.22,
+          "positive_return_probability_percent": 38.89,
+          "return_p20_percent": -1.07,
+          "return_p80_percent": 0.84,
+          "sample_count": 18
+        },
+        "63": {
+          "median_relative_return_percent": -4.13,
+          "median_return_percent": 0.08,
+          "outperform_universe_probability_percent": 22.22,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -1.84,
+          "return_p80_percent": 2.49,
+          "sample_count": 18
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 18.9,
+      "sleeve": "FIXED_INCOME",
+      "status": "AVAILABLE",
+      "symbol": "IEF",
+      "tradable_isin": "IE00B1FZS798",
+      "tradable_name": "iShares $ Treasury Bond 7-10yr UCITS ETF",
+      "tradable_symbol": "IUSM"
+    },
+    {
+      "asset_class": "BOND",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 71,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.49,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -3.28,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 1.61,
+        "relative_to_spy_5_session_percent": 2.04,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "US Treasury 20+ year",
+      "final_score": 57.0,
+      "final_score_change_1_session": 0.8,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": -3.05,
+      "historical_analog_score": 39.2,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 84.4,
+      "opportunity_score": 46.7,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -11.96,
+          "median_return_percent": -4.73,
+          "outperform_universe_probability_percent": 25.0,
+          "positive_return_probability_percent": 25.0,
+          "return_p20_percent": -8.54,
+          "return_p80_percent": 9.2,
+          "sample_count": 8
+        },
+        "21": {
+          "median_relative_return_percent": -3.0,
+          "median_return_percent": -2.1,
+          "outperform_universe_probability_percent": 12.5,
+          "positive_return_probability_percent": 25.0,
+          "return_p20_percent": -3.33,
+          "return_p80_percent": 0.18,
+          "sample_count": 8
+        },
+        "63": {
+          "median_relative_return_percent": -5.7,
+          "median_return_percent": -2.33,
+          "outperform_universe_probability_percent": 37.5,
+          "positive_return_probability_percent": 37.5,
+          "return_p20_percent": -5.56,
+          "return_p80_percent": 4.99,
+          "sample_count": 8
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 32.2,
+      "sleeve": "FIXED_INCOME",
+      "status": "AVAILABLE",
+      "symbol": "TLT",
+      "tradable_isin": "IE00BFM6TC58",
+      "tradable_name": "iShares $ Treasury Bond 20+yr UCITS ETF (Acc)",
+      "tradable_symbol": "DTLA"
+    },
+    {
+      "asset_class": "SECTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 81,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -9.29,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 5.38,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -0.13,
+        "relative_to_spy_5_session_percent": 0.3,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Technology",
+      "final_score": 55.3,
+      "final_score_change_1_session": 5.1,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 10.91,
+      "historical_analog_score": 94.2,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 38.9,
+      "opportunity_score": 65.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 7.95,
+          "median_return_percent": 18.08,
+          "outperform_universe_probability_percent": 87.5,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 10.76,
+          "return_p80_percent": 25.08,
+          "sample_count": 16
+        },
+        "21": {
+          "median_relative_return_percent": 2.9,
+          "median_return_percent": 3.76,
+          "outperform_universe_probability_percent": 76.47,
+          "positive_return_probability_percent": 82.35,
+          "return_p20_percent": 0.79,
+          "return_p80_percent": 8.66,
+          "sample_count": 17
+        },
+        "63": {
+          "median_relative_return_percent": 6.18,
+          "median_return_percent": 10.9,
+          "outperform_universe_probability_percent": 76.47,
+          "positive_return_probability_percent": 94.12,
+          "return_p20_percent": 4.39,
+          "return_p80_percent": 12.7,
+          "sample_count": 17
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 74.4,
+      "sleeve": "US_SECTOR",
+      "status": "AVAILABLE",
+      "symbol": "XLK",
+      "tradable_isin": "IE00BWBXM948",
+      "tradable_name": "State Street SPDR S&P U.S. Technology Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDT"
+    },
+    {
+      "asset_class": "BOND",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 96,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.41,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -1.67,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.44,
+        "relative_to_spy_5_session_percent": 0.86,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "US investment-grade credit",
+      "final_score": 55.2,
+      "final_score_change_1_session": 0.2,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 0.75,
+      "historical_analog_score": 53.6,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 62.2,
+      "opportunity_score": 46.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -6.96,
+          "median_return_percent": 1.48,
+          "outperform_universe_probability_percent": 11.11,
+          "positive_return_probability_percent": 62.96,
+          "return_p20_percent": -2.5,
+          "return_p80_percent": 5.43,
+          "sample_count": 27
+        },
+        "21": {
+          "median_relative_return_percent": -0.66,
+          "median_return_percent": 0.65,
+          "outperform_universe_probability_percent": 41.38,
+          "positive_return_probability_percent": 72.41,
+          "return_p20_percent": -0.33,
+          "return_p80_percent": 1.35,
+          "sample_count": 29
+        },
+        "63": {
+          "median_relative_return_percent": -4.38,
+          "median_return_percent": 0.13,
+          "outperform_universe_probability_percent": 17.24,
+          "positive_return_probability_percent": 51.72,
+          "return_p20_percent": -3.42,
+          "return_p80_percent": 3.4,
+          "sample_count": 29
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 22.2,
+      "sleeve": "FIXED_INCOME",
+      "status": "AVAILABLE",
+      "symbol": "LQD",
+      "tradable_isin": "IE0032895942",
+      "tradable_name": "iShares $ Corp Bond UCITS ETF",
+      "tradable_symbol": "LQDE"
     },
     {
       "asset_class": "COMMODITY",
-      "confidence_score": 72,
-      "exposure": "Broad commodity futures",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 79,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -3.4,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 2.21,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.28,
+        "relative_to_spy_5_session_percent": -0.85,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Agriculture commodities",
+      "final_score": 55.1,
+      "final_score_change_1_session": 7.9,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 2.86,
+      "historical_analog_score": 61.3,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 87.5,
+      "market_psychology_score": 37.8,
+      "opportunity_score": 58.3,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": 4.63,
-          "median_return_percent": 9.95,
-          "outperform_universe_probability_percent": 66.67,
-          "positive_return_probability_percent": 66.67,
-          "return_p20_percent": -1.64,
-          "return_p80_percent": 16.98,
-          "sample_count": 9
+          "median_relative_return_percent": -0.36,
+          "median_return_percent": 4.2,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 71.43,
+          "return_p20_percent": -3.48,
+          "return_p80_percent": 11.75,
+          "sample_count": 14
         },
         "21": {
-          "median_relative_return_percent": -0.68,
-          "median_return_percent": 0.51,
-          "outperform_universe_probability_percent": 44.44,
-          "positive_return_probability_percent": 55.56,
-          "return_p20_percent": -4.87,
-          "return_p80_percent": 2.63,
-          "sample_count": 9
+          "median_relative_return_percent": 1.0,
+          "median_return_percent": 1.39,
+          "outperform_universe_probability_percent": 57.14,
+          "positive_return_probability_percent": 57.14,
+          "return_p20_percent": -2.2,
+          "return_p80_percent": 3.78,
+          "sample_count": 14
         },
         "63": {
-          "median_relative_return_percent": -0.52,
-          "median_return_percent": 3.32,
-          "outperform_universe_probability_percent": 44.44,
-          "positive_return_probability_percent": 66.67,
-          "return_p20_percent": -3.09,
-          "return_p80_percent": 6.79,
-          "sample_count": 9
+          "median_relative_return_percent": 1.15,
+          "median_return_percent": 2.98,
+          "outperform_universe_probability_percent": 64.29,
+          "positive_return_probability_percent": 71.43,
+          "return_p20_percent": -4.5,
+          "return_p80_percent": 6.45,
+          "sample_count": 14
         }
       },
-      "risk_score": 38.5,
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 32.2,
+      "sleeve": "COMMODITY",
       "status": "AVAILABLE",
-      "symbol": "DBC"
+      "symbol": "DBA",
+      "tradable_isin": "GB00B15KYH63",
+      "tradable_name": "WisdomTree Agriculture ETC",
+      "tradable_symbol": "AIGA"
     },
     {
       "asset_class": "SECTOR",
-      "confidence_score": 69,
-      "exposure": "Consumer staples",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 79,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.72,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -6.92,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.83,
+        "relative_to_spy_5_session_percent": 1.26,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Utilities",
+      "final_score": 54.7,
+      "final_score_change_1_session": -0.6,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 4.17,
+      "historical_analog_score": 66.5,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 86.5,
+      "market_psychology_score": 85.6,
+      "opportunity_score": 41.7,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": -2.04,
-          "median_return_percent": -1.26,
-          "outperform_universe_probability_percent": 42.86,
-          "positive_return_probability_percent": 28.57,
-          "return_p20_percent": -5.07,
-          "return_p80_percent": 3.07,
-          "sample_count": 7
+          "median_relative_return_percent": -3.91,
+          "median_return_percent": 6.64,
+          "outperform_universe_probability_percent": 35.71,
+          "positive_return_probability_percent": 78.57,
+          "return_p20_percent": 0.67,
+          "return_p80_percent": 11.91,
+          "sample_count": 14
         },
         "21": {
-          "median_relative_return_percent": -1.6,
-          "median_return_percent": -0.29,
-          "outperform_universe_probability_percent": 14.29,
-          "positive_return_probability_percent": 28.57,
-          "return_p20_percent": -5.47,
-          "return_p80_percent": 1.16,
-          "sample_count": 7
+          "median_relative_return_percent": 2.4,
+          "median_return_percent": 2.1,
+          "outperform_universe_probability_percent": 57.14,
+          "positive_return_probability_percent": 78.57,
+          "return_p20_percent": -0.41,
+          "return_p80_percent": 6.55,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": 1.04,
+          "median_return_percent": 3.76,
+          "outperform_universe_probability_percent": 64.29,
+          "positive_return_probability_percent": 78.57,
+          "return_p20_percent": -2.61,
+          "return_p80_percent": 7.15,
+          "sample_count": 14
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 52.2,
+      "sleeve": "US_SECTOR",
+      "status": "AVAILABLE",
+      "symbol": "XLU",
+      "tradable_isin": "IE00BWBXM885",
+      "tradable_name": "State Street SPDR S&P U.S. Utilities Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDU"
+    },
+    {
+      "asset_class": "EQUITY",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 77,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -7.27,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 4.17,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -0.76,
+        "relative_to_spy_5_session_percent": -0.33,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "US Nasdaq 100",
+      "final_score": 54.1,
+      "final_score_change_1_session": 4.6,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 7.53,
+      "historical_analog_score": 79.0,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 40.0,
+      "opportunity_score": 61.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 3.9,
+          "median_return_percent": 11.97,
+          "outperform_universe_probability_percent": 76.92,
+          "positive_return_probability_percent": 84.62,
+          "return_p20_percent": 4.15,
+          "return_p80_percent": 15.37,
+          "sample_count": 13
+        },
+        "21": {
+          "median_relative_return_percent": 1.76,
+          "median_return_percent": 3.17,
+          "outperform_universe_probability_percent": 71.43,
+          "positive_return_probability_percent": 85.71,
+          "return_p20_percent": 1.93,
+          "return_p80_percent": 5.25,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": 4.42,
+          "median_return_percent": 7.46,
+          "outperform_universe_probability_percent": 71.43,
+          "positive_return_probability_percent": 92.86,
+          "return_p20_percent": 3.62,
+          "return_p80_percent": 13.48,
+          "sample_count": 14
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 62.2,
+      "sleeve": "REGION_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "QQQ",
+      "tradable_isin": "IE00B53SZB19",
+      "tradable_name": "iShares NASDAQ 100 UCITS ETF (Acc)",
+      "tradable_symbol": "SXRV"
+    },
+    {
+      "asset_class": "SECTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 77,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": 0.0,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -7.09,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.97,
+        "relative_to_spy_5_session_percent": 1.4,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "US real estate",
+      "final_score": 53.3,
+      "final_score_change_1_session": 1.4,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 1.18,
+      "historical_analog_score": 54.5,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 75.6,
+      "opportunity_score": 41.7,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -5.0,
+          "median_return_percent": 2.09,
+          "outperform_universe_probability_percent": 46.15,
+          "positive_return_probability_percent": 61.54,
+          "return_p20_percent": -2.33,
+          "return_p80_percent": 15.92,
+          "sample_count": 13
+        },
+        "21": {
+          "median_relative_return_percent": -1.08,
+          "median_return_percent": -0.43,
+          "outperform_universe_probability_percent": 35.71,
+          "positive_return_probability_percent": 42.86,
+          "return_p20_percent": -1.94,
+          "return_p80_percent": 2.92,
+          "sample_count": 14
         },
         "63": {
           "median_relative_return_percent": -3.65,
-          "median_return_percent": -0.56,
-          "outperform_universe_probability_percent": 28.57,
-          "positive_return_probability_percent": 14.29,
-          "return_p20_percent": -1.81,
-          "return_p80_percent": -0.41,
-          "sample_count": 7
-        }
-      },
-      "risk_score": 42.3,
-      "status": "AVAILABLE",
-      "symbol": "XLP"
-    },
-    {
-      "asset_class": "BOND",
-      "confidence_score": 77,
-      "exposure": "US Treasury 1-3 year",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 68.3,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -5.66,
-          "median_return_percent": 1.49,
-          "outperform_universe_probability_percent": 7.69,
-          "positive_return_probability_percent": 76.92,
-          "return_p20_percent": -0.32,
-          "return_p80_percent": 2.31,
-          "sample_count": 13
-        },
-        "21": {
-          "median_relative_return_percent": -1.11,
-          "median_return_percent": 0.01,
-          "outperform_universe_probability_percent": 35.71,
-          "positive_return_probability_percent": 57.14,
-          "return_p20_percent": -0.45,
-          "return_p80_percent": 0.56,
-          "sample_count": 14
-        },
-        "63": {
-          "median_relative_return_percent": -2.84,
-          "median_return_percent": 0.13,
-          "outperform_universe_probability_percent": 30.77,
+          "median_return_percent": 1.88,
+          "outperform_universe_probability_percent": 38.46,
           "positive_return_probability_percent": 69.23,
-          "return_p20_percent": -0.72,
-          "return_p80_percent": 1.36,
+          "return_p20_percent": -3.53,
+          "return_p80_percent": 5.12,
           "sample_count": 13
         }
       },
-      "risk_score": 9.6,
-      "status": "AVAILABLE",
-      "symbol": "SHY"
-    },
-    {
-      "asset_class": "SECTOR",
-      "confidence_score": 81,
-      "exposure": "Materials",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 65.7,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -2.17,
-          "median_return_percent": -0.96,
-          "outperform_universe_probability_percent": 18.75,
-          "positive_return_probability_percent": 50.0,
-          "return_p20_percent": -8.82,
-          "return_p80_percent": 7.19,
-          "sample_count": 16
-        },
-        "21": {
-          "median_relative_return_percent": -0.76,
-          "median_return_percent": -0.07,
-          "outperform_universe_probability_percent": 35.29,
-          "positive_return_probability_percent": 47.06,
-          "return_p20_percent": -3.22,
-          "return_p80_percent": 3.27,
-          "sample_count": 17
-        },
-        "63": {
-          "median_relative_return_percent": -0.95,
-          "median_return_percent": 2.32,
-          "outperform_universe_probability_percent": 47.06,
-          "positive_return_probability_percent": 64.71,
-          "return_p20_percent": -8.85,
-          "return_p80_percent": 6.47,
-          "sample_count": 17
-        }
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
       },
-      "risk_score": 50.0,
+      "risk_score": 40.0,
+      "sleeve": "US_SECTOR",
       "status": "AVAILABLE",
-      "symbol": "XLB"
-    },
-    {
-      "asset_class": "SECTOR",
-      "confidence_score": 80,
-      "exposure": "Technology",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 64.7,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": 11.22,
-          "median_return_percent": 19.82,
-          "outperform_universe_probability_percent": 73.33,
-          "positive_return_probability_percent": 93.33,
-          "return_p20_percent": 12.54,
-          "return_p80_percent": 31.23,
-          "sample_count": 15
-        },
-        "21": {
-          "median_relative_return_percent": 3.35,
-          "median_return_percent": 3.07,
-          "outperform_universe_probability_percent": 73.33,
-          "positive_return_probability_percent": 66.67,
-          "return_p20_percent": -0.41,
-          "return_p80_percent": 8.36,
-          "sample_count": 15
-        },
-        "63": {
-          "median_relative_return_percent": 5.57,
-          "median_return_percent": 10.58,
-          "outperform_universe_probability_percent": 86.67,
-          "positive_return_probability_percent": 86.67,
-          "return_p20_percent": 6.1,
-          "return_p80_percent": 14.84,
-          "sample_count": 15
-        }
-      },
-      "risk_score": 84.6,
-      "status": "AVAILABLE",
-      "symbol": "XLK"
+      "symbol": "XLRE",
+      "tradable_isin": "IE00B1FZSF77",
+      "tradable_name": "iShares US Property Yield UCITS ETF",
+      "tradable_symbol": "IQQ7"
     },
     {
       "asset_class": "EQUITY",
-      "confidence_score": 81,
-      "exposure": "US large cap",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 62.8,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": 3.39,
-          "median_return_percent": 9.01,
-          "outperform_universe_probability_percent": 68.75,
-          "positive_return_probability_percent": 81.25,
-          "return_p20_percent": 3.68,
-          "return_p80_percent": 13.7,
-          "sample_count": 16
-        },
-        "21": {
-          "median_relative_return_percent": -0.05,
-          "median_return_percent": 1.4,
-          "outperform_universe_probability_percent": 47.06,
-          "positive_return_probability_percent": 70.59,
-          "return_p20_percent": -2.1,
-          "return_p80_percent": 2.82,
-          "sample_count": 17
-        },
-        "63": {
-          "median_relative_return_percent": 2.48,
-          "median_return_percent": 2.92,
-          "outperform_universe_probability_percent": 64.71,
-          "positive_return_probability_percent": 82.35,
-          "return_p20_percent": 0.14,
-          "return_p80_percent": 7.92,
-          "sample_count": 17
-        }
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
       },
-      "risk_score": 26.9,
-      "status": "AVAILABLE",
-      "symbol": "SPY"
-    },
-    {
-      "asset_class": "SECTOR",
-      "confidence_score": 75,
-      "exposure": "Financials",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 62.8,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -5.26,
-          "median_return_percent": 4.14,
-          "outperform_universe_probability_percent": 45.45,
-          "positive_return_probability_percent": 54.55,
-          "return_p20_percent": -8.4,
-          "return_p80_percent": 17.14,
-          "sample_count": 11
-        },
-        "21": {
-          "median_relative_return_percent": 0.74,
-          "median_return_percent": 3.1,
-          "outperform_universe_probability_percent": 54.55,
-          "positive_return_probability_percent": 72.73,
-          "return_p20_percent": -10.34,
-          "return_p80_percent": 4.49,
-          "sample_count": 11
-        },
-        "63": {
-          "median_relative_return_percent": -0.69,
-          "median_return_percent": 0.63,
-          "outperform_universe_probability_percent": 45.45,
-          "positive_return_probability_percent": 54.55,
-          "return_p20_percent": -10.19,
-          "return_p80_percent": 6.46,
-          "sample_count": 11
-        }
+      "confidence_score": 84,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -2.78,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -0.35,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -0.89,
+        "relative_to_spy_5_session_percent": -0.46,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
       },
-      "risk_score": 44.2,
-      "status": "AVAILABLE",
-      "symbol": "XLF"
-    },
-    {
-      "asset_class": "EQUITY",
-      "confidence_score": 77,
-      "exposure": "US Nasdaq 100",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 59.0,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": 9.2,
-          "median_return_percent": 17.5,
-          "outperform_universe_probability_percent": 84.62,
-          "positive_return_probability_percent": 84.62,
-          "return_p20_percent": 11.51,
-          "return_p80_percent": 24.23,
-          "sample_count": 13
-        },
-        "21": {
-          "median_relative_return_percent": 0.1,
-          "median_return_percent": 1.79,
-          "outperform_universe_probability_percent": 50.0,
-          "positive_return_probability_percent": 71.43,
-          "return_p20_percent": -0.36,
-          "return_p80_percent": 6.94,
-          "sample_count": 14
-        },
-        "63": {
-          "median_relative_return_percent": 4.3,
-          "median_return_percent": 9.67,
-          "outperform_universe_probability_percent": 69.23,
-          "positive_return_probability_percent": 76.92,
-          "return_p20_percent": -0.34,
-          "return_p80_percent": 17.71,
-          "sample_count": 13
-        }
-      },
-      "risk_score": 71.2,
-      "status": "AVAILABLE",
-      "symbol": "QQQ"
-    },
-    {
-      "asset_class": "SECTOR",
-      "confidence_score": 75,
-      "exposure": "Consumer discretionary",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 56.1,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -0.06,
-          "median_return_percent": 1.55,
-          "outperform_universe_probability_percent": 45.45,
-          "positive_return_probability_percent": 63.64,
-          "return_p20_percent": -0.9,
-          "return_p80_percent": 10.94,
-          "sample_count": 11
-        },
-        "21": {
-          "median_relative_return_percent": -0.16,
-          "median_return_percent": 1.41,
-          "outperform_universe_probability_percent": 50.0,
-          "positive_return_probability_percent": 66.67,
-          "return_p20_percent": -0.46,
-          "return_p80_percent": 3.44,
-          "sample_count": 12
-        },
-        "63": {
-          "median_relative_return_percent": -0.85,
-          "median_return_percent": 1.92,
-          "outperform_universe_probability_percent": 41.67,
-          "positive_return_probability_percent": 50.0,
-          "return_p20_percent": -5.31,
-          "return_p80_percent": 6.68,
-          "sample_count": 12
-        }
-      },
-      "risk_score": 63.5,
-      "status": "AVAILABLE",
-      "symbol": "XLY"
-    },
-    {
-      "asset_class": "EQUITY",
-      "confidence_score": 79,
       "exposure": "Developed markets ex-US",
+      "final_score": 53.2,
+      "final_score_change_1_session": -0.3,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 3.68,
+      "historical_analog_score": 65.4,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 46.8,
+      "market_psychology_score": 47.8,
+      "opportunity_score": 50.6,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": -3.2,
-          "median_return_percent": 2.55,
-          "outperform_universe_probability_percent": 35.71,
-          "positive_return_probability_percent": 64.29,
-          "return_p20_percent": -2.94,
-          "return_p80_percent": 12.49,
-          "sample_count": 14
+          "median_relative_return_percent": -1.88,
+          "median_return_percent": 5.73,
+          "outperform_universe_probability_percent": 22.22,
+          "positive_return_probability_percent": 61.11,
+          "return_p20_percent": -9.15,
+          "return_p80_percent": 15.57,
+          "sample_count": 18
         },
         "21": {
-          "median_relative_return_percent": 0.08,
-          "median_return_percent": 1.59,
-          "outperform_universe_probability_percent": 50.0,
-          "positive_return_probability_percent": 64.29,
-          "return_p20_percent": -4.18,
-          "return_p80_percent": 3.29,
-          "sample_count": 14
-        },
-        "63": {
-          "median_relative_return_percent": -0.49,
-          "median_return_percent": 2.41,
-          "outperform_universe_probability_percent": 35.71,
-          "positive_return_probability_percent": 78.57,
-          "return_p20_percent": -0.17,
-          "return_p80_percent": 8.81,
-          "sample_count": 14
-        }
-      },
-      "risk_score": 44.2,
-      "status": "AVAILABLE",
-      "symbol": "EFA"
-    },
-    {
-      "asset_class": "BOND",
-      "confidence_score": 100,
-      "exposure": "US inflation-linked Treasury",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 46.8,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -4.19,
-          "median_return_percent": 1.49,
-          "outperform_universe_probability_percent": 18.92,
-          "positive_return_probability_percent": 72.97,
-          "return_p20_percent": -0.52,
-          "return_p80_percent": 4.2,
-          "sample_count": 37
-        },
-        "21": {
-          "median_relative_return_percent": -0.91,
-          "median_return_percent": 0.05,
+          "median_relative_return_percent": -0.58,
+          "median_return_percent": 0.24,
           "outperform_universe_probability_percent": 33.33,
-          "positive_return_probability_percent": 53.85,
-          "return_p20_percent": -0.51,
-          "return_p80_percent": 1.18,
-          "sample_count": 39
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -4.43,
+          "return_p80_percent": 4.06,
+          "sample_count": 18
         },
         "63": {
-          "median_relative_return_percent": -3.23,
-          "median_return_percent": 0.51,
-          "outperform_universe_probability_percent": 25.64,
-          "positive_return_probability_percent": 56.41,
-          "return_p20_percent": -1.28,
-          "return_p80_percent": 2.56,
-          "sample_count": 39
+          "median_relative_return_percent": -0.48,
+          "median_return_percent": 5.06,
+          "outperform_universe_probability_percent": 38.89,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": -4.13,
+          "return_p80_percent": 8.3,
+          "sample_count": 18
         }
       },
-      "risk_score": 17.3,
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 37.8,
+      "sleeve": "REGION_EQUITY",
       "status": "AVAILABLE",
-      "symbol": "TIP"
+      "symbol": "EFA",
+      "tradable_isin": "IE0006WW1TQ4",
+      "tradable_name": "Xtrackers MSCI World ex USA UCITS ETF 1C",
+      "tradable_symbol": "EXUS"
+    },
+    {
+      "asset_class": "FACTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 84,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -4.18,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -1.12,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.49,
+        "relative_to_spy_5_session_percent": 0.92,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "World value factor",
+      "final_score": 52.1,
+      "final_score_change_1_session": -2.2,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 0.94,
+      "historical_analog_score": 53.9,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 48.9,
+      "opportunity_score": 53.9,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 0.67,
+          "median_return_percent": -1.41,
+          "outperform_universe_probability_percent": 55.56,
+          "positive_return_probability_percent": 44.44,
+          "return_p20_percent": -8.15,
+          "return_p80_percent": 17.61,
+          "sample_count": 18
+        },
+        "21": {
+          "median_relative_return_percent": 0.12,
+          "median_return_percent": 0.41,
+          "outperform_universe_probability_percent": 55.56,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -5.66,
+          "return_p80_percent": 2.62,
+          "sample_count": 18
+        },
+        "63": {
+          "median_relative_return_percent": 0.87,
+          "median_return_percent": 3.82,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": -4.82,
+          "return_p80_percent": 7.94,
+          "sample_count": 18
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 48.9,
+      "sleeve": "FACTOR_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "VLUE",
+      "tradable_isin": "IE00BP3QZB59",
+      "tradable_name": "iShares Edge MSCI World Value Factor UCITS ETF",
+      "tradable_symbol": "IS3S"
     },
     {
       "asset_class": "BOND",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
       "confidence_score": 79,
-      "exposure": "US Treasury 7-10 year",
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.6,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -1.6,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.25,
+        "relative_to_spy_5_session_percent": 0.68,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "US high-yield credit",
+      "final_score": 51.7,
+      "final_score_change_1_session": 1.5,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 0.67,
+      "historical_analog_score": 52.6,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 42.0,
+      "market_psychology_score": 57.8,
+      "opportunity_score": 38.3,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": -6.57,
-          "median_return_percent": 1.89,
-          "outperform_universe_probability_percent": 7.14,
-          "positive_return_probability_percent": 64.29,
-          "return_p20_percent": -1.42,
-          "return_p80_percent": 4.08,
-          "sample_count": 14
-        },
-        "21": {
-          "median_relative_return_percent": -1.96,
-          "median_return_percent": -0.23,
-          "outperform_universe_probability_percent": 21.43,
-          "positive_return_probability_percent": 42.86,
-          "return_p20_percent": -1.17,
-          "return_p80_percent": 2.97,
-          "sample_count": 14
-        },
-        "63": {
-          "median_relative_return_percent": -2.86,
-          "median_return_percent": 1.85,
+          "median_relative_return_percent": -0.58,
+          "median_return_percent": 1.73,
           "outperform_universe_probability_percent": 35.71,
-          "positive_return_probability_percent": 57.14,
-          "return_p20_percent": -1.04,
-          "return_p80_percent": 3.36,
+          "positive_return_probability_percent": 64.29,
+          "return_p20_percent": -4.11,
+          "return_p80_percent": 3.24,
+          "sample_count": 14
+        },
+        "21": {
+          "median_relative_return_percent": -0.87,
+          "median_return_percent": 0.33,
+          "outperform_universe_probability_percent": 42.86,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -0.91,
+          "return_p80_percent": 1.99,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": 0.07,
+          "median_return_percent": -0.05,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -1.68,
+          "return_p80_percent": 1.74,
           "sample_count": 14
         }
       },
-      "risk_score": 26.9,
-      "status": "AVAILABLE",
-      "symbol": "IEF"
-    },
-    {
-      "asset_class": "BOND",
-      "confidence_score": 75,
-      "exposure": "US Treasury 20+ year",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 42.0,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -7.81,
-          "median_return_percent": -3.18,
-          "outperform_universe_probability_percent": 27.27,
-          "positive_return_probability_percent": 36.36,
-          "return_p20_percent": -8.14,
-          "return_p80_percent": 8.66,
-          "sample_count": 11
-        },
-        "21": {
-          "median_relative_return_percent": -2.84,
-          "median_return_percent": -1.91,
-          "outperform_universe_probability_percent": 27.27,
-          "positive_return_probability_percent": 36.36,
-          "return_p20_percent": -3.32,
-          "return_p80_percent": 0.56,
-          "sample_count": 11
-        },
-        "63": {
-          "median_relative_return_percent": -2.56,
-          "median_return_percent": -0.31,
-          "outperform_universe_probability_percent": 36.36,
-          "positive_return_probability_percent": 45.45,
-          "return_p20_percent": -4.9,
-          "return_p80_percent": 5.65,
-          "sample_count": 11
-        }
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
       },
-      "risk_score": 40.4,
+      "risk_score": 15.6,
+      "sleeve": "FIXED_INCOME",
       "status": "AVAILABLE",
-      "symbol": "TLT"
-    },
-    {
-      "asset_class": "BOND",
-      "confidence_score": 99,
-      "exposure": "US investment-grade credit",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 41.0,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -3.55,
-          "median_return_percent": 0.58,
-          "outperform_universe_probability_percent": 17.24,
-          "positive_return_probability_percent": 62.07,
-          "return_p20_percent": -3.33,
-          "return_p80_percent": 5.53,
-          "sample_count": 29
-        },
-        "21": {
-          "median_relative_return_percent": -0.37,
-          "median_return_percent": 0.34,
-          "outperform_universe_probability_percent": 41.94,
-          "positive_return_probability_percent": 64.52,
-          "return_p20_percent": -1.26,
-          "return_p80_percent": 1.02,
-          "sample_count": 31
-        },
-        "63": {
-          "median_relative_return_percent": -1.07,
-          "median_return_percent": -0.19,
-          "outperform_universe_probability_percent": 35.48,
-          "positive_return_probability_percent": 48.39,
-          "return_p20_percent": -3.78,
-          "return_p80_percent": 2.89,
-          "sample_count": 31
-        }
-      },
-      "risk_score": 30.8,
-      "status": "AVAILABLE",
-      "symbol": "LQD"
-    },
-    {
-      "asset_class": "SECTOR",
-      "confidence_score": 87,
-      "exposure": "Real estate",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 39.1,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -3.54,
-          "median_return_percent": 4.06,
-          "outperform_universe_probability_percent": 35.0,
-          "positive_return_probability_percent": 70.0,
-          "return_p20_percent": -4.09,
-          "return_p80_percent": 8.84,
-          "sample_count": 20
-        },
-        "21": {
-          "median_relative_return_percent": -0.85,
-          "median_return_percent": 0.79,
-          "outperform_universe_probability_percent": 40.0,
-          "positive_return_probability_percent": 50.0,
-          "return_p20_percent": -2.84,
-          "return_p80_percent": 6.26,
-          "sample_count": 20
-        },
-        "63": {
-          "median_relative_return_percent": -3.67,
-          "median_return_percent": -0.08,
-          "outperform_universe_probability_percent": 25.0,
-          "positive_return_probability_percent": 50.0,
-          "return_p20_percent": -7.31,
-          "return_p80_percent": 7.1,
-          "sample_count": 20
-        }
-      },
-      "risk_score": 48.1,
-      "status": "AVAILABLE",
-      "symbol": "XLRE"
-    },
-    {
-      "asset_class": "SECTOR",
-      "confidence_score": 75,
-      "exposure": "Utilities",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 39.1,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -0.76,
-          "median_return_percent": 9.09,
-          "outperform_universe_probability_percent": 36.36,
-          "positive_return_probability_percent": 90.91,
-          "return_p20_percent": 6.8,
-          "return_p80_percent": 15.46,
-          "sample_count": 11
-        },
-        "21": {
-          "median_relative_return_percent": -0.62,
-          "median_return_percent": 1.62,
-          "outperform_universe_probability_percent": 45.45,
-          "positive_return_probability_percent": 72.73,
-          "return_p20_percent": -2.89,
-          "return_p80_percent": 4.58,
-          "sample_count": 11
-        },
-        "63": {
-          "median_relative_return_percent": -1.27,
-          "median_return_percent": 5.54,
-          "outperform_universe_probability_percent": 36.36,
-          "positive_return_probability_percent": 72.73,
-          "return_p20_percent": -0.05,
-          "return_p80_percent": 7.03,
-          "sample_count": 11
-        }
-      },
-      "risk_score": 61.5,
-      "status": "AVAILABLE",
-      "symbol": "XLU"
+      "symbol": "HYG",
+      "tradable_isin": "IE00B4PY7Y77",
+      "tradable_name": "iShares $ High Yield Corp Bond UCITS ETF",
+      "tradable_symbol": "IHYG"
     },
     {
       "asset_class": "EQUITY",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
       "confidence_score": 73,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -2.69,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -7.43,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 1.96,
+        "relative_to_spy_5_session_percent": 2.39,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
       "exposure": "US small cap",
+      "final_score": 50.1,
+      "final_score_change_1_session": 2.6,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 4.78,
+      "historical_analog_score": 67.4,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 35.3,
+      "market_psychology_score": 70.0,
+      "opportunity_score": 38.9,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": -2.91,
-          "median_return_percent": 2.97,
-          "outperform_universe_probability_percent": 30.0,
-          "positive_return_probability_percent": 70.0,
-          "return_p20_percent": -8.21,
-          "return_p80_percent": 14.72,
-          "sample_count": 10
-        },
-        "21": {
-          "median_relative_return_percent": 0.26,
-          "median_return_percent": 3.09,
+          "median_relative_return_percent": -0.19,
+          "median_return_percent": 3.96,
           "outperform_universe_probability_percent": 50.0,
           "positive_return_probability_percent": 60.0,
-          "return_p20_percent": -9.56,
-          "return_p80_percent": 4.66,
+          "return_p20_percent": -9.2,
+          "return_p80_percent": 18.5,
+          "sample_count": 10
+        },
+        "21": {
+          "median_relative_return_percent": 0.98,
+          "median_return_percent": 4.18,
+          "outperform_universe_probability_percent": 60.0,
+          "positive_return_probability_percent": 80.0,
+          "return_p20_percent": -0.11,
+          "return_p80_percent": 6.46,
           "sample_count": 10
         },
         "63": {
-          "median_relative_return_percent": -0.77,
-          "median_return_percent": 6.19,
+          "median_relative_return_percent": 0.14,
+          "median_return_percent": 6.2,
           "outperform_universe_probability_percent": 50.0,
-          "positive_return_probability_percent": 70.0,
-          "return_p20_percent": -6.65,
+          "positive_return_probability_percent": 80.0,
+          "return_p20_percent": -1.1,
           "return_p80_percent": 12.82,
           "sample_count": 10
         }
       },
-      "risk_score": 61.5,
-      "status": "AVAILABLE",
-      "symbol": "IWM"
-    },
-    {
-      "asset_class": "BOND",
-      "confidence_score": 72,
-      "exposure": "US high-yield credit",
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "opportunity_score": 33.7,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -2.0,
-          "median_return_percent": -3.1,
-          "outperform_universe_probability_percent": 33.33,
-          "positive_return_probability_percent": 33.33,
-          "return_p20_percent": -6.23,
-          "return_p80_percent": 1.56,
-          "sample_count": 9
-        },
-        "21": {
-          "median_relative_return_percent": -1.02,
-          "median_return_percent": 0.89,
-          "outperform_universe_probability_percent": 33.33,
-          "positive_return_probability_percent": 66.67,
-          "return_p20_percent": -0.35,
-          "return_p80_percent": 1.99,
-          "sample_count": 9
-        },
-        "63": {
-          "median_relative_return_percent": 0.22,
-          "median_return_percent": -1.05,
-          "outperform_universe_probability_percent": 55.56,
-          "positive_return_probability_percent": 11.11,
-          "return_p20_percent": -2.03,
-          "return_p80_percent": -0.19,
-          "sample_count": 9
-        }
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
       },
-      "risk_score": 21.2,
+      "risk_score": 54.4,
+      "sleeve": "REGION_EQUITY",
       "status": "AVAILABLE",
-      "symbol": "HYG"
+      "symbol": "IWM",
+      "tradable_isin": "IE00BJ38QD84",
+      "tradable_name": "SPDR Russell 2000 U.S. Small Cap UCITS ETF",
+      "tradable_symbol": "ZPRR"
     },
     {
       "asset_class": "EQUITY",
-      "confidence_score": 71,
-      "exposure": "Emerging markets",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 85,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -2.69,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -1.5,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.19,
+        "relative_to_spy_5_session_percent": -0.76,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Europe broad market",
+      "final_score": 49.4,
+      "final_score_change_1_session": -2.4,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 4.67,
+      "historical_analog_score": 69.8,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 17.3,
+      "market_psychology_score": 44.4,
+      "opportunity_score": 43.3,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": -2.71,
-          "median_return_percent": -6.68,
-          "outperform_universe_probability_percent": 37.5,
-          "positive_return_probability_percent": 50.0,
-          "return_p20_percent": -16.27,
-          "return_p80_percent": 7.66,
-          "sample_count": 8
+          "median_relative_return_percent": -1.34,
+          "median_return_percent": 6.15,
+          "outperform_universe_probability_percent": 21.05,
+          "positive_return_probability_percent": 78.95,
+          "return_p20_percent": 0.31,
+          "return_p80_percent": 18.67,
+          "sample_count": 19
         },
         "21": {
-          "median_relative_return_percent": 0.31,
-          "median_return_percent": -1.51,
-          "outperform_universe_probability_percent": 62.5,
-          "positive_return_probability_percent": 25.0,
-          "return_p20_percent": -7.31,
-          "return_p80_percent": 2.07,
-          "sample_count": 8
+          "median_relative_return_percent": -0.41,
+          "median_return_percent": 2.1,
+          "outperform_universe_probability_percent": 47.37,
+          "positive_return_probability_percent": 73.68,
+          "return_p20_percent": -4.41,
+          "return_p80_percent": 4.11,
+          "sample_count": 19
         },
         "63": {
-          "median_relative_return_percent": -3.22,
-          "median_return_percent": -6.79,
-          "outperform_universe_probability_percent": 37.5,
-          "positive_return_probability_percent": 12.5,
-          "return_p20_percent": -9.02,
-          "return_p80_percent": -2.17,
-          "sample_count": 8
+          "median_relative_return_percent": -0.13,
+          "median_return_percent": 5.75,
+          "outperform_universe_probability_percent": 47.37,
+          "positive_return_probability_percent": 78.95,
+          "return_p20_percent": -0.12,
+          "return_p80_percent": 11.87,
+          "sample_count": 19
         }
       },
-      "risk_score": 88.5,
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 40.0,
+      "sleeve": "REGION_EQUITY",
       "status": "AVAILABLE",
-      "symbol": "EEM"
+      "symbol": "VGK",
+      "tradable_isin": "DE0002635307",
+      "tradable_name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+      "tradable_symbol": "EXSA"
     },
     {
       "asset_class": "SECTOR",
-      "confidence_score": 57,
-      "exposure": "Communication services",
-      "history_sessions": 2099,
-      "history_start": "2018-06-19",
-      "opportunity_score": 14.4,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -1.09,
-          "median_return_percent": 0.46,
-          "outperform_universe_probability_percent": 40.0,
-          "positive_return_probability_percent": 60.0,
-          "return_p20_percent": -6.98,
-          "return_p80_percent": 27.06,
-          "sample_count": 5
-        },
-        "21": {
-          "median_relative_return_percent": -0.65,
-          "median_return_percent": 0.19,
-          "outperform_universe_probability_percent": 25.0,
-          "positive_return_probability_percent": 50.0,
-          "return_p20_percent": -3.88,
-          "return_p80_percent": 2.98,
-          "sample_count": 8
-        },
-        "63": {
-          "median_relative_return_percent": -1.0,
-          "median_return_percent": 0.5,
-          "outperform_universe_probability_percent": 28.57,
-          "positive_return_probability_percent": 57.14,
-          "return_p20_percent": -7.12,
-          "return_p80_percent": 5.64,
-          "sample_count": 7
-        }
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 48,
+        "positive_count": 4,
+        "score": 98,
+        "state": "POSITIVE"
       },
-      "risk_score": 80.8,
-      "status": "AVAILABLE",
-      "symbol": "XLC"
-    },
-    {
-      "asset_class": "SECTOR",
       "confidence_score": 64,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -4.06,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -8.18,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.87,
+        "relative_to_spy_5_session_percent": -1.44,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
       "exposure": "Industrials",
+      "final_score": 40.7,
+      "final_score_change_1_session": 1.7,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 14.83,
+      "historical_analog_score": 97.5,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 13.5,
+      "market_psychology_score": 32.2,
+      "opportunity_score": 18.9,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": 7.67,
+          "median_relative_return_percent": 4.71,
           "median_return_percent": 22.54,
           "outperform_universe_probability_percent": 66.67,
           "positive_return_probability_percent": 66.67,
@@ -1551,7 +3329,7 @@
           "sample_count": 3
         },
         "21": {
-          "median_relative_return_percent": 3.86,
+          "median_relative_return_percent": 3.57,
           "median_return_percent": 9.15,
           "outperform_universe_probability_percent": 100.0,
           "positive_return_probability_percent": 100.0,
@@ -1560,69 +3338,1056 @@
           "sample_count": 3
         },
         "63": {
-          "median_relative_return_percent": 6.88,
+          "median_relative_return_percent": 6.21,
           "median_return_percent": 12.81,
-          "outperform_universe_probability_percent": 100.0,
+          "outperform_universe_probability_percent": 66.67,
           "positive_return_probability_percent": 100.0,
           "return_p20_percent": 10.8,
           "return_p80_percent": 16.06,
           "sample_count": 3
         }
       },
-      "risk_score": 67.3,
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 58.9,
+      "sleeve": "US_SECTOR",
       "status": "AVAILABLE",
-      "symbol": "XLI"
+      "symbol": "XLI",
+      "tradable_isin": "IE00BWBXM724",
+      "tradable_name": "State Street SPDR S&P U.S. Industrials Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDI"
     },
     {
-      "asset_class": "COMMODITY",
-      "confidence_score": 65,
-      "exposure": "Physical gold",
+      "asset_class": "EQUITY",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 75,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -3.12,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -0.5,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.52,
+        "relative_to_spy_5_session_percent": -1.09,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Germany",
+      "final_score": 39.2,
+      "final_score_change_1_session": -15.2,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": -0.81,
+      "historical_analog_score": 47.0,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 12.5,
+      "market_psychology_score": 37.8,
+      "opportunity_score": 31.7,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": 1.0,
-          "median_return_percent": 3.54,
-          "outperform_universe_probability_percent": 50.0,
-          "positive_return_probability_percent": 100.0,
-          "return_p20_percent": 1.56,
-          "return_p80_percent": 5.84,
-          "sample_count": 4
+          "median_relative_return_percent": -6.57,
+          "median_return_percent": 0.32,
+          "outperform_universe_probability_percent": 27.27,
+          "positive_return_probability_percent": 54.55,
+          "return_p20_percent": -13.66,
+          "return_p80_percent": 9.78,
+          "sample_count": 11
+        },
+        "21": {
+          "median_relative_return_percent": -1.52,
+          "median_return_percent": -0.98,
+          "outperform_universe_probability_percent": 27.27,
+          "positive_return_probability_percent": 45.45,
+          "return_p20_percent": -5.08,
+          "return_p80_percent": 3.46,
+          "sample_count": 11
+        },
+        "63": {
+          "median_relative_return_percent": -4.86,
+          "median_return_percent": -1.77,
+          "outperform_universe_probability_percent": 27.27,
+          "positive_return_probability_percent": 27.27,
+          "return_p20_percent": -3.25,
+          "return_p80_percent": 2.3,
+          "sample_count": 11
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 48.9,
+      "sleeve": "REGION_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "EWG",
+      "tradable_isin": "DE0005933931",
+      "tradable_name": "iShares Core DAX UCITS ETF (DE)",
+      "tradable_symbol": "EXS1"
+    },
+    {
+      "asset_class": "EQUITY",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 73,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -5.94,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -3.57,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.81,
+        "relative_to_spy_5_session_percent": -1.38,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Eurozone large cap",
+      "final_score": 35.9,
+      "final_score_change_1_session": -5.0,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 4.88,
+      "historical_analog_score": 67.8,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 28.9,
+      "opportunity_score": 25.6,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -1.31,
+          "median_return_percent": 11.71,
+          "outperform_universe_probability_percent": 30.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -8.49,
+          "return_p80_percent": 21.33,
+          "sample_count": 10
+        },
+        "21": {
+          "median_relative_return_percent": -1.8,
+          "median_return_percent": 1.0,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 70.0,
+          "return_p20_percent": -2.87,
+          "return_p80_percent": 7.03,
+          "sample_count": 10
+        },
+        "63": {
+          "median_relative_return_percent": -1.07,
+          "median_return_percent": 1.93,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -12.06,
+          "return_p80_percent": 20.34,
+          "sample_count": 10
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 54.4,
+      "sleeve": "REGION_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "EZU",
+      "tradable_isin": "DE0005933956",
+      "tradable_name": "iShares EURO STOXX 50 UCITS ETF (DE)",
+      "tradable_symbol": "EXW1"
+    },
+    {
+      "asset_class": "FACTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 69,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -10.79,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -2.83,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.27,
+        "relative_to_spy_5_session_percent": -0.84,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "World momentum factor",
+      "final_score": 35.1,
+      "final_score_change_1_session": 2.5,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 4.07,
+      "historical_analog_score": 64.1,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 25.6,
+      "opportunity_score": 35.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 5.53,
+          "median_return_percent": 3.35,
+          "outperform_universe_probability_percent": 57.14,
+          "positive_return_probability_percent": 71.43,
+          "return_p20_percent": -0.03,
+          "return_p80_percent": 19.43,
+          "sample_count": 7
         },
         "21": {
           "median_relative_return_percent": 1.07,
-          "median_return_percent": 3.23,
+          "median_return_percent": 2.65,
           "outperform_universe_probability_percent": 75.0,
           "positive_return_probability_percent": 75.0,
-          "return_p20_percent": 0.38,
-          "return_p80_percent": 4.01,
-          "sample_count": 4
+          "return_p20_percent": -1.59,
+          "return_p80_percent": 5.68,
+          "sample_count": 8
         },
         "63": {
-          "median_relative_return_percent": -4.99,
-          "median_return_percent": -0.32,
-          "outperform_universe_probability_percent": 25.0,
+          "median_relative_return_percent": 5.21,
+          "median_return_percent": 6.22,
+          "outperform_universe_probability_percent": 71.43,
+          "positive_return_probability_percent": 85.71,
+          "return_p20_percent": 3.27,
+          "return_p80_percent": 13.66,
+          "sample_count": 7
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 81.1,
+      "sleeve": "FACTOR_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "MTUM",
+      "tradable_isin": "IE00BP3QZ825",
+      "tradable_name": "iShares Edge MSCI World Momentum Factor UCITS ETF",
+      "tradable_symbol": "IS3R"
+    },
+    {
+      "asset_class": "EQUITY",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 67,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -3.11,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -2.52,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -2.52,
+        "relative_to_spy_5_session_percent": -2.09,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "India",
+      "final_score": 34.3,
+      "final_score_change_1_session": -5.2,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 0.95,
+      "historical_analog_score": 53.2,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 31.1,
+      "opportunity_score": 22.8,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -0.92,
+          "median_return_percent": 1.28,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 80.0,
+          "return_p20_percent": 0.44,
+          "return_p80_percent": 5.09,
+          "sample_count": 5
+        },
+        "21": {
+          "median_relative_return_percent": -0.18,
+          "median_return_percent": -1.03,
+          "outperform_universe_probability_percent": 50.0,
           "positive_return_probability_percent": 50.0,
-          "return_p20_percent": -4.59,
-          "return_p80_percent": 4.51,
+          "return_p20_percent": -3.89,
+          "return_p80_percent": 4.54,
+          "sample_count": 6
+        },
+        "63": {
+          "median_relative_return_percent": 0.24,
+          "median_return_percent": 2.59,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 83.33,
+          "return_p20_percent": 1.22,
+          "return_p80_percent": 3.72,
+          "sample_count": 6
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 50.0,
+      "sleeve": "REGION_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "INDA",
+      "tradable_isin": "IE00BZCQB185",
+      "tradable_name": "iShares MSCI India UCITS ETF",
+      "tradable_symbol": "QDV5"
+    },
+    {
+      "asset_class": "THEME",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 65,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -16.83,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -1.6,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -2.33,
+        "relative_to_spy_5_session_percent": -1.9,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Semiconductors",
+      "final_score": 32.5,
+      "final_score_change_1_session": 3.8,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 4.04,
+      "historical_analog_score": 63.1,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 16.7,
+      "opportunity_score": 35.6,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 0.89,
+          "median_return_percent": 2.96,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -5.48,
+          "return_p80_percent": 20.68,
+          "sample_count": 4
+        },
+        "21": {
+          "median_relative_return_percent": 0.21,
+          "median_return_percent": 3.17,
+          "outperform_universe_probability_percent": 60.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -5.54,
+          "return_p80_percent": 12.0,
+          "sample_count": 5
+        },
+        "63": {
+          "median_relative_return_percent": 2.75,
+          "median_return_percent": 5.98,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 75.0,
+          "return_p20_percent": -2.21,
+          "return_p80_percent": 13.44,
           "sample_count": 4
         }
       },
-      "risk_score": 92.3,
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 87.8,
+      "sleeve": "THEMATIC_EQUITY",
       "status": "AVAILABLE",
-      "symbol": "IAU"
+      "symbol": "SMH",
+      "tradable_isin": "IE00BMC38736",
+      "tradable_name": "VanEck Semiconductor UCITS ETF",
+      "tradable_symbol": "VVSM"
+    },
+    {
+      "asset_class": "THEME",
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 67,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -5.42,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -14.18,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -3.27,
+        "relative_to_spy_5_session_percent": -2.84,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Defense and aerospace",
+      "final_score": 31.2,
+      "final_score_change_1_session": 2.7,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 4.03,
+      "historical_analog_score": 63.5,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 25.6,
+      "opportunity_score": 15.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -5.41,
+          "median_return_percent": 4.74,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -6.99,
+          "return_p80_percent": 21.12,
+          "sample_count": 5
+        },
+        "21": {
+          "median_relative_return_percent": 1.04,
+          "median_return_percent": 2.14,
+          "outperform_universe_probability_percent": 60.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -6.88,
+          "return_p80_percent": 8.95,
+          "sample_count": 5
+        },
+        "63": {
+          "median_relative_return_percent": -7.79,
+          "median_return_percent": 5.22,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 80.0,
+          "return_p20_percent": -3.38,
+          "return_p80_percent": 10.53,
+          "sample_count": 5
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 73.3,
+      "sleeve": "THEMATIC_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "ITA",
+      "tradable_isin": "IE000YYE6WK5",
+      "tradable_name": "VanEck Defense UCITS ETF",
+      "tradable_symbol": "DFEN"
     },
     {
       "asset_class": "COMMODITY",
-      "confidence_score": 75,
-      "exposure": "Physical silver",
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 40,
+        "positive_count": 2,
+        "score": 90,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 65,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -6.83,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 2.03,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -4.07,
+        "relative_to_spy_5_session_percent": -3.64,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Physical gold",
+      "final_score": 29.8,
+      "final_score_change_1_session": 1.9,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 3.56,
+      "historical_analog_score": 61.6,
       "history_sessions": 2514,
       "history_start": "2016-10-24",
-      "opportunity_score": 3.8,
+      "market_psychology_score": 17.8,
+      "opportunity_score": 17.2,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": 4.86,
+          "median_relative_return_percent": 1.11,
+          "median_return_percent": 6.08,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 3.81,
+          "return_p80_percent": 8.15,
+          "sample_count": 4
+        },
+        "21": {
+          "median_relative_return_percent": -0.05,
+          "median_return_percent": 3.21,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 80.0,
+          "return_p20_percent": 1.94,
+          "return_p80_percent": 3.98,
+          "sample_count": 5
+        },
+        "63": {
+          "median_relative_return_percent": -1.93,
+          "median_return_percent": 1.38,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 80.0,
+          "return_p20_percent": -0.46,
+          "return_p80_percent": 4.22,
+          "sample_count": 5
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 77.8,
+      "sleeve": "COMMODITY",
+      "status": "AVAILABLE",
+      "symbol": "IAU",
+      "tradable_isin": "IE00B4ND3602",
+      "tradable_name": "iShares Physical Gold ETC",
+      "tradable_symbol": "PPFB"
+    },
+    {
+      "asset_class": "THEME",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 76,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -13.64,
+        "driver_type": "POSITIONING_UNWIND",
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 15.82,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -8.56,
+        "relative_to_spy_5_session_percent": -8.13,
+        "state": "POSITIONING_UNWIND_WATCH",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Gold miners",
+      "final_score": 26.9,
+      "final_score_change_1_session": -1.0,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": -2.18,
+      "historical_analog_score": 41.7,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 6.7,
+      "opportunity_score": 35.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -5.07,
+          "median_return_percent": -5.98,
+          "outperform_universe_probability_percent": 41.67,
+          "positive_return_probability_percent": 33.33,
+          "return_p20_percent": -9.52,
+          "return_p80_percent": 7.11,
+          "sample_count": 12
+        },
+        "21": {
+          "median_relative_return_percent": -0.01,
+          "median_return_percent": -0.9,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 33.33,
+          "return_p20_percent": -2.44,
+          "return_p80_percent": 7.39,
+          "sample_count": 12
+        },
+        "63": {
+          "median_relative_return_percent": -2.05,
+          "median_return_percent": 0.33,
+          "outperform_universe_probability_percent": 41.67,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -6.08,
+          "return_p80_percent": 9.46,
+          "sample_count": 12
+        }
+      },
+      "rebound_opportunity_context": {
+        "material_negative_event": false,
+        "material_positive_event": false,
+        "price_recovery_confirmed": false,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_positioning_unwind_session": "2026-10-01",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 95.6,
+      "sleeve": "THEMATIC_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "GDX",
+      "tradable_isin": "IE00BQQP9F84",
+      "tradable_name": "VanEck Gold Miners UCITS ETF",
+      "tradable_symbol": "G2X"
+    },
+    {
+      "asset_class": "EQUITY",
+      "catalyst_context": {
+        "negative_count": 2,
+        "net_impact": -40,
+        "positive_count": 0,
+        "score": 10,
+        "state": "NEGATIVE"
+      },
+      "confidence_score": 79,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -9.78,
+        "driver_type": null,
+        "material_negative_event": true,
+        "prior_58_session_return_percent": -1.21,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.34,
+        "relative_to_spy_5_session_percent": -0.91,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Emerging markets",
+      "final_score": 24.9,
+      "final_score_change_1_session": -3.4,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 0.91,
+      "historical_analog_score": 53.6,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 24.4,
+      "opportunity_score": 22.2,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -1.81,
+          "median_return_percent": 5.51,
+          "outperform_universe_probability_percent": 35.71,
+          "positive_return_probability_percent": 57.14,
+          "return_p20_percent": -12.06,
+          "return_p80_percent": 12.96,
+          "sample_count": 14
+        },
+        "21": {
+          "median_relative_return_percent": -0.78,
+          "median_return_percent": -0.45,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 42.86,
+          "return_p20_percent": -2.28,
+          "return_p80_percent": 7.71,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": -5.4,
+          "median_return_percent": -2.33,
+          "outperform_universe_probability_percent": 28.57,
+          "positive_return_probability_percent": 42.86,
+          "return_p20_percent": -12.35,
+          "return_p80_percent": 8.48,
+          "sample_count": 14
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 75.6,
+      "sleeve": "REGION_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "EEM",
+      "tradable_isin": "IE00BKM4GZ66",
+      "tradable_name": "iShares Core MSCI Emerging Markets IMI UCITS ETF (Acc)",
+      "tradable_symbol": "IS3N"
+    },
+    {
+      "asset_class": "SECTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 57,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -6.6,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 2.81,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -4.36,
+        "relative_to_spy_5_session_percent": -3.93,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Communication services",
+      "final_score": 21.9,
+      "final_score_change_1_session": -9.7,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": -15.14,
+      "historical_analog_score": 6.9,
+      "history_sessions": 2099,
+      "history_start": "2018-06-19",
+      "market_psychology_score": 13.3,
+      "opportunity_score": 20.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -11.73,
+          "median_return_percent": -26.2,
+          "outperform_universe_probability_percent": 0.0,
+          "positive_return_probability_percent": 0.0,
+          "return_p20_percent": -30.27,
+          "return_p80_percent": -12.09,
+          "sample_count": 5
+        },
+        "21": {
+          "median_relative_return_percent": -2.54,
+          "median_return_percent": -8.93,
+          "outperform_universe_probability_percent": 0.0,
+          "positive_return_probability_percent": 0.0,
+          "return_p20_percent": -12.71,
+          "return_p80_percent": -1.74,
+          "sample_count": 6
+        },
+        "63": {
+          "median_relative_return_percent": -8.16,
+          "median_return_percent": -10.29,
+          "outperform_universe_probability_percent": 0.0,
+          "positive_return_probability_percent": 16.67,
+          "return_p20_percent": -12.06,
+          "return_p80_percent": -6.22,
+          "sample_count": 6
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 70.0,
+      "sleeve": "US_SECTOR",
+      "status": "AVAILABLE",
+      "symbol": "XLC",
+      "tradable_isin": "IE00BWBXM708",
+      "tradable_name": "State Street SPDR S&P U.S. Communication Services Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDC"
+    },
+    {
+      "asset_class": "EQUITY",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 67,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -6.88,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -5.64,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -4.3,
+        "relative_to_spy_5_session_percent": -3.87,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "China",
+      "final_score": 21.4,
+      "final_score_change_1_session": 0.9,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": -5.49,
+      "historical_analog_score": 31.6,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 15.6,
+      "opportunity_score": 11.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -8.2,
+          "median_return_percent": -10.48,
+          "outperform_universe_probability_percent": 0.0,
+          "positive_return_probability_percent": 20.0,
+          "return_p20_percent": -17.48,
+          "return_p80_percent": -2.65,
+          "sample_count": 5
+        },
+        "21": {
+          "median_relative_return_percent": -2.16,
+          "median_return_percent": 0.65,
+          "outperform_universe_probability_percent": 37.5,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -4.8,
+          "return_p80_percent": 5.73,
+          "sample_count": 8
+        },
+        "63": {
+          "median_relative_return_percent": -10.2,
+          "median_return_percent": -6.64,
+          "outperform_universe_probability_percent": 0.0,
+          "positive_return_probability_percent": 28.57,
+          "return_p20_percent": -14.36,
+          "return_p80_percent": 0.18,
+          "sample_count": 7
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 65.6,
+      "sleeve": "REGION_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "MCHI",
+      "tradable_isin": "IE00BHZRR147",
+      "tradable_name": "Franklin FTSE China UCITS ETF",
+      "tradable_symbol": "FLXC"
+    },
+    {
+      "asset_class": "THEME",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 79,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -8.67,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -8.31,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.9,
+        "relative_to_spy_5_session_percent": -1.47,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Clean energy",
+      "final_score": 20.4,
+      "final_score_change_1_session": 1.0,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": -3.1,
+      "historical_analog_score": 37.8,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 25.6,
+      "opportunity_score": 10.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -14.93,
+          "median_return_percent": -8.75,
+          "outperform_universe_probability_percent": 28.57,
+          "positive_return_probability_percent": 35.71,
+          "return_p20_percent": -14.06,
+          "return_p80_percent": 11.04,
+          "sample_count": 14
+        },
+        "21": {
+          "median_relative_return_percent": -3.05,
+          "median_return_percent": -0.91,
+          "outperform_universe_probability_percent": 33.33,
+          "positive_return_probability_percent": 33.33,
+          "return_p20_percent": -7.56,
+          "return_p80_percent": 2.73,
+          "sample_count": 15
+        },
+        "63": {
+          "median_relative_return_percent": -3.65,
+          "median_return_percent": 0.36,
+          "outperform_universe_probability_percent": 21.43,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -10.24,
+          "return_p80_percent": 7.28,
+          "sample_count": 14
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 86.7,
+      "sleeve": "THEMATIC_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "ICLN",
+      "tradable_isin": "IE00B1XNHC34",
+      "tradable_name": "iShares Global Clean Energy Transition UCITS ETF",
+      "tradable_symbol": "IQQH"
+    },
+    {
+      "asset_class": "THEME",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 68,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -15.73,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 2.67,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -8.61,
+        "relative_to_spy_5_session_percent": -8.18,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Copper miners",
+      "final_score": 17.4,
+      "final_score_change_1_session": 0.0,
+      "final_score_direction": "FLAT",
+      "historical_analog_median_return_percent": 1.97,
+      "historical_analog_score": 56.7,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 4.4,
+      "opportunity_score": 10.0,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 9.47,
+          "median_return_percent": 14.41,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 83.33,
+          "return_p20_percent": 1.08,
+          "return_p80_percent": 33.9,
+          "sample_count": 6
+        },
+        "21": {
+          "median_relative_return_percent": -2.77,
+          "median_return_percent": -4.74,
+          "outperform_universe_probability_percent": 33.33,
+          "positive_return_probability_percent": 33.33,
+          "return_p20_percent": -8.41,
+          "return_p80_percent": 3.66,
+          "sample_count": 6
+        },
+        "63": {
+          "median_relative_return_percent": -2.48,
+          "median_return_percent": -3.76,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 50.0,
+          "return_p20_percent": -9.4,
+          "return_p80_percent": 6.74,
+          "sample_count": 6
+        }
+      },
+      "rebound_opportunity_context": {
+        "material_negative_event": false,
+        "material_positive_event": false,
+        "price_recovery_confirmed": false,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_positioning_unwind_session": "2026-10-16",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 91.1,
+      "sleeve": "THEMATIC_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "COPX",
+      "tradable_isin": "IE0003Z9E2Y3",
+      "tradable_name": "Global X Copper Miners UCITS ETF",
+      "tradable_symbol": "COPX"
+    },
+    {
+      "asset_class": "THEME",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 71,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -18.4,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -12.13,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -3.73,
+        "relative_to_spy_5_session_percent": -3.3,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Uranium and nuclear",
+      "final_score": 15.9,
+      "final_score_change_1_session": 0.7,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": 7.28,
+      "historical_analog_score": 75.9,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 8.9,
+      "opportunity_score": 2.2,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 2.57,
+          "median_return_percent": 6.84,
+          "outperform_universe_probability_percent": 62.5,
+          "positive_return_probability_percent": 75.0,
+          "return_p20_percent": -1.16,
+          "return_p80_percent": 50.29,
+          "sample_count": 8
+        },
+        "21": {
+          "median_relative_return_percent": 0.42,
+          "median_return_percent": 2.73,
+          "outperform_universe_probability_percent": 55.56,
+          "positive_return_probability_percent": 55.56,
+          "return_p20_percent": -6.53,
+          "return_p80_percent": 11.55,
+          "sample_count": 9
+        },
+        "63": {
+          "median_relative_return_percent": 9.65,
+          "median_return_percent": 12.28,
+          "outperform_universe_probability_percent": 77.78,
+          "positive_return_probability_percent": 88.89,
+          "return_p20_percent": 1.97,
+          "return_p80_percent": 28.84,
+          "sample_count": 9
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 96.7,
+      "sleeve": "THEMATIC_EQUITY",
+      "status": "AVAILABLE",
+      "symbol": "URA",
+      "tradable_isin": "IE000M7V94E1",
+      "tradable_name": "VanEck Uranium and Nuclear Technologies UCITS ETF",
+      "tradable_symbol": "NUCL"
+    },
+    {
+      "asset_class": "COMMODITY",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 75,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -16.2,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -2.68,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -5.42,
+        "relative_to_spy_5_session_percent": -4.99,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Physical silver",
+      "final_score": 15.2,
+      "final_score_change_1_session": -1.9,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 2.04,
+      "historical_analog_score": 57.6,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 5.6,
+      "opportunity_score": 5.6,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 5.2,
           "median_return_percent": 5.96,
           "outperform_universe_probability_percent": 72.73,
           "positive_return_probability_percent": 81.82,
@@ -1631,7 +4396,7 @@
           "sample_count": 11
         },
         "21": {
-          "median_relative_return_percent": 1.55,
+          "median_relative_return_percent": 0.77,
           "median_return_percent": -0.45,
           "outperform_universe_probability_percent": 58.33,
           "positive_return_probability_percent": 50.0,
@@ -1640,20 +4405,59 @@
           "sample_count": 12
         },
         "63": {
-          "median_relative_return_percent": 1.38,
+          "median_relative_return_percent": 2.09,
           "median_return_percent": 0.6,
-          "outperform_universe_probability_percent": 75.0,
+          "outperform_universe_probability_percent": 66.67,
           "positive_return_probability_percent": 58.33,
           "return_p20_percent": -3.25,
           "return_p80_percent": 3.43,
           "sample_count": 12
         }
       },
-      "risk_score": 98.1,
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 94.4,
+      "sleeve": "COMMODITY",
       "status": "AVAILABLE",
-      "symbol": "SLV"
+      "symbol": "SLV",
+      "tradable_isin": "IE00B4NCWG09",
+      "tradable_name": "iShares Physical Silver ETC",
+      "tradable_symbol": "PPFD"
     }
   ],
+  "rebound_confirmation_validation": {
+    "calibration": {
+      "episode_count": 37,
+      "future_21_session_gain_5_percent_probability": 59.46,
+      "future_21_session_loss_5_percent_probability": 40.54,
+      "future_21_session_median_close_return_percent": 4.18,
+      "future_21_session_positive_close_probability_percent": 54.05,
+      "status": "AVAILABLE"
+    },
+    "decision": "REJECTED_NO_LIVE_ALERT_AUTHORITY",
+    "evaluation": {
+      "episode_count": 32,
+      "future_21_session_gain_5_percent_probability": 62.5,
+      "future_21_session_loss_5_percent_probability": 59.38,
+      "future_21_session_median_close_return_percent": -2.45,
+      "future_21_session_positive_close_probability_percent": 43.75,
+      "status": "AVAILABLE"
+    },
+    "frozen_rule": {
+      "after_positioning_unwind_within_sessions": 20,
+      "price_above_moving_average_sessions": 20,
+      "rebound_from_post_signal_low_min_percent": 5,
+      "recent_5_session_return_min_percent": 1,
+      "relative_to_spy_5_session_min_percent": 0,
+      "spy_5_session_return_min_percent": 1
+    },
+    "interpretation": "PRICE_ONLY_RECOVERY_DID_NOT_RELIABLY_SEPARATE_REBOUND_FROM_SECONDARY_DRAWDOWN",
+    "split": "FIRST_70_PERCENT_CALIBRATION_LAST_30_PERCENT_EVALUATION",
+    "status": "AVAILABLE"
+  },
   "schema_version": "etf-rotation-research/1",
-  "universe_count": 26
+  "universe_count": 45
 }
