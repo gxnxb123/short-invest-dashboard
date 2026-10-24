@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Short Invest · ETF Rotation</title>
-  <link rel="stylesheet" href="styles.css?v=axes001"><link rel="stylesheet" href="etf.css?v=etf001">
+  <link rel="stylesheet" href="styles.css?v=axes001"><link rel="stylesheet" href="etf.css?v=etf004">
 </head>
 <body>
 <header><div><p class="eyebrow">ETF ROTATION · RESEARCH ONLY</p><h1>ETF potential map</h1><p id="etf-asof">Loading retained ETF research…</p></div></header>
@@ -11,7 +11,11 @@
 <main>
   <p id="etf-error" role="alert" hidden></p>
   <section class="etf-hero"><div><p class="eyebrow">CURRENT PRICE REGIME</p><h2 id="regime">—</h2><p id="regime-note"></p></div><div id="etf-summary" class="etf-summary"></div></section>
-  <section><div class="section-head"><div><p class="eyebrow">RELATIVE POTENTIAL</p><h2>26-ETF opportunity map</h2><p class="etf-note">Scores compare this fixed universe. Curves show historical outcomes after similar signals, not forecast returns.</p></div><label>Asset class<select id="asset-filter"><option value="ALL">All</option><option value="EQUITY">Equity</option><option value="SECTOR">Sector</option><option value="BOND">Bond</option><option value="COMMODITY">Commodity</option></select></label></div><div id="etf-rankings" class="etf-grid"></div></section>
+  <section id="event-alerts" class="impact-panel" hidden><p class="eyebrow">MAJOR EVENT IMPACT</p><h2>What changed today</h2><div id="impact-list"></div></section>
+  <section><div class="section-head"><div><p class="eyebrow">BULLISH OPPORTUNITIES</p><h2>Constructive setups</h2><p class="etf-note">Strong relative opportunities and catalyst-backed rebound candidates. Research signals, not buy recommendations.</p></div></div><div id="etf-bullish" class="etf-grid"></div></section>
+  <section class="warning-section"><div class="section-head"><div><p class="eyebrow">DRAWDOWN ALERTS</p><h2>Crash-risk watch</h2><p class="etf-note">Confirmed downside bias and positioning-unwind warnings. An empty section means no current alert, not that risk is absent.</p></div></div><div id="etf-alerts" class="etf-grid"></div></section>
+  <section class="all-section"><div class="section-head"><div><p class="eyebrow">ALL ETF RESEARCH</p><h2>Opportunity ranking</h2><p class="etf-note">Displayed instruments are eligible for German retail distribution; broker availability can vary. Scores come from the named US signal proxy; curves are historical analogs, not forecasts.</p></div><label>Asset class<select id="asset-filter"><option value="ALL">All</option><option value="EQUITY">Equity</option><option value="SECTOR">Sector</option><option value="THEME">Theme</option><option value="FACTOR">Factor</option><option value="BOND">Bond</option><option value="COMMODITY">Commodity</option></select></label></div><label class="etf-search">Search your holdings<input id="etf-search" type="search" placeholder="Ticker, name, ISIN or signal proxy" autocomplete="off"></label><div class="status-legend" aria-label="Research status legend"><span class="status-5">5 · Catalyst rebound</span><span class="status-4">4 · Strong opportunity</span><span class="status-3">3 · Neutral research</span><span class="status-2">2 · Unwind watch</span><span class="status-1">1 · Downside confirmed</span></div><div id="etf-rankings" class="etf-grid"></div></section>
   <section class="context-grid"><div class="etf-panel"><p class="eyebrow">FROZEN MACRO CONTEXT</p><h2>Rates &amp; economy</h2><div id="macro"></div></div><div class="etf-panel"><p class="eyebrow">FROZEN EVENT CONTEXT</p><h2>Global risk themes</h2><div id="themes"></div></div></section>
+  <section class="news-panel"><p class="eyebrow">TODAY'S WORLD NEWS</p><h2>Ten stories worth knowing</h2><p class="etf-note">Links open the original source. Material ETF effects are classified by the event review model.</p><ol id="world-news"></ol></section>
   <p class="research-only"><strong>No recommendation authority.</strong> Macro and event context are retained prospectively but do not change rankings until their relationship with later outcomes is validated.</p>
-</main><script type="module" src="etf.js?v=etf001"></script></body></html>
+</main><script type="module" src="etf.js?v=etf004"></script></body></html>
