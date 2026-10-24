@@ -94,7 +94,7 @@
   "methodology": {
     "curve": "non-overlapping historical observations in the same 10-point opportunity-score band",
     "downside_risk": "positioning-unwind watch requires prior 58-session gain >=15%, 5-session loss >=6%, relative loss versus SPY >=4%, and 21-session drawdown >=9%; only a material negative event upgrades it to downside bias",
-    "final_score": "45% opportunity + 20% 5/21-session cross-sectional market psychology + 15% inverse risk + 10% confidence-damped historical analog + 10% JEV-reviewed catalyst environment",
+    "final_score": "existing weighted score plus a bounded +/-8 point JEV-reviewed material state-transition overlay",
     "horizons_sessions": [
       21,
       63,
@@ -130,7 +130,7 @@
     "status": "AVAILABLE"
   },
   "price_basis": "YAHOO_AUTO_ADJUSTED_TOTAL_RETURN_PROXY",
-  "price_data_digest": "sha256:44dd7cc26eaf81d3812d5f03c0166ae04d61e00407b89d20ee08e31741db23f8",
+  "price_data_digest": "sha256:48c4ca1b066a02e29638f528e1d8008be8244a67992432fda2889bab7ca46dc8",
   "price_regime_context": {
     "broad_commodity_return_percent": 17.55,
     "defensive_minus_cyclical_percent": 2.79,
@@ -154,6 +154,8 @@
             "direction": "POSITIVE",
             "horizon": "IMMEDIATE_1_TO_5D",
             "relation": "MATERIAL",
+            "state_transition": "NO_MATERIAL_STATE_CHANGE",
+            "state_transition_confidence": 0.42,
             "status": "AVAILABLE",
             "symbol": "BNO"
           },
@@ -161,6 +163,8 @@
             "direction": "POSITIVE",
             "horizon": "IMMEDIATE_1_TO_5D",
             "relation": "MATERIAL",
+            "state_transition": "NO_MATERIAL_STATE_CHANGE",
+            "state_transition_confidence": 0.38,
             "status": "AVAILABLE",
             "symbol": "CIBR"
           },
@@ -168,6 +172,8 @@
             "direction": "POSITIVE",
             "horizon": "IMMEDIATE_1_TO_5D",
             "relation": "MATERIAL",
+            "state_transition": "NO_MATERIAL_STATE_CHANGE",
+            "state_transition_confidence": 0.63,
             "status": "AVAILABLE",
             "symbol": "DBC"
           },
@@ -175,6 +181,8 @@
             "direction": "NEGATIVE",
             "horizon": "IMMEDIATE_1_TO_5D",
             "relation": "MATERIAL",
+            "state_transition": "NEGATIVE_STATE_SHIFT",
+            "state_transition_confidence": 0.66,
             "status": "AVAILABLE",
             "symbol": "EEM"
           },
@@ -182,6 +190,8 @@
             "direction": "POSITIVE",
             "horizon": "IMMEDIATE_1_TO_5D",
             "relation": "MATERIAL",
+            "state_transition": "NO_MATERIAL_STATE_CHANGE",
+            "state_transition_confidence": 0.52,
             "status": "AVAILABLE",
             "symbol": "IAU"
           },
@@ -189,6 +199,8 @@
             "direction": "POSITIVE",
             "horizon": "IMMEDIATE_1_TO_5D",
             "relation": "MATERIAL",
+            "state_transition": "NO_MATERIAL_STATE_CHANGE",
+            "state_transition_confidence": 0.4,
             "status": "AVAILABLE",
             "symbol": "ITA"
           },
@@ -196,6 +208,8 @@
             "direction": "POSITIVE",
             "horizon": "IMMEDIATE_1_TO_5D",
             "relation": "MATERIAL",
+            "state_transition": "NO_MATERIAL_STATE_CHANGE",
+            "state_transition_confidence": 0.43,
             "status": "AVAILABLE",
             "symbol": "USO"
           },
@@ -203,6 +217,8 @@
             "direction": "POSITIVE",
             "horizon": "IMMEDIATE_1_TO_5D",
             "relation": "MATERIAL",
+            "state_transition": "NO_MATERIAL_STATE_CHANGE",
+            "state_transition_confidence": 0.58,
             "status": "AVAILABLE",
             "symbol": "XLE"
           }
@@ -216,68 +232,6 @@
         "url": "https://pakobserver.net/iran-plans-targeting-undersea-cable-in-gulf-if-us-israel-resume-war-reports/"
       },
       {
-        "domain": "dailypioneer.com",
-        "language": "English",
-        "material_impacts": [
-          {
-            "direction": "POSITIVE",
-            "horizon": "IMMEDIATE_1_TO_5D",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "BNO"
-          },
-          {
-            "direction": "POSITIVE",
-            "horizon": "IMMEDIATE_1_TO_5D",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "CIBR"
-          },
-          {
-            "direction": "NEGATIVE",
-            "horizon": "IMMEDIATE_1_TO_5D",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "EEM"
-          },
-          {
-            "direction": "POSITIVE",
-            "horizon": "IMMEDIATE_1_TO_5D",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "IAU"
-          },
-          {
-            "direction": "POSITIVE",
-            "horizon": "IMMEDIATE_1_TO_5D",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "ITA"
-          },
-          {
-            "direction": "POSITIVE",
-            "horizon": "IMMEDIATE_1_TO_5D",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "USO"
-          },
-          {
-            "direction": "POSITIVE",
-            "horizon": "IMMEDIATE_1_TO_5D",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "XLE"
-          }
-        ],
-        "seen_at": "20261024T071500Z",
-        "source_country": "India",
-        "themes": [
-          "MILITARY_GEOPOLITICS"
-        ],
-        "title": "Iran threatens Gulf internet cables if war with US and Israel resumes",
-        "url": "https://dailypioneer.com/world/iran-threatens-gulf-internet-cables-if-war-with-us-and-israel-resumes"
-      },
-      {
         "domain": "600kcol.iheart.com",
         "language": "English",
         "material_impacts": [
@@ -285,6 +239,8 @@
             "direction": "POSITIVE",
             "horizon": "MEDIUM_1_TO_3M",
             "relation": "MATERIAL",
+            "state_transition": "POSITIVE_STATE_SHIFT",
+            "state_transition_confidence": 0.44,
             "status": "AVAILABLE",
             "symbol": "XLB"
           },
@@ -292,6 +248,8 @@
             "direction": "POSITIVE",
             "horizon": "MEDIUM_1_TO_3M",
             "relation": "MATERIAL",
+            "state_transition": "POSITIVE_STATE_SHIFT",
+            "state_transition_confidence": 0.68,
             "status": "AVAILABLE",
             "symbol": "XLI"
           }
@@ -305,114 +263,6 @@
         "url": "https://600kcol.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
       },
       {
-        "domain": "newsradio540.iheart.com",
-        "language": "English",
-        "material_impacts": [
-          {
-            "direction": "POSITIVE",
-            "horizon": "MEDIUM_1_TO_3M",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "XLB"
-          },
-          {
-            "direction": "POSITIVE",
-            "horizon": "MEDIUM_1_TO_3M",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "XLI"
-          }
-        ],
-        "seen_at": "20261024T071500Z",
-        "source_country": "United States",
-        "themes": [
-          "TRADE_CONTROLS"
-        ],
-        "title": "Trump Administration Rolls Back Some Canada Tariffs",
-        "url": "https://newsradio540.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
-      },
-      {
-        "domain": "wchstv.com",
-        "language": "English",
-        "material_impacts": [
-          {
-            "direction": "MIXED_OR_UNCLEAR",
-            "horizon": "MEDIUM_1_TO_3M",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "XLB"
-          },
-          {
-            "direction": "MIXED_OR_UNCLEAR",
-            "horizon": "MEDIUM_1_TO_3M",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "XLI"
-          }
-        ],
-        "seen_at": "20261024T071500Z",
-        "source_country": "United States",
-        "themes": [
-          "TRADE_CONTROLS"
-        ],
-        "title": "Trump lifts tariffs on some Canadian imports , adds others in sweeping revision",
-        "url": "https://wchstv.com/news/nation-world/trump-lifts-tariffs-on-some-canadian-imports-adds-others-in-sweeping-revision"
-      },
-      {
-        "domain": "wmanfm.iheart.com",
-        "language": "English",
-        "material_impacts": [
-          {
-            "direction": "POSITIVE",
-            "horizon": "MEDIUM_1_TO_3M",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "XLB"
-          },
-          {
-            "direction": "POSITIVE",
-            "horizon": "MEDIUM_1_TO_3M",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "XLI"
-          }
-        ],
-        "seen_at": "20261024T071500Z",
-        "source_country": "United States",
-        "themes": [
-          "TRADE_CONTROLS"
-        ],
-        "title": "Trump Administration Rolls Back Some Canada Tariffs",
-        "url": "https://wmanfm.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
-      },
-      {
-        "domain": "wrak.iheart.com",
-        "language": "English",
-        "material_impacts": [
-          {
-            "direction": "POSITIVE",
-            "horizon": "MEDIUM_1_TO_3M",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "XLB"
-          },
-          {
-            "direction": "POSITIVE",
-            "horizon": "MEDIUM_1_TO_3M",
-            "relation": "MATERIAL",
-            "status": "AVAILABLE",
-            "symbol": "XLI"
-          }
-        ],
-        "seen_at": "20261024T071500Z",
-        "source_country": "United States",
-        "themes": [
-          "TRADE_CONTROLS"
-        ],
-        "title": "Trump Administration Rolls Back Some Canada Tariffs",
-        "url": "https://wrak.iheart.com/content/2026-10-24-trump-administration-rolls-back-some-canada-tariffs/"
-      },
-      {
         "domain": "abcnews4.com",
         "language": "English",
         "material_impacts": [
@@ -420,8 +270,19 @@
             "direction": "MIXED_OR_UNCLEAR",
             "horizon": "MEDIUM_1_TO_3M",
             "relation": "MATERIAL",
+            "state_transition": "UNCERTAIN",
+            "state_transition_confidence": 0.52,
             "status": "AVAILABLE",
             "symbol": "XLB"
+          },
+          {
+            "direction": "MIXED_OR_UNCLEAR",
+            "horizon": "MEDIUM_1_TO_3M",
+            "relation": "MATERIAL",
+            "state_transition": "UNCERTAIN",
+            "state_transition_confidence": 0.51,
+            "status": "AVAILABLE",
+            "symbol": "XLI"
           }
         ],
         "seen_at": "20261024T071500Z",
@@ -455,15 +316,27 @@
         ],
         "title": "Azerbaijan ranks among T\u00fcrkiye top three gas suppliers in August",
         "url": "https://www.trend.az/azerbaijan/4238625.html"
+      },
+      {
+        "domain": "rozanaspokesman.com",
+        "language": "English",
+        "material_impacts": [],
+        "seen_at": "20261024T071500Z",
+        "source_country": "India",
+        "themes": [
+          "MILITARY_GEOPOLITICS"
+        ],
+        "title": "Paris Suburbs Shooting : One Killed , Five Wounded in Racist Terror Attack , Says Macron",
+        "url": "https://www.rozanaspokesman.com/news/world/241026/one-killed-five-wounded-in-paris-suburbs-shooting-described-by-macron.html"
       }
     ],
     "jev_assessment": {
-      "assessed_at": "2026-10-24T17:16:03.534778+00:00",
-      "available_pair_count": 72,
+      "assessed_at": "2026-10-24T19:26:02.787306+00:00",
+      "available_pair_count": 69,
       "direction_counts": {
-        "MIXED_OR_UNCLEAR": 3,
+        "MIXED_OR_UNCLEAR": 5,
         "NEGATIVE": 2,
-        "POSITIVE": 21
+        "POSITIVE": 19
       },
       "horizon_counts": {
         "IMMEDIATE_1_TO_5D": 15,
@@ -474,13 +347,20 @@
       "meaningful_pair_count": 26,
       "run_stats": {
         "attempted": 73,
-        "failed": 1,
-        "input_tokens": 58631,
+        "failed": 4,
+        "input_tokens": 74473,
         "model_discovery_requests": 1,
-        "output_tokens": 12737,
+        "output_tokens": 17726,
         "pair_count": 73,
         "status": "AVAILABLE",
-        "succeeded": 72
+        "succeeded": 69
+      },
+      "state_transition_counts": {
+        "CONTINUATION_ALREADY_PRICED": 0,
+        "NEGATIVE_STATE_SHIFT": 2,
+        "NO_MATERIAL_STATE_CHANGE": 13,
+        "POSITIVE_STATE_SHIFT": 7,
+        "UNCERTAIN": 4
       },
       "status": "AVAILABLE"
     },
@@ -504,16 +384,16 @@
     "symbol_catalyst_context": {
       "BNO": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "CIBR": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "DBC": {
@@ -524,55 +404,56 @@
         "state": "POSITIVE"
       },
       "EEM": {
-        "negative_count": 2,
-        "net_impact": -40,
+        "negative_count": 1,
+        "net_impact": -20,
         "positive_count": 0,
-        "score": 10,
+        "score": 30,
         "state": "NEGATIVE"
       },
       "IAU": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "ITA": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "USO": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "XLB": {
         "negative_count": 0,
-        "net_impact": 48,
-        "positive_count": 4,
-        "score": 98,
+        "net_impact": 12,
+        "positive_count": 1,
+        "score": 62,
         "state": "POSITIVE"
       },
       "XLE": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "XLI": {
         "negative_count": 0,
-        "net_impact": 48,
-        "positive_count": 4,
-        "score": 98,
+        "net_impact": 12,
+        "positive_count": 1,
+        "score": 62,
         "state": "POSITIVE"
       }
     },
+    "symbol_transition_context": {},
     "themes": {
       "DEFENSE_ORDERS": {
         "article_count": 0,
@@ -614,6 +495,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.99,
                 "status": "AVAILABLE",
                 "symbol": "BNO"
               },
@@ -621,6 +504,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.89,
                 "status": "AVAILABLE",
                 "symbol": "DBC"
               },
@@ -628,6 +513,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.68,
                 "status": "AVAILABLE",
                 "symbol": "ICLN"
               },
@@ -635,6 +522,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.99,
                 "status": "AVAILABLE",
                 "symbol": "USO"
               },
@@ -642,6 +531,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.98,
                 "status": "AVAILABLE",
                 "symbol": "XLE"
               }
@@ -659,6 +550,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.73,
                 "status": "AVAILABLE",
                 "symbol": "BNO"
               },
@@ -666,6 +559,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.71,
                 "status": "AVAILABLE",
                 "symbol": "DBC"
               },
@@ -673,6 +568,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.93,
                 "status": "AVAILABLE",
                 "symbol": "ICLN"
               },
@@ -680,6 +577,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.74,
                 "status": "AVAILABLE",
                 "symbol": "USO"
               },
@@ -687,6 +586,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.66,
                 "status": "AVAILABLE",
                 "symbol": "XLE"
               }
@@ -740,6 +641,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.74,
                 "status": "AVAILABLE",
                 "symbol": "BNO"
               },
@@ -747,6 +650,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.39,
                 "status": "AVAILABLE",
                 "symbol": "CIBR"
               },
@@ -754,6 +659,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.91,
                 "status": "AVAILABLE",
                 "symbol": "DBC"
               },
@@ -761,6 +668,8 @@
                 "direction": "NEGATIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NEGATIVE_STATE_SHIFT",
+                "state_transition_confidence": 0.55,
                 "status": "AVAILABLE",
                 "symbol": "EEM"
               },
@@ -768,6 +677,8 @@
                 "direction": "NEGATIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.55,
                 "status": "AVAILABLE",
                 "symbol": "EFA"
               },
@@ -775,6 +686,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.9,
                 "status": "AVAILABLE",
                 "symbol": "GDX"
               },
@@ -782,6 +695,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.75,
                 "status": "AVAILABLE",
                 "symbol": "IAU"
               },
@@ -789,6 +704,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.49,
                 "status": "AVAILABLE",
                 "symbol": "ITA"
               },
@@ -796,6 +713,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.82,
                 "status": "AVAILABLE",
                 "symbol": "USO"
               },
@@ -803,13 +722,17 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.89,
                 "status": "AVAILABLE",
                 "symbol": "XLE"
               },
               {
-                "direction": "MIXED_OR_UNCLEAR",
+                "direction": "NEGATIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.74,
                 "status": "AVAILABLE",
                 "symbol": "XLI"
               }
@@ -827,6 +750,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.42,
                 "status": "AVAILABLE",
                 "symbol": "BNO"
               },
@@ -834,6 +759,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.38,
                 "status": "AVAILABLE",
                 "symbol": "CIBR"
               },
@@ -841,6 +768,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.63,
                 "status": "AVAILABLE",
                 "symbol": "DBC"
               },
@@ -848,6 +777,8 @@
                 "direction": "NEGATIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NEGATIVE_STATE_SHIFT",
+                "state_transition_confidence": 0.66,
                 "status": "AVAILABLE",
                 "symbol": "EEM"
               },
@@ -855,6 +786,8 @@
                 "direction": "NEGATIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.51,
                 "status": "AVAILABLE",
                 "symbol": "EFA"
               },
@@ -862,6 +795,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.8099999999999999,
                 "status": "AVAILABLE",
                 "symbol": "GDX"
               },
@@ -869,6 +804,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.52,
                 "status": "AVAILABLE",
                 "symbol": "IAU"
               },
@@ -876,6 +813,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.4,
                 "status": "AVAILABLE",
                 "symbol": "ITA"
               },
@@ -883,6 +822,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.43,
                 "status": "AVAILABLE",
                 "symbol": "USO"
               },
@@ -890,6 +831,8 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "MATERIAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.58,
                 "status": "AVAILABLE",
                 "symbol": "XLE"
               },
@@ -897,6 +840,8 @@
                 "direction": "NEGATIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.69,
                 "status": "AVAILABLE",
                 "symbol": "XLI"
               }
@@ -914,20 +859,26 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 1.0,
                 "status": "AVAILABLE",
                 "symbol": "BNO"
               },
               {
-                "direction": "MIXED_OR_UNCLEAR",
-                "horizon": "UNCERTAIN",
-                "relation": "INCIDENTAL",
-                "status": "AVAILABLE",
+                "direction": null,
+                "horizon": null,
+                "relation": null,
+                "state_transition": null,
+                "state_transition_confidence": 0,
+                "status": "UNAVAILABLE",
                 "symbol": "CIBR"
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.99,
                 "status": "AVAILABLE",
                 "symbol": "DBC"
               },
@@ -935,6 +886,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.98,
                 "status": "AVAILABLE",
                 "symbol": "EEM"
               },
@@ -942,6 +895,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.91,
                 "status": "AVAILABLE",
                 "symbol": "EFA"
               },
@@ -949,6 +904,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.98,
                 "status": "AVAILABLE",
                 "symbol": "GDX"
               },
@@ -956,20 +913,26 @@
                 "direction": "POSITIVE",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.96,
                 "status": "AVAILABLE",
                 "symbol": "IAU"
               },
               {
-                "direction": "MIXED_OR_UNCLEAR",
-                "horizon": "IMMEDIATE_1_TO_5D",
-                "relation": "INCIDENTAL",
-                "status": "AVAILABLE",
+                "direction": null,
+                "horizon": null,
+                "relation": null,
+                "state_transition": null,
+                "state_transition_confidence": 0,
+                "status": "UNAVAILABLE",
                 "symbol": "ITA"
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 1.0,
                 "status": "AVAILABLE",
                 "symbol": "USO"
               },
@@ -977,6 +940,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 1.0,
                 "status": "AVAILABLE",
                 "symbol": "XLE"
               },
@@ -984,6 +949,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.98,
                 "status": "AVAILABLE",
                 "symbol": "XLI"
               }
@@ -1062,6 +1029,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.86,
                 "status": "AVAILABLE",
                 "symbol": "EEM"
               },
@@ -1069,6 +1038,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.59,
                 "status": "AVAILABLE",
                 "symbol": "EFA"
               },
@@ -1076,6 +1047,8 @@
                 "direction": "POSITIVE",
                 "horizon": "MEDIUM_1_TO_3M",
                 "relation": "MATERIAL",
+                "state_transition": "POSITIVE_STATE_SHIFT",
+                "state_transition_confidence": 0.44,
                 "status": "AVAILABLE",
                 "symbol": "XLB"
               },
@@ -1083,13 +1056,17 @@
                 "direction": "POSITIVE",
                 "horizon": "MEDIUM_1_TO_3M",
                 "relation": "MATERIAL",
+                "state_transition": "POSITIVE_STATE_SHIFT",
+                "state_transition_confidence": 0.68,
                 "status": "AVAILABLE",
                 "symbol": "XLI"
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
-                "horizon": "UNCERTAIN",
+                "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.65,
                 "status": "AVAILABLE",
                 "symbol": "XLK"
               }
@@ -1107,13 +1084,17 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "UNCERTAIN",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.7,
                 "status": "AVAILABLE",
                 "symbol": "EEM"
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
-                "horizon": "MEDIUM_1_TO_3M",
+                "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.43,
                 "status": "AVAILABLE",
                 "symbol": "EFA"
               },
@@ -1121,20 +1102,26 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "MEDIUM_1_TO_3M",
                 "relation": "MATERIAL",
+                "state_transition": "UNCERTAIN",
+                "state_transition_confidence": 0.52,
                 "status": "AVAILABLE",
                 "symbol": "XLB"
               },
               {
-                "direction": null,
-                "horizon": null,
-                "relation": null,
-                "status": "UNAVAILABLE",
+                "direction": "MIXED_OR_UNCLEAR",
+                "horizon": "MEDIUM_1_TO_3M",
+                "relation": "MATERIAL",
+                "state_transition": "UNCERTAIN",
+                "state_transition_confidence": 0.51,
+                "status": "AVAILABLE",
                 "symbol": "XLI"
               },
               {
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.62,
                 "status": "AVAILABLE",
                 "symbol": "XLK"
               }
@@ -1150,8 +1137,10 @@
             "etf_assessments": [
               {
                 "direction": "MIXED_OR_UNCLEAR",
-                "horizon": "UNCERTAIN",
+                "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.85,
                 "status": "AVAILABLE",
                 "symbol": "EEM"
               },
@@ -1159,13 +1148,17 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.56,
                 "status": "AVAILABLE",
                 "symbol": "EFA"
               },
               {
-                "direction": "POSITIVE",
+                "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "MEDIUM_1_TO_3M",
                 "relation": "MATERIAL",
+                "state_transition": "POSITIVE_STATE_SHIFT",
+                "state_transition_confidence": 0.48,
                 "status": "AVAILABLE",
                 "symbol": "XLB"
               },
@@ -1173,6 +1166,8 @@
                 "direction": "POSITIVE",
                 "horizon": "MEDIUM_1_TO_3M",
                 "relation": "MATERIAL",
+                "state_transition": "POSITIVE_STATE_SHIFT",
+                "state_transition_confidence": 0.69,
                 "status": "AVAILABLE",
                 "symbol": "XLI"
               },
@@ -1180,6 +1175,8 @@
                 "direction": "MIXED_OR_UNCLEAR",
                 "horizon": "IMMEDIATE_1_TO_5D",
                 "relation": "INCIDENTAL",
+                "state_transition": "NO_MATERIAL_STATE_CHANGE",
+                "state_transition_confidence": 0.6,
                 "status": "AVAILABLE",
                 "symbol": "XLK"
               }
@@ -1239,9 +1236,9 @@
       "asset_class": "COMMODITY",
       "catalyst_context": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "confidence_score": 88,
@@ -1257,8 +1254,9 @@
         "status": "AVAILABLE"
       },
       "exposure": "Brent crude futures strategy",
-      "final_score": 88.9,
-      "final_score_change_1_session": 3.7,
+      "final_score": 86.9,
+      "final_score_5_session_average": 84.5,
+      "final_score_change_vs_5_session_average": 2.4,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 7.04,
       "historical_analog_score": 81.0,
@@ -1302,6 +1300,10 @@
       },
       "risk_score": 51.7,
       "sleeve": "COMMODITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "BNO",
       "tradable_isin": "IE00BVFZGD11",
@@ -1312,9 +1314,9 @@
       "asset_class": "COMMODITY",
       "catalyst_context": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "confidence_score": 84,
@@ -1330,8 +1332,9 @@
         "status": "AVAILABLE"
       },
       "exposure": "WTI futures strategy",
-      "final_score": 86.1,
-      "final_score_change_1_session": 4.2,
+      "final_score": 84.1,
+      "final_score_5_session_average": 81.0,
+      "final_score_change_vs_5_session_average": 3.1,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 4.43,
       "historical_analog_score": 68.6,
@@ -1375,6 +1378,10 @@
       },
       "risk_score": 50.6,
       "sleeve": "COMMODITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "USO",
       "tradable_isin": "IE00BVFZGC04",
@@ -1385,9 +1392,9 @@
       "asset_class": "SECTOR",
       "catalyst_context": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "confidence_score": 73,
@@ -1403,8 +1410,9 @@
         "status": "AVAILABLE"
       },
       "exposure": "Energy",
-      "final_score": 86.0,
-      "final_score_change_1_session": 7.0,
+      "final_score": 84.0,
+      "final_score_5_session_average": 80.6,
+      "final_score_change_vs_5_session_average": 3.4,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 2.94,
       "historical_analog_score": 60.7,
@@ -1448,6 +1456,10 @@
       },
       "risk_score": 38.3,
       "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "XLE",
       "tradable_isin": "IE00BWBXM492",
@@ -1455,12 +1467,87 @@
       "tradable_symbol": "ZPDE"
     },
     {
+      "asset_class": "FACTOR",
+      "catalyst_context": {
+        "score": 50,
+        "state": "NEUTRAL"
+      },
+      "confidence_score": 67,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.54,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": 4.14,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 1.67,
+        "relative_to_spy_5_session_percent": 2.1,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "World minimum volatility factor",
+      "final_score": 80.3,
+      "final_score_5_session_average": 78.0,
+      "final_score_change_vs_5_session_average": 2.3,
+      "final_score_direction": "UP",
+      "historical_analog_median_return_percent": -0.77,
+      "historical_analog_score": 47.4,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 88.9,
+      "opportunity_score": 88.3,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 1.45,
+          "median_return_percent": 2.73,
+          "outperform_universe_probability_percent": 60.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -4.92,
+          "return_p80_percent": 4.59,
+          "sample_count": 5
+        },
+        "21": {
+          "median_relative_return_percent": 0.62,
+          "median_return_percent": -2.47,
+          "outperform_universe_probability_percent": 60.0,
+          "positive_return_probability_percent": 20.0,
+          "return_p20_percent": -5.5,
+          "return_p80_percent": -0.56,
+          "sample_count": 5
+        },
+        "63": {
+          "median_relative_return_percent": -0.81,
+          "median_return_percent": -2.58,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 40.0,
+          "return_p20_percent": -4.67,
+          "return_p80_percent": 0.44,
+          "sample_count": 5
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 13.3,
+      "sleeve": "FACTOR_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
+      "status": "AVAILABLE",
+      "symbol": "USMV",
+      "tradable_isin": "IE00B8FHGS14",
+      "tradable_name": "iShares Edge MSCI World Minimum Volatility UCITS ETF",
+      "tradable_symbol": "IQQ0"
+    },
+    {
       "asset_class": "THEME",
       "catalyst_context": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "confidence_score": 73,
@@ -1476,8 +1563,9 @@
         "status": "AVAILABLE"
       },
       "exposure": "Cyber security",
-      "final_score": 82.0,
-      "final_score_change_1_session": 19.9,
+      "final_score": 80.0,
+      "final_score_5_session_average": 58.9,
+      "final_score_change_vs_5_session_average": 21.1,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 3.35,
       "historical_analog_score": 62.2,
@@ -1525,81 +1613,15 @@
       },
       "risk_score": 57.8,
       "sleeve": "THEMATIC_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "CIBR",
       "tradable_isin": "IE00BYPLS672",
       "tradable_name": "L&G Cyber Security UCITS ETF",
       "tradable_symbol": "ISPY"
-    },
-    {
-      "asset_class": "FACTOR",
-      "catalyst_context": {
-        "score": 50,
-        "state": "NEUTRAL"
-      },
-      "confidence_score": 67,
-      "downside_risk_context": {
-        "drawdown_from_21_session_high_percent": -0.54,
-        "driver_type": null,
-        "material_negative_event": false,
-        "prior_58_session_return_percent": 4.14,
-        "ranking_effect": "NONE_RESEARCH_ONLY",
-        "recent_5_session_return_percent": 1.67,
-        "relative_to_spy_5_session_percent": 2.1,
-        "state": "NO_ALERT",
-        "status": "AVAILABLE"
-      },
-      "exposure": "World minimum volatility factor",
-      "final_score": 80.3,
-      "final_score_change_1_session": 0.7,
-      "final_score_direction": "UP",
-      "historical_analog_median_return_percent": -0.77,
-      "historical_analog_score": 47.4,
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "market_psychology_score": 88.9,
-      "opportunity_score": 88.3,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": 1.45,
-          "median_return_percent": 2.73,
-          "outperform_universe_probability_percent": 60.0,
-          "positive_return_probability_percent": 60.0,
-          "return_p20_percent": -4.92,
-          "return_p80_percent": 4.59,
-          "sample_count": 5
-        },
-        "21": {
-          "median_relative_return_percent": 0.62,
-          "median_return_percent": -2.47,
-          "outperform_universe_probability_percent": 60.0,
-          "positive_return_probability_percent": 20.0,
-          "return_p20_percent": -5.5,
-          "return_p80_percent": -0.56,
-          "sample_count": 5
-        },
-        "63": {
-          "median_relative_return_percent": -0.81,
-          "median_return_percent": -2.58,
-          "outperform_universe_probability_percent": 40.0,
-          "positive_return_probability_percent": 40.0,
-          "return_p20_percent": -4.67,
-          "return_p80_percent": 0.44,
-          "sample_count": 5
-        }
-      },
-      "rebound_opportunity_context": {
-        "ranking_effect": "NONE_RESEARCH_ONLY",
-        "state": "NO_SIGNAL",
-        "status": "AVAILABLE"
-      },
-      "risk_score": 13.3,
-      "sleeve": "FACTOR_EQUITY",
-      "status": "AVAILABLE",
-      "symbol": "USMV",
-      "tradable_isin": "IE00B8FHGS14",
-      "tradable_name": "iShares Edge MSCI World Minimum Volatility UCITS ETF",
-      "tradable_symbol": "IQQ0"
     },
     {
       "asset_class": "COMMODITY",
@@ -1624,7 +1646,8 @@
       },
       "exposure": "Broad commodity futures",
       "final_score": 79.0,
-      "final_score_change_1_session": 4.7,
+      "final_score_5_session_average": 75.6,
+      "final_score_change_vs_5_session_average": 3.4,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 3.79,
       "historical_analog_score": 64.6,
@@ -1668,6 +1691,10 @@
       },
       "risk_score": 35.0,
       "sleeve": "COMMODITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "DBC",
       "tradable_isin": "GB00B15KY989",
@@ -1694,7 +1721,8 @@
       },
       "exposure": "Health care",
       "final_score": 78.1,
-      "final_score_change_1_session": -1.6,
+      "final_score_5_session_average": 79.7,
+      "final_score_change_vs_5_session_average": -1.6,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": -1.5,
       "historical_analog_score": 44.9,
@@ -1738,6 +1766,10 @@
       },
       "risk_score": 36.7,
       "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "XLV",
       "tradable_isin": "IE00BWBXM617",
@@ -1764,7 +1796,8 @@
       },
       "exposure": "Consumer staples",
       "final_score": 74.8,
-      "final_score_change_1_session": -5.3,
+      "final_score_5_session_average": 78.2,
+      "final_score_change_vs_5_session_average": -3.4,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 0.24,
       "historical_analog_score": 50.8,
@@ -1808,84 +1841,15 @@
       },
       "risk_score": 36.7,
       "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "XLP",
       "tradable_isin": "IE00BWBXM385",
       "tradable_name": "State Street SPDR S&P U.S. Consumer Staples Select Sector UCITS ETF (Acc)",
       "tradable_symbol": "ZPDS"
-    },
-    {
-      "asset_class": "SECTOR",
-      "catalyst_context": {
-        "negative_count": 0,
-        "net_impact": 48,
-        "positive_count": 4,
-        "score": 98,
-        "state": "POSITIVE"
-      },
-      "confidence_score": 89,
-      "downside_risk_context": {
-        "drawdown_from_21_session_high_percent": -0.74,
-        "driver_type": null,
-        "material_negative_event": false,
-        "prior_58_session_return_percent": -0.46,
-        "ranking_effect": "NONE_RESEARCH_ONLY",
-        "recent_5_session_return_percent": 0.77,
-        "relative_to_spy_5_session_percent": 1.2,
-        "state": "NO_ALERT",
-        "status": "AVAILABLE"
-      },
-      "exposure": "Materials",
-      "final_score": 69.6,
-      "final_score_change_1_session": 0.4,
-      "final_score_direction": "UP",
-      "historical_analog_median_return_percent": 0.8,
-      "historical_analog_score": 53.5,
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "market_psychology_score": 80.0,
-      "opportunity_score": 66.1,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -1.91,
-          "median_return_percent": 1.16,
-          "outperform_universe_probability_percent": 36.36,
-          "positive_return_probability_percent": 54.55,
-          "return_p20_percent": -6.36,
-          "return_p80_percent": 12.81,
-          "sample_count": 22
-        },
-        "21": {
-          "median_relative_return_percent": -1.74,
-          "median_return_percent": -1.09,
-          "outperform_universe_probability_percent": 30.77,
-          "positive_return_probability_percent": 34.62,
-          "return_p20_percent": -3.53,
-          "return_p80_percent": 1.22,
-          "sample_count": 26
-        },
-        "63": {
-          "median_relative_return_percent": -0.47,
-          "median_return_percent": 2.32,
-          "outperform_universe_probability_percent": 40.0,
-          "positive_return_probability_percent": 60.0,
-          "return_p20_percent": -8.94,
-          "return_p80_percent": 7.17,
-          "sample_count": 25
-        }
-      },
-      "rebound_opportunity_context": {
-        "ranking_effect": "NONE_RESEARCH_ONLY",
-        "state": "NO_SIGNAL",
-        "status": "AVAILABLE"
-      },
-      "risk_score": 42.2,
-      "sleeve": "US_SECTOR",
-      "status": "AVAILABLE",
-      "symbol": "XLB",
-      "tradable_isin": "IE00BWBXM831",
-      "tradable_name": "State Street SPDR S&P U.S. Materials Select Sector UCITS ETF (Acc)",
-      "tradable_symbol": "ZPDM"
     },
     {
       "asset_class": "FACTOR",
@@ -1907,7 +1871,8 @@
       },
       "exposure": "World quality factor",
       "final_score": 69.3,
-      "final_score_change_1_session": -2.5,
+      "final_score_5_session_average": 73.9,
+      "final_score_change_vs_5_session_average": -4.6,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 5.21,
       "historical_analog_score": 73.7,
@@ -1951,6 +1916,10 @@
       },
       "risk_score": 18.9,
       "sleeve": "FACTOR_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "QUAL",
       "tradable_isin": "IE00BP3QZ601",
@@ -1977,8 +1946,9 @@
       },
       "exposure": "US Treasury 1-3 year",
       "final_score": 68.0,
-      "final_score_change_1_session": 0.8,
-      "final_score_direction": "UP",
+      "final_score_5_session_average": 68.4,
+      "final_score_change_vs_5_session_average": -0.4,
+      "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 1.35,
       "historical_analog_score": 54.4,
       "history_sessions": 2514,
@@ -2021,11 +1991,93 @@
       },
       "risk_score": 6.7,
       "sleeve": "FIXED_INCOME",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "SHY",
       "tradable_isin": "IE00B14X4S71",
       "tradable_name": "iShares $ Treasury Bond 1-3yr UCITS ETF",
       "tradable_symbol": "IUSU"
+    },
+    {
+      "asset_class": "SECTOR",
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 12,
+        "positive_count": 1,
+        "score": 62,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 89,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -0.74,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -0.46,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": 0.77,
+        "relative_to_spy_5_session_percent": 1.2,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Materials",
+      "final_score": 66.0,
+      "final_score_5_session_average": 66.3,
+      "final_score_change_vs_5_session_average": -0.3,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 0.8,
+      "historical_analog_score": 53.5,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 80.0,
+      "opportunity_score": 66.1,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -1.91,
+          "median_return_percent": 1.16,
+          "outperform_universe_probability_percent": 36.36,
+          "positive_return_probability_percent": 54.55,
+          "return_p20_percent": -6.36,
+          "return_p80_percent": 12.81,
+          "sample_count": 22
+        },
+        "21": {
+          "median_relative_return_percent": -1.74,
+          "median_return_percent": -1.09,
+          "outperform_universe_probability_percent": 30.77,
+          "positive_return_probability_percent": 34.62,
+          "return_p20_percent": -3.53,
+          "return_p80_percent": 1.22,
+          "sample_count": 26
+        },
+        "63": {
+          "median_relative_return_percent": -0.47,
+          "median_return_percent": 2.32,
+          "outperform_universe_probability_percent": 40.0,
+          "positive_return_probability_percent": 60.0,
+          "return_p20_percent": -8.94,
+          "return_p80_percent": 7.17,
+          "sample_count": 25
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 42.2,
+      "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
+      "status": "AVAILABLE",
+      "symbol": "XLB",
+      "tradable_isin": "IE00BWBXM831",
+      "tradable_name": "State Street SPDR S&P U.S. Materials Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDM"
     },
     {
       "asset_class": "EQUITY",
@@ -2047,8 +2099,9 @@
       },
       "exposure": "US large cap",
       "final_score": 65.4,
-      "final_score_change_1_session": 0.9,
-      "final_score_direction": "UP",
+      "final_score_5_session_average": 68.2,
+      "final_score_change_vs_5_session_average": -2.8,
+      "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 5.77,
       "historical_analog_score": 76.5,
       "history_sessions": 2514,
@@ -2091,6 +2144,10 @@
       },
       "risk_score": 21.1,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "SPY",
       "tradable_isin": "IE00B5BMR087",
@@ -2117,8 +2174,9 @@
       },
       "exposure": "Financials",
       "final_score": 64.8,
-      "final_score_change_1_session": -10.2,
-      "final_score_direction": "DOWN",
+      "final_score_5_session_average": 64.2,
+      "final_score_change_vs_5_session_average": 0.6,
+      "final_score_direction": "UP",
       "historical_analog_median_return_percent": 1.72,
       "historical_analog_score": 57.0,
       "history_sessions": 2514,
@@ -2161,6 +2219,10 @@
       },
       "risk_score": 34.4,
       "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "XLF",
       "tradable_isin": "IE00BWBXM500",
@@ -2187,7 +2249,8 @@
       },
       "exposure": "Japan",
       "final_score": 60.4,
-      "final_score_change_1_session": 3.5,
+      "final_score_5_session_average": 55.7,
+      "final_score_change_vs_5_session_average": 4.7,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 5.75,
       "historical_analog_score": 75.3,
@@ -2231,6 +2294,10 @@
       },
       "risk_score": 51.1,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "EWJ",
       "tradable_isin": "IE00B4L5YX21",
@@ -2257,7 +2324,8 @@
       },
       "exposure": "Consumer discretionary",
       "final_score": 59.8,
-      "final_score_change_1_session": -5.8,
+      "final_score_5_session_average": 61.5,
+      "final_score_change_vs_5_session_average": -1.7,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 5.71,
       "historical_analog_score": 71.7,
@@ -2301,6 +2369,10 @@
       },
       "risk_score": 54.4,
       "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "XLY",
       "tradable_isin": "IE00BWBXM278",
@@ -2327,7 +2399,8 @@
       },
       "exposure": "US inflation-linked Treasury",
       "final_score": 59.3,
-      "final_score_change_1_session": 0.2,
+      "final_score_5_session_average": 54.6,
+      "final_score_change_vs_5_session_average": 4.7,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 0.71,
       "historical_analog_score": 53.3,
@@ -2371,6 +2444,10 @@
       },
       "risk_score": 12.2,
       "sleeve": "FIXED_INCOME",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "TIP",
       "tradable_isin": "IE00B1FZSC47",
@@ -2397,7 +2474,8 @@
       },
       "exposure": "US Treasury 7-10 year",
       "final_score": 57.3,
-      "final_score_change_1_session": 0.5,
+      "final_score_5_session_average": 50.8,
+      "final_score_change_vs_5_session_average": 6.5,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 0.35,
       "historical_analog_score": 51.5,
@@ -2441,6 +2519,10 @@
       },
       "risk_score": 18.9,
       "sleeve": "FIXED_INCOME",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "IEF",
       "tradable_isin": "IE00B1FZS798",
@@ -2467,7 +2549,8 @@
       },
       "exposure": "US Treasury 20+ year",
       "final_score": 57.0,
-      "final_score_change_1_session": 0.8,
+      "final_score_5_session_average": 45.5,
+      "final_score_change_vs_5_session_average": 11.5,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": -3.05,
       "historical_analog_score": 39.2,
@@ -2511,6 +2594,10 @@
       },
       "risk_score": 32.2,
       "sleeve": "FIXED_INCOME",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "TLT",
       "tradable_isin": "IE00BFM6TC58",
@@ -2537,7 +2624,8 @@
       },
       "exposure": "Technology",
       "final_score": 55.3,
-      "final_score_change_1_session": 5.1,
+      "final_score_5_session_average": 52.7,
+      "final_score_change_vs_5_session_average": 2.6,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 10.91,
       "historical_analog_score": 94.2,
@@ -2581,6 +2669,10 @@
       },
       "risk_score": 74.4,
       "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "XLK",
       "tradable_isin": "IE00BWBXM948",
@@ -2607,7 +2699,8 @@
       },
       "exposure": "US investment-grade credit",
       "final_score": 55.2,
-      "final_score_change_1_session": 0.2,
+      "final_score_5_session_average": 48.4,
+      "final_score_change_vs_5_session_average": 6.8,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 0.75,
       "historical_analog_score": 53.6,
@@ -2651,6 +2744,10 @@
       },
       "risk_score": 22.2,
       "sleeve": "FIXED_INCOME",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "LQD",
       "tradable_isin": "IE0032895942",
@@ -2677,8 +2774,9 @@
       },
       "exposure": "Agriculture commodities",
       "final_score": 55.1,
-      "final_score_change_1_session": 7.9,
-      "final_score_direction": "UP",
+      "final_score_5_session_average": 55.5,
+      "final_score_change_vs_5_session_average": -0.4,
+      "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 2.86,
       "historical_analog_score": 61.3,
       "history_sessions": 2514,
@@ -2721,6 +2819,10 @@
       },
       "risk_score": 32.2,
       "sleeve": "COMMODITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "DBA",
       "tradable_isin": "GB00B15KYH63",
@@ -2747,8 +2849,9 @@
       },
       "exposure": "Utilities",
       "final_score": 54.7,
-      "final_score_change_1_session": -0.6,
-      "final_score_direction": "DOWN",
+      "final_score_5_session_average": 49.9,
+      "final_score_change_vs_5_session_average": 4.8,
+      "final_score_direction": "UP",
       "historical_analog_median_return_percent": 4.17,
       "historical_analog_score": 66.5,
       "history_sessions": 2514,
@@ -2791,6 +2894,10 @@
       },
       "risk_score": 52.2,
       "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "XLU",
       "tradable_isin": "IE00BWBXM885",
@@ -2817,8 +2924,9 @@
       },
       "exposure": "US Nasdaq 100",
       "final_score": 54.1,
-      "final_score_change_1_session": 4.6,
-      "final_score_direction": "UP",
+      "final_score_5_session_average": 55.2,
+      "final_score_change_vs_5_session_average": -1.1,
+      "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 7.53,
       "historical_analog_score": 79.0,
       "history_sessions": 2514,
@@ -2861,6 +2969,10 @@
       },
       "risk_score": 62.2,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "QQQ",
       "tradable_isin": "IE00B53SZB19",
@@ -2887,7 +2999,8 @@
       },
       "exposure": "US real estate",
       "final_score": 53.3,
-      "final_score_change_1_session": 1.4,
+      "final_score_5_session_average": 45.4,
+      "final_score_change_vs_5_session_average": 7.9,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 1.18,
       "historical_analog_score": 54.5,
@@ -2931,6 +3044,10 @@
       },
       "risk_score": 40.0,
       "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "XLRE",
       "tradable_isin": "IE00B1FZSF77",
@@ -2957,7 +3074,8 @@
       },
       "exposure": "Developed markets ex-US",
       "final_score": 53.2,
-      "final_score_change_1_session": -0.3,
+      "final_score_5_session_average": 54.6,
+      "final_score_change_vs_5_session_average": -1.4,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 3.68,
       "historical_analog_score": 65.4,
@@ -3001,6 +3119,10 @@
       },
       "risk_score": 37.8,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "EFA",
       "tradable_isin": "IE0006WW1TQ4",
@@ -3027,8 +3149,9 @@
       },
       "exposure": "World value factor",
       "final_score": 52.1,
-      "final_score_change_1_session": -2.2,
-      "final_score_direction": "DOWN",
+      "final_score_5_session_average": 49.1,
+      "final_score_change_vs_5_session_average": 3.0,
+      "final_score_direction": "UP",
       "historical_analog_median_return_percent": 0.94,
       "historical_analog_score": 53.9,
       "history_sessions": 2514,
@@ -3071,6 +3194,10 @@
       },
       "risk_score": 48.9,
       "sleeve": "FACTOR_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "VLUE",
       "tradable_isin": "IE00BP3QZB59",
@@ -3097,7 +3224,8 @@
       },
       "exposure": "US high-yield credit",
       "final_score": 51.7,
-      "final_score_change_1_session": 1.5,
+      "final_score_5_session_average": 47.6,
+      "final_score_change_vs_5_session_average": 4.1,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 0.67,
       "historical_analog_score": 52.6,
@@ -3141,6 +3269,10 @@
       },
       "risk_score": 15.6,
       "sleeve": "FIXED_INCOME",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "HYG",
       "tradable_isin": "IE00B4PY7Y77",
@@ -3167,7 +3299,8 @@
       },
       "exposure": "US small cap",
       "final_score": 50.1,
-      "final_score_change_1_session": 2.6,
+      "final_score_5_session_average": 39.5,
+      "final_score_change_vs_5_session_average": 10.6,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 4.78,
       "historical_analog_score": 67.4,
@@ -3177,7 +3310,7 @@
       "opportunity_score": 38.9,
       "potential_curve": {
         "126": {
-          "median_relative_return_percent": -0.19,
+          "median_relative_return_percent": -0.18,
           "median_return_percent": 3.96,
           "outperform_universe_probability_percent": 50.0,
           "positive_return_probability_percent": 60.0,
@@ -3211,6 +3344,10 @@
       },
       "risk_score": 54.4,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "IWM",
       "tradable_isin": "IE00BJ38QD84",
@@ -3237,7 +3374,8 @@
       },
       "exposure": "Europe broad market",
       "final_score": 49.4,
-      "final_score_change_1_session": -2.4,
+      "final_score_5_session_average": 51.4,
+      "final_score_change_vs_5_session_average": -2.0,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 4.67,
       "historical_analog_score": 69.8,
@@ -3281,84 +3419,15 @@
       },
       "risk_score": 40.0,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "VGK",
       "tradable_isin": "DE0002635307",
       "tradable_name": "iShares STOXX Europe 600 UCITS ETF (DE)",
       "tradable_symbol": "EXSA"
-    },
-    {
-      "asset_class": "SECTOR",
-      "catalyst_context": {
-        "negative_count": 0,
-        "net_impact": 48,
-        "positive_count": 4,
-        "score": 98,
-        "state": "POSITIVE"
-      },
-      "confidence_score": 64,
-      "downside_risk_context": {
-        "drawdown_from_21_session_high_percent": -4.06,
-        "driver_type": null,
-        "material_negative_event": false,
-        "prior_58_session_return_percent": -8.18,
-        "ranking_effect": "NONE_RESEARCH_ONLY",
-        "recent_5_session_return_percent": -1.87,
-        "relative_to_spy_5_session_percent": -1.44,
-        "state": "NO_ALERT",
-        "status": "AVAILABLE"
-      },
-      "exposure": "Industrials",
-      "final_score": 40.7,
-      "final_score_change_1_session": 1.7,
-      "final_score_direction": "UP",
-      "historical_analog_median_return_percent": 14.83,
-      "historical_analog_score": 97.5,
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "market_psychology_score": 32.2,
-      "opportunity_score": 18.9,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": 4.71,
-          "median_return_percent": 22.54,
-          "outperform_universe_probability_percent": 66.67,
-          "positive_return_probability_percent": 66.67,
-          "return_p20_percent": 2.25,
-          "return_p80_percent": 27.6,
-          "sample_count": 3
-        },
-        "21": {
-          "median_relative_return_percent": 3.57,
-          "median_return_percent": 9.15,
-          "outperform_universe_probability_percent": 100.0,
-          "positive_return_probability_percent": 100.0,
-          "return_p20_percent": 7.03,
-          "return_p80_percent": 9.6,
-          "sample_count": 3
-        },
-        "63": {
-          "median_relative_return_percent": 6.21,
-          "median_return_percent": 12.81,
-          "outperform_universe_probability_percent": 66.67,
-          "positive_return_probability_percent": 100.0,
-          "return_p20_percent": 10.8,
-          "return_p80_percent": 16.06,
-          "sample_count": 3
-        }
-      },
-      "rebound_opportunity_context": {
-        "ranking_effect": "NONE_RESEARCH_ONLY",
-        "state": "NO_SIGNAL",
-        "status": "AVAILABLE"
-      },
-      "risk_score": 58.9,
-      "sleeve": "US_SECTOR",
-      "status": "AVAILABLE",
-      "symbol": "XLI",
-      "tradable_isin": "IE00BWBXM724",
-      "tradable_name": "State Street SPDR S&P U.S. Industrials Select Sector UCITS ETF (Acc)",
-      "tradable_symbol": "ZPDI"
     },
     {
       "asset_class": "EQUITY",
@@ -3380,7 +3449,8 @@
       },
       "exposure": "Germany",
       "final_score": 39.2,
-      "final_score_change_1_session": -15.2,
+      "final_score_5_session_average": 50.3,
+      "final_score_change_vs_5_session_average": -11.1,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": -0.81,
       "historical_analog_score": 47.0,
@@ -3424,11 +3494,93 @@
       },
       "risk_score": 48.9,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "EWG",
       "tradable_isin": "DE0005933931",
       "tradable_name": "iShares Core DAX UCITS ETF (DE)",
       "tradable_symbol": "EXS1"
+    },
+    {
+      "asset_class": "SECTOR",
+      "catalyst_context": {
+        "negative_count": 0,
+        "net_impact": 12,
+        "positive_count": 1,
+        "score": 62,
+        "state": "POSITIVE"
+      },
+      "confidence_score": 64,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -4.06,
+        "driver_type": null,
+        "material_negative_event": false,
+        "prior_58_session_return_percent": -8.18,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.87,
+        "relative_to_spy_5_session_percent": -1.44,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Industrials",
+      "final_score": 37.1,
+      "final_score_5_session_average": 42.5,
+      "final_score_change_vs_5_session_average": -5.4,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 14.83,
+      "historical_analog_score": 97.5,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 32.2,
+      "opportunity_score": 18.9,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": 4.71,
+          "median_return_percent": 22.54,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 66.67,
+          "return_p20_percent": 2.25,
+          "return_p80_percent": 27.6,
+          "sample_count": 3
+        },
+        "21": {
+          "median_relative_return_percent": 3.57,
+          "median_return_percent": 9.15,
+          "outperform_universe_probability_percent": 100.0,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 7.03,
+          "return_p80_percent": 9.6,
+          "sample_count": 3
+        },
+        "63": {
+          "median_relative_return_percent": 6.21,
+          "median_return_percent": 12.81,
+          "outperform_universe_probability_percent": 66.67,
+          "positive_return_probability_percent": 100.0,
+          "return_p20_percent": 10.8,
+          "return_p80_percent": 16.06,
+          "sample_count": 3
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 58.9,
+      "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
+      "status": "AVAILABLE",
+      "symbol": "XLI",
+      "tradable_isin": "IE00BWBXM724",
+      "tradable_name": "State Street SPDR S&P U.S. Industrials Select Sector UCITS ETF (Acc)",
+      "tradable_symbol": "ZPDI"
     },
     {
       "asset_class": "EQUITY",
@@ -3450,7 +3602,8 @@
       },
       "exposure": "Eurozone large cap",
       "final_score": 35.9,
-      "final_score_change_1_session": -5.0,
+      "final_score_5_session_average": 39.7,
+      "final_score_change_vs_5_session_average": -3.8,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 4.88,
       "historical_analog_score": 67.8,
@@ -3494,6 +3647,10 @@
       },
       "risk_score": 54.4,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "EZU",
       "tradable_isin": "DE0005933956",
@@ -3520,7 +3677,8 @@
       },
       "exposure": "World momentum factor",
       "final_score": 35.1,
-      "final_score_change_1_session": 2.5,
+      "final_score_5_session_average": 33.3,
+      "final_score_change_vs_5_session_average": 1.8,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 4.07,
       "historical_analog_score": 64.1,
@@ -3564,6 +3722,10 @@
       },
       "risk_score": 81.1,
       "sleeve": "FACTOR_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "MTUM",
       "tradable_isin": "IE00BP3QZ825",
@@ -3590,7 +3752,8 @@
       },
       "exposure": "India",
       "final_score": 34.3,
-      "final_score_change_1_session": -5.2,
+      "final_score_5_session_average": 43.9,
+      "final_score_change_vs_5_session_average": -9.6,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 0.95,
       "historical_analog_score": 53.2,
@@ -3634,6 +3797,10 @@
       },
       "risk_score": 50.0,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "INDA",
       "tradable_isin": "IE00BZCQB185",
@@ -3660,7 +3827,8 @@
       },
       "exposure": "Semiconductors",
       "final_score": 32.5,
-      "final_score_change_1_session": 3.8,
+      "final_score_5_session_average": 31.9,
+      "final_score_change_vs_5_session_average": 0.6,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 4.04,
       "historical_analog_score": 63.1,
@@ -3704,6 +3872,10 @@
       },
       "risk_score": 87.8,
       "sleeve": "THEMATIC_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "SMH",
       "tradable_isin": "IE00BMC38736",
@@ -3714,9 +3886,9 @@
       "asset_class": "THEME",
       "catalyst_context": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "confidence_score": 67,
@@ -3732,9 +3904,10 @@
         "status": "AVAILABLE"
       },
       "exposure": "Defense and aerospace",
-      "final_score": 31.2,
-      "final_score_change_1_session": 2.7,
-      "final_score_direction": "UP",
+      "final_score": 29.2,
+      "final_score_5_session_average": 30.7,
+      "final_score_change_vs_5_session_average": -1.5,
+      "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 4.03,
       "historical_analog_score": 63.5,
       "history_sessions": 2514,
@@ -3777,6 +3950,10 @@
       },
       "risk_score": 73.3,
       "sleeve": "THEMATIC_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "ITA",
       "tradable_isin": "IE000YYE6WK5",
@@ -3787,9 +3964,9 @@
       "asset_class": "COMMODITY",
       "catalyst_context": {
         "negative_count": 0,
-        "net_impact": 40,
-        "positive_count": 2,
-        "score": 90,
+        "net_impact": 20,
+        "positive_count": 1,
+        "score": 70,
         "state": "POSITIVE"
       },
       "confidence_score": 65,
@@ -3805,9 +3982,10 @@
         "status": "AVAILABLE"
       },
       "exposure": "Physical gold",
-      "final_score": 29.8,
-      "final_score_change_1_session": 1.9,
-      "final_score_direction": "UP",
+      "final_score": 27.8,
+      "final_score_5_session_average": 33.4,
+      "final_score_change_vs_5_session_average": -5.6,
+      "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 3.56,
       "historical_analog_score": 61.6,
       "history_sessions": 2514,
@@ -3850,11 +4028,93 @@
       },
       "risk_score": 77.8,
       "sleeve": "COMMODITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "IAU",
       "tradable_isin": "IE00B4ND3602",
       "tradable_name": "iShares Physical Gold ETC",
       "tradable_symbol": "PPFB"
+    },
+    {
+      "asset_class": "EQUITY",
+      "catalyst_context": {
+        "negative_count": 1,
+        "net_impact": -20,
+        "positive_count": 0,
+        "score": 30,
+        "state": "NEGATIVE"
+      },
+      "confidence_score": 79,
+      "downside_risk_context": {
+        "drawdown_from_21_session_high_percent": -9.78,
+        "driver_type": null,
+        "material_negative_event": true,
+        "prior_58_session_return_percent": -1.21,
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "recent_5_session_return_percent": -1.34,
+        "relative_to_spy_5_session_percent": -0.91,
+        "state": "NO_ALERT",
+        "status": "AVAILABLE"
+      },
+      "exposure": "Emerging markets",
+      "final_score": 26.9,
+      "final_score_5_session_average": 31.0,
+      "final_score_change_vs_5_session_average": -4.1,
+      "final_score_direction": "DOWN",
+      "historical_analog_median_return_percent": 0.91,
+      "historical_analog_score": 53.6,
+      "history_sessions": 2514,
+      "history_start": "2016-10-24",
+      "market_psychology_score": 24.4,
+      "opportunity_score": 22.2,
+      "potential_curve": {
+        "126": {
+          "median_relative_return_percent": -1.81,
+          "median_return_percent": 5.51,
+          "outperform_universe_probability_percent": 35.71,
+          "positive_return_probability_percent": 57.14,
+          "return_p20_percent": -12.06,
+          "return_p80_percent": 12.96,
+          "sample_count": 14
+        },
+        "21": {
+          "median_relative_return_percent": -0.78,
+          "median_return_percent": -0.45,
+          "outperform_universe_probability_percent": 50.0,
+          "positive_return_probability_percent": 42.86,
+          "return_p20_percent": -2.28,
+          "return_p80_percent": 7.71,
+          "sample_count": 14
+        },
+        "63": {
+          "median_relative_return_percent": -5.4,
+          "median_return_percent": -2.33,
+          "outperform_universe_probability_percent": 28.57,
+          "positive_return_probability_percent": 42.86,
+          "return_p20_percent": -12.35,
+          "return_p80_percent": 8.48,
+          "sample_count": 14
+        }
+      },
+      "rebound_opportunity_context": {
+        "ranking_effect": "NONE_RESEARCH_ONLY",
+        "state": "NO_SIGNAL",
+        "status": "AVAILABLE"
+      },
+      "risk_score": 75.6,
+      "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
+      "status": "AVAILABLE",
+      "symbol": "EEM",
+      "tradable_isin": "IE00BKM4GZ66",
+      "tradable_name": "iShares Core MSCI Emerging Markets IMI UCITS ETF (Acc)",
+      "tradable_symbol": "IS3N"
     },
     {
       "asset_class": "THEME",
@@ -3876,7 +4136,8 @@
       },
       "exposure": "Gold miners",
       "final_score": 26.9,
-      "final_score_change_1_session": -1.0,
+      "final_score_5_session_average": 31.5,
+      "final_score_change_vs_5_session_average": -4.6,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": -2.18,
       "historical_analog_score": 41.7,
@@ -3924,84 +4185,15 @@
       },
       "risk_score": 95.6,
       "sleeve": "THEMATIC_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "GDX",
       "tradable_isin": "IE00BQQP9F84",
       "tradable_name": "VanEck Gold Miners UCITS ETF",
       "tradable_symbol": "G2X"
-    },
-    {
-      "asset_class": "EQUITY",
-      "catalyst_context": {
-        "negative_count": 2,
-        "net_impact": -40,
-        "positive_count": 0,
-        "score": 10,
-        "state": "NEGATIVE"
-      },
-      "confidence_score": 79,
-      "downside_risk_context": {
-        "drawdown_from_21_session_high_percent": -9.78,
-        "driver_type": null,
-        "material_negative_event": true,
-        "prior_58_session_return_percent": -1.21,
-        "ranking_effect": "NONE_RESEARCH_ONLY",
-        "recent_5_session_return_percent": -1.34,
-        "relative_to_spy_5_session_percent": -0.91,
-        "state": "NO_ALERT",
-        "status": "AVAILABLE"
-      },
-      "exposure": "Emerging markets",
-      "final_score": 24.9,
-      "final_score_change_1_session": -3.4,
-      "final_score_direction": "DOWN",
-      "historical_analog_median_return_percent": 0.91,
-      "historical_analog_score": 53.6,
-      "history_sessions": 2514,
-      "history_start": "2016-10-24",
-      "market_psychology_score": 24.4,
-      "opportunity_score": 22.2,
-      "potential_curve": {
-        "126": {
-          "median_relative_return_percent": -1.81,
-          "median_return_percent": 5.51,
-          "outperform_universe_probability_percent": 35.71,
-          "positive_return_probability_percent": 57.14,
-          "return_p20_percent": -12.06,
-          "return_p80_percent": 12.96,
-          "sample_count": 14
-        },
-        "21": {
-          "median_relative_return_percent": -0.78,
-          "median_return_percent": -0.45,
-          "outperform_universe_probability_percent": 50.0,
-          "positive_return_probability_percent": 42.86,
-          "return_p20_percent": -2.28,
-          "return_p80_percent": 7.71,
-          "sample_count": 14
-        },
-        "63": {
-          "median_relative_return_percent": -5.4,
-          "median_return_percent": -2.33,
-          "outperform_universe_probability_percent": 28.57,
-          "positive_return_probability_percent": 42.86,
-          "return_p20_percent": -12.35,
-          "return_p80_percent": 8.48,
-          "sample_count": 14
-        }
-      },
-      "rebound_opportunity_context": {
-        "ranking_effect": "NONE_RESEARCH_ONLY",
-        "state": "NO_SIGNAL",
-        "status": "AVAILABLE"
-      },
-      "risk_score": 75.6,
-      "sleeve": "REGION_EQUITY",
-      "status": "AVAILABLE",
-      "symbol": "EEM",
-      "tradable_isin": "IE00BKM4GZ66",
-      "tradable_name": "iShares Core MSCI Emerging Markets IMI UCITS ETF (Acc)",
-      "tradable_symbol": "IS3N"
     },
     {
       "asset_class": "SECTOR",
@@ -4023,7 +4215,8 @@
       },
       "exposure": "Communication services",
       "final_score": 21.9,
-      "final_score_change_1_session": -9.7,
+      "final_score_5_session_average": 35.3,
+      "final_score_change_vs_5_session_average": -13.4,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": -15.14,
       "historical_analog_score": 6.9,
@@ -4067,6 +4260,10 @@
       },
       "risk_score": 70.0,
       "sleeve": "US_SECTOR",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "XLC",
       "tradable_isin": "IE00BWBXM708",
@@ -4093,8 +4290,9 @@
       },
       "exposure": "China",
       "final_score": 21.4,
-      "final_score_change_1_session": 0.9,
-      "final_score_direction": "UP",
+      "final_score_5_session_average": 23.0,
+      "final_score_change_vs_5_session_average": -1.6,
+      "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": -5.49,
       "historical_analog_score": 31.6,
       "history_sessions": 2514,
@@ -4137,6 +4335,10 @@
       },
       "risk_score": 65.6,
       "sleeve": "REGION_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "MCHI",
       "tradable_isin": "IE00BHZRR147",
@@ -4163,7 +4365,8 @@
       },
       "exposure": "Clean energy",
       "final_score": 20.4,
-      "final_score_change_1_session": 1.0,
+      "final_score_5_session_average": 17.0,
+      "final_score_change_vs_5_session_average": 3.4,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": -3.1,
       "historical_analog_score": 37.8,
@@ -4207,6 +4410,10 @@
       },
       "risk_score": 86.7,
       "sleeve": "THEMATIC_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "ICLN",
       "tradable_isin": "IE00B1XNHC34",
@@ -4233,8 +4440,9 @@
       },
       "exposure": "Copper miners",
       "final_score": 17.4,
-      "final_score_change_1_session": 0.0,
-      "final_score_direction": "FLAT",
+      "final_score_5_session_average": 24.2,
+      "final_score_change_vs_5_session_average": -6.8,
+      "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 1.97,
       "historical_analog_score": 56.7,
       "history_sessions": 2514,
@@ -4281,6 +4489,10 @@
       },
       "risk_score": 91.1,
       "sleeve": "THEMATIC_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "COPX",
       "tradable_isin": "IE0003Z9E2Y3",
@@ -4307,7 +4519,8 @@
       },
       "exposure": "Uranium and nuclear",
       "final_score": 15.9,
-      "final_score_change_1_session": 0.7,
+      "final_score_5_session_average": 15.4,
+      "final_score_change_vs_5_session_average": 0.5,
       "final_score_direction": "UP",
       "historical_analog_median_return_percent": 7.28,
       "historical_analog_score": 75.9,
@@ -4351,6 +4564,10 @@
       },
       "risk_score": 96.7,
       "sleeve": "THEMATIC_EQUITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "URA",
       "tradable_isin": "IE000M7V94E1",
@@ -4377,7 +4594,8 @@
       },
       "exposure": "Physical silver",
       "final_score": 15.2,
-      "final_score_change_1_session": -1.9,
+      "final_score_5_session_average": 22.2,
+      "final_score_change_vs_5_session_average": -7.0,
       "final_score_direction": "DOWN",
       "historical_analog_median_return_percent": 2.04,
       "historical_analog_score": 57.6,
@@ -4421,6 +4639,10 @@
       },
       "risk_score": 94.4,
       "sleeve": "COMMODITY",
+      "state_transition_context": {
+        "score": 50,
+        "state": "NO_CONFIRMED_SHIFT"
+      },
       "status": "AVAILABLE",
       "symbol": "SLV",
       "tradable_isin": "IE00B4NCWG09",
