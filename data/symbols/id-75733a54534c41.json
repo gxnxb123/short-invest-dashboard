@@ -73,12 +73,46 @@
         "run_identity": 157,
         "source_digest": "sha256:304f8c1b1f603928d6cdbdcd26ff63415faf48efc44fa448b39eeb1f25e8b2c5"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-26",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-21d683f616172d69f5af331d",
+      "provenance": {
+        "run_identity": 160,
+        "source_digest": "sha256:c2491d360f086bc192e02b31970c5c9adae9552a98fc7e1783feee19bf8e89db"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": "2026-10-22",
   "first_retained_observation": "2026-09-09",
-  "generated_at": "2026-10-22T08:51:25.146402-04:00",
+  "generated_at": "2026-10-26T08:49:04.798316-04:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -115,16 +149,16 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "Tesla, Inc."
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "us",
     "symbol": "TSLA",
     "symbol_id": "id-75733a54534c41"
   },
   "latest_actionable_observation": "2026-10-22",
-  "latest_canonical_state": "OPEN_CONFIRMATION_LONG",
-  "latest_retained_observation": "2026-10-22",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-10-26",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "AVAILABLE",
@@ -1268,7 +1302,7 @@
     "status": "AVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 2,
+  "observation_count": 3,
   "observations": [
     {
       "availability": {
@@ -1588,6 +1622,95 @@
         "state": "STRONG_CONTINUATION"
       },
       "source_digest": "sha256:304f8c1b1f603928d6cdbdcd26ff63415faf48efc44fa448b39eeb1f25e8b2c5",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "TSLA",
+      "symbol_id": "id-75733a54534c41"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "meta",
+          "rank": 2,
+          "reference_price": {
+            "previous_regular_close": 372.22,
+            "price": 381.65,
+            "quote_timestamp": "2026-10-26T12:53:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-26",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-21d683f616172d69f5af331d",
+      "observed_at": "2026-10-26T08:49:04.798316-04:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 160,
+      "score": null,
+      "source_digest": "sha256:c2491d360f086bc192e02b31970c5c9adae9552a98fc7e1783feee19bf8e89db",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "TSLA",
       "symbol_id": "id-75733a54534c41"
