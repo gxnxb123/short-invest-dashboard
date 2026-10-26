@@ -113,6 +113,39 @@
   "first_actionable_observation": null,
   "first_retained_observation": "2026-08-26",
   "generated_at": "2026-10-22T08:51:25.146402-04:00",
+  "history_market_context": {
+    "additional_sessions": [
+      {
+        "close": 331.32000732421875,
+        "high": 336.8800048828125,
+        "low": 327.7699890136719,
+        "open": 327.7699890136719,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:e062cef13aaaad0e790d05b201d0556a8e1c2edcf1b2c330169f7441267188b5:r1:efa8120a226d100618b3",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-23",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:4c48e7e4d23686a2aacee990b0eac48e5992ed27a1a2b5705d2364e41c611cd2",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "001-MATURE_D1-efa8120a226d100618b3"
+          }
+        ],
+        "session_date": "2026-10-23"
+      }
+    ],
+    "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
+    "investment_semantic_input": false
+  },
   "identity": {
     "company": {
       "reason": null,
@@ -1817,6 +1850,14 @@
           "stability_quality_percentile": 53.03030303030303
         },
         "detailed_position": 92,
+        "final_assessment": {
+          "horizon": "D1_D3",
+          "reasons": [
+            "DEEP_REVIEW_SELECTED",
+            "NO_DIRECT_POSITIVE_COMPANY_CATALYST"
+          ],
+          "status": "CONDITIONAL_WATCH"
+        },
         "price_path": {
           "momentum_quality": {
             "clean_continuation_probability": 0.46,

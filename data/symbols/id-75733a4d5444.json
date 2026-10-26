@@ -113,6 +113,39 @@
   "first_actionable_observation": null,
   "first_retained_observation": "2026-09-24",
   "generated_at": "2026-10-22T08:51:25.146402-04:00",
+  "history_market_context": {
+    "additional_sessions": [
+      {
+        "close": 1670.2900390625,
+        "high": 1686.97998046875,
+        "low": 1652.97998046875,
+        "open": 1678.0400390625,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:95e026bcde50f5c7b65fec2bf34a262120c9065a478bdfabc7367dd55448f50a:r1:570dd585688c2a38db08",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-23",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:544db0e63a5ef91eb2e1f1cc78c176176896b306449f8f9cf5743f7cbc7657ce",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "001-MATURE_D1-570dd585688c2a38db08"
+          }
+        ],
+        "session_date": "2026-10-23"
+      }
+    ],
+    "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
+    "investment_semantic_input": false
+  },
   "identity": {
     "company": {
       "reason": null,
@@ -1400,6 +1433,14 @@
           "stability_quality_percentile": 71.96969696969697
         },
         "detailed_position": 93,
+        "final_assessment": {
+          "horizon": "D1_D3",
+          "reasons": [
+            "DIRECT_POSITIVE_COMPANY_EVIDENCE",
+            "NO_AXIS_B_C_CONFLICT"
+          ],
+          "status": "PRIORITY_RESEARCH"
+        },
         "price_path": {
           "momentum_quality": {
             "clean_continuation_probability": 0.46,
@@ -1599,6 +1640,14 @@
           "stability_quality_percentile": 73.23232323232322
         },
         "detailed_position": 78,
+        "final_assessment": {
+          "horizon": "D1_D3",
+          "reasons": [
+            "DEEP_REVIEW_SELECTED",
+            "NO_DIRECT_POSITIVE_COMPANY_CATALYST"
+          ],
+          "status": "CONDITIONAL_WATCH"
+        },
         "price_path": {
           "momentum_quality": {
             "clean_continuation_probability": 0.39,

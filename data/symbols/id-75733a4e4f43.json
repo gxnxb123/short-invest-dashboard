@@ -168,6 +168,33 @@
           }
         ],
         "session_date": "2026-10-22"
+      },
+      {
+        "close": 551.4400024414062,
+        "high": 553.5,
+        "low": 541.3499755859375,
+        "open": 546.5900268554688,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:805e3898a6b293de41948441b422b85d18a1fc13dbe04c545e0bfecf9df50eca:r1:91854169ef21a3bb7986",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-23",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:8ff0713a83d51eb580712ec33963a90fd3181aab0e7fdb50bf971eed4c8d2ca1",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "001-MATURE_D1-91854169ef21a3bb7986"
+          }
+        ],
+        "session_date": "2026-10-23"
       }
     ],
     "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
@@ -1347,6 +1374,13 @@
           "stability_quality_percentile": 59.5959595959596
         },
         "detailed_position": 72,
+        "final_assessment": {
+          "horizon": "D1_D3",
+          "reasons": [
+            "DEEP_REVIEW_SELECTED"
+          ],
+          "status": "CONDITIONAL_WATCH"
+        },
         "price_path": {
           "momentum_quality": {
             "clean_continuation_probability": 0.28,
@@ -1581,6 +1615,11 @@
           "stability_quality_percentile": 48.98989898989899
         },
         "detailed_position": 39,
+        "final_assessment": {
+          "horizon": "D1_D3",
+          "reasons": [],
+          "status": "NOT_ASSESSED"
+        },
         "price_path": {
           "momentum_quality": {
             "clean_continuation_probability": 0.35,
