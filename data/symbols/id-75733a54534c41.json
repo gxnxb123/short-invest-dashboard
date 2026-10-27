@@ -123,7 +123,7 @@
         "provenance": [
           {
             "class": "OUTCOME_RECORD_RETAINED",
-            "outcome_id": "outcome-subject:6e3f1de02b7f6f33cdd32293c5774cc7f55eb8931b801ecfebec0f7d37f1de8a:r1:c5194a4f6f7e0ac82eec",
+            "outcome_id": "outcome-subject:6e3f1de02b7f6f33cdd32293c5774cc7f55eb8931b801ecfebec0f7d37f1de8a:r2:d29a680dd26d606b3fc9",
             "price_authority": {
               "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
               "effective_as_of": "2026-10-23",
@@ -137,10 +137,37 @@
               "schema_version": "short-invest-provider-observation-reference/1",
               "success": true
             },
-            "revision_identity": "001-MATURE_D1-c5194a4f6f7e0ac82eec"
+            "revision_identity": "002-MATURE_D2-d29a680dd26d606b3fc9"
           }
         ],
         "session_date": "2026-10-23"
+      },
+      {
+        "close": 391.6199951171875,
+        "high": 397.2699890136719,
+        "low": 383.7300109863281,
+        "open": 383.8299865722656,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "outcome-subject:6e3f1de02b7f6f33cdd32293c5774cc7f55eb8931b801ecfebec0f7d37f1de8a:r2:d29a680dd26d606b3fc9",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-26",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:8393e67bfeeb55c26aebb572e1bb287927c131ca4d112d578f4f4d31a211a1cd",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE_BATCH",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "002-MATURE_D2-d29a680dd26d606b3fc9"
+          }
+        ],
+        "session_date": "2026-10-26"
       }
     ],
     "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
@@ -254,6 +281,55 @@
         "running_mfe": 3.8925667778390682,
         "schema_version": "short-invest-retained-lifecycle/1",
         "source_snapshot_digest": "sha256:4f7c4b61ed339e70054a419d5eca6b121fbe59d971514ccb3df1b2f0d438b9f1",
+        "symbol": "TSLA",
+        "thesis_id": "TH-4c4da0e7db1c426d4a6d",
+        "thesis_start_date": "2026-10-22",
+        "thesis_state": "CONTINUE"
+      },
+      {
+        "current_mfe_capture_ratio": 0.7571805346025532,
+        "current_price": 391.69000244140625,
+        "current_return": 4.6487999944556435,
+        "eligibility_provenance": "ELIGIBLE",
+        "engine_cohort": "swing-v1",
+        "entry_price": 374.2900085449219,
+        "evaluation_effective_at": "2026-10-27T02:19:28.050091+00:00",
+        "evaluation_mode": "BOOTSTRAP_RECONSTRUCTED",
+        "evaluation_session": "2026-10-26",
+        "evaluation_timestamp": "2026-10-27T02:19:28.050091+00:00",
+        "feature_digest": "838ffe969f31c239d427dcf552e50d98891acb25b1e411a243cff5322dd6b3b2",
+        "first_recommendation_id": 1629,
+        "giveback_from_peak": 0.24281946539744598,
+        "invalidation_state": false,
+        "latest_event_id": null,
+        "latest_event_polarity": null,
+        "latest_recommendation_date": "2026-10-22",
+        "latest_recommendation_id": 1629,
+        "lifecycle_state": "CONTINUE",
+        "linked_review_recommendation_id": null,
+        "market": "us",
+        "original_catalyst": null,
+        "original_event_anchor_id": null,
+        "peak_price": 397.2699890136719,
+        "peak_to_current_pp": -1.490819002611965,
+        "price_overlay": "NONE",
+        "prospective_created_at": null,
+        "prospective_recommendation_id": null,
+        "provenance_status": "MISSING_OR_CONFLICTING",
+        "reason_codes": [
+          "WITHIN_D5_WINDOW",
+          "THESIS_INTACT",
+          "NO_ADVERSE_UPDATE",
+          "PRICE_PATH_AVAILABLE"
+        ],
+        "recommendation_count": 1,
+        "retention_authority": "Lifecycle Shadow",
+        "retention_digest": "sha256:d8a5b5b90f498d36b51fc17dc2e9458381cbdc87f65962b75b4d0321e534639a",
+        "rule_version": "lifecycle-shadow-v2",
+        "running_mae": -2.4099012330881964,
+        "running_mfe": 6.1396189970676085,
+        "schema_version": "short-invest-retained-lifecycle/1",
+        "source_snapshot_digest": "sha256:6a4f4fae1173e5929b995bbf731da37c36dd7dec79fcd9416ab8e5f44a431b0a",
         "symbol": "TSLA",
         "thesis_id": "TH-4c4da0e7db1c426d4a6d",
         "thesis_start_date": "2026-10-22",
@@ -1775,32 +1851,70 @@
             "return_percent": null,
             "session_date": "2026-10-23",
             "status": "AVAILABLE"
+          },
+          {
+            "benchmark": {
+              "close": 7676.77001953125,
+              "high": 7702.1298828125,
+              "low": 7639.7001953125,
+              "open": 7639.7001953125,
+              "return_percent": -1.03645921326313
+            },
+            "benchmark_relative_return_percent": null,
+            "close": 391.6199951171875,
+            "high": 397.2699890136719,
+            "horizon": "D+2",
+            "low": 383.7300109863281,
+            "open": 383.8299865722656,
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-26",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:8393e67bfeeb55c26aebb572e1bb287927c131ca4d112d578f4f4d31a211a1cd",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "return_percent": null,
+            "session_date": "2026-10-26",
+            "status": "AVAILABLE"
           }
         ],
-        "matured_through_session": "2026-10-23",
-        "maturity_state": "MATURE_D1",
+        "matured_through_session": "2026-10-26",
+        "maturity_state": "MATURE_D2",
         "observation_id": "obs-5e301542714d2a77acf3d07b",
-        "outcome_id": "signal:1342f2075e5862d147ef07a71bfd3da7b64b85687ad33d6361d4d953c6d4a6b8:r1:74f26150e6bf153e5c90",
+        "outcome_id": "signal:1342f2075e5862d147ef07a71bfd3da7b64b85687ad33d6361d4d953c6d4a6b8:r2:9849c653260d1921674a",
         "provenance": {
-          "record_digest": "sha256:35da3760b932c94ff661fbfcff6cb980936fe447513befaa5c593169e5ed1e15",
-          "retention_digest": "sha256:e617a2bc340424490b3c633002d939951520118beacfee6e36e194292810c37e",
+          "record_digest": "sha256:a00cfc355511187875e3b5411a12de5a51f6bd32213a1e1cae2543ea857bd8c2",
+          "retention_digest": "sha256:717bec65db73072632c4e784999ae01e6cfa59ad1b66c2b35762ccfd5005cb9e",
           "source_schema_version": "short-invest-outcome-record/3"
         },
         "reference_authority": {
           "reason": "CANONICAL_CURRENT_PRICE_AUTHORITY_NOT_RETAINED",
           "status": "UNAVAILABLE"
         },
-        "revision": 1,
+        "revision": 2,
         "revisions": [
           {
             "available_horizons": 2,
             "maturity_state": "MATURE_D1",
             "revision": 1,
             "revision_identity": "001-MATURE_D1-74f26150e6bf153e5c90",
+            "selected": false
+          },
+          {
+            "available_horizons": 3,
+            "maturity_state": "MATURE_D2",
+            "revision": 2,
+            "revision_identity": "002-MATURE_D2-9849c653260d1921674a",
             "selected": true
           }
         ],
-        "selected_revision_identity": "001-MATURE_D1-74f26150e6bf153e5c90",
+        "selected_revision_identity": "002-MATURE_D2-9849c653260d1921674a",
         "signal_id": "signal:1342f2075e5862d147ef07a71bfd3da7b64b85687ad33d6361d4d953c6d4a6b8",
         "terminal_outcomes": {
           "D+1": null,
