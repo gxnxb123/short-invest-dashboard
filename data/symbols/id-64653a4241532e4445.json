@@ -243,6 +243,40 @@
         "run_identity": 152,
         "source_digest": "sha256:fe6ffb4c22281e7f4c0b8dbac30a1bfa691439942b7f98023799368a7aea83ec"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-28",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-d2c1a27b465436a45c9cb8f5",
+      "provenance": {
+        "run_identity": 163,
+        "source_digest": "sha256:f9cedab278b1aa37050d9574c7083d1b9805d69e02b5ca40f5aa46cce149a084"
+      }
     }
   ],
   "events": [
@@ -266,7 +300,7 @@
   ],
   "first_actionable_observation": "2026-10-15",
   "first_retained_observation": "2026-09-02",
-  "generated_at": "2026-10-20T08:21:16.373208+02:00",
+  "generated_at": "2026-10-28T08:20:45.905538+01:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -330,16 +364,16 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "BASF SE                       N"
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "de",
     "symbol": "BAS.DE",
     "symbol_id": "id-64653a4241532e4445"
   },
   "latest_actionable_observation": "2026-10-20",
-  "latest_canonical_state": "WAIT_FOR_PRICE",
-  "latest_retained_observation": "2026-10-20",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-10-28",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -1740,7 +1774,7 @@
       ]
     }
   ],
-  "observation_count": 7,
+  "observation_count": 8,
   "observations": [
     {
       "availability": {
@@ -3055,6 +3089,95 @@
         "state": "STRONG_CONTINUATION"
       },
       "source_digest": "sha256:fe6ffb4c22281e7f4c0b8dbac30a1bfa691439942b7f98023799368a7aea83ec",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "BAS.DE",
+      "symbol_id": "id-64653a4241532e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "meta",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 52.45,
+            "price": 52.119998931884766,
+            "quote_timestamp": "2026-10-27T16:30:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-28",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-d2c1a27b465436a45c9cb8f5",
+      "observed_at": "2026-10-28T08:20:45.905538+01:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 163,
+      "score": null,
+      "source_digest": "sha256:f9cedab278b1aa37050d9574c7083d1b9805d69e02b5ca40f5aa46cce149a084",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "BAS.DE",
       "symbol_id": "id-64653a4241532e4445"
