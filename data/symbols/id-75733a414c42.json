@@ -39,25 +39,59 @@
         "run_identity": 96,
         "source_digest": "sha256:0b5df5e36e25f529cf2c81ca62b98fcf157cb870021948821ca6a2f10e713711"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-28",
+      "ideal_high": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 91.35
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 90.31
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 90.13
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 101.0
+      },
+      "observation_id": "obs-7f94c3028d028d60f3eaf8da",
+      "provenance": {
+        "run_identity": 164,
+        "source_digest": "sha256:9b02878516eadfe47cff996a168fc04a9561112b522786b8c79d7dd1503c0718"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-09-08",
-  "generated_at": "2026-09-08T08:46:51.101578-04:00",
+  "generated_at": "2026-10-28T08:49:53.023435-04:00",
   "identity": {
     "company": {
       "reason": null,
-      "status": "UI_FIELD_NOT_AUTHORITATIVE",
-      "value": null
+      "status": "KNOWN",
+      "value": "Albemarle Corporation"
     },
     "market": "us",
     "symbol": "ALB",
     "symbol_id": "id-75733a414c42"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "negative",
-  "latest_retained_observation": "2026-09-08",
+  "latest_canonical_state": "BACKGROUND_MONITORING",
+  "latest_retained_observation": "2026-10-28",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -66,17 +100,694 @@
   },
   "market_context": {
     "authority": "HISTORICAL_MARKET_CONTEXT_ONLY",
-    "availability": "NOT_RETAINED",
-    "bars": [],
-    "currency": null,
+    "availability": "AVAILABLE",
+    "bars": [
+      {
+        "close": 115.02999877929688,
+        "content_digest": "sha256:d07bccfc946c5e2db1da5abe1560c5175adb82a5d9ad471ff10079e683d377ca",
+        "high": 117.0,
+        "low": 114.2699966430664,
+        "open": 116.05999755859375,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-14"
+      },
+      {
+        "close": 113.44999694824219,
+        "content_digest": "sha256:9897d0f90d0ff3484cdd976a127d5e27d452eac46da4c894c8ed2aba9d3d7405",
+        "high": 115.75,
+        "low": 112.5,
+        "open": 115.27999877929688,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-15"
+      },
+      {
+        "close": 109.47000122070312,
+        "content_digest": "sha256:e7f1352589a6d633218eb17d75c6378b80800f4a0ae2326709150e8787fa914a",
+        "high": 114.62999725341797,
+        "low": 107.9000015258789,
+        "open": 114.0,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-16"
+      },
+      {
+        "close": 115.05000305175781,
+        "content_digest": "sha256:14e36518a75f945cfc4a3c2dffaee9e41e980b6cc6e846797dfecfa5123e565b",
+        "high": 116.30000305175781,
+        "low": 112.5,
+        "open": 112.5,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-17"
+      },
+      {
+        "close": 110.91000366210938,
+        "content_digest": "sha256:f2024d4e2c97efa6a960e7b8f44cdf17e8a01462f57d508036de834756136ea5",
+        "high": 115.12999725341797,
+        "low": 110.41999816894531,
+        "open": 115.0999984741211,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-18"
+      },
+      {
+        "close": 112.91999816894531,
+        "content_digest": "sha256:2b746971cc28acce95ddd6e6280f289f44fa7d215ddc26b9dbf094553f7c3aad",
+        "high": 114.48999786376953,
+        "low": 111.56999969482422,
+        "open": 113.5,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-21"
+      },
+      {
+        "close": 116.80000305175781,
+        "content_digest": "sha256:9f80c0551ddec867d62dfdb35ca33e293144bd40396efdcaf1fe9d02bc7293b6",
+        "high": 117.58999633789062,
+        "low": 112.80000305175781,
+        "open": 113.62000274658203,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-22"
+      },
+      {
+        "close": 113.47000122070312,
+        "content_digest": "sha256:4add51f661c381cdf0905f5b2bda32f5fbdfae18bf9a0c71ef353aaefb493c4b",
+        "high": 115.08000183105469,
+        "low": 112.30999755859375,
+        "open": 114.16999816894531,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-23"
+      },
+      {
+        "close": 108.25,
+        "content_digest": "sha256:1ea40aeb35c85da71e148ab9f6fa1f2d4affda97a29b43daf5e56bdd87a1badb",
+        "high": 110.5,
+        "low": 108.20999908447266,
+        "open": 110.0,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-24"
+      },
+      {
+        "close": 109.7300033569336,
+        "content_digest": "sha256:e4924f72753e4758a0e67aa486ee91c80b71ba3a563cf70adb8b951c3953e503",
+        "high": 112.06999969482422,
+        "low": 108.30000305175781,
+        "open": 108.79000091552734,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-25"
+      },
+      {
+        "close": 107.38999938964844,
+        "content_digest": "sha256:88ad4a2d58e7e71e9a251ef37c7de45067662420b182494bf3fd5bd4ab9605bf",
+        "high": 108.69999694824219,
+        "low": 104.66000366210938,
+        "open": 107.5,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-28"
+      },
+      {
+        "close": 107.62000274658203,
+        "content_digest": "sha256:92f8f700829ec74afbde257814a43565364a5811650f09271500a3cd97c84565",
+        "high": 108.0,
+        "low": 106.05000305175781,
+        "open": 107.93000030517578,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-29"
+      },
+      {
+        "close": 105.77999877929688,
+        "content_digest": "sha256:435dc89d015ba15de2f162eb973c4099c2f619d7518dd668ae17e6694dc03238",
+        "high": 107.79000091552734,
+        "low": 105.62000274658203,
+        "open": 107.5999984741211,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-09-30"
+      },
+      {
+        "close": 105.02999877929688,
+        "content_digest": "sha256:e7d392e013796d24fe96e8b3a037c6542917cd2e11030353ec80dace128f88f8",
+        "high": 105.9800033569336,
+        "low": 102.37000274658203,
+        "open": 104.0999984741211,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-01"
+      },
+      {
+        "close": 104.58999633789062,
+        "content_digest": "sha256:2150266ec6c046704c9d0bc148f109da488172a4b7940b037cd3086a36178985",
+        "high": 106.29000091552734,
+        "low": 103.19000244140625,
+        "open": 105.3499984741211,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-02"
+      },
+      {
+        "close": 104.37000274658203,
+        "content_digest": "sha256:e42d447982db72b488b7b89724339234130ac6283c8833a18d8d3a36d3538426",
+        "high": 105.66999816894531,
+        "low": 103.58999633789062,
+        "open": 105.19000244140625,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-05"
+      },
+      {
+        "close": 106.3499984741211,
+        "content_digest": "sha256:77da97c3a7d99a36ff3753338f0c5fe6612303906926fff428f175e5570d4228",
+        "high": 107.58999633789062,
+        "low": 104.9800033569336,
+        "open": 105.41000366210938,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-06"
+      },
+      {
+        "close": 102.75,
+        "content_digest": "sha256:357e990ce7a8d87b44545bf0b51f58aa21103f580becdf78e15538f6a3fbf2b5",
+        "high": 105.58000183105469,
+        "low": 102.68000030517578,
+        "open": 105.22000122070312,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-07"
+      },
+      {
+        "close": 102.0999984741211,
+        "content_digest": "sha256:f530a34ed05149a3b2b161306b9ac7a6bab44c69450411528f8637b35849d070",
+        "high": 102.69000244140625,
+        "low": 100.51000213623047,
+        "open": 102.41000366210938,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-08"
+      },
+      {
+        "close": 101.2699966430664,
+        "content_digest": "sha256:1ec8310226488f5fc7e1ade742c548f1fa5890d20202e91af37d8ca387100a6a",
+        "high": 103.3499984741211,
+        "low": 100.68000030517578,
+        "open": 103.0,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-09"
+      },
+      {
+        "close": 98.51000213623047,
+        "content_digest": "sha256:26db9fd9a4e9edab7cacf0c1d1f468c93de8c5e1e08ccb7795550e7d732cc8e1",
+        "high": 99.41999816894531,
+        "low": 96.62999725341797,
+        "open": 97.0,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-12"
+      },
+      {
+        "close": 97.6500015258789,
+        "content_digest": "sha256:17d5486074c5e7d83362d18302e2c7d3b8b58a258d012c89552c3a5c2fa53822",
+        "high": 98.5199966430664,
+        "low": 96.0999984741211,
+        "open": 98.0,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-13"
+      },
+      {
+        "close": 97.97000122070312,
+        "content_digest": "sha256:96390f891ccb4c80391fce77a455714de70ac5e69809ec3b8abbeb0c0980544b",
+        "high": 100.76000213623047,
+        "low": 96.01000213623047,
+        "open": 99.0,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-14"
+      },
+      {
+        "close": 98.18000030517578,
+        "content_digest": "sha256:0bacfbbe969f5c2c07c7662e2b19fe760a35cd7ca3453a8cd77657c25303ff90",
+        "high": 98.61000061035156,
+        "low": 94.94999694824219,
+        "open": 97.0,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-15"
+      },
+      {
+        "close": 95.4800033569336,
+        "content_digest": "sha256:f779bd908cc562c3265e5ac4a8e2d924613754a9ee1afccfa3dbeae8f3ec6b5d",
+        "high": 98.98999786376953,
+        "low": 94.66999816894531,
+        "open": 97.0999984741211,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-16"
+      },
+      {
+        "close": 94.63999938964844,
+        "content_digest": "sha256:461b7d8710de4848320c542d6f2e4245248d44484dad63f8123eafdefad73fee",
+        "high": 96.87000274658203,
+        "low": 94.5199966430664,
+        "open": 95.81999969482422,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-19"
+      },
+      {
+        "close": 95.7699966430664,
+        "content_digest": "sha256:9838c98e46d5b45bbdfeff4b96fc71b111d7f02f1c3faa4fc63ec9fdd06c7a51",
+        "high": 96.81999969482422,
+        "low": 93.80000305175781,
+        "open": 94.05000305175781,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-20"
+      },
+      {
+        "close": 94.47000122070312,
+        "content_digest": "sha256:5657d095a497c5ead98bb9c761e85a05e384bccc8496b3926a6e11f23b10c3ab",
+        "high": 96.51000213623047,
+        "low": 92.68000030517578,
+        "open": 95.5,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-21"
+      },
+      {
+        "close": 92.54000091552734,
+        "content_digest": "sha256:2081c5cf8c88af46deb8ec420b4f5758c4cdc35309ad538cf2d78b42b92d568f",
+        "high": 92.66999816894531,
+        "low": 91.0,
+        "open": 91.08000183105469,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-22"
+      },
+      {
+        "close": 93.66999816894531,
+        "content_digest": "sha256:07b43577d81b709813a660caedf6bef5109b284100bce686ca901ffabfa81de7",
+        "high": 94.30999755859375,
+        "low": 92.22000122070312,
+        "open": 92.66000366210938,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-23"
+      },
+      {
+        "close": 93.41999816894531,
+        "content_digest": "sha256:687a49432a5dc382796c2e93ef12a704e54196554f63c8fa5127df87bca6a59d",
+        "high": 95.30000305175781,
+        "low": 92.6500015258789,
+        "open": 93.81999969482422,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-26"
+      },
+      {
+        "close": 98.95999908447266,
+        "content_digest": "sha256:a7678846b10c31d0a6d7e3d43392e8b5341b157558ea14c8d2812ec338b20b9a",
+        "high": 99.79000091552734,
+        "low": 95.0,
+        "open": 95.2699966430664,
+        "provenance": [
+          {
+            "acquired_at": "2026-10-28T08:49:53.023435-04:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 164,
+            "provenance_digest": "sha256:bd411de946d2c912b9a45dab99baef6559fc1fbb6052b1dbcd8578c3b931ea46",
+            "provider_last_session": "2026-10-27",
+            "request_end_exclusive": "2026-10-28",
+            "request_start": "2026-09-12",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-10-27"
+      }
+    ],
+    "currency": "USD",
     "investment_semantic_input": false,
-    "price_basis": null,
-    "provider": null,
-    "session_authority": null,
-    "status": "UNAVAILABLE"
+    "price_basis": "UNADJUSTED_PROVIDER_REPORTED",
+    "provider": "Yahoo Finance",
+    "session_authority": {
+      "calendar_id": "de-us-regular-session-calendar-v2",
+      "session_type": "COMPLETED_REGULAR_SESSION",
+      "venue": "US_REGULAR_MARKET"
+    },
+    "status": "AVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 1,
+  "observation_count": 2,
   "observations": [
     {
       "availability": {
@@ -159,6 +870,266 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "ALB",
       "symbol_id": "id-75733a414c42"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Albemarle Corporation"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-10-28",
+      "decision_reason": "SEMANTIC_NOT_POSITIVE",
+      "directional_basis": "NO_LONG_THESIS",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [],
+        "missing_fields": [
+          "current_price_authority"
+        ],
+        "state": "EXECUTION_EVIDENCE_PARTIAL",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "c424e636a825f33f1cd5ae762b6a726256667539798609274c73e4d452631763",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 1998600.0,
+          "observation_asof": "2026-10-28T08:46:39.379838-04:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 2072600.0,
+          "relative_volume": 0.9642960532664286,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "us",
+      "multi_llm": null,
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": "NO_LONG_THESIS",
+          "recommendation_membership": true,
+          "route": "BACKGROUND_MONITORING",
+          "state": null,
+          "status": "CANONICAL_ROUTED"
+        },
+        "causal": {
+          "items": [
+            {
+              "direction": "NEUTRAL_OR_UNCLEAR",
+              "headline": "Albemarle Announces Quarterly Common Stock Dividend",
+              "scope": "COMPANY",
+              "transmission": "DIRECT_HIGH"
+            }
+          ],
+          "reason": null,
+          "status": "AVAILABLE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 82.82828282828284,
+          "eligible": true,
+          "path_safety_percentile": 79.67171717171718,
+          "queue_position": 5,
+          "routing_contract_version": "deep-review-router-v4",
+          "sector": "Basic Materials",
+          "selected_for_deep_review": true,
+          "severe_weakness_gated": false,
+          "stability_label": "STABLE",
+          "stability_quality_percentile": 71.71717171717172
+        },
+        "detailed_position": 44,
+        "final_assessment": {
+          "horizon": "D1_D3",
+          "reasons": [
+            "DEEP_REVIEW_SELECTED",
+            "NO_DIRECT_POSITIVE_COMPANY_CATALYST",
+            "AXIS_C_INCOMPLETE"
+          ],
+          "status": "CONDITIONAL_WATCH"
+        },
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.42,
+            "early_opportunity_probability": 0.32,
+            "exhaustion_probability": 0.41,
+            "giveback_probability": 0.27,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.36,
+            "mfe_ge_3_probability": 0.62,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:54fb4ed6fd74c51f439346a416ed5e2a14791416f61ab4e91c23f6c1644b5362",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-09-10T18:38:01.391457+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 0.0,
+            "label": "STABLE",
+            "max_abs_return_5d_percent": 5.930208760557387,
+            "max_drawdown_20d_percent": 14.012266721981312,
+            "reason": null,
+            "residual_volatility_percent": 1.8306071298720767,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": "INSUFFICIENT_REVIEWER_AUTHORITY",
+          "active_provider_set": [
+            "xai",
+            "gemini",
+            "qwen"
+          ],
+          "aggregate_authority_status": "INSUFFICIENT_REVIEWER_AUTHORITY",
+          "causal_evidence_sufficiency": "UNAVAILABLE",
+          "continuation_thesis": "ABSTAIN",
+          "failed_or_unavailable_provider_count": 1,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "UNKNOWN",
+          "provider_distributions": {
+            "causal_sufficiency_distribution": {
+              "absent_count": 0,
+              "partial_count": 2,
+              "sufficient_count": 0,
+              "unavailable_count": 0
+            },
+            "continuation_distribution": {
+              "abstain_count": 0,
+              "mixed_count": 1,
+              "supported_count": 1,
+              "weak_count": 0
+            },
+            "priced_in_distribution": {
+              "high_count": 0,
+              "low_count": 1,
+              "medium_count": 1,
+              "unknown_count": 0
+            },
+            "transmission_distribution": {
+              "high_count": 0,
+              "low_count": 1,
+              "medium_count": 1,
+              "not_applicable_count": 0,
+              "unknown_count": 0
+            }
+          },
+          "provider_status_counts": {
+            "PROVIDER_AUTHORIZATION_FAILED": 1,
+            "SUCCESS": 2
+          },
+          "status": "INSUFFICIENT_REVIEWER_AUTHORITY",
+          "successful_provider_count": 2,
+          "transmission_confidence": "UNKNOWN"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:b2af4666d666b260aea1b38094cbdec10306c3e325c293134c4ef4255f841c7a",
+        "symbol": "ALB"
+      },
+      "observation_id": "obs-7f94c3028d028d60f3eaf8da",
+      "observed_at": "2026-10-28T08:49:53.023435-04:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "breakout": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 99.79
+        },
+        "currency": "USD",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 96.78
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 91.35
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 90.31
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 90.13
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 101.0
+        }
+      },
+      "rank": 9,
+      "risk": "中",
+      "run_identity": 164,
+      "score": 36.1,
+      "sector_negative_risk": {
+        "evidence": [],
+        "reason_code": null,
+        "status": "INACTIVE"
+      },
+      "sector_regime": {
+        "availability": "AVAILABLE",
+        "five_session_breadth": 0.8571,
+        "five_session_relative_percent": 3.2497,
+        "five_session_return_percent": 3.3797,
+        "independent_company_catalyst": false,
+        "latest_breadth": 1.0,
+        "latest_relative_percent": 5.5013,
+        "latest_return_percent": 6.0983,
+        "member_count": 7,
+        "prior_relative_percent": -2.2516,
+        "ranking_adjustment": 8.0,
+        "schema_version": "production-sector-regime-v2",
+        "sector": "Basic Materials",
+        "sector_quota": 3,
+        "state": "REVERSAL_CONFIRMED"
+      },
+      "source_digest": "sha256:9b02878516eadfe47cff996a168fc04a9561112b522786b8c79d7dd1503c0718",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "ALB",
+      "symbol_id": "id-75733a414c42"
     }
   ],
   "outcomes": {
@@ -167,11 +1138,45 @@
     "observations": [],
     "status": "UNAVAILABLE"
   },
-  "price_observations": [],
+  "price_observations": [
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "USD",
+      "date": "2026-10-28",
+      "horizon": "D0",
+      "observation_id": "obs-7f94c3028d028d60f3eaf8da",
+      "provenance": {
+        "run_identity": 164,
+        "source_digest": "sha256:9b02878516eadfe47cff996a168fc04a9561112b522786b8c79d7dd1503c0718"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-10-28T08:49:53.023435-04:00",
+      "value": 96.78
+    }
+  ],
   "schema_version": "short-invest-dashboard-symbol/6",
   "trajectory": {
     "continuous_market_series": false,
-    "points": [],
-    "status": "UNAVAILABLE"
+    "points": [
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "USD",
+        "date": "2026-10-28",
+        "horizon": "D0",
+        "observation_id": "obs-7f94c3028d028d60f3eaf8da",
+        "provenance": {
+          "run_identity": 164,
+          "source_digest": "sha256:9b02878516eadfe47cff996a168fc04a9561112b522786b8c79d7dd1503c0718"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-10-28T08:49:53.023435-04:00",
+        "value": 96.78
+      }
+    ],
+    "status": "AVAILABLE"
   }
 }
