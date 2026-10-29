@@ -73,12 +73,46 @@
         "run_identity": 141,
         "source_digest": "sha256:4a8ff124092f0472ec18d5040813bc8abc5eb68f7c90f54310d07f042d57147c"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-29",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-a13ca5913a6d0d4857df74e3",
+      "provenance": {
+        "run_identity": 165,
+        "source_digest": "sha256:ceb76db9d8552bc13308285e54f0b8c1b7ab003132d96d4435e69ebe49bdae22"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-09-04",
-  "generated_at": "2026-10-12T08:47:52.656190-04:00",
+  "generated_at": "2026-10-29T08:49:59.367572-04:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -231,8 +265,8 @@
     "symbol_id": "id-75733a4d534654"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "NEXT_ARCHITECTURE_DEEP_REVIEW",
-  "latest_retained_observation": "2026-10-12",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-10-29",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -348,7 +382,7 @@
       ]
     }
   ],
-  "observation_count": 2,
+  "observation_count": 3,
   "observations": [
     {
       "availability": {
@@ -740,6 +774,95 @@
       "run_identity": 141,
       "score": null,
       "source_digest": "sha256:4a8ff124092f0472ec18d5040813bc8abc5eb68f7c90f54310d07f042d57147c",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "MSFT",
+      "symbol_id": "id-75733a4d534654"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "meta",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 532.6,
+            "price": 541.8848,
+            "quote_timestamp": "2026-10-29T12:56:41+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-29",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-a13ca5913a6d0d4857df74e3",
+      "observed_at": "2026-10-29T08:49:59.367572-04:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 165,
+      "score": null,
+      "source_digest": "sha256:ceb76db9d8552bc13308285e54f0b8c1b7ab003132d96d4435e69ebe49bdae22",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "MSFT",
       "symbol_id": "id-75733a4d534654"
