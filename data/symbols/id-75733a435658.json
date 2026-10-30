@@ -73,6 +73,40 @@
         "run_identity": 160,
         "source_digest": "sha256:c2491d360f086bc192e02b31970c5c9adae9552a98fc7e1783feee19bf8e89db"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-10-30",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-b58a061a6eb090f5a15a58dc",
+      "provenance": {
+        "run_identity": 166,
+        "source_digest": "sha256:56337f8e8751c77fa9a8ae7197de758d132c7bd06917c3fe4d4161171ef9bfc5"
+      }
     }
   ],
   "events": [
@@ -96,7 +130,7 @@
   ],
   "first_actionable_observation": "2026-10-26",
   "first_retained_observation": "2026-10-09",
-  "generated_at": "2026-10-26T08:49:04.798316-04:00",
+  "generated_at": "2026-10-30T08:49:59.883767-04:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -160,16 +194,16 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "Chevron Corporation"
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "us",
     "symbol": "CVX",
     "symbol_id": "id-75733a435658"
   },
   "latest_actionable_observation": "2026-10-26",
-  "latest_canonical_state": "OPEN_CONFIRMATION_LONG",
-  "latest_retained_observation": "2026-10-26",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-10-30",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "AVAILABLE",
@@ -1667,7 +1701,7 @@
       ]
     }
   ],
-  "observation_count": 2,
+  "observation_count": 3,
   "observations": [
     {
       "availability": {
@@ -2243,6 +2277,95 @@
         "state": "STRONG_CONTINUATION"
       },
       "source_digest": "sha256:c2491d360f086bc192e02b31970c5c9adae9552a98fc7e1783feee19bf8e89db",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "CVX",
+      "symbol_id": "id-75733a435658"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "meta",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 228.23,
+            "price": 235.05,
+            "quote_timestamp": "2026-10-30T12:54:54+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-10-30",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-b58a061a6eb090f5a15a58dc",
+      "observed_at": "2026-10-30T08:49:59.883767-04:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 166,
+      "score": null,
+      "source_digest": "sha256:56337f8e8751c77fa9a8ae7197de758d132c7bd06917c3fe4d4161171ef9bfc5",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "CVX",
       "symbol_id": "id-75733a435658"
