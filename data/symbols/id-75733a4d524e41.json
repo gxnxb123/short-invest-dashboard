@@ -385,6 +385,39 @@
   "first_actionable_observation": "2026-10-15",
   "first_retained_observation": "2026-09-10",
   "generated_at": "2026-10-30T08:49:59.883767-04:00",
+  "history_market_context": {
+    "additional_sessions": [
+      {
+        "close": 221.72000122070312,
+        "high": 227.80999755859375,
+        "low": 217.22000122070312,
+        "open": 220.52999877929688,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "signal:114bf3747f95ebd09a2b7a68086b493363efcf36612a599884f490e0a383b6fb:r2:5402df502e024613a08f",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-30",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:62ee6ed5749213b595ebfdb4162fbc7465f245c6c8ec871394f039bde44aba7a",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "002-MATURE_D2-5402df502e024613a08f"
+          }
+        ],
+        "session_date": "2026-10-30"
+      }
+    ],
+    "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
+    "investment_semantic_input": false
+  },
   "identity": {
     "company": {
       "reason": null,
@@ -400,9 +433,58 @@
   "latest_retained_observation": "2026-10-30",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
-    "availability": "NOT_RETAINED",
-    "observations": [],
-    "status": "UNAVAILABLE"
+    "availability": "AVAILABLE",
+    "observations": [
+      {
+        "current_mfe_capture_ratio": 0.17441058932341857,
+        "current_price": 221.75,
+        "current_return": 0.5532132714171301,
+        "eligibility_provenance": "ELIGIBLE",
+        "engine_cohort": "swing-v1",
+        "entry_price": 220.52999877929688,
+        "evaluation_effective_at": "2026-10-31T02:41:50.987967+00:00",
+        "evaluation_mode": "PROSPECTIVE",
+        "evaluation_session": "2026-10-30",
+        "evaluation_timestamp": "2026-10-31T02:41:50.987967+00:00",
+        "feature_digest": "c2a5060681a78e5a2de14fb93a9f412ee2b636a0a769cbddc4c15aa058900ea6",
+        "first_recommendation_id": 1737,
+        "giveback_from_peak": 0.8255894106765789,
+        "invalidation_state": false,
+        "latest_event_id": null,
+        "latest_event_polarity": null,
+        "latest_recommendation_date": "2026-10-30",
+        "latest_recommendation_id": 1737,
+        "lifecycle_state": "PROTECT_PROFIT",
+        "linked_review_recommendation_id": null,
+        "market": "us",
+        "original_catalyst": null,
+        "original_event_anchor_id": null,
+        "peak_price": 227.52499389648438,
+        "peak_to_current_pp": -2.6186885813498373,
+        "price_overlay": "PROFIT_PROTECTION",
+        "prospective_created_at": "2026-10-30T12:49:59.883767+00:00",
+        "prospective_recommendation_id": 1737,
+        "provenance_status": "VERIFIED_PROSPECTIVE",
+        "reason_codes": [
+          "MFE_AT_LEAST_3_PERCENT",
+          "PEAK_GIVEBACK_AT_LEAST_33_PERCENT",
+          "THESIS_INTACT"
+        ],
+        "recommendation_count": 1,
+        "retention_authority": "Lifecycle Shadow",
+        "retention_digest": "sha256:05541c8ac9779f6658bb85693b9d45653bfac248105c64bfe7276e4484576f48",
+        "rule_version": "lifecycle-shadow-v2",
+        "running_mae": -1.5009284799871403,
+        "running_mfe": 3.1719018527669673,
+        "schema_version": "short-invest-retained-lifecycle/1",
+        "source_snapshot_digest": "sha256:2347bdbf2c64b1b8fad0f2725db8f0b0923f263b7bef8f11a321b92f7596f0f1",
+        "symbol": "MRNA",
+        "thesis_id": "TH-d73ac92c4d25e21cdfb8",
+        "thesis_start_date": "2026-10-30",
+        "thesis_state": "NEW"
+      }
+    ],
+    "status": "AVAILABLE"
   },
   "market_context": {
     "authority": "HISTORICAL_MARKET_CONTEXT_ONLY",
@@ -7782,32 +7864,70 @@
             "return_percent": null,
             "session_date": "2026-10-29",
             "status": "AVAILABLE"
+          },
+          {
+            "benchmark": {
+              "close": 7580.06982421875,
+              "high": 7637.47998046875,
+              "low": 7527.56005859375,
+              "open": 7631.06982421875,
+              "return_percent": -1.8456254582023046
+            },
+            "benchmark_relative_return_percent": null,
+            "close": 221.72000122070312,
+            "high": 227.80999755859375,
+            "horizon": "D+2",
+            "low": 217.22000122070312,
+            "open": 220.52999877929688,
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-10-30",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:62ee6ed5749213b595ebfdb4162fbc7465f245c6c8ec871394f039bde44aba7a",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "return_percent": null,
+            "session_date": "2026-10-30",
+            "status": "AVAILABLE"
           }
         ],
-        "matured_through_session": "2026-10-29",
-        "maturity_state": "MATURE_D1",
+        "matured_through_session": "2026-10-30",
+        "maturity_state": "MATURE_D2",
         "observation_id": "obs-f2cded26b40834721fdfe6e4",
-        "outcome_id": "signal:114bf3747f95ebd09a2b7a68086b493363efcf36612a599884f490e0a383b6fb:r1:37b36281fdf390b06e06",
+        "outcome_id": "signal:114bf3747f95ebd09a2b7a68086b493363efcf36612a599884f490e0a383b6fb:r2:5402df502e024613a08f",
         "provenance": {
-          "record_digest": "sha256:34038803b10482b9f4fba698e33a6a22510983415b7446781e40eabf3287565b",
-          "retention_digest": "sha256:0a8b72c7a0d598ad77c044165a5c39bfbb2fb2654535e413c4cb8474b27dd7eb",
+          "record_digest": "sha256:579ff818f06797ca82d2d8251ab890d7ab03194c4c5c7afb514b7fa52dcdd5c2",
+          "retention_digest": "sha256:96a28cfb9bb1c28908d411c779e2fbf2baa28a5cda8619a0154b418f469281ea",
           "source_schema_version": "short-invest-outcome-record/3"
         },
         "reference_authority": {
           "reason": "CANONICAL_CURRENT_PRICE_AUTHORITY_NOT_RETAINED",
           "status": "UNAVAILABLE"
         },
-        "revision": 1,
+        "revision": 2,
         "revisions": [
           {
             "available_horizons": 2,
             "maturity_state": "MATURE_D1",
             "revision": 1,
             "revision_identity": "001-MATURE_D1-37b36281fdf390b06e06",
+            "selected": false
+          },
+          {
+            "available_horizons": 3,
+            "maturity_state": "MATURE_D2",
+            "revision": 2,
+            "revision_identity": "002-MATURE_D2-5402df502e024613a08f",
             "selected": true
           }
         ],
-        "selected_revision_identity": "001-MATURE_D1-37b36281fdf390b06e06",
+        "selected_revision_identity": "002-MATURE_D2-5402df502e024613a08f",
         "signal_id": "signal:114bf3747f95ebd09a2b7a68086b493363efcf36612a599884f490e0a383b6fb",
         "terminal_outcomes": {
           "D+1": null,
