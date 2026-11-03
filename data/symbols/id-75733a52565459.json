@@ -107,12 +107,46 @@
         "run_identity": 110,
         "source_digest": "sha256:7f76938e272018df7ebde516eddd296271cb49566536a92706fa712232a9cc95"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-03",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-acb07ed9645d988272b8e53a",
+      "provenance": {
+        "run_identity": 170,
+        "source_digest": "sha256:164d1be07d07808fcef19500308a209fa5bc42b752695a865a11dd3cc54ed98e"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": "2026-09-17",
   "first_retained_observation": "2026-09-03",
-  "generated_at": "2026-09-17T08:46:41.816831-04:00",
+  "generated_at": "2026-11-03T08:50:33.715976-05:00",
   "identity": {
     "company": {
       "reason": null,
@@ -124,8 +158,8 @@
     "symbol_id": "id-75733a52565459"
   },
   "latest_actionable_observation": "2026-09-17",
-  "latest_canonical_state": "OPEN_CONFIRMATION_LONG",
-  "latest_retained_observation": "2026-09-17",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-03",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -1434,7 +1468,7 @@
       ]
     }
   ],
-  "observation_count": 3,
+  "observation_count": 4,
   "observations": [
     {
       "availability": {
@@ -1876,6 +1910,95 @@
       "run_identity": 110,
       "score": 53.4,
       "source_digest": "sha256:7f76938e272018df7ebde516eddd296271cb49566536a92706fa712232a9cc95",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "RVTY",
+      "symbol_id": "id-75733a52565459"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 2,
+          "reference_price": {
+            "previous_regular_close": 157.0,
+            "price": 165.535,
+            "quote_timestamp": "2026-11-03T13:39:05+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-03",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-acb07ed9645d988272b8e53a",
+      "observed_at": "2026-11-03T08:50:33.715976-05:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 170,
+      "score": null,
+      "source_digest": "sha256:164d1be07d07808fcef19500308a209fa5bc42b752695a865a11dd3cc54ed98e",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "RVTY",
       "symbol_id": "id-75733a52565459"
