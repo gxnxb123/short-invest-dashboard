@@ -79,6 +79,39 @@
   "first_actionable_observation": null,
   "first_retained_observation": "2026-10-16",
   "generated_at": "2026-11-03T08:50:33.715976-05:00",
+  "history_market_context": {
+    "additional_sessions": [
+      {
+        "close": 89.19999694824219,
+        "high": 89.29000091552734,
+        "low": 84.83000183105469,
+        "open": 85.37000274658203,
+        "provenance": [
+          {
+            "class": "OUTCOME_RECORD_RETAINED",
+            "outcome_id": "signal:25409f22f07adc53018edd22887515ed1ac66f8af52daa81ee5cf9dd2efdc53f:r1:8db540e7675c78523153",
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-11-04",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:8cbe9891d047e14e2c8b4fde47c179e7dba2aa7596ca7cd8340cf01b73c7ab82",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "revision_identity": "001-MATURE_D1-8db540e7675c78523153"
+          }
+        ],
+        "session_date": "2026-11-04"
+      }
+    ],
+    "authority": "EX_POST_VISUALIZATION_CONTEXT_ONLY",
+    "investment_semantic_input": false
+  },
   "identity": {
     "company": {
       "reason": null,
@@ -1758,9 +1791,100 @@
   ],
   "outcomes": {
     "authority": "Retained OutcomeRecord authority only; LEGACY_REVIEW_D1 excluded",
-    "availability": "NOT_RETAINED",
-    "observations": [],
-    "status": "UNAVAILABLE"
+    "availability": "AVAILABLE",
+    "observations": [
+      {
+        "excursion": {
+          "intraday_order_identifiable": false,
+          "mae_1_3": {
+            "session": null,
+            "timing_precision": "SESSION_ONLY",
+            "value_percent": null
+          },
+          "mae_1_5": {
+            "session": null,
+            "timing_precision": "SESSION_ONLY",
+            "value_percent": null
+          },
+          "mfe_1_3": {
+            "session": null,
+            "timing_precision": "SESSION_ONLY",
+            "value_percent": null
+          },
+          "mfe_1_5": {
+            "session": null,
+            "timing_precision": "SESSION_ONLY",
+            "value_percent": null
+          }
+        },
+        "horizons": [
+          {
+            "benchmark": {
+              "close": 7688.6201171875,
+              "high": 7715.56982421875,
+              "low": 7635.81005859375,
+              "open": 7635.81005859375,
+              "return_percent": 1.9521602984877706
+            },
+            "benchmark_relative_return_percent": null,
+            "close": 89.19999694824219,
+            "high": 89.29000091552734,
+            "horizon": "D+1",
+            "low": 84.83000183105469,
+            "open": 85.37000274658203,
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-11-04",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:8cbe9891d047e14e2c8b4fde47c179e7dba2aa7596ca7cd8340cf01b73c7ab82",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "return_percent": null,
+            "session_date": "2026-11-04",
+            "status": "AVAILABLE"
+          }
+        ],
+        "matured_through_session": "2026-11-04",
+        "maturity_state": "MATURE_D1",
+        "observation_id": "obs-a9c71d1cb679a54ddd8401a1",
+        "outcome_id": "signal:25409f22f07adc53018edd22887515ed1ac66f8af52daa81ee5cf9dd2efdc53f:r1:8db540e7675c78523153",
+        "provenance": {
+          "record_digest": "sha256:88320c82a0d72d21ce568d2c61ec48c14accde7ca0b9b850b19d2bec1c720a17",
+          "retention_digest": "sha256:59603c564550099be05f04ffe191a19310a25fbc5d0f6191a02a1d4e41f20473",
+          "source_schema_version": "short-invest-outcome-record/3"
+        },
+        "reference_authority": {
+          "reason": "CANONICAL_CURRENT_PRICE_AUTHORITY_NOT_RETAINED",
+          "status": "UNAVAILABLE"
+        },
+        "revision": 1,
+        "revisions": [
+          {
+            "available_horizons": 2,
+            "maturity_state": "MATURE_D1",
+            "revision": 1,
+            "revision_identity": "001-MATURE_D1-8db540e7675c78523153",
+            "selected": true
+          }
+        ],
+        "selected_revision_identity": "001-MATURE_D1-8db540e7675c78523153",
+        "signal_id": "signal:25409f22f07adc53018edd22887515ed1ac66f8af52daa81ee5cf9dd2efdc53f",
+        "terminal_outcomes": {
+          "D+1": null,
+          "D+2": null,
+          "D+3": null,
+          "D+4": null,
+          "D+5": null
+        }
+      }
+    ],
+    "status": "AVAILABLE"
   },
   "price_observations": [],
   "schema_version": "short-invest-dashboard-symbol/6",
