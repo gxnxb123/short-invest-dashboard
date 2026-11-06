@@ -141,25 +141,59 @@
         "run_identity": 157,
         "source_digest": "sha256:304f8c1b1f603928d6cdbdcd26ff63415faf48efc44fa448b39eeb1f25e8b2c5"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-06",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-c7f6e3b5de37639925334c9d",
+      "provenance": {
+        "run_identity": 176,
+        "source_digest": "sha256:934e0d9f8eb52c98f7d9609264488520ed51e69ee892cd5882c861aea98cc72f"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": "2026-10-14",
   "first_retained_observation": "2026-10-07",
-  "generated_at": "2026-10-22T08:51:25.146402-04:00",
+  "generated_at": "2026-11-06T08:51:19.748436-05:00",
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "Vistra Corp."
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "us",
     "symbol": "VST",
     "symbol_id": "id-75733a565354"
   },
   "latest_actionable_observation": "2026-10-22",
-  "latest_canonical_state": "OPEN_CONFIRMATION_LONG",
-  "latest_retained_observation": "2026-10-22",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-06",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "AVAILABLE",
@@ -3566,7 +3600,7 @@
       ]
     }
   ],
-  "observation_count": 4,
+  "observation_count": 5,
   "observations": [
     {
       "availability": {
@@ -4477,6 +4511,95 @@
         "state": "REVERSAL_CONFIRMED"
       },
       "source_digest": "sha256:304f8c1b1f603928d6cdbdcd26ff63415faf48efc44fa448b39eeb1f25e8b2c5",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "VST",
+      "symbol_id": "id-75733a565354"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "meta",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 139.59,
+            "price": 119.6395,
+            "quote_timestamp": "2026-11-06T13:55:54+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-06",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-c7f6e3b5de37639925334c9d",
+      "observed_at": "2026-11-06T08:51:19.748436-05:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 176,
+      "score": null,
+      "source_digest": "sha256:934e0d9f8eb52c98f7d9609264488520ed51e69ee892cd5882c861aea98cc72f",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "VST",
       "symbol_id": "id-75733a565354"

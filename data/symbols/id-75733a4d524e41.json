@@ -413,12 +413,46 @@
         "run_identity": 172,
         "source_digest": "sha256:61dc119fcdde8f0a7c8154bcf5cbafde08c42aea789917308044184bce0fec37"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-06",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-9f966b0afbdc86e818acf8bc",
+      "provenance": {
+        "run_identity": 176,
+        "source_digest": "sha256:934e0d9f8eb52c98f7d9609264488520ed51e69ee892cd5882c861aea98cc72f"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": "2026-10-15",
   "first_retained_observation": "2026-09-10",
-  "generated_at": "2026-11-04T08:49:58.539244-05:00",
+  "generated_at": "2026-11-06T08:51:19.748436-05:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -455,16 +489,16 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "Moderna, Inc."
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "us",
     "symbol": "MRNA",
     "symbol_id": "id-75733a4d524e41"
   },
   "latest_actionable_observation": "2026-10-30",
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-11-04",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-06",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "AVAILABLE",
@@ -5760,7 +5794,7 @@
       ]
     }
   ],
-  "observation_count": 12,
+  "observation_count": 13,
   "observations": [
     {
       "availability": {
@@ -8537,6 +8571,95 @@
         "state": "MARKET_WEAK"
       },
       "source_digest": "sha256:61dc119fcdde8f0a7c8154bcf5cbafde08c42aea789917308044184bce0fec37",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "MRNA",
+      "symbol_id": "id-75733a4d524e41"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 4,
+          "reference_price": {
+            "previous_regular_close": 228.44,
+            "price": 236.3205,
+            "quote_timestamp": "2026-11-06T13:56:34+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-06",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-9f966b0afbdc86e818acf8bc",
+      "observed_at": "2026-11-06T08:51:19.748436-05:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 176,
+      "score": null,
+      "source_digest": "sha256:934e0d9f8eb52c98f7d9609264488520ed51e69ee892cd5882c861aea98cc72f",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "MRNA",
       "symbol_id": "id-75733a4d524e41"
