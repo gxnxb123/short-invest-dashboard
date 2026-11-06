@@ -447,12 +447,46 @@
         "run_identity": 173,
         "source_digest": "sha256:9a9d4058d472579e8282fbf1cdc06542dc4fc8bd31f74a5aeed9923821e10155"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-06",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": 57.21
+      },
+      "observation_id": "obs-303f259355d9d6307cc55086",
+      "provenance": {
+        "run_identity": 175,
+        "source_digest": "sha256:6d00710b644a1754322a40807794f57164f01ed9beffe4ca8ec93c64e51801ec"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": "2026-11-03",
   "first_retained_observation": "2026-09-01",
-  "generated_at": "2026-11-05T08:23:00.174642+01:00",
+  "generated_at": "2026-11-06T08:21:08.212599+01:00",
   "identity": {
     "company": {
       "reason": null,
@@ -465,7 +499,7 @@
   },
   "latest_actionable_observation": "2026-11-03",
   "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-11-05",
+  "latest_retained_observation": "2026-11-06",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "AVAILABLE",
@@ -562,6 +596,55 @@
         "running_mfe": 4.680847453062431,
         "schema_version": "short-invest-retained-lifecycle/1",
         "source_snapshot_digest": "sha256:2d0786bcb0a9a7d9764238009bbc3c41d20c7302e71a30f09382787a6c4268a3",
+        "symbol": "BAYN.DE",
+        "thesis_id": "TH-76bff3eda2fb7d6811e7",
+        "thesis_start_date": "2026-11-03",
+        "thesis_state": "CONTINUE"
+      },
+      {
+        "current_mfe_capture_ratio": 0.9346939093269381,
+        "current_price": 56.279998779296875,
+        "current_return": 8.858796806131842,
+        "eligibility_provenance": "ELIGIBLE",
+        "engine_cohort": "swing-v1",
+        "entry_price": 51.70000076293945,
+        "evaluation_effective_at": "2026-11-06T03:36:33.342592+00:00",
+        "evaluation_mode": "BOOTSTRAP_RECONSTRUCTED",
+        "evaluation_session": "2026-11-05",
+        "evaluation_timestamp": "2026-11-06T03:36:33.342592+00:00",
+        "feature_digest": "a3d37dae1d0793672d04e31d37249269fee6185d8a8ac71eae8831d2c9498f65",
+        "first_recommendation_id": 1763,
+        "giveback_from_peak": 0.06530609067306083,
+        "invalidation_state": false,
+        "latest_event_id": null,
+        "latest_event_polarity": null,
+        "latest_recommendation_date": "2026-11-03",
+        "latest_recommendation_id": 1763,
+        "lifecycle_state": "CONTINUE",
+        "linked_review_recommendation_id": null,
+        "market": "de",
+        "original_catalyst": null,
+        "original_event_anchor_id": null,
+        "peak_price": 56.599998474121094,
+        "peak_to_current_pp": -0.618954913156621,
+        "price_overlay": "NONE",
+        "prospective_created_at": null,
+        "prospective_recommendation_id": null,
+        "provenance_status": "BOOTSTRAP_RECONSTRUCTED",
+        "reason_codes": [
+          "WITHIN_D5_WINDOW",
+          "THESIS_INTACT",
+          "NO_ADVERSE_UPDATE",
+          "PRICE_PATH_AVAILABLE"
+        ],
+        "recommendation_count": 1,
+        "retention_authority": "Lifecycle Shadow",
+        "retention_digest": "sha256:648c1c6212cb6dbfd107284d4699275f7df5cdccb2ec52b6c6d283338433e453",
+        "rule_version": "lifecycle-shadow-v2",
+        "running_mae": -0.6576405175444666,
+        "running_mfe": 9.477751719288463,
+        "schema_version": "short-invest-retained-lifecycle/1",
+        "source_snapshot_digest": "sha256:847ae0619e804b3e45b63c8e6d01ff30df1857ea1654182eb8af8d11d40fed2c",
         "symbol": "BAYN.DE",
         "thesis_id": "TH-76bff3eda2fb7d6811e7",
         "thesis_start_date": "2026-11-03",
@@ -1185,6 +1268,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-09-21"
@@ -1282,6 +1376,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -1381,6 +1486,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-09-23"
@@ -1478,6 +1594,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -1577,6 +1704,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-09-25"
@@ -1674,6 +1812,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -1773,6 +1922,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-09-29"
@@ -1870,6 +2030,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -1969,6 +2140,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-01"
@@ -2066,6 +2248,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -2165,6 +2358,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-05"
@@ -2262,6 +2466,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -2361,6 +2576,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-07"
@@ -2458,6 +2684,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -2557,6 +2794,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-09"
@@ -2654,6 +2902,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -2753,6 +3012,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-13"
@@ -2850,6 +3120,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -2949,6 +3230,17 @@
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-15"
@@ -3046,6 +3338,17 @@
             "provider_last_session": "2026-10-19",
             "request_end_exclusive": "2026-10-20",
             "request_start": "2026-09-04",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -3155,6 +3458,17 @@
             "request_end_exclusive": "2026-10-30",
             "request_start": "2026-09-14",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-20"
@@ -3252,6 +3566,17 @@
             "request_end_exclusive": "2026-10-30",
             "request_start": "2026-09-14",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-22"
@@ -3327,6 +3652,17 @@
             "provider_last_session": "2026-10-29",
             "request_end_exclusive": "2026-10-30",
             "request_start": "2026-09-14",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -3414,6 +3750,17 @@
             "request_end_exclusive": "2026-10-30",
             "request_start": "2026-09-14",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-27"
@@ -3478,6 +3825,17 @@
             "provider_last_session": "2026-10-29",
             "request_end_exclusive": "2026-10-30",
             "request_start": "2026-09-14",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
             "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
@@ -3554,6 +3912,17 @@
             "request_end_exclusive": "2026-10-31",
             "request_start": "2026-09-15",
             "source": "Daily production StockSnapshot.completed_daily_bars"
+          },
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
           }
         ],
         "session_date": "2026-10-30"
@@ -3620,6 +3989,27 @@
           }
         ],
         "session_date": "2026-11-04"
+      },
+      {
+        "close": 56.279998779296875,
+        "content_digest": "sha256:bc07f20f94568207bba3269fe4a4a260e597ea6749f23e5d0a21a8b4b0d1eb46",
+        "high": 56.599998474121094,
+        "low": 55.0,
+        "open": 55.0,
+        "provenance": [
+          {
+            "acquired_at": "2026-11-06T08:21:08.212599+01:00",
+            "acquisition_status": "COMPLETE",
+            "class": "PROSPECTIVE_RETAINED",
+            "production_run_id": 175,
+            "provenance_digest": "sha256:f0c1583f188aa14077a785fa3f51565d6383526e3f7d1c043bb7e6104871d311",
+            "provider_last_session": "2026-11-05",
+            "request_end_exclusive": "2026-11-06",
+            "request_start": "2026-09-21",
+            "source": "Daily production StockSnapshot.completed_daily_bars"
+          }
+        ],
+        "session_date": "2026-11-05"
       }
     ],
     "currency": "EUR",
@@ -3734,9 +4124,110 @@
         "qwen",
         "meta"
       ]
+    },
+    {
+      "active_provider_count": 5,
+      "active_provider_set": [
+        "xai",
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ],
+      "consensus": {
+        "mean_confidence_among_selectors": 71.0,
+        "mean_rank_among_selectors": 3.0,
+        "provider_confidences": {
+          "deepseek": 63,
+          "gemini": 90,
+          "meta": 60
+        },
+        "provider_ranks": {
+          "deepseek": 3,
+          "gemini": 2,
+          "meta": 4
+        },
+        "short_invest_rank": 6,
+        "successful_provider_count": 4,
+        "symbol": "BAYN.DE",
+        "vote_count": 3,
+        "vote_fraction": 0.75
+      },
+      "date": "2026-11-06",
+      "disagreement": [
+        {
+          "symbol": "BAYN.DE",
+          "type": "LOW_RANK_HIGH_CONSENSUS"
+        }
+      ],
+      "observation_id": "obs-303f259355d9d6307cc55086",
+      "packet_digest": "aafc2d52e2deb85efc487d3d6a0975ebd9d9976885d218bc97608e6e930188bd",
+      "providers": [
+        {
+          "display_name": "Grok",
+          "execution_status": "PROVIDER_AUTHORIZATION_FAILED",
+          "provider": "xai",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Gemini",
+          "execution_status": "SUCCESS",
+          "provider": "gemini",
+          "rank": 2,
+          "reason": "Bayer's pharmaceutical division has reached a turning point, with products like Nubeqa and Kerendia driving an outlook upgrade despite litigation pressures. A 7% stock surge following the Q3 earnings beat signals a shift in investor sentiment, as the company achieves resilient 3% organic sales growth and improves its free-cash-flow forecasts.",
+          "risk": "Persistent litigation-related cash outflows and high debt levels stemming from the Monsanto acquisition.",
+          "score": 90,
+          "selected": true
+        },
+        {
+          "display_name": "DeepSeek",
+          "execution_status": "SUCCESS",
+          "provider": "deepseek",
+          "rank": 3,
+          "reason": "Q3 EBITDA rose 6.9% on Nubeqa and Kerendia strength, with full-year EBITDA, margin, cash flow and debt guidance all raised. Goldman Sachs and UBS lifted targets to €66, and the stock is one of the strongest large-cap German momentum names. Pharma growth is currently outweighing Crop Science weakness.",
+          "risk": "Still a reported net loss with negative free cash flow, and glyphosate litigation headlines can hit the shares abruptly; after a large run, the reaction is stretched.",
+          "score": 63,
+          "selected": true
+        },
+        {
+          "display_name": "Qwen",
+          "execution_status": "SUCCESS",
+          "provider": "qwen",
+          "rank": null,
+          "reason": null,
+          "risk": null,
+          "score": null,
+          "selected": false
+        },
+        {
+          "display_name": "Meta",
+          "execution_status": "SUCCESS",
+          "provider": "meta",
+          "rank": 4,
+          "reason": "Q3 pharma EUR4.68bn 5% above Vara consensus drove raised group EBITDA outlook to EUR9.8-10.3bn. Shares +4.6% with broker target hikes support continuation.",
+          "risk": "Litigation overhang and crop-science weakness could offset pharma beat and cap follow-through.",
+          "score": 60,
+          "selected": true
+        }
+      ],
+      "review_date": "2026-11-06",
+      "review_run_identity": 175,
+      "reviewed_at": "2026-11-06T07:23:28.997318+00:00",
+      "source_path": "reports/llm-reviews/multi-llm-review-de-2026-11-06.json",
+      "successful_provider_count": 4,
+      "successful_provider_set": [
+        "gemini",
+        "deepseek",
+        "qwen",
+        "meta"
+      ]
     }
   ],
-  "observation_count": 13,
+  "observation_count": 14,
   "observations": [
     {
       "availability": {
@@ -5647,6 +6138,322 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "BAYN.DE",
       "symbol_id": "id-64653a4241594e2e4445"
+    },
+    {
+      "availability": {
+        "canonical_price": "AVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "AVAILABLE",
+        "rank": "AVAILABLE",
+        "risk": "AVAILABLE",
+        "score": "AVAILABLE"
+      },
+      "canonical_state": "BACKGROUND_MONITORING",
+      "company": {
+        "reason": null,
+        "status": "KNOWN",
+        "value": "Bayer AG                      N"
+      },
+      "constraint_codes": [
+        "CATALYST_NOT_ACTIONABLE",
+        "CATALYST_UNVERIFIED"
+      ],
+      "date": "2026-11-06",
+      "decision_reason": "EXECUTION_CHECK_FAILED",
+      "directional_basis": "TECHNICAL_LONG",
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {
+        "blockers": [
+          "execution_plan_incomplete"
+        ],
+        "missing_fields": [
+          "current_price_authority"
+        ],
+        "state": "EXECUTION_EVIDENCE_BLOCKED",
+        "volume": {
+          "asof_authority": "STAGE_U_RUN_CUTOFF",
+          "contract_digest": "ae90fce28af215483e692d6db7364c3d26762ed96f4c47540ae1c11eea6b357e",
+          "contract_version": "execution-volume-confirmation-v2",
+          "method": "stage_u_volume / stage_u_reference_volume",
+          "numerator_volume": 4887511.0,
+          "observation_asof": "2026-11-06T08:18:46.179969+01:00",
+          "passed": false,
+          "reason": null,
+          "reference_volume": 4505083.0,
+          "relative_volume": 1.084888114159051,
+          "source": "Yahoo Stage U daily quote",
+          "status": "AVAILABLE",
+          "threshold": 1.5
+        }
+      },
+      "market": "de",
+      "multi_llm": {
+        "active_provider_count": 5,
+        "active_provider_set": [
+          "xai",
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ],
+        "consensus": {
+          "mean_confidence_among_selectors": 71.0,
+          "mean_rank_among_selectors": 3.0,
+          "provider_confidences": {
+            "deepseek": 63,
+            "gemini": 90,
+            "meta": 60
+          },
+          "provider_ranks": {
+            "deepseek": 3,
+            "gemini": 2,
+            "meta": 4
+          },
+          "short_invest_rank": 6,
+          "successful_provider_count": 4,
+          "symbol": "BAYN.DE",
+          "vote_count": 3,
+          "vote_fraction": 0.75
+        },
+        "disagreement": [
+          {
+            "symbol": "BAYN.DE",
+            "type": "LOW_RANK_HIGH_CONSENSUS"
+          }
+        ],
+        "packet_digest": "aafc2d52e2deb85efc487d3d6a0975ebd9d9976885d218bc97608e6e930188bd",
+        "providers": [
+          {
+            "display_name": "Grok",
+            "execution_status": "PROVIDER_AUTHORIZATION_FAILED",
+            "provider": "xai",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Gemini",
+            "execution_status": "SUCCESS",
+            "provider": "gemini",
+            "rank": 2,
+            "reason": "Bayer's pharmaceutical division has reached a turning point, with products like Nubeqa and Kerendia driving an outlook upgrade despite litigation pressures. A 7% stock surge following the Q3 earnings beat signals a shift in investor sentiment, as the company achieves resilient 3% organic sales growth and improves its free-cash-flow forecasts.",
+            "risk": "Persistent litigation-related cash outflows and high debt levels stemming from the Monsanto acquisition.",
+            "score": 90,
+            "selected": true
+          },
+          {
+            "display_name": "DeepSeek",
+            "execution_status": "SUCCESS",
+            "provider": "deepseek",
+            "rank": 3,
+            "reason": "Q3 EBITDA rose 6.9% on Nubeqa and Kerendia strength, with full-year EBITDA, margin, cash flow and debt guidance all raised. Goldman Sachs and UBS lifted targets to €66, and the stock is one of the strongest large-cap German momentum names. Pharma growth is currently outweighing Crop Science weakness.",
+            "risk": "Still a reported net loss with negative free cash flow, and glyphosate litigation headlines can hit the shares abruptly; after a large run, the reaction is stretched.",
+            "score": 63,
+            "selected": true
+          },
+          {
+            "display_name": "Qwen",
+            "execution_status": "SUCCESS",
+            "provider": "qwen",
+            "rank": null,
+            "reason": null,
+            "risk": null,
+            "score": null,
+            "selected": false
+          },
+          {
+            "display_name": "Meta",
+            "execution_status": "SUCCESS",
+            "provider": "meta",
+            "rank": 4,
+            "reason": "Q3 pharma EUR4.68bn 5% above Vara consensus drove raised group EBITDA outlook to EUR9.8-10.3bn. Shares +4.6% with broker target hikes support continuation.",
+            "risk": "Litigation overhang and crop-science weakness could offset pharma beat and cap follow-through.",
+            "score": 60,
+            "selected": true
+          }
+        ],
+        "review_date": "2026-11-06",
+        "review_run_identity": 175,
+        "reviewed_at": "2026-11-06T07:23:28.997318+00:00",
+        "source_path": "reports/llm-reviews/multi-llm-review-de-2026-11-06.json",
+        "successful_provider_count": 4,
+        "successful_provider_set": [
+          "gemini",
+          "deepseek",
+          "qwen",
+          "meta"
+        ]
+      },
+      "next_architecture": {
+        "canonical": {
+          "directional_basis": "TECHNICAL_LONG",
+          "recommendation_membership": true,
+          "route": "BACKGROUND_MONITORING",
+          "state": null,
+          "status": "CANONICAL_ROUTED"
+        },
+        "causal": {
+          "items": [],
+          "reason": "NO_QUALIFYING_EVIDENCE",
+          "status": "NO_QUALIFYING_EVIDENCE"
+        },
+        "deep_review_routing": {
+          "directional_quality_percentile": 96.62162162162161,
+          "eligible": true,
+          "path_safety_percentile": 63.513513513513516,
+          "queue_position": null,
+          "routing_contract_version": "deep-review-router-v4",
+          "sector": "Healthcare",
+          "selected_for_deep_review": false,
+          "severe_weakness_gated": false,
+          "stability_label": "EXTENDED",
+          "stability_quality_percentile": 44.5945945945946
+        },
+        "detailed_position": 33,
+        "final_assessment": {
+          "horizon": "D1_D3",
+          "reasons": [],
+          "status": "NOT_ASSESSED"
+        },
+        "price_path": {
+          "momentum_quality": {
+            "clean_continuation_probability": 0.47,
+            "early_opportunity_probability": 0.43,
+            "exhaustion_probability": 0.3,
+            "giveback_probability": 0.23,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:e593f478760f988427805c8585eff4a3c8c45955110aee6a1c758343ee44174d",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-10-22T02:00:00+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "raw": {
+            "d5_alpha_positive_probability": 0.69,
+            "mfe_ge_3_probability": 0.64,
+            "model_era": {
+              "provider_model_metadata_digest": "sha256:e593f478760f988427805c8585eff4a3c8c45955110aee6a1c758343ee44174d",
+              "provider_model_name": "jev-latest",
+              "provider_release_date": "2026-10-22T02:00:00+00:00"
+            },
+            "reason": null,
+            "status": "SUCCEEDED"
+          },
+          "reason": null,
+          "stability": {
+            "extension_above_mean20_percent": 20.507463980659125,
+            "label": "EXTENDED",
+            "max_abs_return_5d_percent": 5.4628915692166435,
+            "max_drawdown_20d_percent": 3.705343200029116,
+            "reason": null,
+            "residual_volatility_percent": 2.1041852366962175,
+            "status": "AVAILABLE"
+          },
+          "status": "AVAILABLE"
+        },
+        "reasoning": {
+          "abstain_reason": null,
+          "active_provider_set": [],
+          "aggregate_authority_status": null,
+          "causal_evidence_sufficiency": null,
+          "continuation_thesis": "NOT_EVALUATED",
+          "failed_or_unavailable_provider_count": null,
+          "main_risk": null,
+          "main_support": null,
+          "priced_in_risk": "UNKNOWN",
+          "provider_distributions": {},
+          "provider_status_counts": {},
+          "status": "NOT_EVALUATED",
+          "successful_provider_count": null,
+          "transmission_confidence": "UNKNOWN"
+        },
+        "recommendation_authority": "NONE",
+        "record_identity": "parallel-revision:c9e4824f04dba92b3751894cfeb513a85f330a7aaeb552d8935095f4edec7831",
+        "symbol": "BAYN.DE"
+      },
+      "observation_id": "obs-303f259355d9d6307cc55086",
+      "observed_at": "2026-11-06T08:21:08.212599+01:00",
+      "presentation_group": "MONITORING",
+      "price": {
+        "breakout": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 56.6
+        },
+        "currency": "EUR",
+        "current": {
+          "reason": null,
+          "status": "AVAILABLE",
+          "value": 56.22
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "KNOWN",
+          "value": 57.21
+        }
+      },
+      "rank": 6,
+      "risk": "中",
+      "run_identity": 175,
+      "score": 45.0,
+      "sector_negative_risk": {
+        "evidence": [],
+        "reason_code": null,
+        "status": "INACTIVE"
+      },
+      "sector_regime": {
+        "availability": "AVAILABLE",
+        "five_session_breadth": 0.625,
+        "five_session_relative_percent": 2.059,
+        "five_session_return_percent": 3.1548,
+        "independent_company_catalyst": false,
+        "latest_breadth": 0.5,
+        "latest_relative_percent": 1.0477,
+        "latest_return_percent": 0.6216,
+        "member_count": 8,
+        "prior_relative_percent": 1.0113,
+        "ranking_adjustment": 4.0,
+        "schema_version": "production-sector-regime-v2",
+        "sector": "Healthcare",
+        "sector_quota": 3,
+        "state": "STRONG_CONTINUATION"
+      },
+      "source_digest": "sha256:6d00710b644a1754322a40807794f57164f01ed9beffe4ca8ec93c64e51801ec",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "BAYN.DE",
+      "symbol_id": "id-64653a4241594e2e4445"
     }
   ],
   "outcomes": {
@@ -5687,14 +6494,45 @@
               "return_percent": 1.757355372199032
             },
             "benchmark_relative_return_percent": null,
+            "close": 54.2400016784668,
+            "high": 54.2400016784668,
+            "horizon": "D+1",
+            "low": 52.18000030517578,
+            "open": 52.20000076293945,
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-11-04",
+              "missing_reason": null,
+              "normalized_data_digest": "sha256:24d75b1e56777130419ba67ed44c7d918fd3a8bf39c446f7d38cc6e78840cf5f",
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": true
+            },
+            "return_percent": null,
+            "session_date": "2026-11-04",
+            "status": "AVAILABLE"
+          },
+          {
+            "benchmark": {
+              "close": 26325.009765625,
+              "high": 26692.900390625,
+              "low": 26223.33984375,
+              "open": 26449.7890625,
+              "return_percent": 1.323731698490449
+            },
+            "benchmark_relative_return_percent": null,
             "close": null,
             "high": null,
-            "horizon": "D+1",
+            "horizon": "D+2",
             "low": null,
             "open": null,
             "price_authority": {
               "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
-              "effective_as_of": "2026-11-04",
+              "effective_as_of": "2026-11-05",
               "missing_reason": "PRICE_DATA_NOT_RETAINED",
               "normalized_data_digest": null,
               "observed_at": null,
@@ -5706,34 +6544,41 @@
               "success": false
             },
             "return_percent": null,
-            "session_date": "2026-11-04",
+            "session_date": "2026-11-05",
             "status": "UNAVAILABLE"
           }
         ],
-        "matured_through_session": "2026-11-04",
-        "maturity_state": "MATURE_D1",
+        "matured_through_session": "2026-11-05",
+        "maturity_state": "MATURE_D2",
         "observation_id": "obs-691ad6223b67111c5e10ec56",
-        "outcome_id": "signal:b57955b839e99dfd9cadc60c21cc0ccc018ed48fee69985821a625a9c457031e:r1:51c6354286c8e3b00105",
+        "outcome_id": "signal:b57955b839e99dfd9cadc60c21cc0ccc018ed48fee69985821a625a9c457031e:r2:073227c443e6f3077894",
         "provenance": {
-          "record_digest": "sha256:20d47f38784f22b3f7e9bcb7cb0a733071fa48e2d93ac867688cbe3c4d70c02d",
-          "retention_digest": "sha256:e7b9bf33de99fedc1be68838ff6c23acc21b8b8dbe38e60dd068a83444e32834",
+          "record_digest": "sha256:8c59b4ba755bc4dcddd572ee72e40812c7bf29fd03a9d5ebe893019db6cc5315",
+          "retention_digest": "sha256:ac40a1acf25f04a11ed765499f80876a2ab2ce8387c2bde6ce8d268f3566fc72",
           "source_schema_version": "short-invest-outcome-record/3"
         },
         "reference_authority": {
           "reason": "CANONICAL_CURRENT_PRICE_AUTHORITY_NOT_RETAINED",
           "status": "UNAVAILABLE"
         },
-        "revision": 1,
+        "revision": 2,
         "revisions": [
           {
             "available_horizons": 1,
             "maturity_state": "MATURE_D1",
             "revision": 1,
             "revision_identity": "001-MATURE_D1-51c6354286c8e3b00105",
+            "selected": false
+          },
+          {
+            "available_horizons": 2,
+            "maturity_state": "MATURE_D2",
+            "revision": 2,
+            "revision_identity": "002-MATURE_D2-073227c443e6f3077894",
             "selected": true
           }
         ],
-        "selected_revision_identity": "001-MATURE_D1-51c6354286c8e3b00105",
+        "selected_revision_identity": "002-MATURE_D2-073227c443e6f3077894",
         "signal_id": "signal:b57955b839e99dfd9cadc60c21cc0ccc018ed48fee69985821a625a9c457031e",
         "terminal_outcomes": {
           "D+1": null,
@@ -5810,6 +6655,22 @@
       "status": "AVAILABLE",
       "timestamp": "2026-11-05T08:23:00.174642+01:00",
       "value": 54.24
+    },
+    {
+      "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+      "currency": "EUR",
+      "date": "2026-11-06",
+      "horizon": "D0",
+      "observation_id": "obs-303f259355d9d6307cc55086",
+      "provenance": {
+        "run_identity": 175,
+        "source_digest": "sha256:6d00710b644a1754322a40807794f57164f01ed9beffe4ca8ec93c64e51801ec"
+      },
+      "session": null,
+      "source": "execution-current-price-authority-v1",
+      "status": "AVAILABLE",
+      "timestamp": "2026-11-06T08:21:08.212599+01:00",
+      "value": 56.22
     }
   ],
   "schema_version": "short-invest-dashboard-symbol/6",
@@ -5879,6 +6740,22 @@
         "status": "AVAILABLE",
         "timestamp": "2026-11-05T08:23:00.174642+01:00",
         "value": 54.24
+      },
+      {
+        "authority_class": "RECOMMENDATION_TIME_CANONICAL_PRICE",
+        "currency": "EUR",
+        "date": "2026-11-06",
+        "horizon": "D0",
+        "observation_id": "obs-303f259355d9d6307cc55086",
+        "provenance": {
+          "run_identity": 175,
+          "source_digest": "sha256:6d00710b644a1754322a40807794f57164f01ed9beffe4ca8ec93c64e51801ec"
+        },
+        "session": null,
+        "source": "execution-current-price-authority-v1",
+        "status": "AVAILABLE",
+        "timestamp": "2026-11-06T08:21:08.212599+01:00",
+        "value": 56.22
       }
     ],
     "status": "AVAILABLE"

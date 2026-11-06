@@ -73,12 +73,46 @@
         "run_identity": 160,
         "source_digest": "sha256:2067b7ef240e3f4eea8933506ff34db715fdc8cb0183745fbbf3eb0708979549"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-06",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-42ae5d93891d8cca29f55de5",
+      "provenance": {
+        "run_identity": 175,
+        "source_digest": "sha256:6d00710b644a1754322a40807794f57164f01ed9beffe4ca8ec93c64e51801ec"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-10-23",
-  "generated_at": "2026-10-26T08:20:02.152039+01:00",
+  "generated_at": "2026-11-06T08:21:08.212599+01:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -223,16 +257,16 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "Deutsche EuroShop SE          N"
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "de",
     "symbol": "DEQ.DE",
     "symbol_id": "id-64653a4445512e4445"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-10-26",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-06",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -2087,7 +2121,7 @@
     "status": "AVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 2,
+  "observation_count": 3,
   "observations": [
     {
       "availability": {
@@ -2519,6 +2553,95 @@
         "state": "MARKET_WEAK"
       },
       "source_digest": "sha256:2067b7ef240e3f4eea8933506ff34db715fdc8cb0183745fbbf3eb0708979549",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "DEQ.DE",
+      "symbol_id": "id-64653a4445512e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 3,
+          "reference_price": {
+            "previous_regular_close": 16.1,
+            "price": 16.31999969482422,
+            "quote_timestamp": "2026-11-05T16:30:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-06",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-42ae5d93891d8cca29f55de5",
+      "observed_at": "2026-11-06T08:21:08.212599+01:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 175,
+      "score": null,
+      "source_digest": "sha256:6d00710b644a1754322a40807794f57164f01ed9beffe4ca8ec93c64e51801ec",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "DEQ.DE",
       "symbol_id": "id-64653a4445512e4445"
