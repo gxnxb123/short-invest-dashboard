@@ -6,7 +6,7 @@ const zh = new Map(Object.entries({
   "TODAY'S DECISION FLOW":'今日决策链路','CURRENT PRICE REGIME':'当前价格环境','MAJOR EVENT IMPACT':'重大事件影响',
   'BULLISH OPPORTUNITIES':'看涨机会','DRAWDOWN ALERTS':'暴跌预警','ALL ETF RESEARCH':'全部 ETF 研究',
   'FROZEN MACRO CONTEXT':'冻结的宏观环境','FROZEN EVENT CONTEXT':'冻结的事件环境',"TODAY'S WORLD NEWS":'今日全球新闻',
-  'SHADOW · PAPER ONLY':'影子链路 · 仅模拟','CATALYST SHADOW V0 · AUTHORITY NONE':'催化剂影子 V0 · 无推荐权限',
+  'SHADOW · PAPER ONLY':'影子链路 · 仅模拟','CATALYST SHADOW V0 · AUTHORITY NONE':'催化剂影子 V0 · 无推荐权限','SECTOR BREAKOUT · PAPER ONLY':'板块确认突破 · 仅模拟',
   'INTRADAY · OPEN EXECUTION':'盘中 · 开盘后执行','ACTION / WAIT':'行动 / 等待','SECONDARY':'次要观察',
   'RESEARCH · NO RECOMMENDATION AUTHORITY':'研究 · 无推荐权限','INDEPENDENT MODEL RESEARCH · AUTHORITY NONE':'独立模型研究 · 无推荐权限',
   'EVIDENCE':'证据','OPERATIONS':'运行状态','HISTORICAL OBSERVATION':'历史观察','LATEST RETAINED RUN':'最新留档运行',
