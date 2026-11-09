@@ -185,7 +185,11 @@ const patterns = [
 const phrases = [
   ['latest retained snapshot','最新留档快照'],['retained snapshot','留档快照'],['generated','生成于'],['Retained','已留档'],
   ['Catalyst or cross-route evidence is not strong enough','催化剂或跨链路证据不足'],
+  ['Catalyst score is below the watch threshold','催化剂分数尚未达到观察门槛'],
   ['Retained negative or no-action evidence blocks the research setup','保留的负面或不行动证据阻止了该研究候选'],
+  ['Retained negative company catalyst blocks the research setup','已保留的公司级负面催化剂阻止了该候选'],
+  ['Next retained a hard no-action assessment','Next 保留了不可放宽的不行动判断'],
+  ['Integrity check says not to chase this move','完整性检查认为不应追高'],
   ['Direct company catalyst and at least two retained routes agree','公司级直接催化剂获得至少两条链路一致支持'],
   ['Verified company catalyst retained by Production; route agreement is not required','Production 保留了已验证的公司级催化剂；不强制要求多链路一致'],
   ['Verified company catalyst retained by Next; route agreement is not required','Next 保留了已验证的公司级催化剂；不强制要求多链路一致'],
