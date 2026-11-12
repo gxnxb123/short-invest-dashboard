@@ -481,25 +481,59 @@
         "run_identity": 175,
         "source_digest": "sha256:6d00710b644a1754322a40807794f57164f01ed9beffe4ca8ec93c64e51801ec"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-12",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-54334957eb0c2f59782f3fa6",
+      "provenance": {
+        "run_identity": 182,
+        "source_digest": "sha256:e25fa68abb1439141302bec26887c20d28e3d626dd9535c2678e95e97c15305c"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": "2026-11-03",
   "first_retained_observation": "2026-09-01",
-  "generated_at": "2026-11-06T08:21:08.212599+01:00",
+  "generated_at": "2026-11-12T08:21:41.952191+01:00",
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "Bayer AG                      N"
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "de",
     "symbol": "BAYN.DE",
     "symbol_id": "id-64653a4241594e2e4445"
   },
   "latest_actionable_observation": "2026-11-03",
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-11-06",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-12",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "AVAILABLE",
@@ -796,6 +830,52 @@
         "thesis_id": "TH-76bff3eda2fb7d6811e7",
         "thesis_start_date": "2026-11-03",
         "thesis_state": "CONTINUE"
+      },
+      {
+        "current_mfe_capture_ratio": 0.8782897853290963,
+        "current_price": 57.040000915527344,
+        "current_return": 10.328820258772243,
+        "eligibility_provenance": "ELIGIBLE",
+        "engine_cohort": "swing-v1",
+        "entry_price": 51.70000076293945,
+        "evaluation_effective_at": "2026-11-12T04:02:10.188820+00:00",
+        "evaluation_mode": "BOOTSTRAP_RECONSTRUCTED",
+        "evaluation_session": "2026-11-11",
+        "evaluation_timestamp": "2026-11-12T04:02:10.188820+00:00",
+        "feature_digest": "a3d37dae1d0793672d04e31d37249269fee6185d8a8ac71eae8831d2c9498f65",
+        "first_recommendation_id": 1763,
+        "giveback_from_peak": 0.12171021467090383,
+        "invalidation_state": false,
+        "latest_event_id": null,
+        "latest_event_polarity": null,
+        "latest_recommendation_date": "2026-11-03",
+        "latest_recommendation_id": 1763,
+        "lifecycle_state": "EXPIRED",
+        "linked_review_recommendation_id": 1763,
+        "market": "de",
+        "original_catalyst": null,
+        "original_event_anchor_id": null,
+        "peak_price": 57.779998779296875,
+        "peak_to_current_pp": -1.4313304697279428,
+        "price_overlay": "NONE",
+        "prospective_created_at": null,
+        "prospective_recommendation_id": null,
+        "provenance_status": "BOOTSTRAP_RECONSTRUCTED",
+        "reason_codes": [
+          "BEYOND_D5_WINDOW"
+        ],
+        "recommendation_count": 1,
+        "retention_authority": "Lifecycle Shadow",
+        "retention_digest": "sha256:cf142663fcb283f583fbd930fea023bf3d3e3370a45acb453e57eb4fb6dfb047",
+        "rule_version": "lifecycle-shadow-v2",
+        "running_mae": -0.6576405175444666,
+        "running_mfe": 11.760150728500186,
+        "schema_version": "short-invest-retained-lifecycle/1",
+        "source_snapshot_digest": "sha256:be7b7d12fb2edbaec41cd638c05d199f23c6573328158779628a52c53ab2b0f6",
+        "symbol": "BAYN.DE",
+        "thesis_id": "TH-76bff3eda2fb7d6811e7",
+        "thesis_start_date": "2026-11-03",
+        "thesis_state": "EXPIRED"
       }
     ],
     "status": "AVAILABLE"
@@ -4374,7 +4454,7 @@
       ]
     }
   ],
-  "observation_count": 14,
+  "observation_count": 15,
   "observations": [
     {
       "availability": {
@@ -6598,6 +6678,95 @@
         "state": "STRONG_CONTINUATION"
       },
       "source_digest": "sha256:6d00710b644a1754322a40807794f57164f01ed9beffe4ca8ec93c64e51801ec",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "BAYN.DE",
+      "symbol_id": "id-64653a4241594e2e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 56.62,
+            "price": 56.7599983215332,
+            "quote_timestamp": "2026-11-11T16:30:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-12",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-54334957eb0c2f59782f3fa6",
+      "observed_at": "2026-11-12T08:21:41.952191+01:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 182,
+      "score": null,
+      "source_digest": "sha256:e25fa68abb1439141302bec26887c20d28e3d626dd9535c2678e95e97c15305c",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "BAYN.DE",
       "symbol_id": "id-64653a4241594e2e4445"
