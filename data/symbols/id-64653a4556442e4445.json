@@ -277,25 +277,59 @@
         "run_identity": 186,
         "source_digest": "sha256:4561df645ecfeb2d9d805d4f1b3e441ac4acff154f5e248e6a63fadf9a33985b"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-17",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-a2a2fc3127ceab475281e5d5",
+      "provenance": {
+        "run_identity": 188,
+        "source_digest": "sha256:573f084f517894a4a5810e0ba3474af49dc622f57bd9867ddd7c737b2f440dfe"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-10-08",
-  "generated_at": "2026-11-16T08:20:37.949925+01:00",
+  "generated_at": "2026-11-17T08:21:04.257452+01:00",
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "CTS Eventim AG & Co. KGaA     I"
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "de",
     "symbol": "EVD.DE",
     "symbol_id": "id-64653a4556442e4445"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-11-16",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-17",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -3943,7 +3977,7 @@
     "status": "AVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 8,
+  "observation_count": 9,
   "observations": [
     {
       "availability": {
@@ -5734,6 +5768,95 @@
         "state": "REVERSAL_CONFIRMED"
       },
       "source_digest": "sha256:4561df645ecfeb2d9d805d4f1b3e441ac4acff154f5e248e6a63fadf9a33985b",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "EVD.DE",
+      "symbol_id": "id-64653a4556442e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "deepseek",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 61.0,
+            "price": 60.70000076293945,
+            "quote_timestamp": "2026-11-16T16:30:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-17",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-a2a2fc3127ceab475281e5d5",
+      "observed_at": "2026-11-17T08:21:04.257452+01:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 188,
+      "score": null,
+      "source_digest": "sha256:573f084f517894a4a5810e0ba3474af49dc622f57bd9867ddd7c737b2f440dfe",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "EVD.DE",
       "symbol_id": "id-64653a4556442e4445"
