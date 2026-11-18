@@ -413,6 +413,40 @@
         "run_identity": 177,
         "source_digest": "sha256:0232fd2b6504148b53d04efefa4ba47be7242083ff5db6a77dd46faf33076b76"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-18",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-32d521f5a88a9e0f708c59bc",
+      "provenance": {
+        "run_identity": 190,
+        "source_digest": "sha256:5745e7b8dfd0692ca2036c4530a12794b4f76fe9c3c47aa041046880337fe48a"
+      }
     }
   ],
   "events": [
@@ -436,20 +470,20 @@
   ],
   "first_actionable_observation": "2026-10-15",
   "first_retained_observation": "2026-09-08",
-  "generated_at": "2026-11-09T08:20:00.666721+01:00",
+  "generated_at": "2026-11-18T08:22:02.069422+01:00",
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "Zalando SE                    I"
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "de",
     "symbol": "ZAL.DE",
     "symbol_id": "id-64653a5a414c2e4445"
   },
   "latest_actionable_observation": "2026-10-29",
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-11-09",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-18",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "AVAILABLE",
@@ -5887,7 +5921,7 @@
       ]
     }
   ],
-  "observation_count": 12,
+  "observation_count": 13,
   "observations": [
     {
       "availability": {
@@ -8205,6 +8239,95 @@
         "state": "STRONG_CONTINUATION"
       },
       "source_digest": "sha256:0232fd2b6504148b53d04efefa4ba47be7242083ff5db6a77dd46faf33076b76",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "ZAL.DE",
+      "symbol_id": "id-64653a5a414c2e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 28.47,
+            "price": 28.34000015258789,
+            "quote_timestamp": "2026-11-17T16:30:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-18",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-32d521f5a88a9e0f708c59bc",
+      "observed_at": "2026-11-18T08:22:02.069422+01:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 190,
+      "score": null,
+      "source_digest": "sha256:5745e7b8dfd0692ca2036c4530a12794b4f76fe9c3c47aa041046880337fe48a",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "ZAL.DE",
       "symbol_id": "id-64653a5a414c2e4445"

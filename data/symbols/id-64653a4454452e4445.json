@@ -515,6 +515,40 @@
         "run_identity": 188,
         "source_digest": "sha256:573f084f517894a4a5810e0ba3474af49dc622f57bd9867ddd7c737b2f440dfe"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-18",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-e5ab5873e98e75a9325a3561",
+      "provenance": {
+        "run_identity": 190,
+        "source_digest": "sha256:5745e7b8dfd0692ca2036c4530a12794b4f76fe9c3c47aa041046880337fe48a"
+      }
     }
   ],
   "events": [
@@ -538,25 +572,73 @@
   ],
   "first_actionable_observation": "2026-11-17",
   "first_retained_observation": "2026-08-26",
-  "generated_at": "2026-11-17T08:21:04.257452+01:00",
+  "generated_at": "2026-11-18T08:22:02.069422+01:00",
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "DEUTSCHE TELEKOM AG           N"
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "de",
     "symbol": "DTE.DE",
     "symbol_id": "id-64653a4454452e4445"
   },
   "latest_actionable_observation": "2026-11-17",
-  "latest_canonical_state": "OPEN_CONFIRMATION_LONG",
-  "latest_retained_observation": "2026-11-17",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-18",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
-    "availability": "NOT_RETAINED",
-    "observations": [],
-    "status": "UNAVAILABLE"
+    "availability": "AVAILABLE",
+    "observations": [
+      {
+        "current_mfe_capture_ratio": 0.6206928303177309,
+        "current_price": 27.190000534057617,
+        "current_return": 0.6664209687170075,
+        "eligibility_provenance": "ELIGIBLE",
+        "engine_cohort": "swing-v1",
+        "entry_price": 27.010000228881836,
+        "evaluation_effective_at": "2026-11-18T04:41:20.854781+00:00",
+        "evaluation_mode": "PROSPECTIVE",
+        "evaluation_session": "2026-11-17",
+        "evaluation_timestamp": "2026-11-18T04:41:20.854781+00:00",
+        "feature_digest": "d16eba4bfa1a81cb2d01e22eb56162f1522503c6a856528fda43286f89cd6a4a",
+        "first_recommendation_id": 1998,
+        "giveback_from_peak": 0.3793071696822609,
+        "invalidation_state": false,
+        "latest_event_id": null,
+        "latest_event_polarity": null,
+        "latest_recommendation_date": "2026-11-17",
+        "latest_recommendation_id": 1998,
+        "lifecycle_state": "NEW",
+        "linked_review_recommendation_id": null,
+        "market": "de",
+        "original_catalyst": null,
+        "original_event_anchor_id": null,
+        "peak_price": 27.299999237060547,
+        "peak_to_current_pp": -0.407251766274741,
+        "price_overlay": "NONE",
+        "prospective_created_at": "2026-11-17T07:21:04.257452+00:00",
+        "prospective_recommendation_id": 1998,
+        "provenance_status": "VERIFIED_PROSPECTIVE",
+        "reason_codes": [
+          "NEW_RECOMMENDATION",
+          "PRICE_PATH_AVAILABLE"
+        ],
+        "recommendation_count": 1,
+        "retention_authority": "Lifecycle Shadow",
+        "retention_digest": "sha256:fdf610a35f7d63064aa870e97abde0016c87a93c7f93ad2a12155749d5e4ffd7",
+        "rule_version": "lifecycle-shadow-v2",
+        "running_mae": -0.11107251533241103,
+        "running_mfe": 1.0736727349917485,
+        "schema_version": "short-invest-retained-lifecycle/1",
+        "source_snapshot_digest": "sha256:2021dac78d4ca58a643e6f4433fada5b15cb925918732c6f44936da6f4a933ef",
+        "symbol": "DTE.DE",
+        "thesis_id": "TH-4a36aeb31bcd68984b9e",
+        "thesis_start_date": "2026-11-17",
+        "thesis_state": "NEW"
+      }
+    ],
+    "status": "AVAILABLE"
   },
   "market_context": {
     "authority": "HISTORICAL_MARKET_CONTEXT_ONLY",
@@ -4760,7 +4842,7 @@
       ]
     }
   ],
-  "observation_count": 15,
+  "observation_count": 16,
   "observations": [
     {
       "availability": {
@@ -7460,6 +7542,95 @@
       "source_schema_version": "production-snapshot-v2",
       "symbol": "DTE.DE",
       "symbol_id": "id-64653a4454452e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 2,
+          "reference_price": {
+            "previous_regular_close": 26.6,
+            "price": 27.1200008392334,
+            "quote_timestamp": "2026-11-17T16:30:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-18",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-e5ab5873e98e75a9325a3561",
+      "observed_at": "2026-11-18T08:22:02.069422+01:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 190,
+      "score": null,
+      "source_digest": "sha256:5745e7b8dfd0692ca2036c4530a12794b4f76fe9c3c47aa041046880337fe48a",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "DTE.DE",
+      "symbol_id": "id-64653a4454452e4445"
     }
   ],
   "outcomes": {
@@ -8205,6 +8376,96 @@
         ],
         "selected_revision_identity": "002-MATURE_D2-8027888f0e4c56509465",
         "signal_id": "signal:f1e86a6f1c681d270c2f663b3bf6c437881d6ae685c92bc37f31861f0eaaa97d",
+        "terminal_outcomes": {
+          "D+1": null,
+          "D+2": null,
+          "D+3": null,
+          "D+4": null,
+          "D+5": null
+        }
+      },
+      {
+        "excursion": {
+          "intraday_order_identifiable": false,
+          "mae_1_3": {
+            "session": null,
+            "timing_precision": "SESSION_ONLY",
+            "value_percent": null
+          },
+          "mae_1_5": {
+            "session": null,
+            "timing_precision": "SESSION_ONLY",
+            "value_percent": null
+          },
+          "mfe_1_3": {
+            "session": null,
+            "timing_precision": "SESSION_ONLY",
+            "value_percent": null
+          },
+          "mfe_1_5": {
+            "session": null,
+            "timing_precision": "SESSION_ONLY",
+            "value_percent": null
+          }
+        },
+        "horizons": [
+          {
+            "benchmark": {
+              "close": 26045.369140625,
+              "high": 26440.609375,
+              "low": 26024.2109375,
+              "open": 26387.439453125,
+              "return_percent": -2.6339492174853762
+            },
+            "benchmark_relative_return_percent": null,
+            "close": null,
+            "high": null,
+            "horizon": "D+1",
+            "low": null,
+            "open": null,
+            "price_authority": {
+              "authority_type": "NORMALIZED_UNADJUSTED_DAILY_OHLC",
+              "effective_as_of": "2026-11-17",
+              "missing_reason": "PRICE_DATA_NOT_RETAINED",
+              "normalized_data_digest": null,
+              "observed_at": null,
+              "operation": "historical_daily_ohlc",
+              "provider": "YAHOO_FINANCE",
+              "raw_response_digest": null,
+              "raw_response_state": "RAW_PROVIDER_RESPONSE_NOT_RETAINED",
+              "schema_version": "short-invest-provider-observation-reference/1",
+              "success": false
+            },
+            "return_percent": null,
+            "session_date": "2026-11-17",
+            "status": "UNAVAILABLE"
+          }
+        ],
+        "matured_through_session": "2026-11-17",
+        "maturity_state": "MATURE_D1",
+        "observation_id": "obs-0a7a1441a2951b2220fc3fda",
+        "outcome_id": "signal:03398ff69449c3978cd801d8100dcaa91cf12958fd999dba07190cdfa2f1e3ba:r1:c4f92b1329734581a2fe",
+        "provenance": {
+          "record_digest": "sha256:460b05a6d509955e30db1d536735745f66dd2fe4494e0cabbfc2bb36cf8c3747",
+          "retention_digest": "sha256:a0d7c501ed5d621cdeb1e462f0d027170d80d88768d2aa1fa17b5477d0bdef21",
+          "source_schema_version": "short-invest-outcome-record/3"
+        },
+        "reference_authority": {
+          "reason": "CANONICAL_CURRENT_PRICE_AUTHORITY_NOT_RETAINED",
+          "status": "UNAVAILABLE"
+        },
+        "revision": 1,
+        "revisions": [
+          {
+            "available_horizons": 1,
+            "maturity_state": "MATURE_D1",
+            "revision": 1,
+            "revision_identity": "001-MATURE_D1-c4f92b1329734581a2fe",
+            "selected": true
+          }
+        ],
+        "selected_revision_identity": "001-MATURE_D1-c4f92b1329734581a2fe",
+        "signal_id": "signal:03398ff69449c3978cd801d8100dcaa91cf12958fd999dba07190cdfa2f1e3ba",
         "terminal_outcomes": {
           "D+1": null,
           "D+2": null,
