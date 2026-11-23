@@ -39,12 +39,46 @@
         "run_identity": 131,
         "source_digest": "sha256:ff6d03932b31db764b94197cc812842ba15744d62073cd360be48c1a9780e0b1"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-23",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-768c6b2b917be64fed057f9c",
+      "provenance": {
+        "run_identity": 197,
+        "source_digest": "sha256:5c7582b6e0758967cffe15de4e407b01acf45be3c781d0ca4ec489319b4d6679"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-10-02",
-  "generated_at": "2026-10-02T08:46:33.868285-04:00",
+  "generated_at": "2026-11-23T08:52:00.026054-05:00",
   "identity": {
     "company": {
       "reason": null,
@@ -56,8 +90,8 @@
     "symbol_id": "id-75733a56525458"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-10-02",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-23",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -1697,7 +1731,7 @@
     "status": "AVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 1,
+  "observation_count": 2,
   "observations": [
     {
       "availability": {
@@ -1799,6 +1833,95 @@
       "run_identity": 131,
       "score": 35.5,
       "source_digest": "sha256:ff6d03932b31db764b94197cc812842ba15744d62073cd360be48c1a9780e0b1",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "VRTX",
+      "symbol_id": "id-75733a56525458"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 515.02,
+            "price": 520.0,
+            "quote_timestamp": "2026-11-23T13:16:53+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-23",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-768c6b2b917be64fed057f9c",
+      "observed_at": "2026-11-23T08:52:00.026054-05:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 197,
+      "score": null,
+      "source_digest": "sha256:5c7582b6e0758967cffe15de4e407b01acf45be3c781d0ca4ec489319b4d6679",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "VRTX",
       "symbol_id": "id-75733a56525458"
