@@ -277,25 +277,59 @@
         "run_identity": 194,
         "source_digest": "sha256:7ae8e1d94dcb17b89fab8e98e3633425cab4ba603123f524fc50bc0d6367eeaf"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-24",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-0b452c2dfde74f1f843e2b7f",
+      "provenance": {
+        "run_identity": 198,
+        "source_digest": "sha256:851c266cda3f4704b372162ca8a22e2b1c6db986296ac523c0a79af6ecea4a79"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": "2026-10-16",
   "first_retained_observation": "2026-09-16",
-  "generated_at": "2026-11-20T08:20:59.592764+01:00",
+  "generated_at": "2026-11-24T08:20:41.038125+01:00",
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "HANNOVER RUECK SE NA O.N."
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "de",
     "symbol": "HNR1.DE",
     "symbol_id": "id-64653a484e52312e4445"
   },
   "latest_actionable_observation": "2026-11-17",
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-11-20",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-24",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "AVAILABLE",
@@ -489,6 +523,55 @@
         "running_mfe": 0.19933757591881207,
         "schema_version": "short-invest-retained-lifecycle/1",
         "source_snapshot_digest": "sha256:8401011d7005fb24788abbee2d9b53b135e9d345d8743c9da36603a44970a4e5",
+        "symbol": "HNR1.DE",
+        "thesis_id": "TH-6308802f15bbd2395874",
+        "thesis_start_date": "2026-11-17",
+        "thesis_state": "CONTINUE"
+      },
+      {
+        "current_mfe_capture_ratio": -8.999898275774397,
+        "current_price": 295.6000061035156,
+        "current_return": -1.7940179058087646,
+        "eligibility_provenance": "ELIGIBLE",
+        "engine_cohort": "swing-v1",
+        "entry_price": 301.0,
+        "evaluation_effective_at": "2026-11-24T07:04:01.209603+00:00",
+        "evaluation_mode": "BOOTSTRAP_RECONSTRUCTED",
+        "evaluation_session": "2026-11-23",
+        "evaluation_timestamp": "2026-11-24T07:04:01.209603+00:00",
+        "feature_digest": "bffc54f5f6a5301448e20cc27c731ae7c689ae1f3b5de090939973311bb13a06",
+        "first_recommendation_id": 1995,
+        "giveback_from_peak": 9.999898275774376,
+        "invalidation_state": false,
+        "latest_event_id": null,
+        "latest_event_polarity": null,
+        "latest_recommendation_date": "2026-11-17",
+        "latest_recommendation_id": 1995,
+        "lifecycle_state": "CONTINUE",
+        "linked_review_recommendation_id": null,
+        "market": "de",
+        "original_catalyst": null,
+        "original_event_anchor_id": null,
+        "peak_price": 301.6000061035156,
+        "peak_to_current_pp": -1.9933554817275767,
+        "price_overlay": "NONE",
+        "prospective_created_at": null,
+        "prospective_recommendation_id": null,
+        "provenance_status": "BOOTSTRAP_RECONSTRUCTED",
+        "reason_codes": [
+          "WITHIN_D5_WINDOW",
+          "THESIS_INTACT",
+          "NO_ADVERSE_UPDATE",
+          "PRICE_PATH_AVAILABLE"
+        ],
+        "recommendation_count": 1,
+        "retention_authority": "Lifecycle Shadow",
+        "retention_digest": "sha256:08c5eea68acc73348464ee6376635ea6b816da596935400aa4a451f638d84c9c",
+        "rule_version": "lifecycle-shadow-v2",
+        "running_mae": -4.119599301157595,
+        "running_mfe": 0.19933757591881207,
+        "schema_version": "short-invest-retained-lifecycle/1",
+        "source_snapshot_digest": "sha256:d63e4b82c0ccfb4bfd4cde4dfb786a134ce7c24d40bf303fc44f2b6506f38f93",
         "symbol": "HNR1.DE",
         "thesis_id": "TH-6308802f15bbd2395874",
         "thesis_start_date": "2026-11-17",
@@ -3320,7 +3403,7 @@
       ]
     }
   ],
-  "observation_count": 8,
+  "observation_count": 9,
   "observations": [
     {
       "availability": {
@@ -5115,6 +5198,95 @@
         "state": "MARKET_WEAK"
       },
       "source_digest": "sha256:7ae8e1d94dcb17b89fab8e98e3633425cab4ba603123f524fc50bc0d6367eeaf",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "HNR1.DE",
+      "symbol_id": "id-64653a484e52312e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "deepseek",
+          "rank": 1,
+          "reference_price": {
+            "previous_regular_close": 293.8,
+            "price": 295.0,
+            "quote_timestamp": "2026-11-23T16:30:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-24",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-0b452c2dfde74f1f843e2b7f",
+      "observed_at": "2026-11-24T08:20:41.038125+01:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 198,
+      "score": null,
+      "source_digest": "sha256:851c266cda3f4704b372162ca8a22e2b1c6db986296ac523c0a79af6ecea4a79",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "HNR1.DE",
       "symbol_id": "id-64653a484e52312e4445"
