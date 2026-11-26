@@ -243,6 +243,40 @@
         "run_identity": 180,
         "source_digest": "sha256:efa1878f66c14f9c041fc48e811331a2c23edf2c03c67675d8547734953819ec"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-26",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-9d38df0f111804e74e2c8c35",
+      "provenance": {
+        "run_identity": 202,
+        "source_digest": "sha256:0f6a48b48206912e07d6044b198cdd5a4deeed581423bcd4752dd836061a5662"
+      }
     }
   ],
   "events": [
@@ -266,20 +300,20 @@
   ],
   "first_actionable_observation": "2026-10-27",
   "first_retained_observation": "2026-09-15",
-  "generated_at": "2026-11-11T08:20:57.806405+01:00",
+  "generated_at": "2026-11-26T08:22:17.944678+01:00",
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "HENSOLDT AG                   I"
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "de",
     "symbol": "HAG.DE",
     "symbol_id": "id-64653a4841472e4445"
   },
   "latest_actionable_observation": "2026-10-27",
-  "latest_canonical_state": "BACKGROUND_MONITORING",
-  "latest_retained_observation": "2026-11-11",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-26",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "AVAILABLE",
@@ -6493,7 +6527,7 @@
       ]
     }
   ],
-  "observation_count": 7,
+  "observation_count": 8,
   "observations": [
     {
       "availability": {
@@ -7834,6 +7868,95 @@
         "state": "NEUTRAL"
       },
       "source_digest": "sha256:efa1878f66c14f9c041fc48e811331a2c23edf2c03c67675d8547734953819ec",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "HAG.DE",
+      "symbol_id": "id-64653a4841472e4445"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "qwen",
+          "rank": 2,
+          "reference_price": {
+            "previous_regular_close": 76.86,
+            "price": 77.22000122070312,
+            "quote_timestamp": "2026-11-25T16:30:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-26",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "de",
+      "multi_llm": null,
+      "observation_id": "obs-9d38df0f111804e74e2c8c35",
+      "observed_at": "2026-11-26T08:22:17.944678+01:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 202,
+      "score": null,
+      "source_digest": "sha256:0f6a48b48206912e07d6044b198cdd5a4deeed581423bcd4752dd836061a5662",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "HAG.DE",
       "symbol_id": "id-64653a4841472e4445"
