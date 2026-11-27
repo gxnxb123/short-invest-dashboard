@@ -73,12 +73,46 @@
         "run_identity": 193,
         "source_digest": "sha256:47d9f1c8284c8452c40e4b8b440a80fd2e5b475e4483e414b23dd0944f2a26be"
       }
+    },
+    {
+      "breakout": {
+        "reason": null,
+        "status": "NOT_RETAINED",
+        "value": null
+      },
+      "current_recommendation": false,
+      "effective_date": "2026-11-27",
+      "ideal_high": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "ideal_low": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "invalidation": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "max_acceptable": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "observation_id": "obs-69baf788c48bb38a4b5b5271",
+      "provenance": {
+        "run_identity": 204,
+        "source_digest": "sha256:c601f53878709166503ed3358ae93725047be68eef7eaa65cf201e97b9a665d5"
+      }
     }
   ],
   "events": [],
   "first_actionable_observation": null,
   "first_retained_observation": "2026-10-13",
-  "generated_at": "2026-11-19T08:50:18.404887-05:00",
+  "generated_at": "2026-11-27T08:49:53.536755-05:00",
   "history_market_context": {
     "additional_sessions": [
       {
@@ -115,16 +149,16 @@
   "identity": {
     "company": {
       "reason": null,
-      "status": "KNOWN",
-      "value": "TJX Companies, Inc. (The)"
+      "status": "UI_FIELD_NOT_AUTHORITATIVE",
+      "value": null
     },
     "market": "us",
     "symbol": "TJX",
     "symbol_id": "id-75733a544a58"
   },
   "latest_actionable_observation": null,
-  "latest_canonical_state": "OVEREXTENDED",
-  "latest_retained_observation": "2026-11-19",
+  "latest_canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+  "latest_retained_observation": "2026-11-27",
   "lifecycle": {
     "authority": "Retained structured Lifecycle authority; Markdown and SQLite not read",
     "availability": "NOT_RETAINED",
@@ -841,7 +875,7 @@
     "status": "AVAILABLE"
   },
   "multi_llm_reviews": [],
-  "observation_count": 2,
+  "observation_count": 3,
   "observations": [
     {
       "availability": {
@@ -1276,6 +1310,95 @@
         "status": "INACTIVE"
       },
       "source_digest": "sha256:47d9f1c8284c8452c40e4b8b440a80fd2e5b475e4483e414b23dd0944f2a26be",
+      "source_schema_version": "production-snapshot-v2",
+      "symbol": "TJX",
+      "symbol_id": "id-75733a544a58"
+    },
+    {
+      "autonomous_llm": [
+        {
+          "provider": "gemini",
+          "rank": 2,
+          "reference_price": {
+            "previous_regular_close": 143.86,
+            "price": 146.48,
+            "quote_timestamp": "2026-11-27T13:43:00+00:00",
+            "timing_classification": "VALID_BEFORE_CUTOFF"
+          }
+        }
+      ],
+      "availability": {
+        "canonical_price": "UNAVAILABLE",
+        "event": "NOT_RETAINED",
+        "multi_llm": "NOT_RETAINED",
+        "rank": "RESEARCH_ONLY",
+        "risk": "RESEARCH_ONLY",
+        "score": "RESEARCH_ONLY"
+      },
+      "canonical_state": "AUTONOMOUS_LLM_RESEARCH",
+      "company": {
+        "reason": null,
+        "status": "UI_FIELD_NOT_AUTHORITATIVE",
+        "value": null
+      },
+      "constraint_codes": [],
+      "date": "2026-11-27",
+      "decision_reason": "INDEPENDENT_MODEL_PICK",
+      "directional_basis": null,
+      "event": {
+        "binding_status": "REPRESENTATIVE_CATALYST_UNAVAILABLE",
+        "event_id": null,
+        "evidence_kind": null,
+        "family": null,
+        "headline": null,
+        "polarity": null,
+        "publication_time": null,
+        "representative_source": null,
+        "representative_source_role": null,
+        "semantic_source": null,
+        "semantic_status": null,
+        "timestamp_authority": "NOT_IDENTIFIABLE",
+        "underlying_event_time": null
+      },
+      "execution": {},
+      "market": "us",
+      "multi_llm": null,
+      "observation_id": "obs-69baf788c48bb38a4b5b5271",
+      "observed_at": "2026-11-27T08:49:53.536755-05:00",
+      "presentation_group": "OTHER_NOT_IDENTIFIABLE",
+      "price": {
+        "currency": null,
+        "current": {
+          "reason": "NO_CANONICAL_EXECUTION_REFERENCE",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "ideal_high": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "ideal_low": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "invalidation": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        },
+        "max_acceptable": {
+          "reason": null,
+          "status": "UI_FIELD_NOT_AUTHORITATIVE",
+          "value": null
+        }
+      },
+      "rank": null,
+      "risk": null,
+      "run_identity": 204,
+      "score": null,
+      "source_digest": "sha256:c601f53878709166503ed3358ae93725047be68eef7eaa65cf201e97b9a665d5",
       "source_schema_version": "production-snapshot-v2",
       "symbol": "TJX",
       "symbol_id": "id-75733a544a58"
